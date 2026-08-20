@@ -1,0 +1,40 @@
+name: Bootstrap Evia Beta
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  bootstrap:
+    if: github.event.head_commit.message == 'Bootstrap Evia_beta from Evia v75'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout beta
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Copy current Evia into beta
+        shell: bash
+        run: |
+          git clone --depth 1 --branch main https://github.com/DDRNFinch/Evia.git /tmp/evia-source
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a /tmp/evia-source/. .
+          rm -rf .git
+          cp -a "$GITHUB_WORKSPACE/.git" /tmp/beta-git 2>/dev/null || true
+
+      - name: Restore beta git metadata and commit
+        shell: bash
+        run: |
+          if [ ! -d .git ]; then
+            mv /tmp/beta-git .git
+          fi
+          git config user.name "Evia Beta Sync"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Initialize Evia_beta from Evia v75"
+          git push origin HEAD:main
