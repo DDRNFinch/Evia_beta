@@ -1,0 +1,9 @@
+{
+  "version": "48",
+  "title": "A new Evia update is ready",
+  "details": [
+    "Made the smaller top Evia use the same proportional line weight as large Evia",
+    "Removed the stroke compensation that made the small avatar look thicker",
+    "Matched the destination stroke exactly to the naturally scaled travelling avatar"
+  ]
+}

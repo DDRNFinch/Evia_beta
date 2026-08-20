@@ -1,0 +1,43 @@
+/* Evia premium motion layer — visual polish only; no course or evidence logic. */
+:root{--evia-motion-fast:140ms;--evia-motion-out:125ms;--evia-motion-page:220ms;--evia-motion-layer:280ms;--evia-motion-ease:cubic-bezier(.22,1,.36,1);--evia-motion-soft:cubic-bezier(.33,1,.68,1)}
+html{scroll-behavior:smooth}
+body{-webkit-tap-highlight-color:transparent}
+
+/* True navigation cross-fade. The outgoing surface fades before its existing click handler runs. */
+.selfobs .self-panel,.selfobs-app .view-panel,.selfobs-app .selfobs-view,.evia-tools-screen,.evia-sign-card,.selfobs-help-card,.evia-target-layer,.evia-rpl-layer{opacity:1;transform:translate3d(0,0,0);will-change:opacity,transform}
+.evia-nav-leave{opacity:0!important;transform:translate3d(0,-4px,0)!important;transition:opacity var(--evia-motion-out) ease,transform var(--evia-motion-out) ease!important;pointer-events:none!important}
+.evia-nav-enter{animation:evia-premium-page-in var(--evia-motion-page) var(--evia-motion-ease) both!important}
+@keyframes evia-premium-page-in{0%{opacity:0;transform:translate3d(0,5px,0)}100%{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes evia-premium-layer-in{0%{opacity:0;transform:translate3d(0,7px,0) scale(.992)}100%{opacity:1;transform:translate3d(0,0,0) scale(1)}}
+
+/* Main Evia workspace opening/closing. */
+.selfobs .menu-stage,.selfobs-app .menu-stage{transform-origin:50% 22%;transition:opacity .25s var(--evia-motion-soft),transform .32s var(--evia-motion-ease)}
+.selfobs:not(.is-open) .menu-stage,.selfobs-app:not(.is-open) .menu-stage{transform:translate3d(0,7px,0) scale(.995)}
+.selfobs.is-open .menu-stage,.selfobs-app.is-open .menu-stage{transform:translate3d(0,0,0) scale(1)}
+.selfobs .self-invite,.selfobs-app .self-invite{transition:opacity .32s var(--evia-motion-soft),transform .32s var(--evia-motion-ease)}
+.selfobs.is-open .self-invite,.selfobs-app.is-open .self-invite{transform:translate(-50%,3px)}
+
+/* Consistent premium touch response without changing existing behaviour. */
+.selfobs button:not(.evia-anchor),.selfobs-app button:not(.evia-anchor),.evia-tools-layer button,.evia-sign-layer button,.evia-target-layer button,.evia-rpl-layer button{transition:transform var(--evia-motion-fast) var(--evia-motion-ease),opacity var(--evia-motion-fast) ease,background-color .2s ease,border-color .2s ease,box-shadow .24s var(--evia-motion-ease);transform-origin:center;touch-action:manipulation}
+.selfobs button:not(.evia-anchor):active,.selfobs-app button:not(.evia-anchor):active,.evia-tools-layer button:active,.evia-sign-layer button:active,.evia-target-layer button:active,.evia-rpl-layer button:active{transform:scale(.975)}
+.selfobs .option-row,.selfobs-app .option-row,.selfobs .self-card,.selfobs-app .selfobs-guidance,.selfobs-app .selfobs-opportunity,.selfobs-app .selfobs-question-card,.selfobs-app .selfobs-evidence-row,.selfobs-app .selfobs-ksb-row,.selfobs-app .selfobs-static-row{transition:transform .2s var(--evia-motion-ease),background-color .24s ease,border-color .24s ease,box-shadow .28s var(--evia-motion-ease),opacity .2s ease}
+
+@media(hover:hover) and (pointer:fine){
+.selfobs .option-row:hover,.selfobs-app .option-row:hover,.selfobs-app .selfobs-opportunity:hover,.selfobs-app .selfobs-evidence-row:hover,.selfobs-app .selfobs-ksb-row:hover{transform:translate3d(0,-1px,0);box-shadow:inset 0 1px rgba(255,255,255,.76),0 5px 18px rgba(38,36,31,.045)}
+}
+
+/* Inputs, tabs and progress settle rather than snap. */
+.selfobs input,.selfobs textarea,.selfobs select,.selfobs-app input,.selfobs-app textarea,.selfobs-app select{transition:border-color .2s ease,background-color .2s ease,box-shadow .24s var(--evia-motion-ease),opacity .2s ease}
+.selfobs .self-tabs button,.selfobs-app .selfobs-evidence-tabs button,.selfobs-app .selfobs-filters button{transition:transform var(--evia-motion-fast) var(--evia-motion-ease),background-color .22s ease,border-color .22s ease,color .22s ease}
+.app-toast,.evia-target-toast{transition:opacity .24s ease,transform .3s var(--evia-motion-ease)!important}
+.progress-arch svg,.progress-arch .arch-number,.progress-arch .arch-label{transition:opacity .2s ease,transform .22s var(--evia-motion-ease),stroke-dasharray .42s var(--evia-motion-ease)}
+.progress-arch:active svg{transform:scale(.97)}
+
+/* Dynamic overlays and sheets. */
+.evia-tools-layer,.evia-sign-layer,.selfobs-help-layer,.evia-target-layer,.evia-rpl-layer{animation:evia-premium-backdrop-in .2s ease both}
+.evia-tools-screen,.evia-sign-card,.selfobs-help-card,.evia-target-layer .evia-tools-screen,.evia-rpl-layer>*{animation:evia-premium-layer-in var(--evia-motion-layer) var(--evia-motion-ease) both;transform-origin:50% 42%}
+@keyframes evia-premium-backdrop-in{from{opacity:0}to{opacity:1}}
+
+/* Accessibility setting and OS preference always win. */
+.selfobs.is-reduced-motion *,.selfobs-app.is-reduced-motion *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.evia-nav-leave,.evia-nav-enter,.evia-tools-layer,.evia-sign-layer,.selfobs-help-layer,.evia-target-layer,.evia-rpl-layer,.evia-tools-screen,.evia-sign-card,.selfobs-help-card{animation:none!important;transition-duration:.001ms!important;transform:none!important;opacity:1!important}.selfobs *,.selfobs-app *,.evia-tools-layer *,.evia-sign-layer *,.evia-target-layer *,.evia-rpl-layer *{transition-duration:.001ms!important;animation-duration:.001ms!important;animation-iteration-count:1!important}}

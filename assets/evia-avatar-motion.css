@@ -1,0 +1,9 @@
+/* Premium Evia travel between home and open positions. */
+.evia-motion-proxy{transition:none!important;will-change:transform,opacity;contain:layout style paint;-webkit-tap-highlight-color:transparent}
+.evia-motion-proxy .evia-face{transition:none!important}
+.evia-avatar-motion-target{opacity:0!important;transition:none!important}
+.evia-avatar-motion-handoff{opacity:1!important;transition:none!important}
+/* The smaller top avatar must keep the same visual line proportion as large Evia. */
+.selfobs.is-open .evia-anchor,.selfobs-app.is-open .evia-anchor{--evia-stroke:clamp(1.5px,.15vw,1.75px)}
+.selfobs.is-guided .evia-anchor,.selfobs-app.is-guided .evia-anchor{--evia-stroke:clamp(1.5px,.15vw,1.75px)}
+@media(prefers-reduced-motion:reduce){.evia-motion-proxy{display:none!important}.evia-avatar-motion-target{opacity:1!important}.evia-avatar-motion-handoff{opacity:1!important;transition:none!important}}

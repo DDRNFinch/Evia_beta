@@ -1,0 +1,276 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nisi.local/schemas/course-pack-v1.json",
+  "title": "Nisi Course Pack v1",
+  "type": "object",
+  "required": [
+    "nisiCoursePack",
+    "schemaVersion",
+    "id",
+    "title"
+  ],
+  "properties": {
+    "nisiCoursePack": {
+      "const": 1
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "familyId": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "shortTitle": {
+      "type": "string"
+    },
+    "standard": {
+      "type": "string"
+    },
+    "standardId": {
+      "type": "string"
+    },
+    "courseType": {
+      "enum": [
+        "apprenticeship",
+        "nvq"
+      ]
+    },
+    "coverageLabel": {
+      "type": "string"
+    },
+    "learningLabel": {
+      "type": "string"
+    },
+    "fourthLabel": {
+      "type": "string"
+    },
+    "otjMinimumHours": {
+      "type": "number",
+      "minimum": 0
+    },
+    "glhTargetHours": {
+      "type": "number",
+      "minimum": 0
+    },
+    "tqtHours": {
+      "type": "number",
+      "minimum": 0
+    },
+    "gatewayBufferMonths": {
+      "type": "number",
+      "minimum": 0
+    },
+    "epaConfigured": {
+      "type": "boolean"
+    },
+    "compatStorageSuffix": {
+      "type": "string"
+    },
+    "codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "units": {
+      "type": "array"
+    },
+    "siteData": {
+      "$ref": "#/$defs/siteData"
+    },
+    "pathways": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "codes",
+          "siteData"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "codes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "siteData": {
+            "$ref": "#/$defs/siteData"
+          },
+          "compatStorageSuffix": {
+            "type": "string"
+          },
+          "otjMinimumHours": {
+            "type": "number",
+            "minimum": 0
+          },
+          "glhTargetHours": {
+            "type": "number",
+            "minimum": 0
+          },
+          "tqtHours": {
+            "type": "number",
+            "minimum": 0
+          },
+          "epaConfigured": {
+            "type": "boolean"
+          },
+          "units": {
+            "type": "array"
+          },
+          "nvqMeta": {
+            "type": "object"
+          },
+          "epaProfile": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "nvqMeta": {
+      "type": "object"
+    },
+    "epaProfile": {
+      "type": "object"
+    },
+    "codeDescriptions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  },
+  "anyOf": [
+    {
+      "required": [
+        "codes",
+        "siteData"
+      ]
+    },
+    {
+      "required": [
+        "pathways"
+      ]
+    }
+  ],
+  "$defs": {
+    "siteData": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "jobs"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "jobs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "title",
+                "opps"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "opps": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id",
+                      "title",
+                      "instruction",
+                      "question",
+                      "codes"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "title": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "instruction": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "question": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "codes": {
+                        "type": "array",
+                        "minItems": 0,
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "holistic": {
+                        "type": "boolean"
+                      },
+                      "bundle": {
+                        "type": "string"
+                      },
+                      "media": {
+                        "enum": [
+                          "talk"
+                        ]
+                      }
+                    },
+                    "additionalProperties": true
+                  }
+                }
+              },
+              "additionalProperties": true
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

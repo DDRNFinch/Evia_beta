@@ -1,0 +1,52 @@
+name: Complete Evia v42
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+jobs:
+  deploy:
+    if: github.event.head_commit.message == 'Stage verified Evia v42 migration'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout staged main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Reconstruct verified v42 delta
+        shell: bash
+        run: |
+          cat .v42-transfer/chunk* | base64 -d > /tmp/evia-v42.tgz
+          tar -xzf /tmp/evia-v42.tgz -C .
+      - name: Validate v42
+        shell: bash
+        run: |
+          test -f course-packs/Trowel_Occupations_6570-05_v1.0.nisi
+          node --check assets/evia-course-packs.js
+          node --check assets/evia-course-context.js
+          node --check assets/evia-trowel-pack-migration.js
+          node --check assets/evia-trowel-pack-cutover.js
+          node --check assets/evia-nvq.js
+          node --check assets/evia-rpl-course.js
+          node --check assets/evia-selfobs-live.js
+          node --check assets/evia-targets.js
+          python -m json.tool course-packs/Trowel_Occupations_6570-05_v1.0.nisi >/dev/null
+          python -m json.tool course-packs/schema-v1.json >/dev/null
+          python -m json.tool update.json >/dev/null
+          python -m json.tool public/update.json >/dev/null
+          grep -q 'evia-app-version" content="42' index.html
+          grep -q 'evia-trowel-pack-migration.js?v=42' index.html
+          grep -q 'evia-trowel-pack-cutover.js?v=42' index.html
+          ! grep -q 'evia-trowel-loader.js' index.html
+          ! grep -q 'evia-trowel-fetch.js' index.html
+      - name: Commit clean v42 main
+        shell: bash
+        run: |
+          rm -rf .v42-transfer .github/workflows/deploy-v42.yml
+          git config user.name "Evia Migration"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Evia v42: migrate Trowel Occupations 6570-05 to Nisi pack"
+          git push origin HEAD:main
