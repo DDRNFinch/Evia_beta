@@ -287,7 +287,7 @@ class MemoryCache {
   }
 }
 
-test("v83 replaces the legacy shell and serves Discussion and Practical Coaches offline", async () => {
+test("v84 replaces the legacy shell and serves Mini Milos, Discussion and Practical Coaches offline", async () => {
   const handlers = new Map();
   const stores = new Map([["evia-shell-v75", new MemoryCache()]]);
   const legacy = stores.get("evia-shell-v75");
@@ -354,7 +354,7 @@ test("v83 replaces the legacy shell and serves Discussion and Practical Coaches 
   let installWork;
   handlers.get("install")({ waitUntil(value) { installWork = value; } });
   await installWork;
-  assert.equal(await caches.has("evia-beta-shell-v83"), true);
+  assert.equal(await caches.has("evia-beta-shell-v84"), true);
 
   let activateWork;
   handlers.get("activate")({ waitUntil(value) { activateWork = value; } });
@@ -376,7 +376,7 @@ test("v83 replaces the legacy shell and serves Discussion and Practical Coaches 
     },
   });
   const offlineHtml = await (await navigationResponse).text();
-  assert.match(offlineHtml, /evia-app-version" content="83"/);
+  assert.match(offlineHtml, /evia-app-version" content="84"/);
   assert.match(offlineHtml, /course-registry\.js\?v=83/);
   assert.match(offlineHtml, /evia-course-enrolment\.js\?v=80/);
   assert.match(offlineHtml, /evia-arp-v80\.js\?v=80/);

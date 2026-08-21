@@ -299,3 +299,12 @@ test("Practical Coach includes learn, guided, mock, evidence, voice, timers and 
   assert.match(html, /assets\/evia-arp-practical-v83\.css\?v=83/);
   assert.match(html, /assets\/evia-arp-practical-v83\.js\?v=83/);
 });
+
+test("Mini Milos focuses on assessor feedback and secure sharing", async () => {
+  const script = await read("assets/evia-assistant-network.js");
+  const html = await read("index.html");
+  assert.doesNotMatch(script, /Mock assessment/i);
+  assert.match(script, /Assessment feedback/);
+  assert.match(script, /Share with assessor/);
+  assert.match(html, /assets\/evia-assistant-network\.js\?v=84/);
+});
