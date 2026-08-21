@@ -61,7 +61,7 @@ async function openScanner(){
   if(!noCourse()||document.querySelector(".evia-enrol-layer"))return;
   style();const layer=document.createElement("div");layer.className="evia-tools-layer evia-enrol-layer";layer.innerHTML=scannerHtml();document.body.appendChild(layer);
   layer.querySelector("[data-enrol-back]").onclick=closeScanner;
-  layer.querySelector("[data-enrol-manual-toggle]").onclick=()=>{const box=layer.querySelector("[data-enrol-manual]");box.classList.toggle("is-open");if(box.classList.contains("is-open"))layer.querySelector("[data-enrol-code]")?.focus()};
+  layer.querySelector("[data-enrol-manual-toggle]").onclick=()=>{const box=layer.querySelector("[data-enrol-manual]");box.classList.toggle("is-open")};
   layer.querySelector("[data-enrol-submit]").onclick=()=>installFromInput(layer.querySelector("[data-enrol-code]")?.value||"");
   layer.querySelector("[data-enrol-code]").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();installFromInput(e.currentTarget.value)}});
   const file=layer.querySelector("[data-enrol-file]");layer.querySelector("[data-enrol-photo]").onclick=()=>file.click();file.onchange=async()=>{const f=file.files?.[0];file.value="";if(f)await scanImage(f)};

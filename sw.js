@@ -1,4 +1,5 @@
-const CACHE_NAME = "evia-beta-shell-v76";
+const CACHE_NAME = "evia-beta-shell-v77";
+const CACHE_PREFIXES = ["evia-beta-shell-", "evia-shell-"];
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -6,6 +7,7 @@ const APP_SHELL = [
   "./icon-192.png",
   "./icon-512.png",
   "./apple-touch-icon.png",
+  "./assets/evia-beta-isolation.js",
   "./assets/index-D_kAPZ6L.css",
   "./assets/evia-selfobs-live.css",
   "./assets/evia-selfobs-fixes.css",
@@ -34,6 +36,7 @@ const APP_SHELL = [
   "./assets/evia-course-context.js",
   "./course-delivery/course-registry.js",
   "./course-delivery/registry-v1.json",
+  "./course-packs/Bricklayer_ST0095_v1.2.nisi",
   "./assets/evia-course-enrolment.js",
   "./assets/evia-st0264-epa-enable.js",
   "./assets/evia-6570-pack-cutover.js",
@@ -89,7 +92,7 @@ self.addEventListener("install", (event) => {
 self.addEventListener("activate", (event) => {
   event.waitUntil((async () => {
     const keys = await caches.keys();
-    await Promise.all(keys.filter((key) => key.startsWith("evia-beta-shell-") && key !== CACHE_NAME).map((key) => caches.delete(key)));
+    await Promise.all(keys.filter((key) => CACHE_PREFIXES.some((prefix) => key.startsWith(prefix)) && key !== CACHE_NAME).map((key) => caches.delete(key)));
     await self.clients.claim();
   })());
 });
@@ -131,12 +134,12 @@ self.addEventListener("fetch", (event) => {
 
   if (request.mode === "navigate" || url.pathname.endsWith("/index.html")) {
     event.respondWith((async () => {
-      const cached = (await caches.match("./index.html")) || (await caches.match("./"));
+      const cache = await caches.open(CACHE_NAME);
+      const cached = (await cache.match("./index.html")) || (await cache.match("./"));
       if (cached) return cached;
       try {
         const response = await fetch(request, { cache: "no-store" });
         if (response.ok) {
-          const cache = await caches.open(CACHE_NAME);
           await cache.put("./index.html", response.clone());
           await cache.put("./", response.clone());
         }
@@ -149,18 +152,18 @@ self.addEventListener("fetch", (event) => {
   }
 
   event.respondWith((async () => {
-    const exact = await caches.match(request);
+    const cache = await caches.open(CACHE_NAME);
+    const exact = await cache.match(request);
     if (exact) return exact;
     try {
       const response = await fetch(request, { cache: "no-cache" });
       if (response.ok) {
-        const cache = await caches.open(CACHE_NAME);
         await cache.put(request, response.clone());
         return response;
       }
-      return (await caches.match(request, { ignoreSearch: true })) || response;
+      return (await cache.match(request, { ignoreSearch: true })) || response;
     } catch {
-      return (await caches.match(request, { ignoreSearch: true })) || Response.error();
+      return (await cache.match(request, { ignoreSearch: true })) || Response.error();
     }
   })());
 });
