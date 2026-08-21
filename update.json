@@ -1,9 +1,9 @@
 {
-  "version": "75",
-  "title": "Add Assessment Readiness & Practice",
+  "version": "76",
+  "title": "Test QR course installation",
   "details": [
-    "The fourth progress arch is now ARP for apprenticeship and NVQ learners",
-    "ARP opens Assessment Readiness & Practice with Multiple Choice, Discussion and Practical",
-    "The Naxos EPA landing and old NVQ Q&A placeholder are no longer loaded; all v74 behaviour remains otherwise unchanged"
+    "Evia Beta now starts with no course selected on a fresh setup",
+    "Tap Evia to scan or enter the Bricklayer ST0095 course code",
+    "Bricklayer downloads, verifies and installs locally; the permanent QR remains EVIA1:ST0095"
   ]
 }
