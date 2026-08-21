@@ -1,0 +1,44 @@
+{
+  "eviaPracticalIndex": 1,
+  "schemaVersion": 1,
+  "updated": "2026-08-21",
+  "totalBanks": 7,
+  "totalTasks": 84,
+  "banks": [
+    {
+      "enrolmentId": "ST0095",
+      "path": "ST0095-v1.json",
+      "taskCount": 12
+    },
+    {
+      "enrolmentId": "ST0264-SITE",
+      "path": "ST0264-SITE-v1.json",
+      "taskCount": 12
+    },
+    {
+      "enrolmentId": "ST0264-AJ",
+      "path": "ST0264-AJ-v1.json",
+      "taskCount": 12
+    },
+    {
+      "enrolmentId": "6570-05-THIN",
+      "path": "6570-05-THIN-v1.json",
+      "taskCount": 12
+    },
+    {
+      "enrolmentId": "6570-05-REPAIR",
+      "path": "6570-05-REPAIR-v1.json",
+      "taskCount": 12
+    },
+    {
+      "enrolmentId": "6570-05-SPECIALIST",
+      "path": "6570-05-SPECIALIST-v1.json",
+      "taskCount": 12
+    },
+    {
+      "enrolmentId": "6570-05-DRAINAGE",
+      "path": "6570-05-DRAINAGE-v1.json",
+      "taskCount": 12
+    }
+  ]
+}

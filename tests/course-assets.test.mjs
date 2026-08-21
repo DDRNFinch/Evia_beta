@@ -50,24 +50,31 @@ test("all seven labelled PNGs decode to their exact permanent Evia payloads", as
   assert.equal((page.match(/Download PNG/g) ?? []).length, 7);
 });
 
-test("all seven registry entries point to verified install packs and mapped 24-question banks", async () => {
+test("all seven registry entries point to verified packs, question banks and 12-task practical banks", async () => {
   const registry = await json("course-delivery/registry-v1.json");
   const index = await json("course-delivery/question-banks/index-v1.json");
+  const practicalIndex = await json("course-delivery/practical-banks/index-v1.json");
   assert.equal(registry.courses.length, 7);
   assert.equal(index.banks.length, 7);
   assert.equal(index.totalQuestions, 168);
   assert.equal(index.totalDiscussionScenarios, 168);
+  assert.equal(practicalIndex.banks.length, 7);
+  assert.equal(practicalIndex.totalTasks, 84);
 
   const packCache = new Map();
   const questionIds = new Set();
+  const practicalIds = new Set();
   for (const entry of registry.courses) {
     assert.equal(entry.publishable, true);
     assert.equal(entry.qrPayload, `EVIA1:${entry.enrolmentId}`);
     assert.equal(entry.content.discussion, "available-24-scenario-coach");
+    assert.equal(entry.content.practical, "available-12-task-coach");
     const packRelative = path.posix.normalize(path.posix.join("course-delivery", entry.packagePath));
     const bankRelative = path.posix.join("course-delivery", entry.questionBankPath);
+    const practicalRelative = path.posix.join("course-delivery", entry.practicalBankPath);
     await access(absolute(packRelative));
     await access(absolute(bankRelative));
+    await access(absolute(practicalRelative));
 
     let pack = packCache.get(packRelative);
     if (!pack) {
@@ -112,8 +119,35 @@ test("all seven registry entries point to verified install packs and mapped 24-q
     assert.equal(indexed?.questionCount, 24);
     assert.equal(indexed?.discussionScenarioCount, 24);
     assert.equal(indexed?.discussionScenariosPerPractice, 5);
+
+    const practical = await json(practicalRelative);
+    assert.equal(practical.eviaPracticalBank, 1);
+    assert.equal(practical.bankVersion, "1.0");
+    assert.equal(practical.enrolmentId, entry.enrolmentId);
+    assert.equal(practical.qualificationId, entry.qualificationId);
+    assert.equal(practical.pathwayId, entry.pathwayId);
+    assert.equal(practical.tasksPerSession, 1);
+    assert.equal(practical.tasks.length, 12);
+    assert.match(practical.sourceNote, /not official/i);
+    for (const task of practical.tasks) {
+      assert.equal(practicalIds.has(task.id), false, `${task.id} should be globally unique`);
+      practicalIds.add(task.id);
+      assert.ok(task.mapsTo.length > 0);
+      assert.ok(task.mapsTo.every((code) => allowed.has(String(code))), `${task.id} should map inside its route`);
+      assert.equal(task.sequence.length, 5);
+      assert.equal(task.evidenceCheckpoints.length, 3);
+      assert.equal(task.checks.length, 3);
+      assert.equal(task.questions.length, 3);
+      assert.equal(task.reviewAreas.reduce((total, area) => total + area.weight, 0), 100);
+      assert.ok(task.resources.length >= 4);
+      assert.equal(task.safetyControls.length, 4);
+    }
+    const practicalIndexed = practicalIndex.banks.find((item) => item.enrolmentId === entry.enrolmentId);
+    assert.equal(practicalIndexed?.path, path.posix.basename(entry.practicalBankPath));
+    assert.equal(practicalIndexed?.taskCount, 12);
   }
   assert.equal(questionIds.size, 168);
+  assert.equal(practicalIds.size, 84);
 });
 
 test("TOC exposes all seven labelled QR downloads and keeps pack management available", async () => {
@@ -190,6 +224,7 @@ test("ARP selects all seven banks and builds 24 graded discussion scenarios for 
   });
   vm.runInContext(await read("assets/evia-arp-v80.js"), context, { filename: "assets/evia-arp-v80.js" });
   vm.runInContext(await read("assets/evia-arp-discussion-v82.js"), context, { filename: "assets/evia-arp-discussion-v82.js" });
+  vm.runInContext(await read("assets/evia-arp-practical-v83.js"), context, { filename: "assets/evia-arp-practical-v83.js" });
 
   const profiles = [
     ["ST0095", { courseId: "st0095-v1-2", packFamilyId: "ST0095", pathway: "" }],
@@ -219,8 +254,11 @@ test("ARP selects all seven banks and builds 24 graded discussion scenarios for 
       assert.ok(Array.from(scenario.responses).every((response) => response.feedback.length > 40));
       assert.ok(scenario.followUp.endsWith("?"));
     }
+    const practical = await window.EviaArpPractical.currentBank();
+    assert.equal(practical.enrolmentId, enrolmentId);
+    assert.equal(practical.tasks.length, 12);
   }
-  assert.equal(requested.length, 7);
+  assert.equal(requested.length, 14);
 });
 
 test("Discussion Coach includes graded choice, voice, transcript and mock flows", async () => {
@@ -240,4 +278,24 @@ test("Discussion Coach includes graded choice, voice, transcript and mock flows"
   assert.match(css, /\.evia-arp-strength-key/);
   assert.match(html, /assets\/evia-arp-v82\.css\?v=82/);
   assert.match(html, /assets\/evia-arp-discussion-v82\.js\?v=82/);
+});
+
+test("Practical Coach includes learn, guided, mock, evidence, voice, timers and readiness history", async () => {
+  const script = await read("assets/evia-arp-practical-v83.js");
+  const css = await read("assets/evia-arp-practical-v83.css");
+  const html = await read("index.html");
+
+  assert.match(script, /data-practical-mode="learn"/);
+  assert.match(script, /data-practical-mode="guided"/);
+  assert.match(script, /data-practical-mode="mock"/);
+  assert.match(script, /Evidence checkpoints/);
+  assert.match(script, /Mock time remaining/);
+  assert.match(script, /window\.SpeechRecognition\|\|window\.webkitSpeechRecognition/);
+  assert.match(script, /Tutor or assessor verified/);
+  assert.match(script, /evia-arp-practical-media-v1/);
+  assert.match(css, /\.evia-practical-evidence/);
+  assert.match(css, /\.evia-practical-ratings/);
+  assert.match(css, /@media\(max-width:370px\)/);
+  assert.match(html, /assets\/evia-arp-practical-v83\.css\?v=83/);
+  assert.match(html, /assets\/evia-arp-practical-v83\.js\?v=83/);
 });

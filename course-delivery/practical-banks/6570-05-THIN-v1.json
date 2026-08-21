@@ -1,0 +1,1757 @@
+{
+  "eviaPracticalBank": 1,
+  "schemaVersion": 1,
+  "bankVersion": "1.0",
+  "updated": "2026-08-21",
+  "enrolmentId": "6570-05-THIN",
+  "courseTitle": "Thin Joint",
+  "qualificationId": "6570-05",
+  "pathwayId": "thin",
+  "courseType": "nvq",
+  "tasksPerSession": 1,
+  "taskCount": 12,
+  "assessmentContext": "Use these tasks for guided workplace rehearsal and evidence preparation. Occupational competence must be confirmed through the qualification's approved assessment process.",
+  "sourceNote": "Original Evia practice tasks mapped to course criteria. These are not official awarding-body or end-point-assessment tasks and do not produce an official grade.",
+  "tasks": [
+    {
+      "id": "657005THIN-P001",
+      "title": "Set out the first thin-joint course",
+      "category": "Setting out",
+      "brief": "Establish datums and set out the first course of a thin-joint block wall to the drawing.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "238.1.1",
+        "238.4.1",
+        "238.7.1"
+      ],
+      "resources": [
+        "Current drawing, specification and manufacturer guidance",
+        "Laser or level, line, square and tape",
+        "Thin-joint applicator and maintained hand tools",
+        "Specified blocks, adhesive and ancillary components"
+      ],
+      "safetyControls": [
+        "Check the task information and safe system of work",
+        "Use the specified PPE and face-fit-tested RPE",
+        "Control silica dust when cutting blocks",
+        "Keep access, platforms and the work area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Interpret lines, openings and levels",
+          "instruction": "Interpret lines, openings and levels"
+        },
+        {
+          "id": "S2",
+          "title": "Establish datum and wall position",
+          "instruction": "Establish datum and wall position"
+        },
+        {
+          "id": "S3",
+          "title": "Dry set corners and openings",
+          "instruction": "Dry set corners and openings"
+        },
+        {
+          "id": "S4",
+          "title": "Bed the first course accurately",
+          "instruction": "Bed the first course accurately"
+        },
+        {
+          "id": "S5",
+          "title": "Check dimensions, diagonals, level and square",
+          "instruction": "Check dimensions, diagonals, level and square"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Datums and wall lines",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Corner and opening dry set-out",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed first course",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Wall position",
+          "target": "Matches the drawing"
+        },
+        {
+          "label": "First-course level",
+          "target": "Continuous across the run"
+        },
+        {
+          "label": "Openings and diagonals",
+          "target": "Square and correctly sized"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the base varies beyond adhesive adjustment. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the base varies beyond adhesive adjustment, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Correct the supporting bed or report the conflict before thin-joint work continues."
+      },
+      "commonFaults": [
+        "the base varies beyond adhesive adjustment",
+        "the opening is out of square",
+        "wall lines conflict with a service"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Establish datum and wall position” important on this task?",
+          "guide": "The first course controls all later thin joints, so base errors cannot be hidden safely."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Use datum readings, line, level, square, dimensions and diagonals."
+        },
+        {
+          "prompt": "What would you do if the base varies beyond adhesive adjustment?",
+          "guide": "Correct the supporting bed or report the conflict before thin-joint work continues."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005THIN-P002",
+      "title": "Prepare thin-joint adhesive",
+      "category": "Materials",
+      "brief": "Prepare and manage thin-joint adhesive to the manufacturer's proportions, working time and consistency.",
+      "timing": {
+        "shortMinutes": 35,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "238.2.1",
+        "238.3.1",
+        "238.4.2"
+      ],
+      "resources": [
+        "Current drawing, specification and manufacturer guidance",
+        "Laser or level, line, square and tape",
+        "Thin-joint applicator and maintained hand tools",
+        "Specified blocks, adhesive and ancillary components"
+      ],
+      "safetyControls": [
+        "Check the task information and safe system of work",
+        "Use the specified PPE and face-fit-tested RPE",
+        "Control silica dust when cutting blocks",
+        "Keep access, platforms and the work area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Read product and task information",
+          "instruction": "Read product and task information"
+        },
+        {
+          "id": "S2",
+          "title": "Prepare clean water, container and mixing equipment",
+          "instruction": "Prepare clean water, container and mixing equipment"
+        },
+        {
+          "id": "S3",
+          "title": "Measure and mix in the stated sequence",
+          "instruction": "Measure and mix in the stated sequence"
+        },
+        {
+          "id": "S4",
+          "title": "Allow and remix only as instructed",
+          "instruction": "Allow and remix only as instructed"
+        },
+        {
+          "id": "S5",
+          "title": "Record batch time and monitor working life",
+          "instruction": "Record batch time and monitor working life"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Product information and measured water",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Mixed consistency and batch time",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Adhesive condition at use",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Water ratio",
+          "target": "Matches manufacturer guidance"
+        },
+        {
+          "label": "Consistency",
+          "target": "Uniform and suitable for the applicator"
+        },
+        {
+          "label": "Working time",
+          "target": "Used within the stated limit"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that water is added after the adhesive begins to stiffen. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of water is added after the adhesive begins to stiffen, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Discard unsuitable adhesive and prepare a fresh recorded batch; do not retemper it."
+      },
+      "commonFaults": [
+        "water is added after the adhesive begins to stiffen",
+        "old material contaminates a new batch",
+        "batch time is not known"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Prepare clean water, container and mixing equipment” important on this task?",
+          "guide": "Controlled mixing protects bond performance and consistent joint thickness."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check measured quantities, texture and elapsed time against product information."
+        },
+        {
+          "prompt": "What would you do if water is added after the adhesive begins to stiffen?",
+          "guide": "Discard unsuitable adhesive and prepare a fresh recorded batch; do not retemper it."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005THIN-P003",
+      "title": "Build a straight thin-joint wall",
+      "category": "Walling",
+      "brief": "Construct a straight thin-joint block wall while maintaining bond, line, level, plumb and specified joint thickness.",
+      "timing": {
+        "shortMinutes": 75,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "238.3.1",
+        "238.4.4",
+        "238.7.2"
+      ],
+      "resources": [
+        "Current drawing, specification and manufacturer guidance",
+        "Laser or level, line, square and tape",
+        "Thin-joint applicator and maintained hand tools",
+        "Specified blocks, adhesive and ancillary components"
+      ],
+      "safetyControls": [
+        "Check the task information and safe system of work",
+        "Use the specified PPE and face-fit-tested RPE",
+        "Control silica dust when cutting blocks",
+        "Keep access, platforms and the work area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm first course and material condition",
+          "instruction": "Confirm first course and material condition"
+        },
+        {
+          "id": "S2",
+          "title": "Set corner leads and bond",
+          "instruction": "Set corner leads and bond"
+        },
+        {
+          "id": "S3",
+          "title": "Apply a continuous controlled adhesive bed",
+          "instruction": "Apply a continuous controlled adhesive bed"
+        },
+        {
+          "id": "S4",
+          "title": "Place and adjust blocks within open time",
+          "instruction": "Place and adjust blocks within open time"
+        },
+        {
+          "id": "S5",
+          "title": "Check each lift and protect completed work",
+          "instruction": "Check each lift and protect completed work"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Corner leads and bond",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Adhesive coverage before concealment",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished lift and protection",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Joint thickness",
+          "target": "Consistent with the system"
+        },
+        {
+          "label": "Line, level and plumb",
+          "target": "Checked progressively"
+        },
+        {
+          "label": "Bond",
+          "target": "Specified lap maintained"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that adhesive coverage is broken. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of adhesive coverage is broken, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Remove affected blocks within the permitted time, clean as required and rebuild with fresh adhesive."
+      },
+      "commonFaults": [
+        "adhesive coverage is broken",
+        "blocks are adjusted after open time",
+        "perpends begin to stack"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Set corner leads and bond” important on this task?",
+          "guide": "Thin joints allow little later adjustment, so progressive checks prevent accumulated error."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check coverage, bond, line, level and plumb on each course."
+        },
+        {
+          "prompt": "What would you do if adhesive coverage is broken?",
+          "guide": "Remove affected blocks within the permitted time, clean as required and rebuild with fresh adhesive."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005THIN-P004",
+      "title": "Form a thin-joint opening",
+      "category": "Openings",
+      "brief": "Set out and build a thin-joint wall opening with the specified jamb, lintel and closure details.",
+      "timing": {
+        "shortMinutes": 75,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "238.1.2",
+        "238.4.3",
+        "238.7.3"
+      ],
+      "resources": [
+        "Current drawing, specification and manufacturer guidance",
+        "Laser or level, line, square and tape",
+        "Thin-joint applicator and maintained hand tools",
+        "Specified blocks, adhesive and ancillary components"
+      ],
+      "safetyControls": [
+        "Check the task information and safe system of work",
+        "Use the specified PPE and face-fit-tested RPE",
+        "Control silica dust when cutting blocks",
+        "Keep access, platforms and the work area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm opening and component dimensions",
+          "instruction": "Confirm opening and component dimensions"
+        },
+        {
+          "id": "S2",
+          "title": "Set out jambs from datums",
+          "instruction": "Set out jambs from datums"
+        },
+        {
+          "id": "S3",
+          "title": "Build jambs evenly",
+          "instruction": "Build jambs evenly"
+        },
+        {
+          "id": "S4",
+          "title": "Install closure and lintel details",
+          "instruction": "Install closure and lintel details"
+        },
+        {
+          "id": "S5",
+          "title": "Check size, square, bearing and finish",
+          "instruction": "Check size, square, bearing and finish"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Opening set-out",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Lintel bearing and hidden closure",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed opening dimensions",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Opening size and square",
+          "target": "Matches the drawing"
+        },
+        {
+          "label": "Lintel bearing",
+          "target": "Meets system requirements"
+        },
+        {
+          "label": "Jamb line and plumb",
+          "target": "Consistent on both sides"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the opening narrows as it rises. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the opening narrows as it rises, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Do not load or conceal the opening; correct the support and recheck all geometry."
+      },
+      "commonFaults": [
+        "the opening narrows as it rises",
+        "lintel bearing is short",
+        "closure detail is omitted"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Set out jambs from datums” important on this task?",
+          "guide": "Balanced jamb construction protects opening size and support on both sides."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Measure widths at several heights, diagonals, jamb plumb and bearing."
+        },
+        {
+          "prompt": "What would you do if the opening narrows as it rises?",
+          "guide": "Do not load or conceal the opening; correct the support and recheck all geometry."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005THIN-P005",
+      "title": "Install thin-joint ancillary components",
+      "category": "Components",
+      "brief": "Install ties, restraints, insulation or movement components within a thin-joint system to the specified layout.",
+      "timing": {
+        "shortMinutes": 55,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "238.2.2",
+        "238.4.5",
+        "238.7.4"
+      ],
+      "resources": [
+        "Current drawing, specification and manufacturer guidance",
+        "Laser or level, line, square and tape",
+        "Thin-joint applicator and maintained hand tools",
+        "Specified blocks, adhesive and ancillary components"
+      ],
+      "safetyControls": [
+        "Check the task information and safe system of work",
+        "Use the specified PPE and face-fit-tested RPE",
+        "Control silica dust when cutting blocks",
+        "Keep access, platforms and the work area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Identify component type and layout",
+          "instruction": "Identify component type and layout"
+        },
+        {
+          "id": "S2",
+          "title": "Check substrate and fixing compatibility",
+          "instruction": "Check substrate and fixing compatibility"
+        },
+        {
+          "id": "S3",
+          "title": "Mark positions before walling",
+          "instruction": "Mark positions before walling"
+        },
+        {
+          "id": "S4",
+          "title": "Install components as work proceeds",
+          "instruction": "Install components as work proceeds"
+        },
+        {
+          "id": "S5",
+          "title": "Inspect embedment, spacing and continuity",
+          "instruction": "Inspect embedment, spacing and continuity"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Component schedule and marks",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Fixings and embedment before concealment",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed layout inspection",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Spacing",
+          "target": "Matches the layout"
+        },
+        {
+          "label": "Embedment and fixing",
+          "target": "Correct for the system"
+        },
+        {
+          "label": "Continuity",
+          "target": "No omitted or obstructed zones"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that component spacing drifts. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of component spacing drifts, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop walling, replace incompatible work and obtain guidance for any substrate discrepancy."
+      },
+      "commonFaults": [
+        "component spacing drifts",
+        "a fixing is unsuitable for the substrate",
+        "insulation continuity is broken"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Check substrate and fixing compatibility” important on this task?",
+          "guide": "Components perform only when their type, position and connection follow the complete system detail."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Compare every installed zone to the schedule before concealment."
+        },
+        {
+          "prompt": "What would you do if component spacing drifts?",
+          "guide": "Stop walling, replace incompatible work and obtain guidance for any substrate discrepancy."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005THIN-P006",
+      "title": "Cut aerated blocks safely",
+      "category": "Cutting",
+      "brief": "Measure and cut aerated blocks accurately using the stated low-dust method and protect cut faces.",
+      "timing": {
+        "shortMinutes": 35,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "238.3.2",
+        "238.4.6",
+        "238.5.1"
+      ],
+      "resources": [
+        "Current drawing, specification and manufacturer guidance",
+        "Laser or level, line, square and tape",
+        "Thin-joint applicator and maintained hand tools",
+        "Specified blocks, adhesive and ancillary components"
+      ],
+      "safetyControls": [
+        "Check the task information and safe system of work",
+        "Use the specified PPE and face-fit-tested RPE",
+        "Control silica dust when cutting blocks",
+        "Keep access, platforms and the work area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm cut size and orientation",
+          "instruction": "Confirm cut size and orientation"
+        },
+        {
+          "id": "S2",
+          "title": "Prepare the controlled cutting area",
+          "instruction": "Prepare the controlled cutting area"
+        },
+        {
+          "id": "S3",
+          "title": "Mark all faces from reference edges",
+          "instruction": "Mark all faces from reference edges"
+        },
+        {
+          "id": "S4",
+          "title": "Cut using the approved method",
+          "instruction": "Cut using the approved method"
+        },
+        {
+          "id": "S5",
+          "title": "Check fit and remove dust safely",
+          "instruction": "Check fit and remove dust safely"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Cut mark and block orientation",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Dust control during cutting",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished cut and trial fit",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Cut size",
+          "target": "Within task tolerance"
+        },
+        {
+          "label": "Cut face",
+          "target": "Square and suitable for the detail"
+        },
+        {
+          "label": "Dust control",
+          "target": "Effective throughout cleanup"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that dust escapes the control zone. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of dust escapes the control zone, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop cutting, improve the control and replace any structurally unsuitable unit."
+      },
+      "commonFaults": [
+        "dust escapes the control zone",
+        "the cut leaves a weak sliver",
+        "a wrongly oriented block is cut"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Prepare the controlled cutting area” important on this task?",
+          "guide": "Marking from reference edges protects the final dimension and orientation."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Trial fit, check square and measure the cut while inspecting dust control."
+        },
+        {
+          "prompt": "What would you do if dust escapes the control zone?",
+          "guide": "Stop cutting, improve the control and replace any structurally unsuitable unit."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005THIN-P007",
+      "title": "Thin-joint movement detail",
+      "category": "Movement",
+      "brief": "Form a specified movement-joint detail through a thin-joint wall without bridging the designed gap.",
+      "timing": {
+        "shortMinutes": 55,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "238.1.3",
+        "238.4.5",
+        "238.7.5"
+      ],
+      "resources": [
+        "Current drawing, specification and manufacturer guidance",
+        "Laser or level, line, square and tape",
+        "Thin-joint applicator and maintained hand tools",
+        "Specified blocks, adhesive and ancillary components"
+      ],
+      "safetyControls": [
+        "Check the task information and safe system of work",
+        "Use the specified PPE and face-fit-tested RPE",
+        "Control silica dust when cutting blocks",
+        "Keep access, platforms and the work area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Read joint position and component detail",
+          "instruction": "Read joint position and component detail"
+        },
+        {
+          "id": "S2",
+          "title": "Mark the continuous joint line",
+          "instruction": "Mark the continuous joint line"
+        },
+        {
+          "id": "S3",
+          "title": "Build both sides independently",
+          "instruction": "Build both sides independently"
+        },
+        {
+          "id": "S4",
+          "title": "Install ties, filler and seal zones as specified",
+          "instruction": "Install ties, filler and seal zones as specified"
+        },
+        {
+          "id": "S5",
+          "title": "Inspect continuity and protect the gap",
+          "instruction": "Inspect continuity and protect the gap"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Joint location",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Hidden ties and filler",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed continuous gap",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Joint width",
+          "target": "Consistent and unbridged"
+        },
+        {
+          "label": "Component position",
+          "target": "Matches the detail"
+        },
+        {
+          "label": "Continuity",
+          "target": "Runs through all required layers"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that adhesive bridges the joint. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of adhesive bridges the joint, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Remove bridging material and correct components before finishes conceal the joint."
+      },
+      "commonFaults": [
+        "adhesive bridges the joint",
+        "movement ties are reversed",
+        "the gap wanders from its datum"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Mark the continuous joint line” important on this task?",
+          "guide": "An unbridged continuous joint gives the wall the movement capacity intended by the design."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Inspect the full height, measure the gap and verify component type and orientation."
+        },
+        {
+          "prompt": "What would you do if adhesive bridges the joint?",
+          "guide": "Remove bridging material and correct components before finishes conceal the joint."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005THIN-P008",
+      "title": "Thin-joint return and corner",
+      "category": "Walling",
+      "brief": "Construct a square return or corner in a thin-joint system with correct bond and component continuity.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "238.4.3",
+        "238.6.1",
+        "238.7.2"
+      ],
+      "resources": [
+        "Current drawing, specification and manufacturer guidance",
+        "Laser or level, line, square and tape",
+        "Thin-joint applicator and maintained hand tools",
+        "Specified blocks, adhesive and ancillary components"
+      ],
+      "safetyControls": [
+        "Check the task information and safe system of work",
+        "Use the specified PPE and face-fit-tested RPE",
+        "Control silica dust when cutting blocks",
+        "Keep access, platforms and the work area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Set out intersecting wall lines",
+          "instruction": "Set out intersecting wall lines"
+        },
+        {
+          "id": "S2",
+          "title": "Dry check corner bond",
+          "instruction": "Dry check corner bond"
+        },
+        {
+          "id": "S3",
+          "title": "Build level corner leads",
+          "instruction": "Build level corner leads"
+        },
+        {
+          "id": "S4",
+          "title": "Run in courses and components",
+          "instruction": "Run in courses and components"
+        },
+        {
+          "id": "S5",
+          "title": "Check square, plumb, joint and bond",
+          "instruction": "Check square, plumb, joint and bond"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Corner footprint",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Bond and components midway",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished return",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Corner square",
+          "target": "Matches wall lines"
+        },
+        {
+          "label": "Corner plumb",
+          "target": "Checked on both faces"
+        },
+        {
+          "label": "Bond and adhesive",
+          "target": "Continuous and correctly lapped"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the return drifts out of square. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the return drifts out of square, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Take down the affected workable courses and rebuild from the accurate lead."
+      },
+      "commonFaults": [
+        "the return drifts out of square",
+        "corner joints lose adhesive coverage",
+        "cut units weaken the bond"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Dry check corner bond” important on this task?",
+          "guide": "The corner lead controls the accuracy of both connected wall runs."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Use square, diagonal, level and plumb checks on both faces."
+        },
+        {
+          "prompt": "What would you do if the return drifts out of square?",
+          "guide": "Take down the affected workable courses and rebuild from the accurate lead."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005THIN-P009",
+      "title": "Protect thin-joint walling",
+      "category": "Protection",
+      "brief": "Inspect and protect completed thin-joint walling against weather, impact and premature loading.",
+      "timing": {
+        "shortMinutes": 30,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "238.5.1",
+        "238.5.3",
+        "238.7.5"
+      ],
+      "resources": [
+        "Current drawing, specification and manufacturer guidance",
+        "Laser or level, line, square and tape",
+        "Thin-joint applicator and maintained hand tools",
+        "Specified blocks, adhesive and ancillary components"
+      ],
+      "safetyControls": [
+        "Check the task information and safe system of work",
+        "Use the specified PPE and face-fit-tested RPE",
+        "Control silica dust when cutting blocks",
+        "Keep access, platforms and the work area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Inspect work and material condition",
+          "instruction": "Inspect work and material condition"
+        },
+        {
+          "id": "S2",
+          "title": "Confirm curing and weather limits",
+          "instruction": "Confirm curing and weather limits"
+        },
+        {
+          "id": "S3",
+          "title": "Correct permitted minor issues",
+          "instruction": "Correct permitted minor issues"
+        },
+        {
+          "id": "S4",
+          "title": "Install stable protective covering",
+          "instruction": "Install stable protective covering"
+        },
+        {
+          "id": "S5",
+          "title": "Restrict loading and record handover",
+          "instruction": "Restrict loading and record handover"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Pre-protection inspection",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Protection fixing and ventilation",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Handover condition",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Wall condition",
+          "target": "No unresolved movement or damage"
+        },
+        {
+          "label": "Weather protection",
+          "target": "Secure and suitable for curing"
+        },
+        {
+          "label": "Loading control",
+          "target": "Area clearly protected from follow-on work"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that fresh walling is exposed to heavy rain. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of fresh walling is exposed to heavy rain, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Strengthen or alter protection immediately and report any affected walling."
+      },
+      "commonFaults": [
+        "fresh walling is exposed to heavy rain",
+        "sheeting can strike the wall",
+        "loads are applied before adequate cure"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Confirm curing and weather limits” important on this task?",
+          "guide": "System adhesive needs the stated conditions to gain performance without washout or freezing."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check weather, curing time, wall stability and protection fixing."
+        },
+        {
+          "prompt": "What would you do if fresh walling is exposed to heavy rain?",
+          "guide": "Strengthen or alter protection immediately and report any affected walling."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005THIN-P010",
+      "title": "Check and correct thin-joint defects",
+      "category": "Quality",
+      "brief": "Inspect a thin-joint sample, identify defects and carry out only the approved corrective actions.",
+      "timing": {
+        "shortMinutes": 45,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "238.5.2",
+        "238.7.4",
+        "238.7.5"
+      ],
+      "resources": [
+        "Current drawing, specification and manufacturer guidance",
+        "Laser or level, line, square and tape",
+        "Thin-joint applicator and maintained hand tools",
+        "Specified blocks, adhesive and ancillary components"
+      ],
+      "safetyControls": [
+        "Check the task information and safe system of work",
+        "Use the specified PPE and face-fit-tested RPE",
+        "Control silica dust when cutting blocks",
+        "Keep access, platforms and the work area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Compare work to drawing and system tolerances",
+          "instruction": "Compare work to drawing and system tolerances"
+        },
+        {
+          "id": "S2",
+          "title": "Mark defects and likely causes",
+          "instruction": "Mark defects and likely causes"
+        },
+        {
+          "id": "S3",
+          "title": "Agree the permitted correction",
+          "instruction": "Agree the permitted correction"
+        },
+        {
+          "id": "S4",
+          "title": "Complete correction without spreading damage",
+          "instruction": "Complete correction without spreading damage"
+        },
+        {
+          "id": "S5",
+          "title": "Recheck and record the result",
+          "instruction": "Recheck and record the result"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Initial defect map",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Correction boundary",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed reinspection",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Geometry",
+          "target": "Line, level, plumb and dimensions checked"
+        },
+        {
+          "label": "Joints and bond",
+          "target": "Continuous and system compliant"
+        },
+        {
+          "label": "Correction",
+          "target": "Does not weaken adjacent work"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that an unauthorised filler is proposed. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of an unauthorised filler is proposed, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop, protect the area and obtain an approved repair method."
+      },
+      "commonFaults": [
+        "an unauthorised filler is proposed",
+        "correction damages sound blocks",
+        "the defect cause remains active"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Mark defects and likely causes” important on this task?",
+          "guide": "Finding the cause prevents the same defect recurring above the repaired area."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Use measured tolerances and system guidance rather than appearance alone."
+        },
+        {
+          "prompt": "What would you do if an unauthorised filler is proposed?",
+          "guide": "Stop, protect the area and obtain an approved repair method."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005THIN-P011",
+      "title": "Coordinate thin-joint work with services",
+      "category": "Interfaces",
+      "brief": "Set out a thin-joint wall around an agreed service interface without unapproved chasing or damaged components.",
+      "timing": {
+        "shortMinutes": 50,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "238.1.4",
+        "238.3.4",
+        "238.7.3"
+      ],
+      "resources": [
+        "Current drawing, specification and manufacturer guidance",
+        "Laser or level, line, square and tape",
+        "Thin-joint applicator and maintained hand tools",
+        "Specified blocks, adhesive and ancillary components"
+      ],
+      "safetyControls": [
+        "Check the task information and safe system of work",
+        "Use the specified PPE and face-fit-tested RPE",
+        "Control silica dust when cutting blocks",
+        "Keep access, platforms and the work area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Review coordinated drawing and service zone",
+          "instruction": "Review coordinated drawing and service zone"
+        },
+        {
+          "id": "S2",
+          "title": "Confirm openings, sleeves and supports",
+          "instruction": "Confirm openings, sleeves and supports"
+        },
+        {
+          "id": "S3",
+          "title": "Mark interfaces before walling",
+          "instruction": "Mark interfaces before walling"
+        },
+        {
+          "id": "S4",
+          "title": "Build and fit approved components",
+          "instruction": "Build and fit approved components"
+        },
+        {
+          "id": "S5",
+          "title": "Check clearance, fire and finish requirements",
+          "instruction": "Check clearance, fire and finish requirements"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Coordinated interface marks",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Hidden sleeves or supports",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed clearance and seal zones",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Interface position",
+          "target": "Matches coordinated information"
+        },
+        {
+          "label": "Masonry integrity",
+          "target": "No unapproved cutting or chasing"
+        },
+        {
+          "label": "Required seals",
+          "target": "Space retained for specified completion"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that a service conflicts with a loadbearing zone. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of a service conflicts with a loadbearing zone, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop and refer the conflict for coordinated instruction before altering masonry."
+      },
+      "commonFaults": [
+        "a service conflicts with a loadbearing zone",
+        "an unapproved chase is requested",
+        "a fire-seal zone is obstructed"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Confirm openings, sleeves and supports” important on this task?",
+          "guide": "Coordination before walling avoids weakening the system or creating inaccessible defects."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check positions against both drawings and confirm required clearances and seals."
+        },
+        {
+          "prompt": "What would you do if a service conflicts with a loadbearing zone?",
+          "guide": "Stop and refer the conflict for coordinated instruction before altering masonry."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005THIN-P012",
+      "title": "Complete a thin-joint work-area handover",
+      "category": "Handover",
+      "brief": "Complete final quality, resource, protection and housekeeping checks for a thin-joint work area.",
+      "timing": {
+        "shortMinutes": 30,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "238.5.5",
+        "238.6.2",
+        "238.7.5"
+      ],
+      "resources": [
+        "Current drawing, specification and manufacturer guidance",
+        "Laser or level, line, square and tape",
+        "Thin-joint applicator and maintained hand tools",
+        "Specified blocks, adhesive and ancillary components"
+      ],
+      "safetyControls": [
+        "Check the task information and safe system of work",
+        "Use the specified PPE and face-fit-tested RPE",
+        "Control silica dust when cutting blocks",
+        "Keep access, platforms and the work area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Reconcile completed work with the brief",
+          "instruction": "Reconcile completed work with the brief"
+        },
+        {
+          "id": "S2",
+          "title": "Inspect dimensions and interfaces",
+          "instruction": "Inspect dimensions and interfaces"
+        },
+        {
+          "id": "S3",
+          "title": "Segregate materials and clean safely",
+          "instruction": "Segregate materials and clean safely"
+        },
+        {
+          "id": "S4",
+          "title": "Install final protection",
+          "instruction": "Install final protection"
+        },
+        {
+          "id": "S5",
+          "title": "Record checks, issues and handover",
+          "instruction": "Record checks, issues and handover"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Final measured inspection",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Clean and protected area",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Recorded handover",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Specification completion",
+          "target": "All stated details present"
+        },
+        {
+          "label": "Area condition",
+          "target": "Clean without harmful dust spread"
+        },
+        {
+          "label": "Handover record",
+          "target": "Issues and protection clearly identified"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that unused adhesive is disposed of incorrectly. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of unused adhesive is disposed of incorrectly, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Make the area safe, correct what is within authority and report remaining actions."
+      },
+      "commonFaults": [
+        "unused adhesive is disposed of incorrectly",
+        "an incomplete interface is unrecorded",
+        "protection blocks safe access"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Inspect dimensions and interfaces” important on this task?",
+          "guide": "A clear handover prevents unfinished or vulnerable work being mistaken for complete work."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Use a final drawing-based inspection and record measurements, protection and exceptions."
+        },
+        {
+          "prompt": "What would you do if unused adhesive is disposed of incorrectly?",
+          "guide": "Make the area safe, correct what is within authority and report remaining actions."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

@@ -21,10 +21,11 @@
         "course": "available",
         "multipleChoice": "available-24-question-bank",
         "discussion": "available-24-scenario-coach",
-        "practical": "not-yet-created"
+        "practical": "available-12-task-coach"
       },
       "releaseChannel": "beta",
-      "publishable": true
+      "publishable": true,
+      "practicalBankPath": "practical-banks/ST0095-v1.json"
     },
     {
       "enrolmentId": "ST0264-SITE",
@@ -43,10 +44,11 @@
         "course": "available",
         "multipleChoice": "available-24-question-bank",
         "discussion": "available-24-scenario-coach",
-        "practical": "not-yet-created"
+        "practical": "available-12-task-coach"
       },
       "releaseChannel": "beta",
-      "publishable": true
+      "publishable": true,
+      "practicalBankPath": "practical-banks/ST0264-SITE-v1.json"
     },
     {
       "enrolmentId": "ST0264-AJ",
@@ -65,10 +67,11 @@
         "course": "available",
         "multipleChoice": "available-24-question-bank",
         "discussion": "available-24-scenario-coach",
-        "practical": "not-yet-created"
+        "practical": "available-12-task-coach"
       },
       "releaseChannel": "beta",
-      "publishable": true
+      "publishable": true,
+      "practicalBankPath": "practical-banks/ST0264-AJ-v1.json"
     },
     {
       "enrolmentId": "6570-05-THIN",
@@ -87,10 +90,11 @@
         "course": "available",
         "multipleChoice": "available-24-question-bank",
         "discussion": "available-24-scenario-coach",
-        "practical": "not-yet-created"
+        "practical": "available-12-task-coach"
       },
       "releaseChannel": "beta",
-      "publishable": true
+      "publishable": true,
+      "practicalBankPath": "practical-banks/6570-05-THIN-v1.json"
     },
     {
       "enrolmentId": "6570-05-REPAIR",
@@ -109,10 +113,11 @@
         "course": "available",
         "multipleChoice": "available-24-question-bank",
         "discussion": "available-24-scenario-coach",
-        "practical": "not-yet-created"
+        "practical": "available-12-task-coach"
       },
       "releaseChannel": "beta",
-      "publishable": true
+      "publishable": true,
+      "practicalBankPath": "practical-banks/6570-05-REPAIR-v1.json"
     },
     {
       "enrolmentId": "6570-05-SPECIALIST",
@@ -131,10 +136,11 @@
         "course": "available",
         "multipleChoice": "available-24-question-bank",
         "discussion": "available-24-scenario-coach",
-        "practical": "not-yet-created"
+        "practical": "available-12-task-coach"
       },
       "releaseChannel": "beta",
-      "publishable": true
+      "publishable": true,
+      "practicalBankPath": "practical-banks/6570-05-SPECIALIST-v1.json"
     },
     {
       "enrolmentId": "6570-05-DRAINAGE",
@@ -153,10 +159,11 @@
         "course": "available",
         "multipleChoice": "available-24-question-bank",
         "discussion": "available-24-scenario-coach",
-        "practical": "not-yet-created"
+        "practical": "available-12-task-coach"
       },
       "releaseChannel": "beta",
-      "publishable": true
+      "publishable": true,
+      "practicalBankPath": "practical-banks/6570-05-DRAINAGE-v1.json"
     }
   ]
 }

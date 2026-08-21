@@ -1,4 +1,4 @@
-const CACHE_NAME = "evia-beta-shell-v82";
+const CACHE_NAME = "evia-beta-shell-v83";
 const CACHE_PREFIXES = ["evia-beta-shell-", "evia-shell-"];
 const APP_SHELL = [
   "./",
@@ -14,6 +14,7 @@ const APP_SHELL = [
   "./assets/evia-updater.css",
   "./assets/evia-tools.css",
   "./assets/evia-arp-v82.css",
+  "./assets/evia-arp-practical-v83.css",
   "./assets/evia-rpl-evidence.css",
   "./assets/evia-rpl-course.css",
   "./assets/evia-targets.css",
@@ -57,6 +58,14 @@ const APP_SHELL = [
   "./course-delivery/question-banks/6570-05-REPAIR-v1.json",
   "./course-delivery/question-banks/6570-05-SPECIALIST-v1.json",
   "./course-delivery/question-banks/6570-05-DRAINAGE-v1.json",
+  "./course-delivery/practical-banks/index-v1.json",
+  "./course-delivery/practical-banks/ST0095-v1.json",
+  "./course-delivery/practical-banks/ST0264-SITE-v1.json",
+  "./course-delivery/practical-banks/ST0264-AJ-v1.json",
+  "./course-delivery/practical-banks/6570-05-THIN-v1.json",
+  "./course-delivery/practical-banks/6570-05-REPAIR-v1.json",
+  "./course-delivery/practical-banks/6570-05-SPECIALIST-v1.json",
+  "./course-delivery/practical-banks/6570-05-DRAINAGE-v1.json",
   "./assets/jsQR-1.4.0.js",
   "./assets/evia-course-enrolment.js",
   "./assets/evia-st0264-epa-enable.js",
@@ -72,6 +81,7 @@ const APP_SHELL = [
   "./assets/evia-count-display.js",
   "./assets/evia-arp-v80.js",
   "./assets/evia-arp-discussion-v82.js",
+  "./assets/evia-arp-practical-v83.js",
   "./assets/evia-assistant-network.js",
   "./assets/evia-v69-interaction-fixes.js",
   "./assets/evia-v73-page-handoff.js",

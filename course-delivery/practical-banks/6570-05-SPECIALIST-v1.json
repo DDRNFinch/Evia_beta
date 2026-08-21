@@ -1,0 +1,1757 @@
+{
+  "eviaPracticalBank": 1,
+  "schemaVersion": 1,
+  "bankVersion": "1.0",
+  "updated": "2026-08-21",
+  "enrolmentId": "6570-05-SPECIALIST",
+  "courseTitle": "Specialist Masonry",
+  "qualificationId": "6570-05",
+  "pathwayId": "specialist",
+  "courseType": "nvq",
+  "tasksPerSession": 1,
+  "taskCount": 12,
+  "assessmentContext": "Use these tasks for guided workplace rehearsal and evidence preparation. Occupational competence must be confirmed through the qualification's approved assessment process.",
+  "sourceNote": "Original Evia practice tasks mapped to course criteria. These are not official awarding-body or end-point-assessment tasks and do not produce an official grade.",
+  "tasks": [
+    {
+      "id": "657005SPECIALIST-P001",
+      "title": "Set out a masonry support system",
+      "category": "Support systems",
+      "brief": "Establish datums and set out a masonry support angle or bracket system to the specialist drawing.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "828.1.1",
+        "828.4.1",
+        "828.7.1"
+      ],
+      "resources": [
+        "Current specialist masonry drawing and fixing schedule",
+        "Datum, level, torque and measuring equipment",
+        "Approved access, lifting and handling equipment",
+        "Specified masonry, support system, fixings and barriers"
+      ],
+      "safetyControls": [
+        "Check the specialist method statement and lifting plan",
+        "Use the specified PPE, RPE and work-at-height controls",
+        "Verify substrate and temporary stability before loading",
+        "Inspect hidden components before they are concealed"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Read grid, levels and fixing schedule",
+          "instruction": "Read grid, levels and fixing schedule"
+        },
+        {
+          "id": "S2",
+          "title": "Survey substrate and establish datum",
+          "instruction": "Survey substrate and establish datum"
+        },
+        {
+          "id": "S3",
+          "title": "Mark bracket and joint positions",
+          "instruction": "Mark bracket and joint positions"
+        },
+        {
+          "id": "S4",
+          "title": "Trial components and pack as approved",
+          "instruction": "Trial components and pack as approved"
+        },
+        {
+          "id": "S5",
+          "title": "Check line, level, offsets and records",
+          "instruction": "Check line, level, offsets and records"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Datum and substrate survey",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Bracket marks and pack zones",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed set-out record",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Support level",
+          "target": "Matches the drawing datum"
+        },
+        {
+          "label": "Bracket spacing",
+          "target": "Matches fixing schedule"
+        },
+        {
+          "label": "Offset and cavity",
+          "target": "Allows specified masonry position"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that substrate position prevents the designed offset. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of substrate position prevents the designed offset, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop and obtain an engineered instruction rather than altering brackets or packing."
+      },
+      "commonFaults": [
+        "substrate position prevents the designed offset",
+        "bracket spacing conflicts with a joint",
+        "unapproved packing is proposed"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Survey substrate and establish datum” important on this task?",
+          "guide": "The support datum controls finished masonry levels and load transfer across the elevation."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Survey each fixing position and compare level, offset and spacing with the schedule."
+        },
+        {
+          "prompt": "What would you do if substrate position prevents the designed offset?",
+          "guide": "Stop and obtain an engineered instruction rather than altering brackets or packing."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005SPECIALIST-P002",
+      "title": "Install masonry support brackets",
+      "category": "Support systems",
+      "brief": "Install and verify specialist masonry support brackets, fixings, shims and angle continuity.",
+      "timing": {
+        "shortMinutes": 75,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "828.2.1",
+        "828.3.1",
+        "828.4.2"
+      ],
+      "resources": [
+        "Current specialist masonry drawing and fixing schedule",
+        "Datum, level, torque and measuring equipment",
+        "Approved access, lifting and handling equipment",
+        "Specified masonry, support system, fixings and barriers"
+      ],
+      "safetyControls": [
+        "Check the specialist method statement and lifting plan",
+        "Use the specified PPE, RPE and work-at-height controls",
+        "Verify substrate and temporary stability before loading",
+        "Inspect hidden components before they are concealed"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm approved components and substrate",
+          "instruction": "Confirm approved components and substrate"
+        },
+        {
+          "id": "S2",
+          "title": "Prepare access and temporary controls",
+          "instruction": "Prepare access and temporary controls"
+        },
+        {
+          "id": "S3",
+          "title": "Drill or position fixings as specified",
+          "instruction": "Drill or position fixings as specified"
+        },
+        {
+          "id": "S4",
+          "title": "Install brackets, shims and angle",
+          "instruction": "Install brackets, shims and angle"
+        },
+        {
+          "id": "S5",
+          "title": "Torque or verify fixings and record inspection",
+          "instruction": "Torque or verify fixings and record inspection"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Substrate and component check",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Hidden fixing and shim arrangement",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed angle and verification record",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Fixing type and embedment",
+          "target": "Matches approved schedule"
+        },
+        {
+          "label": "Torque or verification",
+          "target": "Recorded where specified"
+        },
+        {
+          "label": "Angle line and continuity",
+          "target": "Level and correctly jointed"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the substrate differs from the design. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the substrate differs from the design, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Quarantine the position and obtain a revised engineered detail."
+      },
+      "commonFaults": [
+        "the substrate differs from the design",
+        "a fixing cannot achieve verification",
+        "shims exceed the approved arrangement"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Prepare access and temporary controls” important on this task?",
+          "guide": "The support system relies on tested fixings and known substrate capacity."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Verify type, embedment, torque or test result and inspect each shim stack."
+        },
+        {
+          "prompt": "What would you do if the substrate differs from the design?",
+          "guide": "Quarantine the position and obtain a revised engineered detail."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005SPECIALIST-P003",
+      "title": "Install windposts and restraints",
+      "category": "Restraint systems",
+      "brief": "Position and connect a windpost or restraint system with the stated head, base and masonry ties.",
+      "timing": {
+        "shortMinutes": 80,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "828.1.2",
+        "828.4.3",
+        "828.7.2"
+      ],
+      "resources": [
+        "Current specialist masonry drawing and fixing schedule",
+        "Datum, level, torque and measuring equipment",
+        "Approved access, lifting and handling equipment",
+        "Specified masonry, support system, fixings and barriers"
+      ],
+      "safetyControls": [
+        "Check the specialist method statement and lifting plan",
+        "Use the specified PPE, RPE and work-at-height controls",
+        "Verify substrate and temporary stability before loading",
+        "Inspect hidden components before they are concealed"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm post type, orientation and connections",
+          "instruction": "Confirm post type, orientation and connections"
+        },
+        {
+          "id": "S2",
+          "title": "Survey base and head structure",
+          "instruction": "Survey base and head structure"
+        },
+        {
+          "id": "S3",
+          "title": "Lift and temporarily stabilise the post",
+          "instruction": "Lift and temporarily stabilise the post"
+        },
+        {
+          "id": "S4",
+          "title": "Install approved connections and ties",
+          "instruction": "Install approved connections and ties"
+        },
+        {
+          "id": "S5",
+          "title": "Check plumb, movement allowance and records",
+          "instruction": "Check plumb, movement allowance and records"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Base and head survey",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Connections and ties before concealment",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed post and movement detail",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Post position and plumb",
+          "target": "Within the drawing tolerance"
+        },
+        {
+          "label": "Connections",
+          "target": "Correct type and fully installed"
+        },
+        {
+          "label": "Movement allowance",
+          "target": "Head or interface remains free as designed"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the post is fixed through a designed movement slot. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the post is fixed through a designed movement slot, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Reinstate support and correct the connection before masonry conceals it."
+      },
+      "commonFaults": [
+        "the post is fixed through a designed movement slot",
+        "tie spacing is incomplete",
+        "temporary stability is removed before connections"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Survey base and head structure” important on this task?",
+          "guide": "Movement details let the structure deflect without loading masonry unintentionally."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check post plumb, every connection, tie spacing and movement clearance."
+        },
+        {
+          "prompt": "What would you do if the post is fixed through a designed movement slot?",
+          "guide": "Reinstate support and correct the connection before masonry conceals it."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005SPECIALIST-P004",
+      "title": "Construct supported masonry above an angle",
+      "category": "Supported masonry",
+      "brief": "Build specialist masonry from a support angle while maintaining bearing, bond, joints and cavity details.",
+      "timing": {
+        "shortMinutes": 90,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "828.4.4",
+        "828.6.1",
+        "828.7.3"
+      ],
+      "resources": [
+        "Current specialist masonry drawing and fixing schedule",
+        "Datum, level, torque and measuring equipment",
+        "Approved access, lifting and handling equipment",
+        "Specified masonry, support system, fixings and barriers"
+      ],
+      "safetyControls": [
+        "Check the specialist method statement and lifting plan",
+        "Use the specified PPE, RPE and work-at-height controls",
+        "Verify substrate and temporary stability before loading",
+        "Inspect hidden components before they are concealed"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Accept inspected support and establish first-course layout",
+          "instruction": "Accept inspected support and establish first-course layout"
+        },
+        {
+          "id": "S2",
+          "title": "Dry set bond and movement positions",
+          "instruction": "Dry set bond and movement positions"
+        },
+        {
+          "id": "S3",
+          "title": "Build the first supported course",
+          "instruction": "Build the first supported course"
+        },
+        {
+          "id": "S4",
+          "title": "Continue masonry and components",
+          "instruction": "Continue masonry and components"
+        },
+        {
+          "id": "S5",
+          "title": "Check bearing, line, level, plumb and joints",
+          "instruction": "Check bearing, line, level, plumb and joints"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Support acceptance and dry layout",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "First-course bearing and hidden components",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed supported panel",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Bearing on angle",
+          "target": "Meets the system detail"
+        },
+        {
+          "label": "First-course level",
+          "target": "Consistent from support datum"
+        },
+        {
+          "label": "Movement and bond",
+          "target": "Joints remain in designed positions"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that masonry bearing is inadequate. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of masonry bearing is inadequate, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Do not build above; correct the supported course and obtain reinspection."
+      },
+      "commonFaults": [
+        "masonry bearing is inadequate",
+        "mortar blocks a movement interface",
+        "the first course drifts off the support"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Dry set bond and movement positions” important on this task?",
+          "guide": "The first supported course transfers masonry load to the angle and controls the elevation above."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Inspect bearing, line, level, joint positions and component continuity."
+        },
+        {
+          "prompt": "What would you do if masonry bearing is inadequate?",
+          "guide": "Do not build above; correct the supported course and obtain reinspection."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005SPECIALIST-P005",
+      "title": "Install cavity fire barriers",
+      "category": "Fire stopping",
+      "brief": "Install a cavity fire barrier or fire-stopping arrangement continuously around the specified interface.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "828.2.2",
+        "828.4.5",
+        "828.7.4"
+      ],
+      "resources": [
+        "Current specialist masonry drawing and fixing schedule",
+        "Datum, level, torque and measuring equipment",
+        "Approved access, lifting and handling equipment",
+        "Specified masonry, support system, fixings and barriers"
+      ],
+      "safetyControls": [
+        "Check the specialist method statement and lifting plan",
+        "Use the specified PPE, RPE and work-at-height controls",
+        "Verify substrate and temporary stability before loading",
+        "Inspect hidden components before they are concealed"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm approved product and location",
+          "instruction": "Confirm approved product and location"
+        },
+        {
+          "id": "S2",
+          "title": "Inspect cavity size and substrates",
+          "instruction": "Inspect cavity size and substrates"
+        },
+        {
+          "id": "S3",
+          "title": "Cut and fit components without gaps",
+          "instruction": "Cut and fit components without gaps"
+        },
+        {
+          "id": "S4",
+          "title": "Install fixings and compression as specified",
+          "instruction": "Install fixings and compression as specified"
+        },
+        {
+          "id": "S5",
+          "title": "Photograph and inspect continuity before concealment",
+          "instruction": "Photograph and inspect continuity before concealment"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Product and cavity survey",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Corners, joints and fixings",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed barrier before concealment",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Product and orientation",
+          "target": "Matches approved detail"
+        },
+        {
+          "label": "Continuity",
+          "target": "No unapproved gaps at joints or corners"
+        },
+        {
+          "label": "Compression and fixing",
+          "target": "Within manufacturer requirement"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that a service creates an unapproved gap. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of a service creates an unapproved gap, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop concealment and obtain the approved service or gap detail."
+      },
+      "commonFaults": [
+        "a service creates an unapproved gap",
+        "the barrier is reversed",
+        "a corner joint opens during fixing"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Inspect cavity size and substrates” important on this task?",
+          "guide": "Fire performance depends on a complete tested arrangement, including interfaces and fixings."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Trace the barrier continuously and inspect every joint, corner, service and fixing."
+        },
+        {
+          "prompt": "What would you do if a service creates an unapproved gap?",
+          "guide": "Stop concealment and obtain the approved service or gap detail."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005SPECIALIST-P006",
+      "title": "Install bed-joint reinforcement",
+      "category": "Reinforcement",
+      "brief": "Place and lap bed-joint reinforcement at the specified courses, corners and openings.",
+      "timing": {
+        "shortMinutes": 50,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "828.4.3",
+        "828.4.6",
+        "828.7.3"
+      ],
+      "resources": [
+        "Current specialist masonry drawing and fixing schedule",
+        "Datum, level, torque and measuring equipment",
+        "Approved access, lifting and handling equipment",
+        "Specified masonry, support system, fixings and barriers"
+      ],
+      "safetyControls": [
+        "Check the specialist method statement and lifting plan",
+        "Use the specified PPE, RPE and work-at-height controls",
+        "Verify substrate and temporary stability before loading",
+        "Inspect hidden components before they are concealed"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Read reinforcement layout and lap detail",
+          "instruction": "Read reinforcement layout and lap detail"
+        },
+        {
+          "id": "S2",
+          "title": "Mark required courses",
+          "instruction": "Mark required courses"
+        },
+        {
+          "id": "S3",
+          "title": "Prepare complete mortar beds",
+          "instruction": "Prepare complete mortar beds"
+        },
+        {
+          "id": "S4",
+          "title": "Place reinforcement with cover and laps",
+          "instruction": "Place reinforcement with cover and laps"
+        },
+        {
+          "id": "S5",
+          "title": "Inspect position before next course",
+          "instruction": "Inspect position before next course"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Marked reinforcement levels",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Corners, laps and cover",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed hidden reinforcement record",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Course position",
+          "target": "Matches layout"
+        },
+        {
+          "label": "Lap and corner",
+          "target": "Meets system detail"
+        },
+        {
+          "label": "Cover",
+          "target": "Fully embedded without touching faces"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that lap length is short. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of lap length is short, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Lift and reset it while accessible; do not conceal a short lap or missing zone."
+      },
+      "commonFaults": [
+        "lap length is short",
+        "reinforcement reaches the exposed face",
+        "a required opening zone is omitted"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Mark required courses” important on this task?",
+          "guide": "Correct cover and laps let the reinforcement work without corrosion or visible staining."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Inspect each full length before bedding the next course and record hidden positions."
+        },
+        {
+          "prompt": "What would you do if lap length is short?",
+          "guide": "Lift and reset it while accessible; do not conceal a short lap or missing zone."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005SPECIALIST-P007",
+      "title": "Form a specialist movement joint",
+      "category": "Movement joints",
+      "brief": "Construct a full-height movement joint with the specified ties, filler, seal zone and interfaces.",
+      "timing": {
+        "shortMinutes": 55,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "828.1.3",
+        "828.4.6",
+        "828.7.5"
+      ],
+      "resources": [
+        "Current specialist masonry drawing and fixing schedule",
+        "Datum, level, torque and measuring equipment",
+        "Approved access, lifting and handling equipment",
+        "Specified masonry, support system, fixings and barriers"
+      ],
+      "safetyControls": [
+        "Check the specialist method statement and lifting plan",
+        "Use the specified PPE, RPE and work-at-height controls",
+        "Verify substrate and temporary stability before loading",
+        "Inspect hidden components before they are concealed"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Set out joint from structural datum",
+          "instruction": "Set out joint from structural datum"
+        },
+        {
+          "id": "S2",
+          "title": "Confirm compatible ties and filler",
+          "instruction": "Confirm compatible ties and filler"
+        },
+        {
+          "id": "S3",
+          "title": "Build both sides without bridging",
+          "instruction": "Build both sides without bridging"
+        },
+        {
+          "id": "S4",
+          "title": "Install components and maintain seal depth",
+          "instruction": "Install components and maintain seal depth"
+        },
+        {
+          "id": "S5",
+          "title": "Inspect continuous joint before finishes",
+          "instruction": "Inspect continuous joint before finishes"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Joint datum",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Hidden ties and filler",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed continuous seal zone",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Joint width and line",
+          "target": "Consistent throughout"
+        },
+        {
+          "label": "Tie type and orientation",
+          "target": "Allows designed movement"
+        },
+        {
+          "label": "No bridging",
+          "target": "Mortar and debris removed"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that mortar bridges the joint. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of mortar bridges the joint, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Remove bridging and replace incorrect components before concealment."
+      },
+      "commonFaults": [
+        "mortar bridges the joint",
+        "a standard tie replaces a movement tie",
+        "the seal zone depth varies"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Confirm compatible ties and filler” important on this task?",
+          "guide": "The joint must remain free to move while still restraining masonry in the designed direction."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Inspect the full height, component orientation and unbridged gap."
+        },
+        {
+          "prompt": "What would you do if mortar bridges the joint?",
+          "guide": "Remove bridging and replace incorrect components before concealment."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005SPECIALIST-P008",
+      "title": "Stone or masonry lifting operation",
+      "category": "Handling",
+      "brief": "Plan and complete a controlled lift and placement of a heavy specialist masonry component.",
+      "timing": {
+        "shortMinutes": 50,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "828.2.3",
+        "828.3.2",
+        "828.4.7"
+      ],
+      "resources": [
+        "Current specialist masonry drawing and fixing schedule",
+        "Datum, level, torque and measuring equipment",
+        "Approved access, lifting and handling equipment",
+        "Specified masonry, support system, fixings and barriers"
+      ],
+      "safetyControls": [
+        "Check the specialist method statement and lifting plan",
+        "Use the specified PPE, RPE and work-at-height controls",
+        "Verify substrate and temporary stability before loading",
+        "Inspect hidden components before they are concealed"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm component weight and lifting points",
+          "instruction": "Confirm component weight and lifting points"
+        },
+        {
+          "id": "S2",
+          "title": "Check lifting plan, equipment and exclusion zone",
+          "instruction": "Check lifting plan, equipment and exclusion zone"
+        },
+        {
+          "id": "S3",
+          "title": "Trial balance and communication",
+          "instruction": "Trial balance and communication"
+        },
+        {
+          "id": "S4",
+          "title": "Lift and place under one controller",
+          "instruction": "Lift and place under one controller"
+        },
+        {
+          "id": "S5",
+          "title": "Release only after stable support and checks",
+          "instruction": "Release only after stable support and checks"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Equipment and exclusion zone",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Trial lift and balance",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Final bearing and stable release",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Equipment capacity",
+          "target": "Suitable and in-date"
+        },
+        {
+          "label": "Control and communication",
+          "target": "One agreed signal system"
+        },
+        {
+          "label": "Final support",
+          "target": "Full stable bearing before release"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the component tilts on the trial lift. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the component tilts on the trial lift, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Lower to a safe position and revise the lift or support before trying again."
+      },
+      "commonFaults": [
+        "the component tilts on the trial lift",
+        "people enter the exclusion zone",
+        "bearing is incomplete at placement"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Check lifting plan, equipment and exclusion zone” important on this task?",
+          "guide": "A trial lift proves balance and controls before the component is committed to travel."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check equipment identification, lift path, signals, balance and final bearing."
+        },
+        {
+          "prompt": "What would you do if the component tilts on the trial lift?",
+          "guide": "Lower to a safe position and revise the lift or support before trying again."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005SPECIALIST-P009",
+      "title": "Specialist masonry interface with frame",
+      "category": "Interfaces",
+      "brief": "Build and connect specialist masonry at a framed interface with the specified movement, tie and weather details.",
+      "timing": {
+        "shortMinutes": 70,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "828.1.4",
+        "828.4.4",
+        "828.7.4"
+      ],
+      "resources": [
+        "Current specialist masonry drawing and fixing schedule",
+        "Datum, level, torque and measuring equipment",
+        "Approved access, lifting and handling equipment",
+        "Specified masonry, support system, fixings and barriers"
+      ],
+      "safetyControls": [
+        "Check the specialist method statement and lifting plan",
+        "Use the specified PPE, RPE and work-at-height controls",
+        "Verify substrate and temporary stability before loading",
+        "Inspect hidden components before they are concealed"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Review coordinated frame and masonry details",
+          "instruction": "Review coordinated frame and masonry details"
+        },
+        {
+          "id": "S2",
+          "title": "Survey frame position and tolerances",
+          "instruction": "Survey frame position and tolerances"
+        },
+        {
+          "id": "S3",
+          "title": "Set out masonry and component zones",
+          "instruction": "Set out masonry and component zones"
+        },
+        {
+          "id": "S4",
+          "title": "Install ties, membranes and closures",
+          "instruction": "Install ties, membranes and closures"
+        },
+        {
+          "id": "S5",
+          "title": "Check clearances and inspect before concealment",
+          "instruction": "Check clearances and inspect before concealment"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Frame survey and coordinated set-out",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Hidden ties, membrane and closure",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed interface and clearances",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Frame-to-masonry clearance",
+          "target": "Within coordinated detail"
+        },
+        {
+          "label": "Tie and membrane",
+          "target": "Correctly connected and continuous"
+        },
+        {
+          "label": "Movement",
+          "target": "No rigid bridging"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that frame position is outside coordinated tolerance. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of frame position is outside coordinated tolerance, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop the interface and obtain a coordinated revised detail."
+      },
+      "commonFaults": [
+        "frame position is outside coordinated tolerance",
+        "membrane continuity is broken",
+        "mortar bridges a deflection gap"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Survey frame position and tolerances” important on this task?",
+          "guide": "Interfaces must accommodate structural tolerance and movement while maintaining weather and fire performance."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Survey the frame, trace membranes and inspect every tie and clearance."
+        },
+        {
+          "prompt": "What would you do if frame position is outside coordinated tolerance?",
+          "guide": "Stop the interface and obtain a coordinated revised detail."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005SPECIALIST-P010",
+      "title": "Fix a masonry slip or prefabricated unit",
+      "category": "Prefabricated masonry",
+      "brief": "Set out and install masonry slips or a prefabricated masonry unit using the approved support and bonding system.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "828.4.1",
+        "828.4.7",
+        "828.7.2"
+      ],
+      "resources": [
+        "Current specialist masonry drawing and fixing schedule",
+        "Datum, level, torque and measuring equipment",
+        "Approved access, lifting and handling equipment",
+        "Specified masonry, support system, fixings and barriers"
+      ],
+      "safetyControls": [
+        "Check the specialist method statement and lifting plan",
+        "Use the specified PPE, RPE and work-at-height controls",
+        "Verify substrate and temporary stability before loading",
+        "Inspect hidden components before they are concealed"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm system, substrate and layout",
+          "instruction": "Confirm system, substrate and layout"
+        },
+        {
+          "id": "S2",
+          "title": "Set datums and dry check joints",
+          "instruction": "Set datums and dry check joints"
+        },
+        {
+          "id": "S3",
+          "title": "Prepare substrate and materials",
+          "instruction": "Prepare substrate and materials"
+        },
+        {
+          "id": "S4",
+          "title": "Install units in controlled sequence",
+          "instruction": "Install units in controlled sequence"
+        },
+        {
+          "id": "S5",
+          "title": "Check bond, alignment, adhesion and protection",
+          "instruction": "Check bond, alignment, adhesion and protection"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Substrate acceptance and grid",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Adhesive or fixing coverage",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished unit layout",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Substrate",
+          "target": "Accepted for the system"
+        },
+        {
+          "label": "Bond or fixing",
+          "target": "Required coverage and embedment"
+        },
+        {
+          "label": "Grid and joints",
+          "target": "Consistent with adjacent masonry"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that substrate contamination reduces bond. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of substrate contamination reduces bond, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop installation and replace incompatible material or correct the substrate."
+      },
+      "commonFaults": [
+        "substrate contamination reduces bond",
+        "units creep from the grid",
+        "an incompatible adhesive is supplied"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Set datums and dry check joints” important on this task?",
+          "guide": "The proprietary system depends on a suitable prepared substrate and specified components."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check pull or acceptance data where required, coverage, grid and unit alignment."
+        },
+        {
+          "prompt": "What would you do if substrate contamination reduces bond?",
+          "guide": "Stop installation and replace incompatible material or correct the substrate."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005SPECIALIST-P011",
+      "title": "Pre-concealment specialist inspection",
+      "category": "Inspection",
+      "brief": "Complete a structured pre-concealment inspection of supports, restraints, barriers and cavity components.",
+      "timing": {
+        "shortMinutes": 40,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "828.5.1",
+        "828.5.4",
+        "828.7.5"
+      ],
+      "resources": [
+        "Current specialist masonry drawing and fixing schedule",
+        "Datum, level, torque and measuring equipment",
+        "Approved access, lifting and handling equipment",
+        "Specified masonry, support system, fixings and barriers"
+      ],
+      "safetyControls": [
+        "Check the specialist method statement and lifting plan",
+        "Use the specified PPE, RPE and work-at-height controls",
+        "Verify substrate and temporary stability before loading",
+        "Inspect hidden components before they are concealed"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Gather drawing and inspection schedule",
+          "instruction": "Gather drawing and inspection schedule"
+        },
+        {
+          "id": "S2",
+          "title": "Inspect from datum through each component",
+          "instruction": "Inspect from datum through each component"
+        },
+        {
+          "id": "S3",
+          "title": "Photograph hidden work and identifiers",
+          "instruction": "Photograph hidden work and identifiers"
+        },
+        {
+          "id": "S4",
+          "title": "Record non-conformances",
+          "instruction": "Record non-conformances"
+        },
+        {
+          "id": "S5",
+          "title": "Close only verified items and retain evidence",
+          "instruction": "Close only verified items and retain evidence"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Inspection references",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Component-by-component evidence",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Signed or recorded release",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Coverage",
+          "target": "All scheduled hidden items inspected"
+        },
+        {
+          "label": "Traceability",
+          "target": "Locations and product identifiers recorded"
+        },
+        {
+          "label": "Non-conformance",
+          "target": "Remains open until corrected and rechecked"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that work is concealed before an open item is closed. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of work is concealed before an open item is closed, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop concealment, reopen access if safe and complete the required verification."
+      },
+      "commonFaults": [
+        "work is concealed before an open item is closed",
+        "product identifiers are not recorded",
+        "a photo lacks a clear location"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Inspect from datum through each component” important on this task?",
+          "guide": "Hidden work cannot be verified later without destructive opening, so traceable evidence is essential."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Follow the schedule, locate every image and keep non-conformances visibly open."
+        },
+        {
+          "prompt": "What would you do if work is concealed before an open item is closed?",
+          "guide": "Stop concealment, reopen access if safe and complete the required verification."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005SPECIALIST-P012",
+      "title": "Specialist masonry handover",
+      "category": "Handover",
+      "brief": "Complete final checks, protection, records and handover for a specialist masonry work zone.",
+      "timing": {
+        "shortMinutes": 35,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "828.5.5",
+        "828.6.2",
+        "828.7.6"
+      ],
+      "resources": [
+        "Current specialist masonry drawing and fixing schedule",
+        "Datum, level, torque and measuring equipment",
+        "Approved access, lifting and handling equipment",
+        "Specified masonry, support system, fixings and barriers"
+      ],
+      "safetyControls": [
+        "Check the specialist method statement and lifting plan",
+        "Use the specified PPE, RPE and work-at-height controls",
+        "Verify substrate and temporary stability before loading",
+        "Inspect hidden components before they are concealed"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Reconcile work with drawings and inspection records",
+          "instruction": "Reconcile work with drawings and inspection records"
+        },
+        {
+          "id": "S2",
+          "title": "Check visible quality and interfaces",
+          "instruction": "Check visible quality and interfaces"
+        },
+        {
+          "id": "S3",
+          "title": "Confirm hidden-work records are complete",
+          "instruction": "Confirm hidden-work records are complete"
+        },
+        {
+          "id": "S4",
+          "title": "Install protection and clean safely",
+          "instruction": "Install protection and clean safely"
+        },
+        {
+          "id": "S5",
+          "title": "Record handover and remaining restrictions",
+          "instruction": "Record handover and remaining restrictions"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Final elevation inspection",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Protection and completed records",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Handover condition",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Visible masonry",
+          "target": "Geometry, joints and condition accepted"
+        },
+        {
+          "label": "Records",
+          "target": "Fixing, fire and support evidence complete"
+        },
+        {
+          "label": "Protection",
+          "target": "Maintains safety and finished quality"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that a hidden-work record is missing. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of a hidden-work record is missing, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Keep the area restricted and close the missing evidence or defect before handover."
+      },
+      "commonFaults": [
+        "a hidden-work record is missing",
+        "protection loads fresh masonry",
+        "an interface defect is left unreported"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Check visible quality and interfaces” important on this task?",
+          "guide": "Handover connects the finished appearance to the verified support, restraint and fire details behind it."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Cross-check drawings, inspection schedule, visible quality and protection."
+        },
+        {
+          "prompt": "What would you do if a hidden-work record is missing?",
+          "guide": "Keep the area restricted and close the missing evidence or defect before handover."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1780 @@
+{
+  "eviaPracticalBank": 1,
+  "schemaVersion": 1,
+  "bankVersion": "1.0",
+  "updated": "2026-08-21",
+  "enrolmentId": "ST0095",
+  "courseTitle": "Bricklayer",
+  "qualificationId": "ST0095",
+  "pathwayId": null,
+  "courseType": "apprenticeship",
+  "tasksPerSession": 1,
+  "taskCount": 12,
+  "assessmentContext": "The current apprenticeship uses an observed practical assessment with questions. Evia provides preparation and rehearsal, not an official assessment result.",
+  "sourceNote": "Original Evia practice tasks mapped to course criteria. These are not official awarding-body or end-point-assessment tasks and do not produce an official grade.",
+  "tasks": [
+    {
+      "id": "ST0095-P001",
+      "title": "Cavity wall with an opening",
+      "category": "Cavity walling",
+      "brief": "Set out and construct a brick-and-block cavity wall section incorporating an opening and the specified cavity components.",
+      "timing": {
+        "shortMinutes": 90,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K21",
+        "K22",
+        "S10",
+        "S11",
+        "B3"
+      ],
+      "resources": [
+        "Current drawing and specification",
+        "Gauge rod, level, square and tape",
+        "Bricklaying hand tools",
+        "Suitable bricks, blocks and mortar",
+        "Profiles and line pins",
+        "Lintel, cavity closures and weep vents"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and task-specific RPE",
+        "Keep the work area and access routes clear",
+        "Use cutting controls and isolate equipment before adjustments"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Interpret the drawing and establish datums",
+          "instruction": "Interpret the drawing and establish datums"
+        },
+        {
+          "id": "S2",
+          "title": "Set out the wall, return and opening",
+          "instruction": "Set out the wall, return and opening"
+        },
+        {
+          "id": "S3",
+          "title": "Build both leaves while maintaining the cavity",
+          "instruction": "Build both leaves while maintaining the cavity"
+        },
+        {
+          "id": "S4",
+          "title": "Install ties, insulation, DPC, tray, weeps and fire stopping",
+          "instruction": "Install ties, insulation, DPC, tray, weeps and fire stopping"
+        },
+        {
+          "id": "S5",
+          "title": "Form the opening details and complete final checks",
+          "instruction": "Form the opening details and complete final checks"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Set-out, diagonals and first course",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Ties, insulation and moisture/fire components before concealment",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished opening, lintel, cill, joints and wall tolerances",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Opening and wall set-out",
+          "target": "Matches the drawing and stated tolerances"
+        },
+        {
+          "label": "Line, level, plumb and gauge",
+          "target": "Checked progressively on both leaves"
+        },
+        {
+          "label": "Cavity components",
+          "target": "Correct type, position, spacing and orientation"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the opening is moving out of square. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the opening is moving out of square, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop at a safe point, find the cause, correct the affected work and recheck before continuing."
+      },
+      "commonFaults": [
+        "the opening is moving out of square",
+        "mortar droppings are bridging the cavity",
+        "a tie or tray will be concealed before inspection"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Set out the wall, return and opening” important on this task?",
+          "guide": "It protects the dimensions and prevents errors being built into later courses."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check datums, diagonals, gauge, line, level, plumb and component positions against the drawing."
+        },
+        {
+          "prompt": "What would you do if the opening is moving out of square?",
+          "guide": "Stop at a safe point, find the cause, correct the affected work and recheck before continuing."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0095-P002",
+      "title": "Cavity wall return and corner",
+      "category": "Cavity walling",
+      "brief": "Construct a stretcher-bond cavity wall return, keeping both leaves bonded, aligned and within the required cavity width.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K21",
+        "K22",
+        "S10",
+        "S11"
+      ],
+      "resources": [
+        "Current drawing and specification",
+        "Gauge rod, level, square and tape",
+        "Bricklaying hand tools",
+        "Suitable bricks, blocks and mortar"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and task-specific RPE",
+        "Keep the work area and access routes clear",
+        "Use cutting controls and isolate equipment before adjustments"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm wall lines and corner position",
+          "instruction": "Confirm wall lines and corner position"
+        },
+        {
+          "id": "S2",
+          "title": "Dry check the bond and cut requirements",
+          "instruction": "Dry check the bond and cut requirements"
+        },
+        {
+          "id": "S3",
+          "title": "Build the corner leads",
+          "instruction": "Build the corner leads"
+        },
+        {
+          "id": "S4",
+          "title": "Run in both leaves and install components",
+          "instruction": "Run in both leaves and install components"
+        },
+        {
+          "id": "S5",
+          "title": "Check the return, cavity and finished work",
+          "instruction": "Check the return, cavity and finished work"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Corner set-out and first course",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Bond, ties and cavity cleanliness midway",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished return, gauge and joint profile",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Corner squareness",
+          "target": "Checked from the established wall lines"
+        },
+        {
+          "label": "Cavity width",
+          "target": "Maintained without mortar bridging"
+        },
+        {
+          "label": "Bond and perp alignment",
+          "target": "Matches the specified stretcher bond"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the corner lead is leaning. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the corner lead is leaning, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Take down only the affected work while workable, correct the lead and rebuild to the checks."
+      },
+      "commonFaults": [
+        "the corner lead is leaning",
+        "perpends are stacking at the return",
+        "the cavity width is reducing"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Dry check the bond and cut requirements” important on this task?",
+          "guide": "A correct corner controls the lines, bond and accuracy of both wall runs."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Use the square, level, tape, gauge rod and line from established datums."
+        },
+        {
+          "prompt": "What would you do if the corner lead is leaning?",
+          "guide": "Take down only the affected work while workable, correct the lead and rebuild to the checks."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0095-P003",
+      "title": "Solid wall in English bond",
+      "category": "Solid walling",
+      "brief": "Set out and build a simple solid brick wall in English bond with the specified lap, gauge and capping detail.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K15",
+        "K16",
+        "S13",
+        "B3"
+      ],
+      "resources": [
+        "Current drawing and specification",
+        "Gauge rod, level, square and tape",
+        "Bricklaying hand tools",
+        "Suitable bricks, blocks and mortar"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and task-specific RPE",
+        "Keep the work area and access routes clear",
+        "Use cutting controls and isolate equipment before adjustments"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Read the dimensions and identify the bond",
+          "instruction": "Read the dimensions and identify the bond"
+        },
+        {
+          "id": "S2",
+          "title": "Set out wall length and dry bond",
+          "instruction": "Set out wall length and dry bond"
+        },
+        {
+          "id": "S3",
+          "title": "Build accurate corner leads",
+          "instruction": "Build accurate corner leads"
+        },
+        {
+          "id": "S4",
+          "title": "Run in alternate header and stretcher courses",
+          "instruction": "Run in alternate header and stretcher courses"
+        },
+        {
+          "id": "S5",
+          "title": "Form the capping and complete quality checks",
+          "instruction": "Form the capping and complete quality checks"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Dry bond and first course",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Lap, quoins and gauge midway",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Capping, joints and finished tolerances",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Bond and lap",
+          "target": "No unintended straight joints"
+        },
+        {
+          "label": "Wall line, level and plumb",
+          "target": "Checked progressively"
+        },
+        {
+          "label": "Finished dimensions",
+          "target": "Match the task drawing"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that a straight joint is developing. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of a straight joint is developing, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Identify where the bond changed, remove affected work and reinstate the correct sequence."
+      },
+      "commonFaults": [
+        "a straight joint is developing",
+        "the wall is running out of gauge",
+        "headers are not centred over the course below"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Set out wall length and dry bond” important on this task?",
+          "guide": "Dry bonding confirms the arrangement before mortar makes correction slower and wasteful."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check each course against the bond pattern, line, level, plumb and gauge rod."
+        },
+        {
+          "prompt": "What would you do if a straight joint is developing?",
+          "guide": "Identify where the bond changed, remove affected work and reinstate the correct sequence."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0095-P004",
+      "title": "Blockwork partition",
+      "category": "Solid walling",
+      "brief": "Set out and build a straight blockwork partition with a return or abutment detail to the given drawing.",
+      "timing": {
+        "shortMinutes": 50,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K16",
+        "S5",
+        "S13",
+        "B3"
+      ],
+      "resources": [
+        "Current drawing and specification",
+        "Gauge rod, level, square and tape",
+        "Bricklaying hand tools",
+        "Suitable bricks, blocks and mortar"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and task-specific RPE",
+        "Keep the work area and access routes clear",
+        "Use cutting controls and isolate equipment before adjustments"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm partition position and interfaces",
+          "instruction": "Confirm partition position and interfaces"
+        },
+        {
+          "id": "S2",
+          "title": "Set out the wall and check the base",
+          "instruction": "Set out the wall and check the base"
+        },
+        {
+          "id": "S3",
+          "title": "Lay and level the first course",
+          "instruction": "Lay and level the first course"
+        },
+        {
+          "id": "S4",
+          "title": "Build to line, level, plumb and gauge",
+          "instruction": "Build to line, level, plumb and gauge"
+        },
+        {
+          "id": "S5",
+          "title": "Complete the head, joint and protection requirements",
+          "instruction": "Complete the head, joint and protection requirements"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Partition position and first course",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Bond, restraint and services interfaces",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished wall and protection",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Partition position",
+          "target": "Matches the drawing and datum"
+        },
+        {
+          "label": "Level and plumb",
+          "target": "Checked on every lift"
+        },
+        {
+          "label": "Restraint or abutment detail",
+          "target": "Installed to the specification"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the first course is not level. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the first course is not level, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Correct the base or bed before continuing and recheck the full run."
+      },
+      "commonFaults": [
+        "the first course is not level",
+        "the abutment detail has been missed",
+        "blocks are rocking on uneven beds"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Set out the wall and check the base” important on this task?",
+          "guide": "The first course establishes the level and accuracy of everything above it."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Use the datum, tape, line, level and straightedge, including the abutment position."
+        },
+        {
+          "prompt": "What would you do if the first course is not level?",
+          "guide": "Correct the base or bed before continuing and recheck the full run."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0095-P005",
+      "title": "DPC, cavity tray and weeps",
+      "category": "Moisture protection",
+      "brief": "Install a DPC and cavity tray arrangement with stop ends and weep vents at the stated level and opening.",
+      "timing": {
+        "shortMinutes": 45,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K6",
+        "K8",
+        "K22",
+        "S11"
+      ],
+      "resources": [
+        "Current drawing and specification",
+        "Gauge rod, level, square and tape",
+        "Bricklaying hand tools",
+        "Suitable bricks, blocks and mortar",
+        "DPC scissors and jointing tape",
+        "Stop ends and compatible sealant"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and task-specific RPE",
+        "Keep the work area and access routes clear",
+        "Use cutting controls and isolate equipment before adjustments"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Read the moisture-control detail",
+          "instruction": "Read the moisture-control detail"
+        },
+        {
+          "id": "S2",
+          "title": "Confirm levels, laps and discharge points",
+          "instruction": "Confirm levels, laps and discharge points"
+        },
+        {
+          "id": "S3",
+          "title": "Prepare clean, supported beds",
+          "instruction": "Prepare clean, supported beds"
+        },
+        {
+          "id": "S4",
+          "title": "Install DPC, tray, stop ends and weeps",
+          "instruction": "Install DPC, tray, stop ends and weeps"
+        },
+        {
+          "id": "S5",
+          "title": "Inspect continuity and protect before concealment",
+          "instruction": "Inspect continuity and protect before concealment"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Datum and proposed tray level",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Laps, corners, stop ends and outlets",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed detail before the next course conceals it",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Tray fall and support",
+          "target": "Directs water toward the outer leaf"
+        },
+        {
+          "label": "Laps and stop ends",
+          "target": "Continuous and formed to the specification"
+        },
+        {
+          "label": "Weep positions",
+          "target": "Clear and correctly spaced at discharge points"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the tray falls toward the inner leaf. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the tray falls toward the inner leaf, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Do not conceal it; remake the faulty section and re-inspect the whole moisture path."
+      },
+      "commonFaults": [
+        "the tray falls toward the inner leaf",
+        "a lap is short or unsupported",
+        "a weep route is blocked by mortar"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Confirm levels, laps and discharge points” important on this task?",
+          "guide": "The detail must intercept moisture and give it a continuous route to the outside."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Visually trace the tray from back upstand to each clear outlet and check levels and laps."
+        },
+        {
+          "prompt": "What would you do if the tray falls toward the inner leaf?",
+          "guide": "Do not conceal it; remake the faulty section and re-inspect the whole moisture path."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0095-P006",
+      "title": "Lintel and soldier course",
+      "category": "Openings",
+      "brief": "Set a lintel to the correct bearing and level, then form a centred soldier course above the opening.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K22",
+        "K23",
+        "S11",
+        "S15"
+      ],
+      "resources": [
+        "Current drawing and specification",
+        "Gauge rod, level, square and tape",
+        "Bricklaying hand tools",
+        "Suitable bricks, blocks and mortar",
+        "Specified lintel",
+        "Soldier-course template or gauge"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and task-specific RPE",
+        "Keep the work area and access routes clear",
+        "Use cutting controls and isolate equipment before adjustments"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Check opening, lintel type and bearing",
+          "instruction": "Check opening, lintel type and bearing"
+        },
+        {
+          "id": "S2",
+          "title": "Establish centre lines and soldier gauge",
+          "instruction": "Establish centre lines and soldier gauge"
+        },
+        {
+          "id": "S3",
+          "title": "Bed and level the lintel without twisting",
+          "instruction": "Bed and level the lintel without twisting"
+        },
+        {
+          "id": "S4",
+          "title": "Set out and build the soldier course",
+          "instruction": "Set out and build the soldier course"
+        },
+        {
+          "id": "S5",
+          "title": "Check alignment, joints and support details",
+          "instruction": "Check alignment, joints and support details"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Opening dimensions and bearing points",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Lintel level and soldier dry set-out",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished soldier course, joints and moisture detail",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Lintel bearing",
+          "target": "Meets the drawing and manufacturer requirement"
+        },
+        {
+          "label": "Lintel level and position",
+          "target": "Supported evenly without twist"
+        },
+        {
+          "label": "Soldier spacing and centre",
+          "target": "Balanced with consistent joints"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that one lintel end has inadequate bearing. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of one lintel end has inadequate bearing, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop loading the lintel, correct its bed and position, then repeat all checks."
+      },
+      "commonFaults": [
+        "one lintel end has inadequate bearing",
+        "the soldier course will finish off-centre",
+        "the lintel is twisted across the cavity"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Establish centre lines and soldier gauge” important on this task?",
+          "guide": "Bearing and level allow loads to transfer correctly and keep the opening geometry true."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check bearing at both ends, level along and across, then dry set the soldiers from the centre."
+        },
+        {
+          "prompt": "What would you do if one lintel end has inadequate bearing?",
+          "guide": "Stop loading the lintel, correct its bed and position, then repeat all checks."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0095-P007",
+      "title": "Brick-on-edge cill",
+      "category": "Openings",
+      "brief": "Set out and construct a brick-on-edge cill with the specified projection, fall, bond and joint finish.",
+      "timing": {
+        "shortMinutes": 45,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K23",
+        "S15",
+        "B3"
+      ],
+      "resources": [
+        "Current drawing and specification",
+        "Gauge rod, level, square and tape",
+        "Bricklaying hand tools",
+        "Suitable bricks, blocks and mortar"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and task-specific RPE",
+        "Keep the work area and access routes clear",
+        "Use cutting controls and isolate equipment before adjustments"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Read the cill detail and establish centre",
+          "instruction": "Read the cill detail and establish centre"
+        },
+        {
+          "id": "S2",
+          "title": "Measure the opening and dry set the units",
+          "instruction": "Measure the opening and dry set the units"
+        },
+        {
+          "id": "S3",
+          "title": "Prepare any accurate cuts",
+          "instruction": "Prepare any accurate cuts"
+        },
+        {
+          "id": "S4",
+          "title": "Bed units to projection and fall",
+          "instruction": "Bed units to projection and fall"
+        },
+        {
+          "id": "S5",
+          "title": "Finish joints and verify drainage away from the opening",
+          "instruction": "Finish joints and verify drainage away from the opening"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Dry set-out and cut positions",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Projection, centre and fall during bedding",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished cill, joints and interface seals",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Cill projection",
+          "target": "Consistent across the opening"
+        },
+        {
+          "label": "Fall",
+          "target": "Falls outward as detailed"
+        },
+        {
+          "label": "Joint width and finish",
+          "target": "Even, compact and weather resistant"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the cill is falling back toward the opening. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the cill is falling back toward the opening, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Lift and reset the affected units while workable; do not disguise the fault with jointing."
+      },
+      "commonFaults": [
+        "the cill is falling back toward the opening",
+        "end cuts are unbalanced",
+        "the projection varies across the width"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Measure the opening and dry set the units” important on this task?",
+          "guide": "Dry setting balances the cill and prevents a poor cut or joint at one end."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Measure projection at several points and check the outward fall with a level."
+        },
+        {
+          "prompt": "What would you do if the cill is falling back toward the opening?",
+          "guide": "Lift and reset the affected units while workable; do not disguise the fault with jointing."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0095-P008",
+      "title": "Decorative attached pier",
+      "category": "Decorative masonry",
+      "brief": "Build an attached pier or projecting feature tied and bonded to the backing wall as shown on the drawing.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K18",
+        "S5",
+        "S13",
+        "B3"
+      ],
+      "resources": [
+        "Current drawing and specification",
+        "Gauge rod, level, square and tape",
+        "Bricklaying hand tools",
+        "Suitable bricks, blocks and mortar"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and task-specific RPE",
+        "Keep the work area and access routes clear",
+        "Use cutting controls and isolate equipment before adjustments"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Interpret the pier dimensions and bond",
+          "instruction": "Interpret the pier dimensions and bond"
+        },
+        {
+          "id": "S2",
+          "title": "Set out the backing wall and projection",
+          "instruction": "Set out the backing wall and projection"
+        },
+        {
+          "id": "S3",
+          "title": "Dry check closers and repeating pattern",
+          "instruction": "Dry check closers and repeating pattern"
+        },
+        {
+          "id": "S4",
+          "title": "Build pier and wall together",
+          "instruction": "Build pier and wall together"
+        },
+        {
+          "id": "S5",
+          "title": "Check bond, projection, plumb and finish",
+          "instruction": "Check bond, projection, plumb and finish"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Pier centre and first-course footprint",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Bond and connection to backing wall",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished projection, capping and joints",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Pier position and size",
+          "target": "Matches the drawing"
+        },
+        {
+          "label": "Bond to backing wall",
+          "target": "Continuous and secure as detailed"
+        },
+        {
+          "label": "Plumb and projection",
+          "target": "Checked on all visible faces"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the pier is drifting from its centre line. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the pier is drifting from its centre line, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Remove affected courses to a sound bond and rebuild from the original datum."
+      },
+      "commonFaults": [
+        "the pier is drifting from its centre line",
+        "the connection to the wall is weak",
+        "the projecting courses are inconsistent"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Set out the backing wall and projection” important on this task?",
+          "guide": "Accurate set-out keeps the feature symmetrical and ensures its connection can be built correctly."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check from centre lines, measure projection and use a level on every face."
+        },
+        {
+          "prompt": "What would you do if the pier is drifting from its centre line?",
+          "guide": "Remove affected courses to a sound bond and rebuild from the original datum."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0095-P009",
+      "title": "Raking cut wall",
+      "category": "Cut masonry",
+      "brief": "Set out and construct a brick wall with a clean raking cut to the stated pitch and finish.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K29",
+        "K30",
+        "S15",
+        "S22"
+      ],
+      "resources": [
+        "Current drawing and specification",
+        "Gauge rod, level, square and tape",
+        "Bricklaying hand tools",
+        "Suitable bricks, blocks and mortar",
+        "Raking template",
+        "Approved cutting area and dust control"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and task-specific RPE",
+        "Keep the work area and access routes clear",
+        "Use cutting controls and isolate equipment before adjustments"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm pitch, dimensions and cut line",
+          "instruction": "Confirm pitch, dimensions and cut line"
+        },
+        {
+          "id": "S2",
+          "title": "Build sufficient supporting walling",
+          "instruction": "Build sufficient supporting walling"
+        },
+        {
+          "id": "S3",
+          "title": "Mark cuts from a template or calculated line",
+          "instruction": "Mark cuts from a template or calculated line"
+        },
+        {
+          "id": "S4",
+          "title": "Cut safely and bed units to the rake",
+          "instruction": "Cut safely and bed units to the rake"
+        },
+        {
+          "id": "S5",
+          "title": "Check the line, bond and exposed finish",
+          "instruction": "Check the line, bond and exposed finish"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Rake datum and template",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Cut accuracy and remaining unit strength",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished rake line and joint consistency",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Rake angle and line",
+          "target": "Matches the drawing without steps"
+        },
+        {
+          "label": "Cut quality",
+          "target": "Clean and within tolerance"
+        },
+        {
+          "label": "Bond below the rake",
+          "target": "Maintained without weak fragments"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the rake line is becoming stepped. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the rake line is becoming stepped, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop cutting, correct the method or control, then replace unsuitable units rather than using them."
+      },
+      "commonFaults": [
+        "the rake line is becoming stepped",
+        "cuts leave fragile slivers",
+        "dust controls are not effective"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Build sufficient supporting walling” important on this task?",
+          "guide": "A reliable template transfers the required pitch consistently to every unit."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Offer units to the line, check the template and inspect each cut before bedding."
+        },
+        {
+          "prompt": "What would you do if the rake line is becoming stepped?",
+          "guide": "Stop cutting, correct the method or control, then replace unsuitable units rather than using them."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0095-P010",
+      "title": "Mortar gauging and joint finishes",
+      "category": "Mortar and jointing",
+      "brief": "Gauge and hand-mix mortar to the stated ratio, then produce consistent flush, bucket-handle and weather-struck sample joints.",
+      "timing": {
+        "shortMinutes": 40,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K17",
+        "K20",
+        "S12",
+        "S14"
+      ],
+      "resources": [
+        "Current drawing and specification",
+        "Gauge rod, level, square and tape",
+        "Bricklaying hand tools",
+        "Suitable bricks, blocks and mortar",
+        "Gauging boxes or buckets",
+        "Jointing tools and sample panel"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and task-specific RPE",
+        "Keep the work area and access routes clear",
+        "Use cutting controls and isolate equipment before adjustments"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm mortar specification and quantities",
+          "instruction": "Confirm mortar specification and quantities"
+        },
+        {
+          "id": "S2",
+          "title": "Measure materials consistently",
+          "instruction": "Measure materials consistently"
+        },
+        {
+          "id": "S3",
+          "title": "Mix to an even workable consistency",
+          "instruction": "Mix to an even workable consistency"
+        },
+        {
+          "id": "S4",
+          "title": "Allow joints to reach the correct condition",
+          "instruction": "Allow joints to reach the correct condition"
+        },
+        {
+          "id": "S5",
+          "title": "Form and compare the specified joint profiles",
+          "instruction": "Form and compare the specified joint profiles"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Measured dry materials",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Finished mix consistency",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Three completed joint samples",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Mix ratio",
+          "target": "Matches the task specification"
+        },
+        {
+          "label": "Consistency",
+          "target": "Uniform without uncontrolled water addition"
+        },
+        {
+          "label": "Joint profile",
+          "target": "Compact, consistent and correctly timed"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that extra water is being added without measurement. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of extra water is being added without measurement, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Reject or correct the affected batch or sample; do not hide an unsuitable mix in the wall."
+      },
+      "commonFaults": [
+        "extra water is being added without measurement",
+        "jointing starts while mortar is too wet",
+        "profiles vary along the sample"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Measure materials consistently” important on this task?",
+          "guide": "Controlled gauging makes performance and colour more consistent between batches."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Record the measures, inspect the full mix and compare joint depth and profile along the work."
+        },
+        {
+          "prompt": "What would you do if extra water is being added without measurement?",
+          "guide": "Reject or correct the affected batch or sample; do not hide an unsuitable mix in the wall."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0095-P011",
+      "title": "Simple masonry repair",
+      "category": "Repair",
+      "brief": "Remove a damaged masonry unit and reinstate a compatible replacement without damaging sound surrounding work.",
+      "timing": {
+        "shortMinutes": 45,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K24",
+        "K25",
+        "S16",
+        "S17"
+      ],
+      "resources": [
+        "Current drawing and specification",
+        "Gauge rod, level, square and tape",
+        "Bricklaying hand tools",
+        "Suitable bricks, blocks and mortar"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and task-specific RPE",
+        "Keep the work area and access routes clear",
+        "Use cutting controls and isolate equipment before adjustments"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Identify the defect and agree the repair extent",
+          "instruction": "Identify the defect and agree the repair extent"
+        },
+        {
+          "id": "S2",
+          "title": "Protect and support the surrounding work",
+          "instruction": "Protect and support the surrounding work"
+        },
+        {
+          "id": "S3",
+          "title": "Remove the damaged unit and clean the pocket",
+          "instruction": "Remove the damaged unit and clean the pocket"
+        },
+        {
+          "id": "S4",
+          "title": "Install the compatible replacement",
+          "instruction": "Install the compatible replacement"
+        },
+        {
+          "id": "S5",
+          "title": "Finish, cure and inspect the repair",
+          "instruction": "Finish, cure and inspect the repair"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Defect and agreed repair boundary",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Prepared pocket and surrounding protection",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished replacement, joints and curing protection",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Removal boundary",
+          "target": "Only defective work is disturbed"
+        },
+        {
+          "label": "Replacement match",
+          "target": "Correct unit, bond and mortar compatibility"
+        },
+        {
+          "label": "Finished repair",
+          "target": "Fully filled, aligned and protected"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that sound adjacent masonry starts to loosen. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of sound adjacent masonry starts to loosen, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop, stabilise the area, report the changed condition and revise the repair method."
+      },
+      "commonFaults": [
+        "sound adjacent masonry starts to loosen",
+        "the replacement unit is incompatible",
+        "the back of the joint is left unfilled"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Protect and support the surrounding work” important on this task?",
+          "guide": "Agreeing the cause and extent prevents a cosmetic repair that leaves the real defect unresolved."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check surrounding stability, full joint fill, alignment, bond and compatibility."
+        },
+        {
+          "prompt": "What would you do if sound adjacent masonry starts to loosen?",
+          "guide": "Stop, stabilise the area, report the changed condition and revise the repair method."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0095-P012",
+      "title": "Protect completed masonry",
+      "category": "Quality and protection",
+      "brief": "Inspect a completed masonry panel, correct minor defects and install suitable protection against weather and follow-on trades.",
+      "timing": {
+        "shortMinutes": 35,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K24",
+        "K25",
+        "S16",
+        "S17",
+        "B3"
+      ],
+      "resources": [
+        "Current drawing and specification",
+        "Gauge rod, level, square and tape",
+        "Bricklaying hand tools",
+        "Suitable bricks, blocks and mortar"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and task-specific RPE",
+        "Keep the work area and access routes clear",
+        "Use cutting controls and isolate equipment before adjustments"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Inspect against the drawing and quality standard",
+          "instruction": "Inspect against the drawing and quality standard"
+        },
+        {
+          "id": "S2",
+          "title": "Identify defects and their likely causes",
+          "instruction": "Identify defects and their likely causes"
+        },
+        {
+          "id": "S3",
+          "title": "Complete only approved minor corrections",
+          "instruction": "Complete only approved minor corrections"
+        },
+        {
+          "id": "S4",
+          "title": "Install weather and impact protection",
+          "instruction": "Install weather and impact protection"
+        },
+        {
+          "id": "S5",
+          "title": "Record checks and hand over the area",
+          "instruction": "Record checks and hand over the area"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Initial defect inspection",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Corrected work before protection",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Protected area and handover condition",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Finished tolerances",
+          "target": "Line, level, plumb, gauge and dimensions checked"
+        },
+        {
+          "label": "Joint and face condition",
+          "target": "Clean, compact and free from avoidable staining"
+        },
+        {
+          "label": "Protection",
+          "target": "Secure without trapping damage-causing moisture"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that fresh walling is left exposed to frost or rain. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of fresh walling is left exposed to frost or rain, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Change the protection method immediately and report any damage already caused."
+      },
+      "commonFaults": [
+        "fresh walling is left exposed to frost or rain",
+        "cleaning risks smearing or damaging faces",
+        "protection is fixed so it can blow against the wall"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Identify defects and their likely causes” important on this task?",
+          "guide": "Early inspection allows minor issues to be corrected before mortar hardens or work is concealed."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Use the task tolerances, inspect faces and joints, and confirm protection is secure and ventilated as required."
+        },
+        {
+          "prompt": "What would you do if fresh walling is left exposed to frost or rain?",
+          "guide": "Change the protection method immediately and report any damage already caused."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

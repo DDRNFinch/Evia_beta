@@ -182,6 +182,8 @@ test("all seven permanent manual and QR values resolve to publishable course pac
       assert.equal(resolved.course.packageId, course.packageId);
       assert.equal(resolved.course.packagePath, course.packagePath);
       assert.match(resolved.course.questionBankPath, /question-banks\/.+-v1\.json$/);
+      assert.match(resolved.course.practicalBankPath, /practical-banks\/.+-v1\.json$/);
+      assert.equal(resolved.course.content.practical, "available-12-task-coach");
     }
   }
 });
@@ -227,6 +229,7 @@ test("all seven manual codes remain bundled when the remote registry is unavaila
     const harness = await makeInstallerHarness({ registryOnline: false });
     const resolved = await harness.window.EviaCourseRegistry.resolve(enrolmentId);
     assert.equal(resolved.ok, true, `${enrolmentId} should use the bundled registry`);
+    assert.match(resolved.course.practicalBankPath, /practical-banks\/.+-v1\.json$/);
     await harness.window.EviaCourseEnrolment.installFromInput(enrolmentId);
     assert.equal(harness.reloadCount, 1);
     assert.equal(harness.loggedErrors.length, 0);
@@ -284,7 +287,7 @@ class MemoryCache {
   }
 }
 
-test("v82 replaces the legacy shell and serves Discussion Coach offline", async () => {
+test("v83 replaces the legacy shell and serves Discussion and Practical Coaches offline", async () => {
   const handlers = new Map();
   const stores = new Map([["evia-shell-v75", new MemoryCache()]]);
   const legacy = stores.get("evia-shell-v75");
@@ -351,7 +354,7 @@ test("v82 replaces the legacy shell and serves Discussion Coach offline", async 
   let installWork;
   handlers.get("install")({ waitUntil(value) { installWork = value; } });
   await installWork;
-  assert.equal(await caches.has("evia-beta-shell-v82"), true);
+  assert.equal(await caches.has("evia-beta-shell-v83"), true);
 
   let activateWork;
   handlers.get("activate")({ waitUntil(value) { activateWork = value; } });
@@ -373,21 +376,25 @@ test("v82 replaces the legacy shell and serves Discussion Coach offline", async 
     },
   });
   const offlineHtml = await (await navigationResponse).text();
-  assert.match(offlineHtml, /evia-app-version" content="82"/);
-  assert.match(offlineHtml, /course-registry\.js\?v=82/);
+  assert.match(offlineHtml, /evia-app-version" content="83"/);
+  assert.match(offlineHtml, /course-registry\.js\?v=83/);
   assert.match(offlineHtml, /evia-course-enrolment\.js\?v=80/);
   assert.match(offlineHtml, /evia-arp-v80\.js\?v=80/);
   assert.match(offlineHtml, /evia-arp-discussion-v82\.js\?v=82/);
   assert.match(offlineHtml, /evia-arp-v82\.css\?v=82/);
+  assert.match(offlineHtml, /evia-arp-practical-v83\.js\?v=83/);
+  assert.match(offlineHtml, /evia-arp-practical-v83\.css\?v=83/);
   assert.match(offlineHtml, /evia-toc\.js\?v=81/);
 
   for (const resource of [
     "assets/evia-beta-isolation.js?v=80",
-    "course-delivery/registry-v1.json?v=82",
+    "course-delivery/registry-v1.json?v=83",
     "assets/jsQR-1.4.0.js?v=80",
     "assets/evia-arp-v80.js?v=80",
     "assets/evia-arp-discussion-v82.js?v=82",
     "assets/evia-arp-v82.css?v=82",
+    "assets/evia-arp-practical-v83.js?v=83",
+    "assets/evia-arp-practical-v83.css?v=83",
     "assets/evia-toc.js?v=81",
     "assets/evia-toc.css?v=81",
     "course-packs/Bricklayer_ST0095_v1.2.nisi",
@@ -395,6 +402,9 @@ test("v82 replaces the legacy shell and serves Discussion Coach offline", async 
     "course-packs/Trowel_Occupations_6570-05_v1.nisi",
     "course-delivery/question-banks/ST0264-AJ-v1.json",
     "course-delivery/question-banks/6570-05-DRAINAGE-v1.json",
+    "course-delivery/practical-banks/ST0095-v1.json",
+    "course-delivery/practical-banks/ST0264-AJ-v1.json",
+    "course-delivery/practical-banks/6570-05-DRAINAGE-v1.json",
     "course-delivery/qr/ST0264-SITE.png",
     "course-delivery/qr/6570-05-SPECIALIST.png",
   ]) {

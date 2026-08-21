@@ -1,0 +1,1781 @@
+{
+  "eviaPracticalBank": 1,
+  "schemaVersion": 1,
+  "bankVersion": "1.0",
+  "updated": "2026-08-21",
+  "enrolmentId": "ST0264-SITE",
+  "courseTitle": "Site Carpenter",
+  "qualificationId": "ST0264",
+  "pathwayId": "site-carpenter",
+  "courseType": "apprenticeship",
+  "tasksPerSession": 1,
+  "taskCount": 12,
+  "assessmentContext": "The current apprenticeship uses an observed practical assessment with questions. Evia provides route-specific preparation and rehearsal, not an official assessment result.",
+  "sourceNote": "Original Evia practice tasks mapped to course criteria. These are not official awarding-body or end-point-assessment tasks and do not produce an official grade.",
+  "tasks": [
+    {
+      "id": "ST0264SITE-P001",
+      "title": "First-fix floor joists",
+      "category": "First fix",
+      "brief": "Set out and install a section of floor joists with the specified supports, trimming and structural fixings.",
+      "timing": {
+        "shortMinutes": 75,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K22",
+        "K23",
+        "K27",
+        "S14",
+        "S15",
+        "S16"
+      ],
+      "resources": [
+        "Current drawing, specification and cutting information",
+        "Tape, square, level and marking tools",
+        "Maintained hand and power tools",
+        "Correct graded timber, fixings and ironmongery",
+        "Joist hangers, straps and structural fixings"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and RPE",
+        "Check guards, extraction and leads before using power tools",
+        "Support materials securely and keep the area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Read the structural layout and sizing information",
+          "instruction": "Read the structural layout and sizing information"
+        },
+        {
+          "id": "S2",
+          "title": "Mark joist centres and trimmed opening",
+          "instruction": "Mark joist centres and trimmed opening"
+        },
+        {
+          "id": "S3",
+          "title": "Cut and position members",
+          "instruction": "Cut and position members"
+        },
+        {
+          "id": "S4",
+          "title": "Install hangers, straps and specified fixings",
+          "instruction": "Install hangers, straps and specified fixings"
+        },
+        {
+          "id": "S5",
+          "title": "Check level, centres, bearing and stability",
+          "instruction": "Check level, centres, bearing and stability"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Support and centre-line set-out",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Trimmed opening and hidden fixings",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed floor zone before covering",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Joist centres",
+          "target": "Match the layout"
+        },
+        {
+          "label": "Bearing and hanger fit",
+          "target": "Full support with specified fixings"
+        },
+        {
+          "label": "Level and trimming",
+          "target": "Opening is square and members are aligned"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that a joist hanger has missing specified nails. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of a joist hanger has missing specified nails, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Do not cover the work; correct the support or fixing and repeat the structural checks."
+      },
+      "commonFaults": [
+        "a joist hanger has missing specified nails",
+        "the trimmed opening is out of square",
+        "a joist crown is installed inconsistently"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Mark joist centres and trimmed opening” important on this task?",
+          "guide": "Structural information controls member size, centres, supports and fixing requirements."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Measure centres, diagonals, bearing and level, then visually inspect every hidden fixing."
+        },
+        {
+          "prompt": "What would you do if a joist hanger has missing specified nails?",
+          "guide": "Do not cover the work; correct the support or fixing and repeat the structural checks."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264SITE-P002",
+      "title": "Timber stud partition",
+      "category": "First fix",
+      "brief": "Set out and construct a timber stud partition with an opening, noggins and the stated fixing details.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K21",
+        "K27",
+        "S14",
+        "S15",
+        "S21"
+      ],
+      "resources": [
+        "Current drawing, specification and cutting information",
+        "Tape, square, level and marking tools",
+        "Maintained hand and power tools",
+        "Correct graded timber, fixings and ironmongery"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and RPE",
+        "Check guards, extraction and leads before using power tools",
+        "Support materials securely and keep the area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Transfer the wall and opening positions",
+          "instruction": "Transfer the wall and opening positions"
+        },
+        {
+          "id": "S2",
+          "title": "Cut plates and mark stud centres",
+          "instruction": "Cut plates and mark stud centres"
+        },
+        {
+          "id": "S3",
+          "title": "Fix plates and end studs",
+          "instruction": "Fix plates and end studs"
+        },
+        {
+          "id": "S4",
+          "title": "Install studs, opening members and noggins",
+          "instruction": "Install studs, opening members and noggins"
+        },
+        {
+          "id": "S5",
+          "title": "Check line, plumb, centres and opening size",
+          "instruction": "Check line, plumb, centres and opening size"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Wall line and opening set-out",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Stud centres and concealed noggins",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed frame and opening dimensions",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Partition position",
+          "target": "Matches the drawing"
+        },
+        {
+          "label": "Stud centres",
+          "target": "Consistent for the lining material"
+        },
+        {
+          "label": "Opening",
+          "target": "Square, plumb and correctly sized"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the opening is narrowing toward the head. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the opening is narrowing toward the head, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop, confirm the correct line or service information and alter the frame before covering."
+      },
+      "commonFaults": [
+        "the opening is narrowing toward the head",
+        "noggins are missing at a fixing zone",
+        "the sole plate crosses a service route"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Cut plates and mark stud centres” important on this task?",
+          "guide": "Accurate transfer prevents clashes and ensures linings and fittings have the required support."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check from datums, measure centres and diagonals, and level or plumb each boundary."
+        },
+        {
+          "prompt": "What would you do if the opening is narrowing toward the head?",
+          "guide": "Stop, confirm the correct line or service information and alter the frame before covering."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264SITE-P003",
+      "title": "Door lining installation",
+      "category": "First fix",
+      "brief": "Prepare and install an internal door lining plumb, level, square and correctly sized for the selected door.",
+      "timing": {
+        "shortMinutes": 50,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K27",
+        "K28",
+        "S14",
+        "S21"
+      ],
+      "resources": [
+        "Current drawing, specification and cutting information",
+        "Tape, square, level and marking tools",
+        "Maintained hand and power tools",
+        "Correct graded timber, fixings and ironmongery"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and RPE",
+        "Check guards, extraction and leads before using power tools",
+        "Support materials securely and keep the area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Check opening, lining and door data",
+          "instruction": "Check opening, lining and door data"
+        },
+        {
+          "id": "S2",
+          "title": "Assemble and square the lining",
+          "instruction": "Assemble and square the lining"
+        },
+        {
+          "id": "S3",
+          "title": "Position with packers at fixing points",
+          "instruction": "Position with packers at fixing points"
+        },
+        {
+          "id": "S4",
+          "title": "Fix jambs and head without distortion",
+          "instruction": "Fix jambs and head without distortion"
+        },
+        {
+          "id": "S5",
+          "title": "Check diagonals, widths, plumb and floor allowance",
+          "instruction": "Check diagonals, widths, plumb and floor allowance"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Opening survey and lining assembly",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Packers and fixings before concealment",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished opening dimensions and diagonals",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Jamb plumb",
+          "target": "Checked on face and edge"
+        },
+        {
+          "label": "Head level and opening square",
+          "target": "Diagonals and widths agree"
+        },
+        {
+          "label": "Fixing and packing",
+          "target": "Secure without bowing the lining"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that a fixing pulls the jamb out of straight. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of a fixing pulls the jamb out of straight, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Release the affected fixing, repack accurately and refix before any architrave hides it."
+      },
+      "commonFaults": [
+        "a fixing pulls the jamb out of straight",
+        "the lining is too tight for the door clearance",
+        "packers are missing behind a fixing"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Assemble and square the lining” important on this task?",
+          "guide": "Surveying first confirms the lining can be installed to the required clearances without distortion."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check both jambs, head, diagonals, three opening widths and the floor-finish allowance."
+        },
+        {
+          "prompt": "What would you do if a fixing pulls the jamb out of straight?",
+          "guide": "Release the affected fixing, repack accurately and refix before any architrave hides it."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264SITE-P004",
+      "title": "Hang and fit an internal door",
+      "category": "Second fix",
+      "brief": "Fit, hinge and hang an internal door with consistent clearances and the specified latch or lock.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K11",
+        "K28",
+        "S17",
+        "S21"
+      ],
+      "resources": [
+        "Current drawing, specification and cutting information",
+        "Tape, square, level and marking tools",
+        "Maintained hand and power tools",
+        "Correct graded timber, fixings and ironmongery",
+        "Specified hinges, latch and handles",
+        "Door stand and gap gauges"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and RPE",
+        "Check guards, extraction and leads before using power tools",
+        "Support materials securely and keep the area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Check door, lining, handing and ironmongery",
+          "instruction": "Check door, lining, handing and ironmongery"
+        },
+        {
+          "id": "S2",
+          "title": "Size and mark the door from the opening",
+          "instruction": "Size and mark the door from the opening"
+        },
+        {
+          "id": "S3",
+          "title": "Set out and recess hinges",
+          "instruction": "Set out and recess hinges"
+        },
+        {
+          "id": "S4",
+          "title": "Hang and adjust clearances",
+          "instruction": "Hang and adjust clearances"
+        },
+        {
+          "id": "S5",
+          "title": "Fit latch, handles and keep, then function test",
+          "instruction": "Fit latch, handles and keep, then function test"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Door and opening survey",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Hinge positions and recesses",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed gaps, latch and operation",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Door clearances",
+          "target": "Even and suitable for the specification"
+        },
+        {
+          "label": "Hinge fit",
+          "target": "Leaves sit flush with secure fixings"
+        },
+        {
+          "label": "Operation",
+          "target": "Door swings, closes and latches without binding"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the leading edge binds on closing. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the leading edge binds on closing, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Find whether the cause is lining, hinge or door geometry and correct that cause before adjusting hardware."
+      },
+      "commonFaults": [
+        "the leading edge binds on closing",
+        "a hinge recess is too deep",
+        "the latch and keep are misaligned"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Size and mark the door from the opening” important on this task?",
+          "guide": "Correct handing and survey prevent irreversible cutting or ironmongery errors."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Use consistent gap gauges, check hinge alignment and operate the door through its full travel."
+        },
+        {
+          "prompt": "What would you do if the leading edge binds on closing?",
+          "guide": "Find whether the cause is lining, hinge or door geometry and correct that cause before adjusting hardware."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264SITE-P005",
+      "title": "Skirting and architrave",
+      "category": "Second fix",
+      "brief": "Measure, cut, scribe and fix skirting and architrave to a sample corner and doorway with neat joints.",
+      "timing": {
+        "shortMinutes": 55,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K24",
+        "K28",
+        "S17",
+        "S22"
+      ],
+      "resources": [
+        "Current drawing, specification and cutting information",
+        "Tape, square, level and marking tools",
+        "Maintained hand and power tools",
+        "Correct graded timber, fixings and ironmongery"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and RPE",
+        "Check guards, extraction and leads before using power tools",
+        "Support materials securely and keep the area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Check moisture, backgrounds and finished floor level",
+          "instruction": "Check moisture, backgrounds and finished floor level"
+        },
+        {
+          "id": "S2",
+          "title": "Mark margins and joint positions",
+          "instruction": "Mark margins and joint positions"
+        },
+        {
+          "id": "S3",
+          "title": "Cut mitres and scribes",
+          "instruction": "Cut mitres and scribes"
+        },
+        {
+          "id": "S4",
+          "title": "Dry fit and adjust",
+          "instruction": "Dry fit and adjust"
+        },
+        {
+          "id": "S5",
+          "title": "Fix, punch and complete final appearance checks",
+          "instruction": "Fix, punch and complete final appearance checks"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Margin and joint set-out",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Dry-fitted mitre and scribe",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Fixed work, joints and surface condition",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Architrave margin",
+          "target": "Consistent around the lining"
+        },
+        {
+          "label": "Mitres and scribes",
+          "target": "Close without forcing"
+        },
+        {
+          "label": "Fixing and finish",
+          "target": "Secure with minimal visible damage"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the internal skirting joint opens at the face. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the internal skirting joint opens at the face, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Remove or remake the affected component rather than filling a poorly fitted structural joint."
+      },
+      "commonFaults": [
+        "the internal skirting joint opens at the face",
+        "architrave margins vary",
+        "fixings split the moulding"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Mark margins and joint positions” important on this task?",
+          "guide": "Dry fitting confirms each joint before fixings make damage or movement harder to correct."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Inspect joints under normal light, measure margins and check the material sits flat to the background."
+        },
+        {
+          "prompt": "What would you do if the internal skirting joint opens at the face?",
+          "guide": "Remove or remake the affected component rather than filling a poorly fitted structural joint."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264SITE-P006",
+      "title": "Common rafters for a straight roof",
+      "category": "Roofing",
+      "brief": "Set out, cut and assemble common rafters with the stated pitch, birdsmouth and ridge connection.",
+      "timing": {
+        "shortMinutes": 90,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K25",
+        "S18",
+        "S20",
+        "S21"
+      ],
+      "resources": [
+        "Current drawing, specification and cutting information",
+        "Tape, square, level and marking tools",
+        "Maintained hand and power tools",
+        "Correct graded timber, fixings and ironmongery",
+        "Rafter square or roofing calculator",
+        "Structural connectors and temporary bracing"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and RPE",
+        "Check guards, extraction and leads before using power tools",
+        "Support materials securely and keep the area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Read span, pitch and structural information",
+          "instruction": "Read span, pitch and structural information"
+        },
+        {
+          "id": "S2",
+          "title": "Calculate or transfer the rafter length",
+          "instruction": "Calculate or transfer the rafter length"
+        },
+        {
+          "id": "S3",
+          "title": "Mark a full-size pattern rafter",
+          "instruction": "Mark a full-size pattern rafter"
+        },
+        {
+          "id": "S4",
+          "title": "Cut and trial fit before reproducing",
+          "instruction": "Cut and trial fit before reproducing"
+        },
+        {
+          "id": "S5",
+          "title": "Assemble and check ridge line, seat and stability",
+          "instruction": "Assemble and check ridge line, seat and stability"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Calculation and pattern marks",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Trial rafter at ridge and wall plate",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Assembled rafters and structural connections",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Rafter length and pitch",
+          "target": "Matches the roof geometry"
+        },
+        {
+          "label": "Birdsmouth",
+          "target": "Seats fully without excessive depth"
+        },
+        {
+          "label": "Ridge and pairs",
+          "target": "Aligned, plumb and consistently fixed"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the birdsmouth removes too much rafter depth. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the birdsmouth removes too much rafter depth, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop production, correct or remake the pattern and quarantine incorrect rafters."
+      },
+      "commonFaults": [
+        "the birdsmouth removes too much rafter depth",
+        "rafter pairs push the ridge out of line",
+        "the pattern error is being copied"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Calculate or transfer the rafter length” important on this task?",
+          "guide": "The pattern rafter prevents a small marking error being repeated across the whole roof."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Trial fit, check pitch and seat contact, then compare every copy back to the approved pattern."
+        },
+        {
+          "prompt": "What would you do if the birdsmouth removes too much rafter depth?",
+          "guide": "Stop production, correct or remake the pattern and quarantine incorrect rafters."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264SITE-P007",
+      "title": "Flat roof joists and firrings",
+      "category": "Roofing",
+      "brief": "Set out and install flat-roof joists and firrings to create the specified falls and perimeter details.",
+      "timing": {
+        "shortMinutes": 75,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K22",
+        "K26",
+        "S14",
+        "S15"
+      ],
+      "resources": [
+        "Current drawing, specification and cutting information",
+        "Tape, square, level and marking tools",
+        "Maintained hand and power tools",
+        "Correct graded timber, fixings and ironmongery"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and RPE",
+        "Check guards, extraction and leads before using power tools",
+        "Support materials securely and keep the area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm span, direction of fall and outlet",
+          "instruction": "Confirm span, direction of fall and outlet"
+        },
+        {
+          "id": "S2",
+          "title": "Set out supports and joist centres",
+          "instruction": "Set out supports and joist centres"
+        },
+        {
+          "id": "S3",
+          "title": "Install joists and trimming",
+          "instruction": "Install joists and trimming"
+        },
+        {
+          "id": "S4",
+          "title": "Cut or fit firrings in sequence",
+          "instruction": "Cut or fit firrings in sequence"
+        },
+        {
+          "id": "S5",
+          "title": "Check support, deck line and drainage fall",
+          "instruction": "Check support, deck line and drainage fall"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Datum, outlet and support set-out",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Joist trimming and firring sequence",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished fall before decking",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Joist support and centres",
+          "target": "Match structural information"
+        },
+        {
+          "label": "Firrings",
+          "target": "Run continuously in the correct direction"
+        },
+        {
+          "label": "Finished fall",
+          "target": "Positive fall to the outlet without hollows"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the firrings create a backfall. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the firrings create a backfall, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Correct the firring sequence or support before decking conceals the fault."
+      },
+      "commonFaults": [
+        "the firrings create a backfall",
+        "trimming fixings are incomplete",
+        "joist centres do not suit the deck edges"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Set out supports and joist centres” important on this task?",
+          "guide": "The drainage datum controls every firring and prevents water being trapped on the finished roof."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Use a laser or level from the outlet datum and check the straightedge line across each zone."
+        },
+        {
+          "prompt": "What would you do if the firrings create a backfall?",
+          "guide": "Correct the firring sequence or support before decking conceals the fault."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264SITE-P008",
+      "title": "Timber stair component and trimming",
+      "category": "First fix",
+      "brief": "Set out and fit a stair trimming or prepared stair component to the drawing, maintaining support, level and clearances.",
+      "timing": {
+        "shortMinutes": 75,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K22",
+        "K27",
+        "S14",
+        "S15",
+        "S20"
+      ],
+      "resources": [
+        "Current drawing, specification and cutting information",
+        "Tape, square, level and marking tools",
+        "Maintained hand and power tools",
+        "Correct graded timber, fixings and ironmongery"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and RPE",
+        "Check guards, extraction and leads before using power tools",
+        "Support materials securely and keep the area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm opening and stair information",
+          "instruction": "Confirm opening and stair information"
+        },
+        {
+          "id": "S2",
+          "title": "Survey supports and finished levels",
+          "instruction": "Survey supports and finished levels"
+        },
+        {
+          "id": "S3",
+          "title": "Set out trimming and connection positions",
+          "instruction": "Set out trimming and connection positions"
+        },
+        {
+          "id": "S4",
+          "title": "Fit and temporarily stabilise the component",
+          "instruction": "Fit and temporarily stabilise the component"
+        },
+        {
+          "id": "S5",
+          "title": "Install fixings and check geometry and clearance",
+          "instruction": "Install fixings and check geometry and clearance"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Opening and level survey",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Connections and temporary support",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed component, clearances and stability",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Opening dimensions",
+          "target": "Match the drawing and stair data"
+        },
+        {
+          "label": "Support and connections",
+          "target": "Full bearing with specified fixings"
+        },
+        {
+          "label": "Level, pitch and clearance",
+          "target": "Within the task requirements"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the stair component bears on an unsupported edge. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the stair component bears on an unsupported edge, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Keep the component supported, report the discrepancy and correct the structure or detail before final fixing."
+      },
+      "commonFaults": [
+        "the stair component bears on an unsupported edge",
+        "headroom is below the drawing requirement",
+        "temporary support is removed too early"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Survey supports and finished levels” important on this task?",
+          "guide": "A full survey confirms the manufactured component will fit before lifting or altering structural work."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check levels, opening diagonals, bearing, pitch and the required clearances from fixed datums."
+        },
+        {
+          "prompt": "What would you do if the stair component bears on an unsupported edge?",
+          "guide": "Keep the component supported, report the discrepancy and correct the structure or detail before final fixing."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264SITE-P009",
+      "title": "Scribed timber connection",
+      "category": "Connections",
+      "brief": "Measure, mark, cut and fit a scribed timber connection tightly to an irregular surface.",
+      "timing": {
+        "shortMinutes": 45,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K21",
+        "K24",
+        "S20",
+        "S22"
+      ],
+      "resources": [
+        "Current drawing, specification and cutting information",
+        "Tape, square, level and marking tools",
+        "Maintained hand and power tools",
+        "Correct graded timber, fixings and ironmongery"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and RPE",
+        "Check guards, extraction and leads before using power tools",
+        "Support materials securely and keep the area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Identify the fixed datum and bearing requirement",
+          "instruction": "Identify the fixed datum and bearing requirement"
+        },
+        {
+          "id": "S2",
+          "title": "Offer and temporarily position the component",
+          "instruction": "Offer and temporarily position the component"
+        },
+        {
+          "id": "S3",
+          "title": "Transfer the irregular profile",
+          "instruction": "Transfer the irregular profile"
+        },
+        {
+          "id": "S4",
+          "title": "Cut conservatively and refine the scribe",
+          "instruction": "Cut conservatively and refine the scribe"
+        },
+        {
+          "id": "S5",
+          "title": "Fit, fix and check bearing and appearance",
+          "instruction": "Fit, fix and check bearing and appearance"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Datum and initial component position",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Transferred scribe line",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Final fit, bearing and fixing",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Scribe fit",
+          "target": "Close without forcing or large filler gaps"
+        },
+        {
+          "label": "Component position",
+          "target": "Remains on datum after fitting"
+        },
+        {
+          "label": "Bearing or fixing",
+          "target": "Meets the connection detail"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that material is removed beyond the scribe line. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of material is removed beyond the scribe line, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Remake the component if required strength or appearance cannot be recovered safely."
+      },
+      "commonFaults": [
+        "material is removed beyond the scribe line",
+        "the component moves off datum while fitting",
+        "the joint fits visually but lacks bearing"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Offer and temporarily position the component” important on this task?",
+          "guide": "Conservative cutting allows controlled adjustment and protects the final fit."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Use feeler checks or light inspection along the joint and confirm datum and bearing separately."
+        },
+        {
+          "prompt": "What would you do if material is removed beyond the scribe line?",
+          "guide": "Remake the component if required strength or appearance cannot be recovered safely."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264SITE-P010",
+      "title": "Ironmongery recess and fitting",
+      "category": "Second fix",
+      "brief": "Set out, recess and fit a selected item of ironmongery flush, aligned and fully operational.",
+      "timing": {
+        "shortMinutes": 40,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K11",
+        "K21",
+        "K28",
+        "S17",
+        "S21"
+      ],
+      "resources": [
+        "Current drawing, specification and cutting information",
+        "Tape, square, level and marking tools",
+        "Maintained hand and power tools",
+        "Correct graded timber, fixings and ironmongery"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and RPE",
+        "Check guards, extraction and leads before using power tools",
+        "Support materials securely and keep the area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Check hardware, handing and manufacturer template",
+          "instruction": "Check hardware, handing and manufacturer template"
+        },
+        {
+          "id": "S2",
+          "title": "Mark centres and fixing positions",
+          "instruction": "Mark centres and fixing positions"
+        },
+        {
+          "id": "S3",
+          "title": "Form the recess in controlled stages",
+          "instruction": "Form the recess in controlled stages"
+        },
+        {
+          "id": "S4",
+          "title": "Pilot, fit and align the hardware",
+          "instruction": "Pilot, fit and align the hardware"
+        },
+        {
+          "id": "S5",
+          "title": "Operate, adjust and inspect the finished component",
+          "instruction": "Operate, adjust and inspect the finished component"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Hardware and set-out marks",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Recess before final fitting",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed fit and function test",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Recess depth",
+          "target": "Hardware sits flush without rocking"
+        },
+        {
+          "label": "Alignment",
+          "target": "Moving and receiving parts meet correctly"
+        },
+        {
+          "label": "Fixings and operation",
+          "target": "Secure and operates repeatedly"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the recess becomes too deep. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the recess becomes too deep, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Remove the hardware, find the geometric cause and correct the recess or position rather than forcing it."
+      },
+      "commonFaults": [
+        "the recess becomes too deep",
+        "fixing screws are pulling out of line",
+        "the hardware works only when forced"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Mark centres and fixing positions” important on this task?",
+          "guide": "The manufacturer template controls clearances and prevents avoidable material removal."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check flushness, alignment and operation several times before final tightening."
+        },
+        {
+          "prompt": "What would you do if the recess becomes too deep?",
+          "guide": "Remove the hardware, find the geometric cause and correct the recess or position rather than forcing it."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264SITE-P011",
+      "title": "Laser-level site set-out",
+      "category": "Setting out",
+      "brief": "Establish a site datum and use a laser level to transfer heights for a carpentry installation.",
+      "timing": {
+        "shortMinutes": 35,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K8",
+        "K29",
+        "S6",
+        "S19"
+      ],
+      "resources": [
+        "Current drawing, specification and cutting information",
+        "Tape, square, level and marking tools",
+        "Maintained hand and power tools",
+        "Correct graded timber, fixings and ironmongery",
+        "Laser level, staff and detector",
+        "Datum record sheet"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and RPE",
+        "Check guards, extraction and leads before using power tools",
+        "Support materials securely and keep the area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm the drawing datum and required levels",
+          "instruction": "Confirm the drawing datum and required levels"
+        },
+        {
+          "id": "S2",
+          "title": "Set and verify the laser on a stable position",
+          "instruction": "Set and verify the laser on a stable position"
+        },
+        {
+          "id": "S3",
+          "title": "Take an independent benchmark reading",
+          "instruction": "Take an independent benchmark reading"
+        },
+        {
+          "id": "S4",
+          "title": "Transfer and label installation marks",
+          "instruction": "Transfer and label installation marks"
+        },
+        {
+          "id": "S5",
+          "title": "Close the loop and record any discrepancy",
+          "instruction": "Close the loop and record any discrepancy"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Benchmark and laser setup",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Transferred marks at each work zone",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Closing reading and recorded levels",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Instrument verification",
+          "target": "Benchmark repeats within the task tolerance"
+        },
+        {
+          "label": "Transferred marks",
+          "target": "Clearly labelled from the same datum"
+        },
+        {
+          "label": "Closing error",
+          "target": "Within tolerance and recorded"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the closing reading does not match the benchmark. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the closing reading does not match the benchmark, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Quarantine the marks, re-establish the instrument and repeat the full transfer."
+      },
+      "commonFaults": [
+        "the closing reading does not match the benchmark",
+        "the laser is moved without rechecking",
+        "marks from different datums are mixed"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Set and verify the laser on a stable position” important on this task?",
+          "guide": "Closing the loop reveals instrument movement or reading errors before installation starts."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Return to the benchmark, compare readings and clearly label every datum and offset."
+        },
+        {
+          "prompt": "What would you do if the closing reading does not match the benchmark?",
+          "guide": "Quarantine the marks, re-establish the instrument and repeat the full transfer."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264SITE-P012",
+      "title": "Local timber repair and splice",
+      "category": "Repair",
+      "brief": "Remove a controlled section of defective timber and form a sound repair or splice to the agreed detail.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K10",
+        "K24",
+        "S20",
+        "S22"
+      ],
+      "resources": [
+        "Current drawing, specification and cutting information",
+        "Tape, square, level and marking tools",
+        "Maintained hand and power tools",
+        "Correct graded timber, fixings and ironmongery"
+      ],
+      "safetyControls": [
+        "Check the risk assessment and method statement",
+        "Wear the specified PPE and RPE",
+        "Check guards, extraction and leads before using power tools",
+        "Support materials securely and keep the area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Identify defect cause and repair extent",
+          "instruction": "Identify defect cause and repair extent"
+        },
+        {
+          "id": "S2",
+          "title": "Protect and support the existing work",
+          "instruction": "Protect and support the existing work"
+        },
+        {
+          "id": "S3",
+          "title": "Cut back to sound timber",
+          "instruction": "Cut back to sound timber"
+        },
+        {
+          "id": "S4",
+          "title": "Prepare and fit the repair piece or splice",
+          "instruction": "Prepare and fit the repair piece or splice"
+        },
+        {
+          "id": "S5",
+          "title": "Fix, treat where specified and inspect",
+          "instruction": "Fix, treat where specified and inspect"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Defect and agreed cut-back line",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Prepared sound timber and joint",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed repair, fixings and finish",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Sound substrate",
+          "target": "No defective material remains at the joint"
+        },
+        {
+          "label": "Joint fit and grain",
+          "target": "Close fit with suitable material orientation"
+        },
+        {
+          "label": "Fixing and treatment",
+          "target": "Matches the repair detail"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that decay continues beyond the agreed cut line. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of decay continues beyond the agreed cut line, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop, report the larger defect and extend the agreed repair only after approval."
+      },
+      "commonFaults": [
+        "decay continues beyond the agreed cut line",
+        "the repair piece has unsuitable moisture or grain",
+        "the splice lacks full contact"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Protect and support the existing work” important on this task?",
+          "guide": "The cause must be addressed or the new repair will be exposed to the same failure."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Probe or inspect to sound timber, dry fit the joint and verify fixings against the detail."
+        },
+        {
+          "prompt": "What would you do if decay continues beyond the agreed cut line?",
+          "guide": "Stop, report the larger defect and extend the agreed repair only after approval."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

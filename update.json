@@ -1,11 +1,11 @@
 {
-  "version": "82",
-  "title": "Discussion Coach added to ARP",
+  "version": "83",
+  "title": "Practical Coach added to ARP",
   "details": [
-    "Discussion now includes Learn, Practice and Mock Discussion modes",
-    "Every course has 24 mapped trade scenarios with four levels of correct response",
-    "Practice selects five random scenarios and explains how to strengthen each answer",
-    "Voice rehearsal includes question playback, recording, optional device transcription and assessor-style follow-up questions",
-    "All 168 discussion scenarios and their course mappings remain available offline"
+    "Practical now includes Learn the Task, Guided Rehearsal and Mock Practical modes",
+    "Every course has 12 mapped trade tasks, giving 84 practical tasks across all seven routes",
+    "Guided Rehearsal includes safety gates, work stages, camera or gallery checkpoints and recorded quality checks",
+    "Mock Practical includes short and full timers, practical questioning, readiness scoring and optional tutor verification",
+    "Saved practical progress, results and evidence remain private on the learner's device and work offline"
   ]
 }

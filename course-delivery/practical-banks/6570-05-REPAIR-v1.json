@@ -1,0 +1,1757 @@
+{
+  "eviaPracticalBank": 1,
+  "schemaVersion": 1,
+  "bankVersion": "1.0",
+  "updated": "2026-08-21",
+  "enrolmentId": "6570-05-REPAIR",
+  "courseTitle": "Repair & Maintenance",
+  "qualificationId": "6570-05",
+  "pathwayId": "repair",
+  "courseType": "nvq",
+  "tasksPerSession": 1,
+  "taskCount": 12,
+  "assessmentContext": "Use these tasks for guided workplace rehearsal and evidence preparation. Occupational competence must be confirmed through the qualification's approved assessment process.",
+  "sourceNote": "Original Evia practice tasks mapped to course criteria. These are not official awarding-body or end-point-assessment tasks and do not produce an official grade.",
+  "tasks": [
+    {
+      "id": "657005REPAIR-P001",
+      "title": "Diagnose a masonry defect",
+      "category": "Diagnosis",
+      "brief": "Inspect a masonry defect, identify likely causes and define a safe repair boundary before work starts.",
+      "timing": {
+        "shortMinutes": 40,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "690.1.1",
+        "690.2.1",
+        "690.7.1"
+      ],
+      "resources": [
+        "Current survey, drawing and repair specification",
+        "Measuring, testing and hand tools",
+        "Suitable access, protection and temporary support",
+        "Compatible repair materials and replacement masonry"
+      ],
+      "safetyControls": [
+        "Confirm the defect, stability and safe removal method",
+        "Use the specified PPE, RPE and dust controls",
+        "Protect occupants, services and surrounding finishes",
+        "Stop and report hidden defects or instability"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Review history, drawings and visible symptoms",
+          "instruction": "Review history, drawings and visible symptoms"
+        },
+        {
+          "id": "S2",
+          "title": "Make the area safe and inspect systematically",
+          "instruction": "Make the area safe and inspect systematically"
+        },
+        {
+          "id": "S3",
+          "title": "Record crack, moisture or movement patterns",
+          "instruction": "Record crack, moisture or movement patterns"
+        },
+        {
+          "id": "S4",
+          "title": "Identify likely causes and constraints",
+          "instruction": "Identify likely causes and constraints"
+        },
+        {
+          "id": "S5",
+          "title": "Agree repair extent and escalation points",
+          "instruction": "Agree repair extent and escalation points"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Initial condition",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Measured defect pattern",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Agreed repair boundary",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Defect record",
+          "target": "Location, size and pattern captured"
+        },
+        {
+          "label": "Cause assessment",
+          "target": "Considers moisture, movement, material and loading"
+        },
+        {
+          "label": "Repair boundary",
+          "target": "Agreed before disturbance"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the defect indicates possible structural movement. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the defect indicates possible structural movement, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop invasive work, make safe and refer the changed risk or suspected structural issue."
+      },
+      "commonFaults": [
+        "the defect indicates possible structural movement",
+        "the cause is hidden behind a finish",
+        "the proposed repair treats only the symptom"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Make the area safe and inspect systematically” important on this task?",
+          "guide": "A repair will fail if the active cause is not understood and controlled."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Measure and photograph the pattern, compare related areas and review site information."
+        },
+        {
+          "prompt": "What would you do if the defect indicates possible structural movement?",
+          "guide": "Stop invasive work, make safe and refer the changed risk or suspected structural issue."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005REPAIR-P002",
+      "title": "Controlled removal of damaged masonry",
+      "category": "Removal",
+      "brief": "Remove defective masonry to an agreed boundary while preserving sound adjacent work and stability.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "690.2.2",
+        "690.3.1",
+        "690.5.1"
+      ],
+      "resources": [
+        "Current survey, drawing and repair specification",
+        "Measuring, testing and hand tools",
+        "Suitable access, protection and temporary support",
+        "Compatible repair materials and replacement masonry"
+      ],
+      "safetyControls": [
+        "Confirm the defect, stability and safe removal method",
+        "Use the specified PPE, RPE and dust controls",
+        "Protect occupants, services and surrounding finishes",
+        "Stop and report hidden defects or instability"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm support, services and removal sequence",
+          "instruction": "Confirm support, services and removal sequence"
+        },
+        {
+          "id": "S2",
+          "title": "Protect surroundings and establish dust controls",
+          "instruction": "Protect surroundings and establish dust controls"
+        },
+        {
+          "id": "S3",
+          "title": "Cut out joints or defective units progressively",
+          "instruction": "Cut out joints or defective units progressively"
+        },
+        {
+          "id": "S4",
+          "title": "Monitor adjacent stability",
+          "instruction": "Monitor adjacent stability"
+        },
+        {
+          "id": "S5",
+          "title": "Clean and inspect the prepared opening",
+          "instruction": "Clean and inspect the prepared opening"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Protected work area",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Removal boundary and temporary support",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Prepared opening",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Boundary",
+          "target": "Only agreed defective work removed"
+        },
+        {
+          "label": "Stability",
+          "target": "Adjacent masonry remains supported"
+        },
+        {
+          "label": "Prepared surfaces",
+          "target": "Sound and suitable for repair"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that sound masonry begins to loosen. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of sound masonry begins to loosen, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop immediately, stabilise and report the new condition before extending work."
+      },
+      "commonFaults": [
+        "sound masonry begins to loosen",
+        "hidden reinforcement or a service is exposed",
+        "the removal grows beyond the supported zone"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Protect surroundings and establish dust controls” important on this task?",
+          "guide": "A controlled sequence limits load redistribution and secondary damage."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check support, movement and soundness after every small stage of removal."
+        },
+        {
+          "prompt": "What would you do if sound masonry begins to loosen?",
+          "guide": "Stop immediately, stabilise and report the new condition before extending work."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005REPAIR-P003",
+      "title": "Replace individual bricks or blocks",
+      "category": "Unit replacement",
+      "brief": "Replace damaged masonry units with compatible units and mortar, matching bond, line and joint profile.",
+      "timing": {
+        "shortMinutes": 50,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "690.4.1",
+        "690.4.4",
+        "690.7.2"
+      ],
+      "resources": [
+        "Current survey, drawing and repair specification",
+        "Measuring, testing and hand tools",
+        "Suitable access, protection and temporary support",
+        "Compatible repair materials and replacement masonry"
+      ],
+      "safetyControls": [
+        "Confirm the defect, stability and safe removal method",
+        "Use the specified PPE, RPE and dust controls",
+        "Protect occupants, services and surrounding finishes",
+        "Stop and report hidden defects or instability"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm replacement compatibility",
+          "instruction": "Confirm replacement compatibility"
+        },
+        {
+          "id": "S2",
+          "title": "Prepare the pocket and dampen as specified",
+          "instruction": "Prepare the pocket and dampen as specified"
+        },
+        {
+          "id": "S3",
+          "title": "Place mortar to achieve full joint fill",
+          "instruction": "Place mortar to achieve full joint fill"
+        },
+        {
+          "id": "S4",
+          "title": "Insert and align the replacement unit",
+          "instruction": "Insert and align the replacement unit"
+        },
+        {
+          "id": "S5",
+          "title": "Finish, clean and protect the repair",
+          "instruction": "Finish, clean and protect the repair"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Prepared pocket",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Replacement before joint finish",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed repair and curing protection",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Compatibility",
+          "target": "Unit and mortar suit existing work"
+        },
+        {
+          "label": "Joint fill",
+          "target": "Full beds and perpends"
+        },
+        {
+          "label": "Alignment and finish",
+          "target": "Matches surrounding bond and profile"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the replacement unit is harder or less absorbent than specified. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the replacement unit is harder or less absorbent than specified, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Remove the unsuitable replacement while workable and reinstate with approved materials."
+      },
+      "commonFaults": [
+        "the replacement unit is harder or less absorbent than specified",
+        "the back of a joint is hollow",
+        "cleaning stains adjacent faces"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Prepare the pocket and dampen as specified” important on this task?",
+          "guide": "Compatible materials reduce differential movement, trapped moisture and visual mismatch."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check unit properties, full joint fill, face alignment and joint profile."
+        },
+        {
+          "prompt": "What would you do if the replacement unit is harder or less absorbent than specified?",
+          "guide": "Remove the unsuitable replacement while workable and reinstate with approved materials."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005REPAIR-P004",
+      "title": "Repoint a masonry panel",
+      "category": "Repointing",
+      "brief": "Rake out and repoint a sample masonry panel to the agreed depth, mortar and joint profile.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "690.3.2",
+        "690.4.2",
+        "690.7.3"
+      ],
+      "resources": [
+        "Current survey, drawing and repair specification",
+        "Measuring, testing and hand tools",
+        "Suitable access, protection and temporary support",
+        "Compatible repair materials and replacement masonry"
+      ],
+      "safetyControls": [
+        "Confirm the defect, stability and safe removal method",
+        "Use the specified PPE, RPE and dust controls",
+        "Protect occupants, services and surrounding finishes",
+        "Stop and report hidden defects or instability"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm mortar and joint requirements",
+          "instruction": "Confirm mortar and joint requirements"
+        },
+        {
+          "id": "S2",
+          "title": "Protect the area and control dust",
+          "instruction": "Protect the area and control dust"
+        },
+        {
+          "id": "S3",
+          "title": "Rake out without widening arrises",
+          "instruction": "Rake out without widening arrises"
+        },
+        {
+          "id": "S4",
+          "title": "Clean and prepare joints",
+          "instruction": "Clean and prepare joints"
+        },
+        {
+          "id": "S5",
+          "title": "Compact new mortar in layers, finish and cure",
+          "instruction": "Compact new mortar in layers, finish and cure"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Existing joint and test area",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Prepared joint depth",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished panel and curing",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Rake-out depth",
+          "target": "Consistent and adequate for bond"
+        },
+        {
+          "label": "Arris condition",
+          "target": "Sound edges preserved"
+        },
+        {
+          "label": "Repointing",
+          "target": "Fully compacted and profile matched"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that raking damages brick arrises. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of raking damages brick arrises, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop the damaging method, revise tooling or control and repair only by the approved approach."
+      },
+      "commonFaults": [
+        "raking damages brick arrises",
+        "mortar is smeared over faces",
+        "joints are filled only at the surface"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Protect the area and control dust” important on this task?",
+          "guide": "Adequate depth and clean sound sides give new mortar a durable bond."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Probe joint depth, inspect arrises and compact each layer before finishing."
+        },
+        {
+          "prompt": "What would you do if raking damages brick arrises?",
+          "guide": "Stop the damaging method, revise tooling or control and repair only by the approved approach."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005REPAIR-P005",
+      "title": "Repair a crack with approved restraint",
+      "category": "Crack repair",
+      "brief": "Install an approved crack-repair or restraint system to the specified slots, spacing and embedment.",
+      "timing": {
+        "shortMinutes": 65,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "690.1.3",
+        "690.4.5",
+        "690.7.4"
+      ],
+      "resources": [
+        "Current survey, drawing and repair specification",
+        "Measuring, testing and hand tools",
+        "Suitable access, protection and temporary support",
+        "Compatible repair materials and replacement masonry"
+      ],
+      "safetyControls": [
+        "Confirm the defect, stability and safe removal method",
+        "Use the specified PPE, RPE and dust controls",
+        "Protect occupants, services and surrounding finishes",
+        "Stop and report hidden defects or instability"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm crack cause and approved detail",
+          "instruction": "Confirm crack cause and approved detail"
+        },
+        {
+          "id": "S2",
+          "title": "Mark slots and protect the area",
+          "instruction": "Mark slots and protect the area"
+        },
+        {
+          "id": "S3",
+          "title": "Cut and clean slots to size",
+          "instruction": "Cut and clean slots to size"
+        },
+        {
+          "id": "S4",
+          "title": "Install grout and restraint components",
+          "instruction": "Install grout and restraint components"
+        },
+        {
+          "id": "S5",
+          "title": "Repoint, cure and record positions",
+          "instruction": "Repoint, cure and record positions"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Crack and slot set-out",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Clean slots and installed restraint",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished repair and record",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Slot position and depth",
+          "target": "Matches system detail"
+        },
+        {
+          "label": "Embedment",
+          "target": "Continuous grout coverage"
+        },
+        {
+          "label": "Repair record",
+          "target": "Component locations retained"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the crack is still moving actively. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the crack is still moving actively, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop, protect the area and obtain revised instruction for movement or service conflict."
+      },
+      "commonFaults": [
+        "the crack is still moving actively",
+        "a slot intersects a service",
+        "restraint lacks grout coverage"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Mark slots and protect the area” important on this task?",
+          "guide": "The approved system assumes a known cause and specific load-transfer detail."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check slot geometry, cleanliness, embedment and component continuity."
+        },
+        {
+          "prompt": "What would you do if the crack is still moving actively?",
+          "guide": "Stop, protect the area and obtain revised instruction for movement or service conflict."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005REPAIR-P006",
+      "title": "Repair a damaged corner or arris",
+      "category": "Local repair",
+      "brief": "Rebuild or repair a damaged masonry corner using an approved compatible repair method.",
+      "timing": {
+        "shortMinutes": 45,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "690.4.3",
+        "690.5.2",
+        "690.7.2"
+      ],
+      "resources": [
+        "Current survey, drawing and repair specification",
+        "Measuring, testing and hand tools",
+        "Suitable access, protection and temporary support",
+        "Compatible repair materials and replacement masonry"
+      ],
+      "safetyControls": [
+        "Confirm the defect, stability and safe removal method",
+        "Use the specified PPE, RPE and dust controls",
+        "Protect occupants, services and surrounding finishes",
+        "Stop and report hidden defects or instability"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Assess damage and repair suitability",
+          "instruction": "Assess damage and repair suitability"
+        },
+        {
+          "id": "S2",
+          "title": "Remove loose material to sound edges",
+          "instruction": "Remove loose material to sound edges"
+        },
+        {
+          "id": "S3",
+          "title": "Prepare substrate and any formwork",
+          "instruction": "Prepare substrate and any formwork"
+        },
+        {
+          "id": "S4",
+          "title": "Place replacement unit or repair material",
+          "instruction": "Place replacement unit or repair material"
+        },
+        {
+          "id": "S5",
+          "title": "Shape, cure and protect the corner",
+          "instruction": "Shape, cure and protect the corner"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Damage boundary",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Prepared substrate",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished geometry and protection",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Sound preparation",
+          "target": "No loose or contaminated substrate"
+        },
+        {
+          "label": "Corner geometry",
+          "target": "Line and arris match existing work"
+        },
+        {
+          "label": "Cure and protection",
+          "target": "Follows repair-system guidance"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the repair is feathered to a weak edge. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the repair is feathered to a weak edge, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Remove weak repair material and reprepare to the approved boundary."
+      },
+      "commonFaults": [
+        "the repair is feathered to a weak edge",
+        "substrate contamination remains",
+        "formwork moves during placement"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Remove loose material to sound edges” important on this task?",
+          "guide": "A sound non-feathered boundary lets the approved material develop a durable edge."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Inspect preparation, use straightedges and verify the curing arrangement."
+        },
+        {
+          "prompt": "What would you do if the repair is feathered to a weak edge?",
+          "guide": "Remove weak repair material and reprepare to the approved boundary."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005REPAIR-P007",
+      "title": "Renew a local DPC or moisture detail",
+      "category": "Moisture repair",
+      "brief": "Repair a local damp-proof or cavity drainage detail without bridging the moisture path.",
+      "timing": {
+        "shortMinutes": 75,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "690.1.4",
+        "690.4.6",
+        "690.7.5"
+      ],
+      "resources": [
+        "Current survey, drawing and repair specification",
+        "Measuring, testing and hand tools",
+        "Suitable access, protection and temporary support",
+        "Compatible repair materials and replacement masonry"
+      ],
+      "safetyControls": [
+        "Confirm the defect, stability and safe removal method",
+        "Use the specified PPE, RPE and dust controls",
+        "Protect occupants, services and surrounding finishes",
+        "Stop and report hidden defects or instability"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm moisture route and repair detail",
+          "instruction": "Confirm moisture route and repair detail"
+        },
+        {
+          "id": "S2",
+          "title": "Expose the area in a supported sequence",
+          "instruction": "Expose the area in a supported sequence"
+        },
+        {
+          "id": "S3",
+          "title": "Clean cavity or joint interfaces",
+          "instruction": "Clean cavity or joint interfaces"
+        },
+        {
+          "id": "S4",
+          "title": "Install compatible DPC, tray or outlet detail",
+          "instruction": "Install compatible DPC, tray or outlet detail"
+        },
+        {
+          "id": "S5",
+          "title": "Test continuity and reinstate masonry",
+          "instruction": "Test continuity and reinstate masonry"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Moisture diagnosis and opening",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "New hidden detail before concealment",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Reinstated area and outlet",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Continuity",
+          "target": "No gaps or backwards falls"
+        },
+        {
+          "label": "Cavity cleanliness",
+          "target": "No mortar bridge remains"
+        },
+        {
+          "label": "Outlet",
+          "target": "Clear route to the exterior"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the new membrane is bridged. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the new membrane is bridged, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Do not conceal it; remake the faulty section and re-inspect the whole route."
+      },
+      "commonFaults": [
+        "the new membrane is bridged",
+        "a lap falls the wrong way",
+        "the outlet remains blocked"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Expose the area in a supported sequence” important on this task?",
+          "guide": "The repair must restore a continuous path that intercepts and discharges moisture."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Trace the full route visually and check laps, falls and outlets before closure."
+        },
+        {
+          "prompt": "What would you do if the new membrane is bridged?",
+          "guide": "Do not conceal it; remake the faulty section and re-inspect the whole route."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005REPAIR-P008",
+      "title": "Rebuild an unstable small section",
+      "category": "Rebuilding",
+      "brief": "Take down and rebuild an agreed small masonry section with temporary support and matching bond.",
+      "timing": {
+        "shortMinutes": 90,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "690.2.3",
+        "690.3.3",
+        "690.6.1"
+      ],
+      "resources": [
+        "Current survey, drawing and repair specification",
+        "Measuring, testing and hand tools",
+        "Suitable access, protection and temporary support",
+        "Compatible repair materials and replacement masonry"
+      ],
+      "safetyControls": [
+        "Confirm the defect, stability and safe removal method",
+        "Use the specified PPE, RPE and dust controls",
+        "Protect occupants, services and surrounding finishes",
+        "Stop and report hidden defects or instability"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm extent, loads and support",
+          "instruction": "Confirm extent, loads and support"
+        },
+        {
+          "id": "S2",
+          "title": "Label reusable units and protect interfaces",
+          "instruction": "Label reusable units and protect interfaces"
+        },
+        {
+          "id": "S3",
+          "title": "Dismantle in a stable sequence",
+          "instruction": "Dismantle in a stable sequence"
+        },
+        {
+          "id": "S4",
+          "title": "Prepare and rebuild to the original bond",
+          "instruction": "Prepare and rebuild to the original bond"
+        },
+        {
+          "id": "S5",
+          "title": "Check, cure and remove support only when authorised",
+          "instruction": "Check, cure and remove support only when authorised"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Support and dismantling boundary",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Prepared base and bond reference",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Rebuilt section before support removal",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Temporary stability",
+          "target": "Maintained throughout"
+        },
+        {
+          "label": "Bond and alignment",
+          "target": "Matches retained work"
+        },
+        {
+          "label": "Support removal",
+          "target": "Only after required cure or approval"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the retained edge becomes unstable. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the retained edge becomes unstable, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop, strengthen support and revise the agreed method before continuing."
+      },
+      "commonFaults": [
+        "the retained edge becomes unstable",
+        "the original bond cannot be matched with available units",
+        "support is scheduled for early removal"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Label reusable units and protect interfaces” important on this task?",
+          "guide": "Planned support and sequence prevent local repair from causing a larger collapse."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Monitor retained edges, check bond, line, plumb and authorised curing time."
+        },
+        {
+          "prompt": "What would you do if the retained edge becomes unstable?",
+          "guide": "Stop, strengthen support and revise the agreed method before continuing."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005REPAIR-P009",
+      "title": "Patch repair to a masonry background",
+      "category": "Surface repair",
+      "brief": "Prepare and patch a defective masonry or render background with compatible material and a sound keyed boundary.",
+      "timing": {
+        "shortMinutes": 50,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "690.4.2",
+        "690.4.7",
+        "690.5.3"
+      ],
+      "resources": [
+        "Current survey, drawing and repair specification",
+        "Measuring, testing and hand tools",
+        "Suitable access, protection and temporary support",
+        "Compatible repair materials and replacement masonry"
+      ],
+      "safetyControls": [
+        "Confirm the defect, stability and safe removal method",
+        "Use the specified PPE, RPE and dust controls",
+        "Protect occupants, services and surrounding finishes",
+        "Stop and report hidden defects or instability"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm material and defect cause",
+          "instruction": "Confirm material and defect cause"
+        },
+        {
+          "id": "S2",
+          "title": "Cut back to a sound defined edge",
+          "instruction": "Cut back to a sound defined edge"
+        },
+        {
+          "id": "S3",
+          "title": "Clean and prepare the background",
+          "instruction": "Clean and prepare the background"
+        },
+        {
+          "id": "S4",
+          "title": "Apply approved repair in controlled layers",
+          "instruction": "Apply approved repair in controlled layers"
+        },
+        {
+          "id": "S5",
+          "title": "Finish, cure and blend only as specified",
+          "instruction": "Finish, cure and blend only as specified"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Defect and cut-back",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Prepared keyed substrate",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished patch and cure",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Boundary",
+          "target": "Sound and not feather-edged"
+        },
+        {
+          "label": "Layer thickness",
+          "target": "Within system limits"
+        },
+        {
+          "label": "Finish and cure",
+          "target": "Matches specification without premature drying"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the patch is applied over dust. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the patch is applied over dust, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Remove failed material, correct the cause and repeat the approved process."
+      },
+      "commonFaults": [
+        "the patch is applied over dust",
+        "one layer exceeds allowed thickness",
+        "rapid drying causes shrinkage"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Cut back to a sound defined edge” important on this task?",
+          "guide": "Clean keyed preparation and controlled thickness support adhesion and limit shrinkage."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check substrate soundness, layer depth and curing conditions."
+        },
+        {
+          "prompt": "What would you do if the patch is applied over dust?",
+          "guide": "Remove failed material, correct the cause and repeat the approved process."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005REPAIR-P010",
+      "title": "Repair movement-joint seal",
+      "category": "Sealants",
+      "brief": "Remove failed sealant and reinstate a movement joint with the correct depth, backing and adhesion faces.",
+      "timing": {
+        "shortMinutes": 40,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "690.3.4",
+        "690.4.5",
+        "690.7.4"
+      ],
+      "resources": [
+        "Current survey, drawing and repair specification",
+        "Measuring, testing and hand tools",
+        "Suitable access, protection and temporary support",
+        "Compatible repair materials and replacement masonry"
+      ],
+      "safetyControls": [
+        "Confirm the defect, stability and safe removal method",
+        "Use the specified PPE, RPE and dust controls",
+        "Protect occupants, services and surrounding finishes",
+        "Stop and report hidden defects or instability"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm joint function and compatible system",
+          "instruction": "Confirm joint function and compatible system"
+        },
+        {
+          "id": "S2",
+          "title": "Remove failed sealant without damaging edges",
+          "instruction": "Remove failed sealant without damaging edges"
+        },
+        {
+          "id": "S3",
+          "title": "Clean and prepare adhesion faces",
+          "instruction": "Clean and prepare adhesion faces"
+        },
+        {
+          "id": "S4",
+          "title": "Install backing to control depth",
+          "instruction": "Install backing to control depth"
+        },
+        {
+          "id": "S5",
+          "title": "Apply, tool and protect new sealant",
+          "instruction": "Apply, tool and protect new sealant"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Existing joint condition",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Prepared joint and backing",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished seal profile",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Joint width and depth",
+          "target": "Within product detail"
+        },
+        {
+          "label": "Adhesion faces",
+          "target": "Clean with no three-sided bond"
+        },
+        {
+          "label": "Seal profile",
+          "target": "Continuous and correctly tooled"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that sealant bonds to the back of the joint. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of sealant bonds to the back of the joint, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Remove unsuitable material and reprep rather than applying another layer over it."
+      },
+      "commonFaults": [
+        "sealant bonds to the back of the joint",
+        "moisture or dust remains on adhesion faces",
+        "the joint is filled too shallow"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Remove failed sealant without damaging edges” important on this task?",
+          "guide": "Backing material controls seal geometry and prevents restrictive three-sided adhesion."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Measure width and depth, inspect adhesion faces and check the continuous finished profile."
+        },
+        {
+          "prompt": "What would you do if sealant bonds to the back of the joint?",
+          "guide": "Remove unsuitable material and reprep rather than applying another layer over it."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005REPAIR-P011",
+      "title": "Match replacement mortar and finish",
+      "category": "Compatibility",
+      "brief": "Produce and compare mortar or finish samples before completing a visible masonry repair.",
+      "timing": {
+        "shortMinutes": 35,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "690.1.2",
+        "690.4.1",
+        "690.7.3"
+      ],
+      "resources": [
+        "Current survey, drawing and repair specification",
+        "Measuring, testing and hand tools",
+        "Suitable access, protection and temporary support",
+        "Compatible repair materials and replacement masonry"
+      ],
+      "safetyControls": [
+        "Confirm the defect, stability and safe removal method",
+        "Use the specified PPE, RPE and dust controls",
+        "Protect occupants, services and surrounding finishes",
+        "Stop and report hidden defects or instability"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Review existing mortar and exposure",
+          "instruction": "Review existing mortar and exposure"
+        },
+        {
+          "id": "S2",
+          "title": "Select approved trial proportions",
+          "instruction": "Select approved trial proportions"
+        },
+        {
+          "id": "S3",
+          "title": "Prepare controlled sample mixes",
+          "instruction": "Prepare controlled sample mixes"
+        },
+        {
+          "id": "S4",
+          "title": "Cure and compare colour, texture and profile",
+          "instruction": "Cure and compare colour, texture and profile"
+        },
+        {
+          "id": "S5",
+          "title": "Record and use the approved sample",
+          "instruction": "Record and use the approved sample"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Existing mortar record",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Labelled sample mixes",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Approved cured comparison",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Compatibility",
+          "target": "Strength and permeability suit existing work"
+        },
+        {
+          "label": "Appearance",
+          "target": "Compared only after suitable cure"
+        },
+        {
+          "label": "Record",
+          "target": "Approved proportions and sample retained"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that a strong dense mortar is chosen only for colour. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of a strong dense mortar is chosen only for colour, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Reject the trial and produce a controlled compatible alternative."
+      },
+      "commonFaults": [
+        "a strong dense mortar is chosen only for colour",
+        "wet samples are judged too early",
+        "sample proportions are not recorded"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Select approved trial proportions” important on this task?",
+          "guide": "Compatibility matters more than immediate wet colour because movement and moisture behaviour affect durability."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Compare cured samples, texture and joint profile while retaining a clear mix record."
+        },
+        {
+          "prompt": "What would you do if a strong dense mortar is chosen only for colour?",
+          "guide": "Reject the trial and produce a controlled compatible alternative."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005REPAIR-P012",
+      "title": "Repair-area completion and handover",
+      "category": "Handover",
+      "brief": "Complete final inspection, protection, records and housekeeping for a masonry repair area.",
+      "timing": {
+        "shortMinutes": 30,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "690.5.5",
+        "690.6.2",
+        "690.7.6"
+      ],
+      "resources": [
+        "Current survey, drawing and repair specification",
+        "Measuring, testing and hand tools",
+        "Suitable access, protection and temporary support",
+        "Compatible repair materials and replacement masonry"
+      ],
+      "safetyControls": [
+        "Confirm the defect, stability and safe removal method",
+        "Use the specified PPE, RPE and dust controls",
+        "Protect occupants, services and surrounding finishes",
+        "Stop and report hidden defects or instability"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Compare repair to the agreed brief",
+          "instruction": "Compare repair to the agreed brief"
+        },
+        {
+          "id": "S2",
+          "title": "Inspect interfaces, cure and remaining risks",
+          "instruction": "Inspect interfaces, cure and remaining risks"
+        },
+        {
+          "id": "S3",
+          "title": "Clean without damaging new work",
+          "instruction": "Clean without damaging new work"
+        },
+        {
+          "id": "S4",
+          "title": "Install protection and restrictions",
+          "instruction": "Install protection and restrictions"
+        },
+        {
+          "id": "S5",
+          "title": "Record materials, checks and handover",
+          "instruction": "Record materials, checks and handover"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Final repair inspection",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Protection and clean area",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed repair record",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Repair completion",
+          "target": "All agreed work and checks recorded"
+        },
+        {
+          "label": "Protection",
+          "target": "Suitable for cure and follow-on activity"
+        },
+        {
+          "label": "Handover",
+          "target": "Outstanding risks or observations clearly reported"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that an active cause remains unreported. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of an active cause remains unreported, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Make safe, reinstate protection and report any unresolved cause or damage."
+      },
+      "commonFaults": [
+        "an active cause remains unreported",
+        "cleaning damages new joints",
+        "protection is removed before cure"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Inspect interfaces, cure and remaining risks” important on this task?",
+          "guide": "A complete record links the visible repair to its materials, cause, checks and future monitoring."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Reinspect the brief, cure, interfaces and protection while documenting exceptions."
+        },
+        {
+          "prompt": "What would you do if an active cause remains unreported?",
+          "guide": "Make safe, reinstate protection and report any unresolved cause or damage."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

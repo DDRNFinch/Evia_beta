@@ -1,0 +1,1759 @@
+{
+  "eviaPracticalBank": 1,
+  "schemaVersion": 1,
+  "bankVersion": "1.0",
+  "updated": "2026-08-21",
+  "enrolmentId": "6570-05-DRAINAGE",
+  "courseTitle": "Drainage",
+  "qualificationId": "6570-05",
+  "pathwayId": "drainage",
+  "courseType": "nvq",
+  "tasksPerSession": 1,
+  "taskCount": 12,
+  "assessmentContext": "Use these tasks for guided workplace rehearsal and evidence preparation. Occupational competence must be confirmed through the qualification's approved assessment process.",
+  "sourceNote": "Original Evia practice tasks mapped to course criteria. These are not official awarding-body or end-point-assessment tasks and do not produce an official grade.",
+  "tasks": [
+    {
+      "id": "657005DRAINAGE-P001",
+      "title": "Set out a drainage run",
+      "category": "Setting out",
+      "brief": "Transfer the drainage drawing to the work area and establish line, invert levels and required fall.",
+      "timing": {
+        "shortMinutes": 45,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "837.1.1",
+        "837.4.1",
+        "837.7.1"
+      ],
+      "resources": [
+        "Current drainage drawing, datum and specification",
+        "Laser or level, staff, line and tape",
+        "Approved excavation and compaction equipment",
+        "Specified pipes, fittings, bedding and access components"
+      ],
+      "safetyControls": [
+        "Check service information, permits and excavation controls",
+        "Use the specified PPE and safe access",
+        "Keep people clear of plant and unsupported excavations",
+        "Control water, contamination and manual handling risks"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Read route, invert and connection information",
+          "instruction": "Read route, invert and connection information"
+        },
+        {
+          "id": "S2",
+          "title": "Establish benchmark and instrument",
+          "instruction": "Establish benchmark and instrument"
+        },
+        {
+          "id": "S3",
+          "title": "Mark access points and centre line",
+          "instruction": "Mark access points and centre line"
+        },
+        {
+          "id": "S4",
+          "title": "Calculate intermediate invert levels",
+          "instruction": "Calculate intermediate invert levels"
+        },
+        {
+          "id": "S5",
+          "title": "Close the level check and record set-out",
+          "instruction": "Close the level check and record set-out"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Benchmark and route marks",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Calculated invert schedule",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Closing reading and set-out record",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Route",
+          "target": "Matches coordinated drawing"
+        },
+        {
+          "label": "Invert levels",
+          "target": "Reconcile with start, finish and fall"
+        },
+        {
+          "label": "Closing error",
+          "target": "Within task tolerance"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that calculated fall does not reach the connection level. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of calculated fall does not reach the connection level, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Quarantine the marks and obtain revised instruction for an impossible or conflicting route."
+      },
+      "commonFaults": [
+        "calculated fall does not reach the connection level",
+        "route conflicts with a service",
+        "closing reading differs from benchmark"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Establish benchmark and instrument” important on this task?",
+          "guide": "The invert schedule proves the run can achieve both the designed fall and connection levels."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Recalculate level differences, check instrument closure and compare route with service information."
+        },
+        {
+          "prompt": "What would you do if calculated fall does not reach the connection level?",
+          "guide": "Quarantine the marks and obtain revised instruction for an impossible or conflicting route."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005DRAINAGE-P002",
+      "title": "Prepare trench and bedding",
+      "category": "Groundwork",
+      "brief": "Prepare a safe trench formation and consistent bedding layer for a specified drainage pipe.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "837.2.1",
+        "837.3.1",
+        "837.4.2"
+      ],
+      "resources": [
+        "Current drainage drawing, datum and specification",
+        "Laser or level, staff, line and tape",
+        "Approved excavation and compaction equipment",
+        "Specified pipes, fittings, bedding and access components"
+      ],
+      "safetyControls": [
+        "Check service information, permits and excavation controls",
+        "Use the specified PPE and safe access",
+        "Keep people clear of plant and unsupported excavations",
+        "Control water, contamination and manual handling risks"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm excavation controls and formation level",
+          "instruction": "Confirm excavation controls and formation level"
+        },
+        {
+          "id": "S2",
+          "title": "Inspect trench stability and remove soft spots",
+          "instruction": "Inspect trench stability and remove soft spots"
+        },
+        {
+          "id": "S3",
+          "title": "Place specified bedding material",
+          "instruction": "Place specified bedding material"
+        },
+        {
+          "id": "S4",
+          "title": "Shape bedding for pipe support",
+          "instruction": "Shape bedding for pipe support"
+        },
+        {
+          "id": "S5",
+          "title": "Check line, level, thickness and access",
+          "instruction": "Check line, level, thickness and access"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Trench safety and formation",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Bedding material and thickness",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Prepared line and invert",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Formation",
+          "target": "Stable and at required depth"
+        },
+        {
+          "label": "Bedding thickness",
+          "target": "Matches specification"
+        },
+        {
+          "label": "Line and level",
+          "target": "Ready for designed invert"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that water or soft ground undermines formation. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of water or soft ground undermines formation, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop, make the excavation safe and improve formation only by the approved method."
+      },
+      "commonFaults": [
+        "water or soft ground undermines formation",
+        "bedding contains oversized material",
+        "trench access becomes unsafe"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Inspect trench stability and remove soft spots” important on this task?",
+          "guide": "Uniform formation and bedding support the pipe barrel without damaging point loads."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Probe formation, measure bedding and verify line and level along the trench."
+        },
+        {
+          "prompt": "What would you do if water or soft ground undermines formation?",
+          "guide": "Stop, make the excavation safe and improve formation only by the approved method."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005DRAINAGE-P003",
+      "title": "Lay and joint drainage pipes",
+      "category": "Pipework",
+      "brief": "Lay a pipe run to line and fall with clean, correctly oriented and fully engaged joints.",
+      "timing": {
+        "shortMinutes": 75,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "837.3.2",
+        "837.4.3",
+        "837.7.2"
+      ],
+      "resources": [
+        "Current drainage drawing, datum and specification",
+        "Laser or level, staff, line and tape",
+        "Approved excavation and compaction equipment",
+        "Specified pipes, fittings, bedding and access components"
+      ],
+      "safetyControls": [
+        "Check service information, permits and excavation controls",
+        "Use the specified PPE and safe access",
+        "Keep people clear of plant and unsupported excavations",
+        "Control water, contamination and manual handling risks"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Inspect pipes, seals and bedding",
+          "instruction": "Inspect pipes, seals and bedding"
+        },
+        {
+          "id": "S2",
+          "title": "Clean and lubricate joints as specified",
+          "instruction": "Clean and lubricate joints as specified"
+        },
+        {
+          "id": "S3",
+          "title": "Lay from the correct end and orient sockets",
+          "instruction": "Lay from the correct end and orient sockets"
+        },
+        {
+          "id": "S4",
+          "title": "Engage to the insertion mark",
+          "instruction": "Engage to the insertion mark"
+        },
+        {
+          "id": "S5",
+          "title": "Check line, invert, fall and joint support",
+          "instruction": "Check line, invert, fall and joint support"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Pipe and seal inspection",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Joint insertion before bedding covers it",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed run and invert checks",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Joint engagement",
+          "target": "At insertion mark without displaced seal"
+        },
+        {
+          "label": "Pipe fall",
+          "target": "Continuous to the design"
+        },
+        {
+          "label": "Barrel support",
+          "target": "Uniform with joint pockets as required"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that a seal rolls during insertion. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of a seal rolls during insertion, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Remove and remake the joint with a new seal if required; never force or bury it."
+      },
+      "commonFaults": [
+        "a seal rolls during insertion",
+        "a pipe creates a backfall",
+        "the socket is left unsupported incorrectly"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Clean and lubricate joints as specified” important on this task?",
+          "guide": "Clean controlled assembly protects watertightness and prevents seal displacement."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check insertion marks, feel or inspect joints and take invert readings at each pipe."
+        },
+        {
+          "prompt": "What would you do if a seal rolls during insertion?",
+          "guide": "Remove and remake the joint with a new seal if required; never force or bury it."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005DRAINAGE-P004",
+      "title": "Install an inspection chamber",
+      "category": "Access",
+      "brief": "Set out and install an inspection chamber base, channels, connections, risers and cover detail.",
+      "timing": {
+        "shortMinutes": 75,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "837.1.2",
+        "837.4.4",
+        "837.7.3"
+      ],
+      "resources": [
+        "Current drainage drawing, datum and specification",
+        "Laser or level, staff, line and tape",
+        "Approved excavation and compaction equipment",
+        "Specified pipes, fittings, bedding and access components"
+      ],
+      "safetyControls": [
+        "Check service information, permits and excavation controls",
+        "Use the specified PPE and safe access",
+        "Keep people clear of plant and unsupported excavations",
+        "Control water, contamination and manual handling risks"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm chamber location, inverts and branch angles",
+          "instruction": "Confirm chamber location, inverts and branch angles"
+        },
+        {
+          "id": "S2",
+          "title": "Prepare base and stable support",
+          "instruction": "Prepare base and stable support"
+        },
+        {
+          "id": "S3",
+          "title": "Install channel base and connections",
+          "instruction": "Install channel base and connections"
+        },
+        {
+          "id": "S4",
+          "title": "Fit risers and seals plumb",
+          "instruction": "Fit risers and seals plumb"
+        },
+        {
+          "id": "S5",
+          "title": "Complete cover support and access checks",
+          "instruction": "Complete cover support and access checks"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Chamber set-out and invert",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Hidden connections and seals",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed riser and cover level",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Channel and branch flow",
+          "target": "Smooth through the chamber"
+        },
+        {
+          "label": "Riser plumb and seals",
+          "target": "Fully seated and accessible"
+        },
+        {
+          "label": "Cover level and support",
+          "target": "Matches finish and load requirement"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that a branch enters against the channel flow. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of a branch enters against the channel flow, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Reconfigure the connection before backfill; do not accept a forced branch."
+      },
+      "commonFaults": [
+        "a branch enters against the channel flow",
+        "a riser seal is pinched",
+        "cover support bears incorrectly on the chamber"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Prepare base and stable support” important on this task?",
+          "guide": "Correct channels and branch angles maintain flow and future rodding access."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Inspect every seal, pour or trace flow and check riser plumb and cover support."
+        },
+        {
+          "prompt": "What would you do if a branch enters against the channel flow?",
+          "guide": "Reconfigure the connection before backfill; do not accept a forced branch."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005DRAINAGE-P005",
+      "title": "Form a branch connection",
+      "category": "Connections",
+      "brief": "Install an approved drainage branch or junction with the correct direction, angle, support and access.",
+      "timing": {
+        "shortMinutes": 55,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "837.4.3",
+        "837.4.5",
+        "837.7.3"
+      ],
+      "resources": [
+        "Current drainage drawing, datum and specification",
+        "Laser or level, staff, line and tape",
+        "Approved excavation and compaction equipment",
+        "Specified pipes, fittings, bedding and access components"
+      ],
+      "safetyControls": [
+        "Check service information, permits and excavation controls",
+        "Use the specified PPE and safe access",
+        "Keep people clear of plant and unsupported excavations",
+        "Control water, contamination and manual handling risks"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm connection point and flow direction",
+          "instruction": "Confirm connection point and flow direction"
+        },
+        {
+          "id": "S2",
+          "title": "Expose and support existing pipe if applicable",
+          "instruction": "Expose and support existing pipe if applicable"
+        },
+        {
+          "id": "S3",
+          "title": "Prepare approved fitting or connection",
+          "instruction": "Prepare approved fitting or connection"
+        },
+        {
+          "id": "S4",
+          "title": "Assemble and align branch",
+          "instruction": "Assemble and align branch"
+        },
+        {
+          "id": "S5",
+          "title": "Check seals, fall, support and rodding route",
+          "instruction": "Check seals, fall, support and rodding route"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Connection set-out",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Prepared pipe and fitting",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed branch before backfill",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Flow direction",
+          "target": "Branch sweeps with the run"
+        },
+        {
+          "label": "Joint and support",
+          "target": "Fully sealed and uniformly supported"
+        },
+        {
+          "label": "Access",
+          "target": "Can be cleared as designed"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the branch faces against flow. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the branch faces against flow, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop and use the correct fitting or revised approved detail."
+      },
+      "commonFaults": [
+        "the branch faces against flow",
+        "an existing pipe is left unsupported",
+        "the connection removes rodding access"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Expose and support existing pipe if applicable” important on this task?",
+          "guide": "Branch orientation reduces turbulence and blockage risk while preserving maintainability."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check arrows or geometry, insertion marks, fall and the full rodding path."
+        },
+        {
+          "prompt": "What would you do if the branch faces against flow?",
+          "guide": "Stop and use the correct fitting or revised approved detail."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005DRAINAGE-P006",
+      "title": "Connect to an existing drain",
+      "category": "Connections",
+      "brief": "Expose, verify and make an approved connection to an existing drainage run while controlling contamination and flow.",
+      "timing": {
+        "shortMinutes": 75,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "837.2.2",
+        "837.3.3",
+        "837.4.5"
+      ],
+      "resources": [
+        "Current drainage drawing, datum and specification",
+        "Laser or level, staff, line and tape",
+        "Approved excavation and compaction equipment",
+        "Specified pipes, fittings, bedding and access components"
+      ],
+      "safetyControls": [
+        "Check service information, permits and excavation controls",
+        "Use the specified PPE and safe access",
+        "Keep people clear of plant and unsupported excavations",
+        "Control water, contamination and manual handling risks"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm permit, pipe identity and isolation plan",
+          "instruction": "Confirm permit, pipe identity and isolation plan"
+        },
+        {
+          "id": "S2",
+          "title": "Expose and support the existing pipe",
+          "instruction": "Expose and support the existing pipe"
+        },
+        {
+          "id": "S3",
+          "title": "Verify level, material and condition",
+          "instruction": "Verify level, material and condition"
+        },
+        {
+          "id": "S4",
+          "title": "Make the approved connection",
+          "instruction": "Make the approved connection"
+        },
+        {
+          "id": "S5",
+          "title": "Test, reinstate flow and record the connection",
+          "instruction": "Test, reinstate flow and record the connection"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Existing service identification",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Supported cut and fitting",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed tested connection",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Pipe identity and condition",
+          "target": "Confirmed before cutting"
+        },
+        {
+          "label": "Connection",
+          "target": "Compatible, aligned and sealed"
+        },
+        {
+          "label": "Flow control",
+          "target": "Restored safely with no leakage"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the pipe differs from records. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the pipe differs from records, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop, isolate or control the area and obtain revised instruction."
+      },
+      "commonFaults": [
+        "the pipe differs from records",
+        "uncontrolled flow enters the work",
+        "existing material fractures beyond the cut"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Expose and support the existing pipe” important on this task?",
+          "guide": "Verification prevents cutting the wrong service or applying an incompatible connection."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check material, diameter, invert, flow and condition before alteration."
+        },
+        {
+          "prompt": "What would you do if the pipe differs from records?",
+          "guide": "Stop, isolate or control the area and obtain revised instruction."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005DRAINAGE-P007",
+      "title": "Install a rodding point or access fitting",
+      "category": "Access",
+      "brief": "Position and install a rodding point or access fitting that permits safe clearing in the direction of flow.",
+      "timing": {
+        "shortMinutes": 45,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "837.1.3",
+        "837.4.4",
+        "837.7.4"
+      ],
+      "resources": [
+        "Current drainage drawing, datum and specification",
+        "Laser or level, staff, line and tape",
+        "Approved excavation and compaction equipment",
+        "Specified pipes, fittings, bedding and access components"
+      ],
+      "safetyControls": [
+        "Check service information, permits and excavation controls",
+        "Use the specified PPE and safe access",
+        "Keep people clear of plant and unsupported excavations",
+        "Control water, contamination and manual handling risks"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Review maintenance route and finished level",
+          "instruction": "Review maintenance route and finished level"
+        },
+        {
+          "id": "S2",
+          "title": "Set out access position and orientation",
+          "instruction": "Set out access position and orientation"
+        },
+        {
+          "id": "S3",
+          "title": "Install fitting and supported connection",
+          "instruction": "Install fitting and supported connection"
+        },
+        {
+          "id": "S4",
+          "title": "Build riser or cover detail",
+          "instruction": "Build riser or cover detail"
+        },
+        {
+          "id": "S5",
+          "title": "Check accessibility, seal and rodding direction",
+          "instruction": "Check accessibility, seal and rodding direction"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Access set-out",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Hidden connection and orientation",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed accessible cover",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Rodding direction",
+          "target": "Provides access along the intended run"
+        },
+        {
+          "label": "Cover level",
+          "target": "Accessible and suitable for location"
+        },
+        {
+          "label": "Seal and support",
+          "target": "Secure without stressing pipe"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the access faces the wrong direction. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the access faces the wrong direction, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Reorient or relocate to the approved accessible position before reinstatement."
+      },
+      "commonFaults": [
+        "the access faces the wrong direction",
+        "finished work will bury the cover",
+        "riser loads the branch connection"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Set out access position and orientation” important on this task?",
+          "guide": "Access must remain usable after surfaces and landscaping are complete."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Simulate the rodding route and check cover position against finished levels."
+        },
+        {
+          "prompt": "What would you do if the access faces the wrong direction?",
+          "guide": "Reorient or relocate to the approved accessible position before reinstatement."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005DRAINAGE-P008",
+      "title": "Backfill and compact a pipe trench",
+      "category": "Backfilling",
+      "brief": "Place sidefill, surround and backfill in the specified sequence without moving or damaging the drainage run.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "837.4.6",
+        "837.5.1",
+        "837.7.5"
+      ],
+      "resources": [
+        "Current drainage drawing, datum and specification",
+        "Laser or level, staff, line and tape",
+        "Approved excavation and compaction equipment",
+        "Specified pipes, fittings, bedding and access components"
+      ],
+      "safetyControls": [
+        "Check service information, permits and excavation controls",
+        "Use the specified PPE and safe access",
+        "Keep people clear of plant and unsupported excavations",
+        "Control water, contamination and manual handling risks"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Obtain pre-backfill inspection",
+          "instruction": "Obtain pre-backfill inspection"
+        },
+        {
+          "id": "S2",
+          "title": "Place selected material evenly at pipe sides",
+          "instruction": "Place selected material evenly at pipe sides"
+        },
+        {
+          "id": "S3",
+          "title": "Compact haunch and surround as specified",
+          "instruction": "Compact haunch and surround as specified"
+        },
+        {
+          "id": "S4",
+          "title": "Place layers using permitted equipment",
+          "instruction": "Place layers using permitted equipment"
+        },
+        {
+          "id": "S5",
+          "title": "Recheck line, level and surface condition",
+          "instruction": "Recheck line, level and surface condition"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Pre-backfill pipe inspection",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Sidefill and surround",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed layered backfill",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Selected material",
+          "target": "Suitable around pipe"
+        },
+        {
+          "label": "Compaction sequence",
+          "target": "Even and within layer limits"
+        },
+        {
+          "label": "Pipe position",
+          "target": "No movement or damage after backfill"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that compaction equipment is used too close to pipe. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of compaction equipment is used too close to pipe, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop, expose and recheck any section that may have moved or been damaged."
+      },
+      "commonFaults": [
+        "compaction equipment is used too close to pipe",
+        "large material contacts the pipe",
+        "one side is filled ahead of the other"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Place selected material evenly at pipe sides” important on this task?",
+          "guide": "Balanced selected sidefill prevents pipe displacement and creates uniform support."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Inspect material, layer depth and pipe position throughout the sequence."
+        },
+        {
+          "prompt": "What would you do if compaction equipment is used too close to pipe?",
+          "guide": "Stop, expose and recheck any section that may have moved or been damaged."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005DRAINAGE-P009",
+      "title": "Test a drainage installation",
+      "category": "Testing",
+      "brief": "Complete the specified drainage test, record results and inspect joints or access points for defects.",
+      "timing": {
+        "shortMinutes": 45,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "837.2.3",
+        "837.5.2",
+        "837.7.6"
+      ],
+      "resources": [
+        "Current drainage drawing, datum and specification",
+        "Laser or level, staff, line and tape",
+        "Approved excavation and compaction equipment",
+        "Specified pipes, fittings, bedding and access components",
+        "Approved drainage test equipment",
+        "Test record sheet"
+      ],
+      "safetyControls": [
+        "Check service information, permits and excavation controls",
+        "Use the specified PPE and safe access",
+        "Keep people clear of plant and unsupported excavations",
+        "Control water, contamination and manual handling risks"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm test method, limits and isolation",
+          "instruction": "Confirm test method, limits and isolation"
+        },
+        {
+          "id": "S2",
+          "title": "Inspect and prepare test section",
+          "instruction": "Inspect and prepare test section"
+        },
+        {
+          "id": "S3",
+          "title": "Apply test safely and stabilise",
+          "instruction": "Apply test safely and stabilise"
+        },
+        {
+          "id": "S4",
+          "title": "Monitor for the required period",
+          "instruction": "Monitor for the required period"
+        },
+        {
+          "id": "S5",
+          "title": "Record result, release safely and report defects",
+          "instruction": "Record result, release safely and report defects"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Test section and equipment",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Stable test reading",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed result and defect record",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Test setup",
+          "target": "Correct section, plugs and equipment"
+        },
+        {
+          "label": "Result",
+          "target": "Meets stated limit for required period"
+        },
+        {
+          "label": "Safe release",
+          "target": "Pressure or water removed controllably"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that a plug is insecure. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of a plug is insecure, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop, release safely, locate the defect and retest after correction."
+      },
+      "commonFaults": [
+        "a plug is insecure",
+        "the reading drops outside tolerance",
+        "pressure is released toward people"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Inspect and prepare test section” important on this task?",
+          "guide": "A controlled stable test distinguishes installation leakage from poor test setup."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Verify equipment, stabilisation time, readings and visible joints."
+        },
+        {
+          "prompt": "What would you do if a plug is insecure?",
+          "guide": "Stop, release safely, locate the defect and retest after correction."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005DRAINAGE-P010",
+      "title": "Find and correct a drainage fault",
+      "category": "Fault finding",
+      "brief": "Use observations and test results to locate a drainage fault, complete an approved correction and retest.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "837.5.2",
+        "837.5.4",
+        "837.7.6"
+      ],
+      "resources": [
+        "Current drainage drawing, datum and specification",
+        "Laser or level, staff, line and tape",
+        "Approved excavation and compaction equipment",
+        "Specified pipes, fittings, bedding and access components"
+      ],
+      "safetyControls": [
+        "Check service information, permits and excavation controls",
+        "Use the specified PPE and safe access",
+        "Keep people clear of plant and unsupported excavations",
+        "Control water, contamination and manual handling risks"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Review symptoms, route and previous results",
+          "instruction": "Review symptoms, route and previous results"
+        },
+        {
+          "id": "S2",
+          "title": "Isolate the smallest testable section",
+          "instruction": "Isolate the smallest testable section"
+        },
+        {
+          "id": "S3",
+          "title": "Inspect likely joints, levels and obstructions",
+          "instruction": "Inspect likely joints, levels and obstructions"
+        },
+        {
+          "id": "S4",
+          "title": "Complete approved correction",
+          "instruction": "Complete approved correction"
+        },
+        {
+          "id": "S5",
+          "title": "Retest and record cause and result",
+          "instruction": "Retest and record cause and result"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Fault information and isolated section",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Exposed identified cause",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Corrected retest result",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Diagnosis",
+          "target": "Supported by measurements or test evidence"
+        },
+        {
+          "label": "Correction",
+          "target": "Addresses cause, not only symptom"
+        },
+        {
+          "label": "Retest",
+          "target": "Pass result recorded"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the suspected fault location is assumed without evidence. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the suspected fault location is assumed without evidence, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Continue diagnosis and do not reinstate until the corrected section passes."
+      },
+      "commonFaults": [
+        "the suspected fault location is assumed without evidence",
+        "a backfall remains after joint repair",
+        "the system is closed without retest"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Isolate the smallest testable section” important on this task?",
+          "guide": "Sectional testing narrows the cause without unnecessary excavation."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Compare invert readings, flow observations and test sections before opening work."
+        },
+        {
+          "prompt": "What would you do if the suspected fault location is assumed without evidence?",
+          "guide": "Continue diagnosis and do not reinstate until the corrected section passes."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005DRAINAGE-P011",
+      "title": "Drainage crossing and service interface",
+      "category": "Interfaces",
+      "brief": "Construct an approved drainage crossing or interface while maintaining separation, support and access.",
+      "timing": {
+        "shortMinutes": 55,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "837.1.4",
+        "837.3.4",
+        "837.7.4"
+      ],
+      "resources": [
+        "Current drainage drawing, datum and specification",
+        "Laser or level, staff, line and tape",
+        "Approved excavation and compaction equipment",
+        "Specified pipes, fittings, bedding and access components"
+      ],
+      "safetyControls": [
+        "Check service information, permits and excavation controls",
+        "Use the specified PPE and safe access",
+        "Keep people clear of plant and unsupported excavations",
+        "Control water, contamination and manual handling risks"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Review coordinated service information",
+          "instruction": "Review coordinated service information"
+        },
+        {
+          "id": "S2",
+          "title": "Expose or verify crossing levels",
+          "instruction": "Expose or verify crossing levels"
+        },
+        {
+          "id": "S3",
+          "title": "Confirm required separation and protection",
+          "instruction": "Confirm required separation and protection"
+        },
+        {
+          "id": "S4",
+          "title": "Install support or protection detail",
+          "instruction": "Install support or protection detail"
+        },
+        {
+          "id": "S5",
+          "title": "Record levels and inspect before covering",
+          "instruction": "Record levels and inspect before covering"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Service survey and crossing set-out",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Protection and support detail",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed recorded crossing",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Separation",
+          "target": "Meets coordinated requirement"
+        },
+        {
+          "label": "Support",
+          "target": "Neither service is undermined or point loaded"
+        },
+        {
+          "label": "Record",
+          "target": "Actual position and level retained"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that required separation cannot be achieved. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of required separation cannot be achieved, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop and obtain a coordinated revised detail before covering."
+      },
+      "commonFaults": [
+        "required separation cannot be achieved",
+        "one service is left unsupported",
+        "the crossing blocks future access"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Expose or verify crossing levels” important on this task?",
+          "guide": "Coordinated separation and support protect both systems from damage and maintenance conflicts."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Measure actual levels and clearances and inspect bearing on both sides."
+        },
+        {
+          "prompt": "What would you do if required separation cannot be achieved?",
+          "guide": "Stop and obtain a coordinated revised detail before covering."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "657005DRAINAGE-P012",
+      "title": "Drainage completion and handover",
+      "category": "Handover",
+      "brief": "Complete final testing, records, protection and housekeeping for a drainage work area.",
+      "timing": {
+        "shortMinutes": 35,
+        "fullMinutes": 180
+      },
+      "mapsTo": [
+        "837.5.5",
+        "837.6.2",
+        "837.7.8"
+      ],
+      "resources": [
+        "Current drainage drawing, datum and specification",
+        "Laser or level, staff, line and tape",
+        "Approved excavation and compaction equipment",
+        "Specified pipes, fittings, bedding and access components"
+      ],
+      "safetyControls": [
+        "Check service information, permits and excavation controls",
+        "Use the specified PPE and safe access",
+        "Keep people clear of plant and unsupported excavations",
+        "Control water, contamination and manual handling risks"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Reconcile installed route with drawing",
+          "instruction": "Reconcile installed route with drawing"
+        },
+        {
+          "id": "S2",
+          "title": "Confirm tests and inspections are complete",
+          "instruction": "Confirm tests and inspections are complete"
+        },
+        {
+          "id": "S3",
+          "title": "Check covers, falls and surface reinstatement",
+          "instruction": "Check covers, falls and surface reinstatement"
+        },
+        {
+          "id": "S4",
+          "title": "Clean and protect access points",
+          "instruction": "Clean and protect access points"
+        },
+        {
+          "id": "S5",
+          "title": "Record as-built information and handover",
+          "instruction": "Record as-built information and handover"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Final route and cover inspection",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Test and as-built records",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Safe completed area",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Testing",
+          "target": "Required results complete"
+        },
+        {
+          "label": "As-built record",
+          "target": "Route, levels and access points captured"
+        },
+        {
+          "label": "Handover condition",
+          "target": "Safe, clean and protected"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that an access point is omitted from records. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of an access point is omitted from records, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Keep the area controlled and close failed or missing items before handover."
+      },
+      "commonFaults": [
+        "an access point is omitted from records",
+        "a cover is left below unsafe surface level",
+        "a failed test remains open"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Confirm tests and inspections are complete” important on this task?",
+          "guide": "As-built records allow future maintenance without unsafe or unnecessary excavation."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Cross-check every access point, test result, invert and finished level."
+        },
+        {
+          "prompt": "What would you do if an access point is omitted from records?",
+          "guide": "Keep the area controlled and close failed or missing items before handover."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

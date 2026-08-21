@@ -1,0 +1,1775 @@
+{
+  "eviaPracticalBank": 1,
+  "schemaVersion": 1,
+  "bankVersion": "1.0",
+  "updated": "2026-08-21",
+  "enrolmentId": "ST0264-AJ",
+  "courseTitle": "Architectural Joiner",
+  "qualificationId": "ST0264",
+  "pathwayId": "architectural-joiner",
+  "courseType": "apprenticeship",
+  "tasksPerSession": 1,
+  "taskCount": 12,
+  "assessmentContext": "The current apprenticeship uses an observed practical assessment with questions. Evia provides route-specific preparation and rehearsal, not an official assessment result.",
+  "sourceNote": "Original Evia practice tasks mapped to course criteria. These are not official awarding-body or end-point-assessment tasks and do not produce an official grade.",
+  "tasks": [
+    {
+      "id": "ST0264AJ-P001",
+      "title": "Produce a setting rod",
+      "category": "Setting out",
+      "brief": "Produce a full-size setting rod for a joinery component, showing overall sizes, joints, sections and key reference faces.",
+      "timing": {
+        "shortMinutes": 50,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K8",
+        "K32",
+        "S6",
+        "S23"
+      ],
+      "resources": [
+        "Current drawing, specification and setting-out information",
+        "Setting rod, square, gauges and marking tools",
+        "Maintained hand tools and approved machinery",
+        "Correct timber, components, adhesive and ironmongery",
+        "Straight setting rod material",
+        "Sharp pencil or knife and gauges"
+      ],
+      "safetyControls": [
+        "Check the workshop risk assessment and machine instructions",
+        "Wear the specified PPE and use extraction",
+        "Check guards, stops and emergency controls before machining",
+        "Keep components supported and the bench area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Read the drawing and identify finished sizes",
+          "instruction": "Read the drawing and identify finished sizes"
+        },
+        {
+          "id": "S2",
+          "title": "Select a straight stable rod and establish datum",
+          "instruction": "Select a straight stable rod and establish datum"
+        },
+        {
+          "id": "S3",
+          "title": "Draw elevations and sections full size",
+          "instruction": "Draw elevations and sections full size"
+        },
+        {
+          "id": "S4",
+          "title": "Mark joints, shoulders and reference faces",
+          "instruction": "Mark joints, shoulders and reference faces"
+        },
+        {
+          "id": "S5",
+          "title": "Cross-check dimensions and label the rod",
+          "instruction": "Cross-check dimensions and label the rod"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Datum and overall sizes",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Joint and section set-out",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed labelled rod checked to drawing",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Overall dimensions",
+          "target": "Agree with the drawing"
+        },
+        {
+          "label": "Joint positions",
+          "target": "Related consistently to datum faces"
+        },
+        {
+          "label": "Line accuracy",
+          "target": "Fine, square and clearly labelled"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that joint marks are taken from different datums. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of joint marks are taken from different datums, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Correct the rod before any timber is marked or machined from it."
+      },
+      "commonFaults": [
+        "joint marks are taken from different datums",
+        "a finished size is confused with a cutting size",
+        "the rod lacks reference-face marks"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Select a straight stable rod and establish datum” important on this task?",
+          "guide": "One datum prevents cumulative errors as details are transferred to components."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Reconcile overall and chain dimensions, then check joints from the same face and edge."
+        },
+        {
+          "prompt": "What would you do if joint marks are taken from different datums?",
+          "guide": "Correct the rod before any timber is marked or machined from it."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264AJ-P002",
+      "title": "Mortise-and-tenon joint",
+      "category": "Timber joints",
+      "brief": "Mark out, cut and fit a mortise-and-tenon joint to the stated shoulders, haunch and finished section.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K33",
+        "S9",
+        "S24"
+      ],
+      "resources": [
+        "Current drawing, specification and setting-out information",
+        "Setting rod, square, gauges and marking tools",
+        "Maintained hand tools and approved machinery",
+        "Correct timber, components, adhesive and ironmongery"
+      ],
+      "safetyControls": [
+        "Check the workshop risk assessment and machine instructions",
+        "Wear the specified PPE and use extraction",
+        "Check guards, stops and emergency controls before machining",
+        "Keep components supported and the bench area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Select and face-mark the components",
+          "instruction": "Select and face-mark the components"
+        },
+        {
+          "id": "S2",
+          "title": "Gauge mortise and tenon from reference faces",
+          "instruction": "Gauge mortise and tenon from reference faces"
+        },
+        {
+          "id": "S3",
+          "title": "Cut the mortise in controlled stages",
+          "instruction": "Cut the mortise in controlled stages"
+        },
+        {
+          "id": "S4",
+          "title": "Saw tenon cheeks and shoulders",
+          "instruction": "Saw tenon cheeks and shoulders"
+        },
+        {
+          "id": "S5",
+          "title": "Trial fit, adjust and check squareness",
+          "instruction": "Trial fit, adjust and check squareness"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Face marks and gauged joint",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Joint surfaces before assembly",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Dry-fitted joint and shoulder closure",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Joint position",
+          "target": "Matches the setting rod"
+        },
+        {
+          "label": "Fit",
+          "target": "Firm without splitting or excessive force"
+        },
+        {
+          "label": "Shoulders and square",
+          "target": "Close and component remains square"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the tenon is loose on one cheek. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the tenon is loose on one cheek, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Identify the high point and pare only where needed; remake a component if strength is compromised."
+      },
+      "commonFaults": [
+        "the tenon is loose on one cheek",
+        "shoulders do not close evenly",
+        "the mortise breaks through the face"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Gauge mortise and tenon from reference faces” important on this task?",
+          "guide": "Reference faces make both halves of the joint relate to the same finished surfaces."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Dry fit without glue, inspect shoulder closure and check the assembly for square."
+        },
+        {
+          "prompt": "What would you do if the tenon is loose on one cheek?",
+          "guide": "Identify the high point and pare only where needed; remake a component if strength is compromised."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264AJ-P003",
+      "title": "Casement window section",
+      "category": "Timber windows",
+      "brief": "Set out, manufacture and dry assemble a small casement window or representative frame-and-sash section.",
+      "timing": {
+        "shortMinutes": 90,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K34",
+        "K35",
+        "S25",
+        "S26"
+      ],
+      "resources": [
+        "Current drawing, specification and setting-out information",
+        "Setting rod, square, gauges and marking tools",
+        "Maintained hand tools and approved machinery",
+        "Correct timber, components, adhesive and ironmongery",
+        "Window section cutters or approved machinery",
+        "Assembly cramps and diagonal battens"
+      ],
+      "safetyControls": [
+        "Check the workshop risk assessment and machine instructions",
+        "Wear the specified PPE and use extraction",
+        "Check guards, stops and emergency controls before machining",
+        "Keep components supported and the bench area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Interpret the setting rod and component list",
+          "instruction": "Interpret the setting rod and component list"
+        },
+        {
+          "id": "S2",
+          "title": "Mark and machine frame and sash sections",
+          "instruction": "Mark and machine frame and sash sections"
+        },
+        {
+          "id": "S3",
+          "title": "Form joints and drainage or rebate details",
+          "instruction": "Form joints and drainage or rebate details"
+        },
+        {
+          "id": "S4",
+          "title": "Dry assemble frame and sash",
+          "instruction": "Dry assemble frame and sash"
+        },
+        {
+          "id": "S5",
+          "title": "Check diagonals, clearances and operation",
+          "instruction": "Check diagonals, clearances and operation"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Component marks and machined sections",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Joints and hidden drainage details",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Dry assembly, diagonals and sash clearance",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Frame diagonals",
+          "target": "Equal within the task tolerance"
+        },
+        {
+          "label": "Section and rebate",
+          "target": "Continuous and correctly oriented"
+        },
+        {
+          "label": "Sash clearance",
+          "target": "Even and allows operation"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the frame is pulled out of square during assembly. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the frame is pulled out of square during assembly, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Release clamps, correct the joint or component orientation and repeat the dry assembly."
+      },
+      "commonFaults": [
+        "the frame is pulled out of square during assembly",
+        "a drainage detail is reversed",
+        "sash clearance closes at one corner"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Mark and machine frame and sash sections” important on this task?",
+          "guide": "Dry assembly proves geometry and component orientation before adhesive makes correction difficult."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Measure diagonals, inspect continuous rebates and test the sash through its movement."
+        },
+        {
+          "prompt": "What would you do if the frame is pulled out of square during assembly?",
+          "guide": "Release clamps, correct the joint or component orientation and repeat the dry assembly."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264AJ-P004",
+      "title": "Door frame manufacture",
+      "category": "First-fix manufacture",
+      "brief": "Manufacture and assemble a timber door frame or lining with the specified joints, rebates and opening dimensions.",
+      "timing": {
+        "shortMinutes": 80,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K36",
+        "S23",
+        "S25",
+        "S27"
+      ],
+      "resources": [
+        "Current drawing, specification and setting-out information",
+        "Setting rod, square, gauges and marking tools",
+        "Maintained hand tools and approved machinery",
+        "Correct timber, components, adhesive and ironmongery"
+      ],
+      "safetyControls": [
+        "Check the workshop risk assessment and machine instructions",
+        "Wear the specified PPE and use extraction",
+        "Check guards, stops and emergency controls before machining",
+        "Keep components supported and the bench area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Set out from the rod and cutting list",
+          "instruction": "Set out from the rod and cutting list"
+        },
+        {
+          "id": "S2",
+          "title": "Prepare stiles, head and any threshold",
+          "instruction": "Prepare stiles, head and any threshold"
+        },
+        {
+          "id": "S3",
+          "title": "Form joints and rebates",
+          "instruction": "Form joints and rebates"
+        },
+        {
+          "id": "S4",
+          "title": "Dry assemble and verify opening",
+          "instruction": "Dry assemble and verify opening"
+        },
+        {
+          "id": "S5",
+          "title": "Glue or fix, cramp square and complete checks",
+          "instruction": "Glue or fix, cramp square and complete checks"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Prepared components and reference marks",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Joints and rebates before assembly",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Assembled frame, diagonals and opening size",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Opening dimensions",
+          "target": "Allow for the specified door and clearances"
+        },
+        {
+          "label": "Rebate",
+          "target": "Continuous and correctly handed"
+        },
+        {
+          "label": "Assembly square",
+          "target": "Diagonals agree and joints close"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the rebate is machined on the wrong face. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the rebate is machined on the wrong face, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop assembly, identify the incorrect component and remake it before adhesive cures."
+      },
+      "commonFaults": [
+        "the rebate is machined on the wrong face",
+        "the opening is undersize",
+        "cramping closes one joint but racks the frame"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Prepare stiles, head and any threshold” important on this task?",
+          "guide": "Handing and reference marks protect the component orientation throughout machining and assembly."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Compare the dry opening to the rod, check rebates, joint closure and diagonals."
+        },
+        {
+          "prompt": "What would you do if the rebate is machined on the wrong face?",
+          "guide": "Stop assembly, identify the incorrect component and remake it before adhesive cures."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264AJ-P005",
+      "title": "Panelled door assembly",
+      "category": "Second-fix manufacture",
+      "brief": "Set out, manufacture and dry assemble a small framed-and-panelled door or representative section.",
+      "timing": {
+        "shortMinutes": 90,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K33",
+        "K37",
+        "S24",
+        "S28"
+      ],
+      "resources": [
+        "Current drawing, specification and setting-out information",
+        "Setting rod, square, gauges and marking tools",
+        "Maintained hand tools and approved machinery",
+        "Correct timber, components, adhesive and ironmongery"
+      ],
+      "safetyControls": [
+        "Check the workshop risk assessment and machine instructions",
+        "Wear the specified PPE and use extraction",
+        "Check guards, stops and emergency controls before machining",
+        "Keep components supported and the bench area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Read the setting rod and identify component faces",
+          "instruction": "Read the setting rod and identify component faces"
+        },
+        {
+          "id": "S2",
+          "title": "Machine stiles, rails, grooves and panel",
+          "instruction": "Machine stiles, rails, grooves and panel"
+        },
+        {
+          "id": "S3",
+          "title": "Form and fit joints",
+          "instruction": "Form and fit joints"
+        },
+        {
+          "id": "S4",
+          "title": "Dry assemble with panels free to move as detailed",
+          "instruction": "Dry assemble with panels free to move as detailed"
+        },
+        {
+          "id": "S5",
+          "title": "Check square, wind, joints and finished size",
+          "instruction": "Check square, wind, joints and finished size"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Components and joint set-out",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Panel grooves and dry joint fit",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Complete dry assembly and diagonals",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Door dimensions",
+          "target": "Match the rod"
+        },
+        {
+          "label": "Joint shoulders",
+          "target": "Close without distorting the frame"
+        },
+        {
+          "label": "Panel fit",
+          "target": "Correct clearance and orientation"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the panel is cramped rigidly in its groove. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the panel is cramped rigidly in its groove, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Release cramps, correct joint fit or panel clearance and assemble again."
+      },
+      "commonFaults": [
+        "the panel is cramped rigidly in its groove",
+        "the door is in wind",
+        "rail shoulders remain open"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Machine stiles, rails, grooves and panel” important on this task?",
+          "guide": "The panel needs the specified clearance so seasonal movement does not split or distort the door."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Use winding checks, diagonals, straightedges and inspect every shoulder during dry assembly."
+        },
+        {
+          "prompt": "What would you do if the panel is cramped rigidly in its groove?",
+          "guide": "Release cramps, correct joint fit or panel clearance and assemble again."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264AJ-P006",
+      "title": "Fire-door assembly details",
+      "category": "Fire doors",
+      "brief": "Prepare a fire-door assembly sample with the specified frame, gaps, seals and compatible ironmongery positions.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K30",
+        "K39",
+        "S28",
+        "S29"
+      ],
+      "resources": [
+        "Current drawing, specification and setting-out information",
+        "Setting rod, square, gauges and marking tools",
+        "Maintained hand tools and approved machinery",
+        "Correct timber, components, adhesive and ironmongery",
+        "Certified door data and gap gauges",
+        "Specified seals and compatible ironmongery"
+      ],
+      "safetyControls": [
+        "Check the workshop risk assessment and machine instructions",
+        "Wear the specified PPE and use extraction",
+        "Check guards, stops and emergency controls before machining",
+        "Keep components supported and the bench area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm the certified assembly information",
+          "instruction": "Confirm the certified assembly information"
+        },
+        {
+          "id": "S2",
+          "title": "Check leaf, frame, seals and hardware compatibility",
+          "instruction": "Check leaf, frame, seals and hardware compatibility"
+        },
+        {
+          "id": "S3",
+          "title": "Set out grooves and hardware positions",
+          "instruction": "Set out grooves and hardware positions"
+        },
+        {
+          "id": "S4",
+          "title": "Machine and fit without damaging certification details",
+          "instruction": "Machine and fit without damaging certification details"
+        },
+        {
+          "id": "S5",
+          "title": "Measure gaps and record the completed checks",
+          "instruction": "Measure gaps and record the completed checks"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Certification and component compatibility",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Seal grooves and hardware recesses",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed gaps, labels and operation",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Component compatibility",
+          "target": "Matches the approved doorset information"
+        },
+        {
+          "label": "Gaps and seals",
+          "target": "Within the stated limits and continuous"
+        },
+        {
+          "label": "Labels and records",
+          "target": "Remain legible and complete"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that an unapproved hinge or closer is proposed. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of an unapproved hinge or closer is proposed, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop and obtain an approved compatible component or replacement before completion."
+      },
+      "commonFaults": [
+        "an unapproved hinge or closer is proposed",
+        "a seal groove is oversized",
+        "the required door label is damaged"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Check leaf, frame, seals and hardware compatibility” important on this task?",
+          "guide": "A fire door performs as a tested assembly, so substitutions can invalidate its expected performance."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Check the approved evidence, measure gaps at several points and inspect seal continuity and labels."
+        },
+        {
+          "prompt": "What would you do if an unapproved hinge or closer is proposed?",
+          "guide": "Stop and obtain an approved compatible component or replacement before completion."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264AJ-P007",
+      "title": "Stair string and tread section",
+      "category": "First-fix manufacture",
+      "brief": "Set out and manufacture a representative stair string, tread and riser connection from the given rise and going.",
+      "timing": {
+        "shortMinutes": 75,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K32",
+        "K36",
+        "S23",
+        "S27"
+      ],
+      "resources": [
+        "Current drawing, specification and setting-out information",
+        "Setting rod, square, gauges and marking tools",
+        "Maintained hand tools and approved machinery",
+        "Correct timber, components, adhesive and ironmongery"
+      ],
+      "safetyControls": [
+        "Check the workshop risk assessment and machine instructions",
+        "Wear the specified PPE and use extraction",
+        "Check guards, stops and emergency controls before machining",
+        "Keep components supported and the bench area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm total rise, going and component sizes",
+          "instruction": "Confirm total rise, going and component sizes"
+        },
+        {
+          "id": "S2",
+          "title": "Set out the pitch line and individual steps",
+          "instruction": "Set out the pitch line and individual steps"
+        },
+        {
+          "id": "S3",
+          "title": "Mark housings from reference faces",
+          "instruction": "Mark housings from reference faces"
+        },
+        {
+          "id": "S4",
+          "title": "Machine housings and prepare tread or riser",
+          "instruction": "Machine housings and prepare tread or riser"
+        },
+        {
+          "id": "S5",
+          "title": "Dry assemble and check pitch, fit and square",
+          "instruction": "Dry assemble and check pitch, fit and square"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Calculated rise, going and pitch line",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Housing depth and position",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Dry assembly and component fit",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Rise and going",
+          "target": "Consistent with the task data"
+        },
+        {
+          "label": "Housing",
+          "target": "Correct depth without weakening the string"
+        },
+        {
+          "label": "Dry fit",
+          "target": "Tread and riser seat fully and square"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that step divisions do not reconcile with total rise. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of step divisions do not reconcile with total rise, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Correct the setting out before machining further; remake weakened or wrongly handed parts."
+      },
+      "commonFaults": [
+        "step divisions do not reconcile with total rise",
+        "a housing is cut from the wrong face",
+        "the tread rocks in the housing"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Set out the pitch line and individual steps” important on this task?",
+          "guide": "Reconciling individual steps to the total rise prevents accumulated error across the flight."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Add the individual rises, compare pitch lines and trial each component in the housings."
+        },
+        {
+          "prompt": "What would you do if step divisions do not reconcile with total rise?",
+          "guide": "Correct the setting out before machining further; remake weakened or wrongly handed parts."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264AJ-P008",
+      "title": "Box sash window section",
+      "category": "Timber windows",
+      "brief": "Manufacture and assemble a representative box-frame and sash window section with the specified rebates, grooves and clearances.",
+      "timing": {
+        "shortMinutes": 90,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K34",
+        "S25",
+        "S26"
+      ],
+      "resources": [
+        "Current drawing, specification and setting-out information",
+        "Setting rod, square, gauges and marking tools",
+        "Maintained hand tools and approved machinery",
+        "Correct timber, components, adhesive and ironmongery"
+      ],
+      "safetyControls": [
+        "Check the workshop risk assessment and machine instructions",
+        "Wear the specified PPE and use extraction",
+        "Check guards, stops and emergency controls before machining",
+        "Keep components supported and the bench area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Read the section drawing and identify handed parts",
+          "instruction": "Read the section drawing and identify handed parts"
+        },
+        {
+          "id": "S2",
+          "title": "Prepare frame, pulley stile and sash components",
+          "instruction": "Prepare frame, pulley stile and sash components"
+        },
+        {
+          "id": "S3",
+          "title": "Machine grooves, pockets, rebates and joints",
+          "instruction": "Machine grooves, pockets, rebates and joints"
+        },
+        {
+          "id": "S4",
+          "title": "Dry assemble the representative section",
+          "instruction": "Dry assemble the representative section"
+        },
+        {
+          "id": "S5",
+          "title": "Check alignment, clearances and access details",
+          "instruction": "Check alignment, clearances and access details"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Section orientation and component marks",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Hidden pockets, grooves and joints",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Dry assembly and sash path",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Section profile",
+          "target": "Matches the drawing throughout"
+        },
+        {
+          "label": "Sash path and clearance",
+          "target": "Free and consistently aligned"
+        },
+        {
+          "label": "Access details",
+          "target": "Pockets and removable parts remain usable"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that a pulley stile is machined as the opposite hand. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of a pulley stile is machined as the opposite hand, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Segregate the wrongly handed part and remake it before assembly."
+      },
+      "commonFaults": [
+        "a pulley stile is machined as the opposite hand",
+        "the sash path is pinched",
+        "an access pocket will be concealed"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Prepare frame, pulley stile and sash components” important on this task?",
+          "guide": "Handed marking protects the orientation of complex profiles that can look similar before assembly."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Compare sections to the rod, run a straightedge through the sash path and test access components."
+        },
+        {
+          "prompt": "What would you do if a pulley stile is machined as the opposite hand?",
+          "guide": "Segregate the wrongly handed part and remake it before assembly."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264AJ-P009",
+      "title": "Fit joinery ironmongery",
+      "category": "Ironmongery",
+      "brief": "Set out, recess and fit hinges, a latch or another specified item to a joinery sample accurately and flush.",
+      "timing": {
+        "shortMinutes": 45,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K39",
+        "S24",
+        "S29"
+      ],
+      "resources": [
+        "Current drawing, specification and setting-out information",
+        "Setting rod, square, gauges and marking tools",
+        "Maintained hand tools and approved machinery",
+        "Correct timber, components, adhesive and ironmongery"
+      ],
+      "safetyControls": [
+        "Check the workshop risk assessment and machine instructions",
+        "Wear the specified PPE and use extraction",
+        "Check guards, stops and emergency controls before machining",
+        "Keep components supported and the bench area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Check hardware and manufacturer information",
+          "instruction": "Check hardware and manufacturer information"
+        },
+        {
+          "id": "S2",
+          "title": "Mark centres, edges and fixing positions",
+          "instruction": "Mark centres, edges and fixing positions"
+        },
+        {
+          "id": "S3",
+          "title": "Form recesses progressively",
+          "instruction": "Form recesses progressively"
+        },
+        {
+          "id": "S4",
+          "title": "Pilot and fit hardware",
+          "instruction": "Pilot and fit hardware"
+        },
+        {
+          "id": "S5",
+          "title": "Align receiving parts and function test",
+          "instruction": "Align receiving parts and function test"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Hardware and position marks",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Recess before hardware covers it",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed fitting and operation",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Position",
+          "target": "Matches the setting information"
+        },
+        {
+          "label": "Flush fit",
+          "target": "No rocking, proud edges or over-depth"
+        },
+        {
+          "label": "Operation",
+          "target": "Smooth, aligned and securely fixed"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the recess is over-depth. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the recess is over-depth, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Remove the item, repair only by an approved method or remake the component if the defect affects quality."
+      },
+      "commonFaults": [
+        "the recess is over-depth",
+        "a screw splits the component edge",
+        "receiving hardware is offset"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Mark centres, edges and fixing positions” important on this task?",
+          "guide": "Progressive recessing protects finished surfaces and allows fit to be checked before too much is removed."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Use depth and alignment checks, pilot appropriately and operate the hardware repeatedly."
+        },
+        {
+          "prompt": "What would you do if the recess is over-depth?",
+          "guide": "Remove the item, repair only by an approved method or remake the component if the defect affects quality."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264AJ-P010",
+      "title": "Machine a run of joinery components",
+      "category": "Workshop machinery",
+      "brief": "Set up approved fixed machinery and produce a short run of consistent joinery components to a cutting list.",
+      "timing": {
+        "shortMinutes": 60,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K31",
+        "S10",
+        "S30",
+        "B1"
+      ],
+      "resources": [
+        "Current drawing, specification and setting-out information",
+        "Setting rod, square, gauges and marking tools",
+        "Maintained hand tools and approved machinery",
+        "Correct timber, components, adhesive and ironmongery",
+        "Approved fixed machinery",
+        "Push devices, trial material and measuring equipment"
+      ],
+      "safetyControls": [
+        "Check the workshop risk assessment and machine instructions",
+        "Wear the specified PPE and use extraction",
+        "Check guards, stops and emergency controls before machining",
+        "Keep components supported and the bench area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Check machine authority, guards and extraction",
+          "instruction": "Check machine authority, guards and extraction"
+        },
+        {
+          "id": "S2",
+          "title": "Confirm cutter, direction and finished dimensions",
+          "instruction": "Confirm cutter, direction and finished dimensions"
+        },
+        {
+          "id": "S3",
+          "title": "Set fences, stops and trial piece",
+          "instruction": "Set fences, stops and trial piece"
+        },
+        {
+          "id": "S4",
+          "title": "Measure and approve the trial",
+          "instruction": "Measure and approve the trial"
+        },
+        {
+          "id": "S5",
+          "title": "Machine the batch and monitor consistency",
+          "instruction": "Machine the batch and monitor consistency"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Machine checks and setup",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Measured trial component",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Completed batch and machine shutdown",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Trial size",
+          "target": "Matches the cutting list before the batch"
+        },
+        {
+          "label": "Component consistency",
+          "target": "Repeated dimensions remain within tolerance"
+        },
+        {
+          "label": "Machine controls",
+          "target": "Guards, extraction and feed method remain correct"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the trial piece is outside tolerance. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the trial piece is outside tolerance, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop and isolate the machine, find the setup or equipment cause and do not continue until safe and accurate."
+      },
+      "commonFaults": [
+        "the trial piece is outside tolerance",
+        "extraction performance drops",
+        "components begin to vary during the run"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Confirm cutter, direction and finished dimensions” important on this task?",
+          "guide": "The trial proves setup safely before an error is repeated through valuable material."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Measure the trial at several points and sample the batch against the approved piece."
+        },
+        {
+          "prompt": "What would you do if the trial piece is outside tolerance?",
+          "guide": "Stop and isolate the machine, find the setup or equipment cause and do not continue until safe and accurate."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264AJ-P011",
+      "title": "Dowelled or loose-tenon connection",
+      "category": "Joinery connections",
+      "brief": "Set out and form a repeatable dowelled or loose-tenon connection using an approved jig.",
+      "timing": {
+        "shortMinutes": 55,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K16",
+        "K35",
+        "S12",
+        "S25"
+      ],
+      "resources": [
+        "Current drawing, specification and setting-out information",
+        "Setting rod, square, gauges and marking tools",
+        "Maintained hand tools and approved machinery",
+        "Correct timber, components, adhesive and ironmongery"
+      ],
+      "safetyControls": [
+        "Check the workshop risk assessment and machine instructions",
+        "Wear the specified PPE and use extraction",
+        "Check guards, stops and emergency controls before machining",
+        "Keep components supported and the bench area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Confirm component faces and joint position",
+          "instruction": "Confirm component faces and joint position"
+        },
+        {
+          "id": "S2",
+          "title": "Set or make the jig from datum faces",
+          "instruction": "Set or make the jig from datum faces"
+        },
+        {
+          "id": "S3",
+          "title": "Trial the setup on spare material",
+          "instruction": "Trial the setup on spare material"
+        },
+        {
+          "id": "S4",
+          "title": "Machine matching joint parts",
+          "instruction": "Machine matching joint parts"
+        },
+        {
+          "id": "S5",
+          "title": "Dry assemble and verify alignment",
+          "instruction": "Dry assemble and verify alignment"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Datum marks and jig setup",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Trial joint and measured offsets",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Final dry assembly",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Joint alignment",
+          "target": "Faces and edges finish flush"
+        },
+        {
+          "label": "Depth and fit",
+          "target": "Adequate without bottoming out"
+        },
+        {
+          "label": "Repeatability",
+          "target": "Jig produces consistent positions"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that the mating holes are offset. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of the mating holes are offset, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Reset the jig from the correct datum and remake parts whose joint strength or appearance is affected."
+      },
+      "commonFaults": [
+        "the mating holes are offset",
+        "a loose tenon bottoms before shoulders close",
+        "the jig references the wrong face"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Set or make the jig from datum faces” important on this task?",
+          "guide": "A controlled jig makes repeated connections consistent only when it always uses the same reference faces."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Test on spare material, measure offsets and dry fit before using adhesive."
+        },
+        {
+          "prompt": "What would you do if the mating holes are offset?",
+          "guide": "Reset the jig from the correct datum and remake parts whose joint strength or appearance is affected."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": "ST0264AJ-P012",
+      "title": "Prepare and finish a joinery assembly",
+      "category": "Finishing",
+      "brief": "Prepare an assembled joinery item for finish, correcting permitted minor defects and protecting critical interfaces.",
+      "timing": {
+        "shortMinutes": 45,
+        "fullMinutes": 720
+      },
+      "mapsTo": [
+        "K38",
+        "S28",
+        "B2"
+      ],
+      "resources": [
+        "Current drawing, specification and setting-out information",
+        "Setting rod, square, gauges and marking tools",
+        "Maintained hand tools and approved machinery",
+        "Correct timber, components, adhesive and ironmongery",
+        "Approved abrasives and extraction",
+        "Specified finish or protective wrapping"
+      ],
+      "safetyControls": [
+        "Check the workshop risk assessment and machine instructions",
+        "Wear the specified PPE and use extraction",
+        "Check guards, stops and emergency controls before machining",
+        "Keep components supported and the bench area clear"
+      ],
+      "sequence": [
+        {
+          "id": "S1",
+          "title": "Inspect the assembly under suitable light",
+          "instruction": "Inspect the assembly under suitable light"
+        },
+        {
+          "id": "S2",
+          "title": "Confirm permitted repair and finishing process",
+          "instruction": "Confirm permitted repair and finishing process"
+        },
+        {
+          "id": "S3",
+          "title": "Prepare surfaces in the correct abrasive sequence",
+          "instruction": "Prepare surfaces in the correct abrasive sequence"
+        },
+        {
+          "id": "S4",
+          "title": "Ease approved edges and clean dust",
+          "instruction": "Ease approved edges and clean dust"
+        },
+        {
+          "id": "S5",
+          "title": "Apply or prepare for finish and protect the item",
+          "instruction": "Apply or prepare for finish and protect the item"
+        }
+      ],
+      "evidenceCheckpoints": [
+        {
+          "id": "E1",
+          "title": "Set-out",
+          "prompt": "Initial defect and surface inspection",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E2",
+          "title": "Hidden work",
+          "prompt": "Prepared joints, edges and surfaces",
+          "accept": "image/*,video/*"
+        },
+        {
+          "id": "E3",
+          "title": "Finished work",
+          "prompt": "Finished or protected assembly",
+          "accept": "image/*,video/*"
+        }
+      ],
+      "checks": [
+        {
+          "label": "Surface preparation",
+          "target": "Even without cross-grain damage"
+        },
+        {
+          "label": "Joint and edge condition",
+          "target": "Meets the drawing and finish requirement"
+        },
+        {
+          "label": "Cleanliness and protection",
+          "target": "Dust controlled and critical faces protected"
+        }
+      ],
+      "decision": {
+        "prompt": "A checkpoint reveals that heavy sanding changes a finished size. What is the strongest response?",
+        "options": [
+          "Pause at a safe point, correct the cause of heavy sanding changes a finished size, then repeat the specified checks before continuing.",
+          "Continue and hide the issue during finishing.",
+          "Change the drawing or specification to match the work.",
+          "Leave it for the next trade without recording it."
+        ],
+        "correctIndex": 0,
+        "feedback": "Stop, isolate the affected surface and use only the approved corrective process."
+      },
+      "commonFaults": [
+        "heavy sanding changes a finished size",
+        "cross-grain scratches remain",
+        "finish contaminates a hardware or bonding surface"
+      ],
+      "questions": [
+        {
+          "prompt": "Why is “Confirm permitted repair and finishing process” important on this task?",
+          "guide": "Finishing must improve the surface without changing component dimensions, joints or certification details."
+        },
+        {
+          "prompt": "How would you check that this work meets the drawing or specification?",
+          "guide": "Inspect across the grain under raking light and remeasure critical interfaces."
+        },
+        {
+          "prompt": "What would you do if heavy sanding changes a finished size?",
+          "guide": "Stop, isolate the affected surface and use only the approved corrective process."
+        }
+      ],
+      "reviewAreas": [
+        {
+          "id": "safety",
+          "label": "Safety and preparation",
+          "weight": 20
+        },
+        {
+          "id": "method",
+          "label": "Method and sequence",
+          "weight": 20
+        },
+        {
+          "id": "accuracy",
+          "label": "Measurements and checks",
+          "weight": 30
+        },
+        {
+          "id": "finish",
+          "label": "Finished work",
+          "weight": 20
+        },
+        {
+          "id": "questions",
+          "label": "Practical questions",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}
