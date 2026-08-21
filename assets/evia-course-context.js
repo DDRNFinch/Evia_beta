@@ -13,6 +13,7 @@ const original=betaStorage?{
 const brickCodes=[...Array.from({length:31},(_,i)=>`K${i+1}`),...Array.from({length:22},(_,i)=>`S${i+1}`),...Array.from({length:6},(_,i)=>`B${i+1}`)];
 const siteCodes=[...Array.from({length:29},(_,i)=>`K${i+1}`),"K40",...Array.from({length:22},(_,i)=>`S${i+1}`),...Array.from({length:5},(_,i)=>`B${i+1}`)];
 const joinerCodes=[...Array.from({length:20},(_,i)=>`K${i+1}`),...Array.from({length:11},(_,i)=>`K${i+30}`),...Array.from({length:13},(_,i)=>`S${i+1}`),...Array.from({length:8},(_,i)=>`S${i+23}`),...Array.from({length:5},(_,i)=>`B${i+1}`)];
+let noCourseAnnounced=false;
 function timeline(){try{const x=JSON.parse(original.getItem.call(localStorage,TIMELINE_KEY)||"null");return x&&typeof x==="object"?x:{}}catch{return{}}}
 function installedPack(id){try{const all=JSON.parse(original.getItem.call(localStorage,PACK_KEY)||"{}");return all&&typeof all==="object"?all[String(id||"")]||null:null}catch{return null}}
 function migrationFailed(){try{return JSON.parse(original.getItem.call(localStorage,NVQ_MIGRATION_MARKER)||"null")?.status==="failed-safe"}catch{return false}}
@@ -29,7 +30,7 @@ function trowelRollbackProfile(t){
   };
 }
 function noCourseProfile(){
-  document.documentElement.classList.add("evia-no-course-pending");
+  if(!noCourseAnnounced){document.documentElement.classList.add("evia-no-course-pending");noCourseAnnounced=true}
   return{
     courseId:"__no_course__",courseTitle:"",pathway:null,pathwayTitle:"",storageSuffix:"__no_course__",
     dataPrefix:"evia-no-course-data",codes:["SETUP"],totalKsb:1,courseType:"none",coverageLabel:"",learningLabel:"",
