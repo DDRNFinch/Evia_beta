@@ -1,4 +1,4 @@
-const CACHE_NAME = "evia-beta-shell-v77";
+const CACHE_NAME = "evia-beta-shell-v78";
 const CACHE_PREFIXES = ["evia-beta-shell-", "evia-shell-"];
 const APP_SHELL = [
   "./",
@@ -37,6 +37,7 @@ const APP_SHELL = [
   "./course-delivery/course-registry.js",
   "./course-delivery/registry-v1.json",
   "./course-packs/Bricklayer_ST0095_v1.2.nisi",
+  "./assets/jsQR-1.4.0.js",
   "./assets/evia-course-enrolment.js",
   "./assets/evia-st0264-epa-enable.js",
   "./assets/evia-6570-pack-cutover.js",

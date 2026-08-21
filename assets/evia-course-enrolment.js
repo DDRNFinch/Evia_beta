@@ -2,7 +2,7 @@
 "use strict";
 const RECEIPT_KEY="evia-course-enrolment-v1";
 const REGISTRY_FILE="./course-delivery/registry-v1.json";
-let stream=null,scanTimer=null,detector=null,installing=false,observer=null;
+let stream=null,scanTimer=null,detector=null,installing=false,observer=null,nativeDetectorSupport=null,decodeCanvas=null;
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function course(){return window.EviaCourseContext?.current?.()||null}
 function noCourse(){return course()?.noCourse===true}
@@ -54,8 +54,38 @@ function closeScanner(){stopCamera();document.querySelector(".evia-enrol-layer")
 function scannerHtml(){return `<section class="evia-tools-screen"><div class="evia-tools-head"><button type="button" data-enrol-back>‹ Back</button><b>Add course</b><span></span></div><div class="evia-tools-body"><p class="evia-tools-kicker">Course QR</p><h2>Scan your course</h2><p class="evia-tools-copy">Point the camera at the Evia QR for your qualification. You only need to do this once.</p><div class="evia-enrol-camera"><video data-enrol-video playsinline muted autoplay></video><span class="frame" aria-hidden="true"></span></div><div class="evia-enrol-status" data-enrol-status>Starting camera…</div><div class="evia-enrol-actions"><button type="button" class="evia-enrol-secondary" data-enrol-photo>Choose QR image</button><button type="button" class="evia-enrol-secondary" data-enrol-manual-toggle>Enter course code</button></div><div class="evia-enrol-manual" data-enrol-manual><label for="eviaCourseCode">Course code</label><input id="eviaCourseCode" data-enrol-code inputmode="text" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="e.g. ST0095"><button type="button" class="evia-tools-primary" data-enrol-submit>Install course</button></div><input type="file" accept="image/*" data-enrol-file hidden></div></section>`}
 function status(text,error=false){const n=document.querySelector("[data-enrol-status]");if(!n)return;n.textContent=text;n.classList.toggle("is-error",error)}
 async function supportsDetector(){
-  if(typeof window.BarcodeDetector!=="function")return false;
-  try{const xs=await BarcodeDetector.getSupportedFormats?.();return !Array.isArray(xs)||xs.includes("qr_code")}catch{return true}
+  if(nativeDetectorSupport!==null)return nativeDetectorSupport;
+  if(typeof window.BarcodeDetector!=="function")return nativeDetectorSupport=false;
+  try{const xs=await window.BarcodeDetector.getSupportedFormats?.();return nativeDetectorSupport=!Array.isArray(xs)||xs.includes("qr_code")}catch{return nativeDetectorSupport=true}
+}
+function supportsJsQr(){return typeof window.jsQR==="function"}
+function sourceSize(source){
+  return{width:Number(source?.videoWidth||source?.naturalWidth||source?.width||0),height:Number(source?.videoHeight||source?.naturalHeight||source?.height||0)}
+}
+function decodeWithJsQr(source){
+  if(!supportsJsQr())return null;
+  const size=sourceSize(source);if(!size.width||!size.height)return null;
+  const maxSide=960,scale=Math.min(1,maxSide/Math.max(size.width,size.height)),width=Math.max(1,Math.round(size.width*scale)),height=Math.max(1,Math.round(size.height*scale));
+  decodeCanvas=decodeCanvas||document.createElement("canvas");decodeCanvas.width=width;decodeCanvas.height=height;
+  const context=decodeCanvas.getContext("2d",{willReadFrequently:true});if(!context)return null;
+  context.drawImage(source,0,0,width,height);const pixels=context.getImageData(0,0,width,height);
+  return window.jsQR(pixels.data,width,height,{inversionAttempts:"attemptBoth"})?.data||null
+}
+async function decodeSource(source){
+  if(await supportsDetector()){
+    try{const reader=detector||new window.BarcodeDetector({formats:["qr_code"]});const found=await reader.detect(source);const raw=found?.[0]?.rawValue;if(raw)return raw}catch(error){console.debug("Evia native QR decode",error)}
+  }
+  return decodeWithJsQr(source)
+}
+async function imageFromFile(file){
+  if(typeof window.createImageBitmap==="function"){
+    const image=await window.createImageBitmap(file);return{image,close(){image.close?.()}}
+  }
+  const url=URL.createObjectURL(file),image=new window.Image();
+  try{
+    await new Promise((resolve,reject)=>{image.onload=resolve;image.onerror=()=>reject(Error("The QR image could not be opened."));image.src=url});
+    return{image,close(){URL.revokeObjectURL(url)}}
+  }catch(error){URL.revokeObjectURL(url);throw error}
 }
 async function openScanner(){
   if(!noCourse()||document.querySelector(".evia-enrol-layer"))return;
@@ -69,27 +99,28 @@ async function openScanner(){
 }
 async function startCamera(video){
   if(!navigator.mediaDevices?.getUserMedia){status("Camera scanning is not available here. Enter your course code instead.",true);return}
-  if(!(await supportsDetector())){status("This browser cannot read QR codes with the camera yet. Enter your course code instead.",true);return}
+  const native=await supportsDetector();if(!native&&!supportsJsQr()){status("The QR reader did not load. Enter your course code instead.",true);return}
   try{
-    detector=new BarcodeDetector({formats:["qr_code"]});
+    detector=native?new window.BarcodeDetector({formats:["qr_code"]}):null;
     stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:"environment"},width:{ideal:1280},height:{ideal:1280}},audio:false});
     if(!document.body.contains(video)){stopCamera();return}
     video.srcObject=stream;await video.play();status("Ready — hold the QR inside the square.");scanLoop(video)
   }catch(error){console.error("Evia course camera",error);status("Camera could not start. Allow camera access or enter your course code instead.",true)}
 }
 async function scanLoop(video){
-  if(!detector||!stream||installing||!document.body.contains(video))return;
+  if(!stream||installing||!document.body.contains(video))return;
   try{
-    if(video.readyState>=2){const found=await detector.detect(video);const raw=found?.[0]?.rawValue;if(raw){await installFromInput(raw);return}}
+    if(video.readyState>=2){const raw=await decodeSource(video);if(raw){await installFromInput(raw);return}}
   }catch(error){console.debug("Evia QR scan",error)}
   scanTimer=setTimeout(()=>scanLoop(video),220)
 }
 async function scanImage(file){
-  if(!(await supportsDetector())){status("QR images are not supported by this browser yet. Enter the course code instead.",true);return}
+  if(!(await supportsDetector())&&!supportsJsQr()){status("The QR reader did not load. Enter the course code instead.",true);return}
+  let loaded=null;
   try{
-    status("Reading QR image…");const image=await createImageBitmap(file);const d=new BarcodeDetector({formats:["qr_code"]});const found=await d.detect(image);image.close?.();const raw=found?.[0]?.rawValue;
+    status("Reading QR image…");loaded=await imageFromFile(file);const raw=await decodeSource(loaded.image);
     if(!raw){status("I could not find an Evia QR in that image.",true);return}await installFromInput(raw)
-  }catch(error){console.error("Evia QR image",error);status("That QR image could not be read. Try another image or enter the course code.",true)}
+  }catch(error){console.error("Evia QR image",error);status("That QR image could not be read. Try another image or enter the course code.",true)}finally{loaded?.close?.()}
 }
 function packageUrl(path){const base=new URL(REGISTRY_FILE,document.baseURI);return new URL(String(path||""),base).href}
 function verifyRegistryPack(pack,entry){

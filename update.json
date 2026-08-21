@@ -1,10 +1,10 @@
 {
-  "version": "77",
-  "title": "Bricklayer QR installation is ready",
+  "version": "78",
+  "title": "Bricklayer enrolment repaired for mobile",
   "details": [
-    "Evia Beta now starts with no course selected on a fresh setup",
-    "Tap Evia to scan or enter the Bricklayer ST0095 course code",
-    "Bricklayer downloads, verifies and installs locally; the permanent QR remains EVIA1:ST0095",
-    "The installed course and complete Beta shell remain available offline"
+    "QR images now scan inside Evia on Android and iPhone even when the browser has no built-in QR reader",
+    "The permanent Bricklayer code remains ST0095 and the QR remains EVIA1:ST0095",
+    "Manual ST0095 entry has a bundled fallback if the online registry cannot be reached",
+    "The Bricklayer course pack and complete Beta shell remain available offline"
   ]
 }
