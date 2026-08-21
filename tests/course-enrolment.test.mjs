@@ -41,7 +41,11 @@ class MemoryStorage {
 
 async function makeInstallerHarness({ registryOnline = true } = {}) {
   const registry = JSON.parse(await read("course-delivery/registry-v1.json"));
-  const bricklayerPack = JSON.parse(await read("course-packs/Bricklayer_ST0095_v1.2.nisi"));
+  const packs = {
+    "Bricklayer_ST0095_v1.2.nisi": JSON.parse(await read("course-packs/Bricklayer_ST0095_v1.2.nisi")),
+    "Carpentry_Joinery_ST0264_v1.4.nisi": JSON.parse(await read("course-packs/Carpentry_Joinery_ST0264_v1.4.nisi")),
+    "Trowel_Occupations_6570-05_v1.nisi": JSON.parse(await read("course-packs/Trowel_Occupations_6570-05_v1.nisi")),
+  };
   class HarnessStorage extends MemoryStorage {}
   const storage = new HarnessStorage();
   const requestedUrls = [];
@@ -64,8 +68,9 @@ async function makeInstallerHarness({ registryOnline = true } = {}) {
       if (!registryOnline) throw new TypeError("offline");
       return Response.json(registry);
     }
-    if (url.includes("course-packs/Bricklayer_ST0095_v1.2.nisi")) {
-      return Response.json(bricklayerPack);
+    const filename = Object.keys(packs).find((name) => url.includes(`course-packs/${name}`));
+    if (filename) {
+      return Response.json(packs[filename]);
     }
     return new Response("Not found", { status: 404 });
   };
@@ -152,8 +157,8 @@ async function makeInstallerHarness({ registryOnline = true } = {}) {
   }
 
   return {
-    bricklayerPack,
     loggedErrors,
+    packs,
     registry,
     requestedUrls,
     statusNode,
@@ -165,87 +170,90 @@ async function makeInstallerHarness({ registryOnline = true } = {}) {
   };
 }
 
-test("permanent manual and QR values resolve to the publishable Bricklayer package", async () => {
+test("all seven permanent manual and QR values resolve to publishable course packages", async () => {
   const harness = await makeInstallerHarness();
 
-  for (const value of ["ST0095", "evia1:st0095"]) {
-    const resolved = await harness.window.EviaCourseRegistry.resolve(value);
-    assert.equal(resolved.ok, true);
-    assert.equal(resolved.enrolmentId, "ST0095");
-    assert.equal(resolved.course.packageId, "st0095-v1-2");
-    assert.equal(resolved.course.packagePath, "../course-packs/Bricklayer_ST0095_v1.2.nisi");
+  assert.equal(harness.registry.courses.length, 7);
+  for (const course of harness.registry.courses) {
+    for (const value of [course.enrolmentId, course.qrPayload.toLowerCase()]) {
+      const resolved = await harness.window.EviaCourseRegistry.resolve(value);
+      assert.equal(resolved.ok, true, `${value} should resolve`);
+      assert.equal(resolved.enrolmentId, course.enrolmentId);
+      assert.equal(resolved.course.packageId, course.packageId);
+      assert.equal(resolved.course.packagePath, course.packagePath);
+      assert.match(resolved.course.questionBankPath, /question-banks\/.+-v1\.json$/);
+    }
   }
-
-  const unavailable = await harness.window.EviaCourseRegistry.resolve("ST0264-SITE");
-  assert.deepEqual(
-    { ok: unavailable.ok, reason: unavailable.reason },
-    { ok: false, reason: "course-not-ready" },
-  );
 });
 
-test("ST0095 installs, activates, persists and reloads through the real installer", async () => {
-  const harness = await makeInstallerHarness();
+test("all seven QR routes install, activate, persist and reload through the real installer", async () => {
+  const expected = {
+    ST0095: { packageId: "st0095-v1-2", pathway: "", total: 59 },
+    "ST0264-SITE": { packageId: "st0264-v1-4", pathway: "site-carpenter", total: 57 },
+    "ST0264-AJ": { packageId: "st0264-v1-4", pathway: "architectural-joiner", total: 57 },
+    "6570-05-THIN": { packageId: "6570-05", pathway: "thin", total: 238 },
+    "6570-05-REPAIR": { packageId: "6570-05", pathway: "repair", total: 239 },
+    "6570-05-SPECIALIST": { packageId: "6570-05", pathway: "specialist", total: 239 },
+    "6570-05-DRAINAGE": { packageId: "6570-05", pathway: "drainage", total: 240 },
+  };
 
-  assert.equal(harness.window.EviaCourseContext.current().noCourse, true);
-  await harness.window.EviaCourseEnrolment.installFromInput("EVIA1:ST0095");
+  for (const [enrolmentId, wanted] of Object.entries(expected)) {
+    const harness = await makeInstallerHarness();
+    assert.equal(harness.window.EviaCourseContext.current().noCourse, true);
+    await harness.window.EviaCourseEnrolment.installFromInput(`EVIA1:${enrolmentId}`);
 
-  const installed = JSON.parse(harness.storage.getItem("nisi-installed-course-packs-v1"));
-  const timeline = JSON.parse(harness.storage.getItem("evia-course-timeline"));
-  const receipt = JSON.parse(harness.storage.getItem("evia-course-enrolment-v1"));
-  const active = harness.window.EviaCourseContext.current();
+    const installed = JSON.parse(harness.storage.getItem("nisi-installed-course-packs-v1"));
+    const timeline = JSON.parse(harness.storage.getItem("evia-course-timeline"));
+    const receipt = JSON.parse(harness.storage.getItem("evia-course-enrolment-v1"));
+    const active = harness.window.EviaCourseContext.current();
 
-  assert.equal(installed["st0095-v1-2"].standardId, "ST0095");
-  assert.equal(timeline.courseId, "st0095-v1-2");
-  assert.equal(receipt.enrolmentId, "ST0095");
-  assert.equal(receipt.packageVersion, "1.2");
-  assert.equal(active.noCourse, undefined);
-  assert.equal(active.courseId, "st0095-v1-2");
-  assert.equal(active.totalKsb, 59);
-  assert.equal(active.dataPrefix, "nisi-pack-active");
-  assert.equal(harness.reloadCount, 1);
-  assert.equal(harness.loggedErrors.length, 0);
-  assert.match(harness.statusNode.textContent, /installed\. Opening Evia/i);
-  assert.ok(
-    harness.requestedUrls.some((url) =>
-      url.endsWith("/Evia_beta/course-packs/Bricklayer_ST0095_v1.2.nisi"),
-    ),
-  );
+    assert.ok(installed[wanted.packageId], `${enrolmentId} pack should be installed`);
+    assert.equal(timeline.courseId, wanted.packageId);
+    assert.equal(timeline.pathway ?? "", wanted.pathway);
+    assert.equal(receipt.enrolmentId, enrolmentId);
+    assert.equal(active.courseId, wanted.packageId);
+    assert.equal(active.pathway ?? "", wanted.pathway);
+    assert.equal(active.totalKsb, wanted.total);
+    assert.equal(active.dataPrefix, "nisi-pack-active");
+    assert.equal(harness.reloadCount, 1);
+    assert.equal(harness.loggedErrors.length, 0);
+    assert.match(harness.statusNode.textContent, /installed\. Opening Evia/i);
+  }
 });
 
-test("manual ST0095 enrolment still installs when the remote registry is unavailable", async () => {
-  const harness = await makeInstallerHarness({ registryOnline: false });
-
-  const resolved = await harness.window.EviaCourseRegistry.resolve("ST0095");
-  assert.equal(resolved.ok, true);
-  assert.equal(resolved.course.packageId, "st0095-v1-2");
-
-  await harness.window.EviaCourseEnrolment.installFromInput("ST0095");
-  assert.equal(harness.window.EviaCourseContext.current().courseId, "st0095-v1-2");
-  assert.equal(harness.reloadCount, 1);
-  assert.equal(harness.loggedErrors.length, 0);
+test("all seven manual codes remain bundled when the remote registry is unavailable", async () => {
+  const expected = ["ST0095", "ST0264-SITE", "ST0264-AJ", "6570-05-THIN", "6570-05-REPAIR", "6570-05-SPECIALIST", "6570-05-DRAINAGE"];
+  for (const enrolmentId of expected) {
+    const harness = await makeInstallerHarness({ registryOnline: false });
+    const resolved = await harness.window.EviaCourseRegistry.resolve(enrolmentId);
+    assert.equal(resolved.ok, true, `${enrolmentId} should use the bundled registry`);
+    await harness.window.EviaCourseEnrolment.installFromInput(enrolmentId);
+    assert.equal(harness.reloadCount, 1);
+    assert.equal(harness.loggedErrors.length, 0);
+  }
 });
 
 test("the cross-browser QR decoder loads before the enrolment controller", async () => {
   const html = await read("index.html");
-  const decoder = html.indexOf("assets/jsQR-1.4.0.js?v=79");
-  const enrolment = html.indexOf("assets/evia-course-enrolment.js?v=79");
+  const decoder = html.indexOf("assets/jsQR-1.4.0.js?v=80");
+  const enrolment = html.indexOf("assets/evia-course-enrolment.js?v=80");
 
   assert.ok(decoder > 0, "the QR decoder should be included");
   assert.ok(enrolment > decoder, "the QR decoder should load first");
   assert.ok((await read("assets/jsQR-1.4.0.js")).includes('root["jsQR"] = factory()'));
 });
 
-test("unpublished courses are refused without changing the learner device", async () => {
+test("unknown course codes are refused without changing the learner device", async () => {
   const harness = await makeInstallerHarness();
 
-  await harness.window.EviaCourseEnrolment.installFromInput("ST0264-SITE");
+  await harness.window.EviaCourseEnrolment.installFromInput("NOT-A-COURSE");
 
   assert.equal(harness.storage.getItem("nisi-installed-course-packs-v1"), null);
   assert.equal(harness.storage.getItem("evia-course-timeline"), null);
   assert.equal(harness.reloadCount, 0);
   assert.equal(harness.loggedErrors.length, 1);
   assert.equal(harness.statusNode.classList.error, true);
-  assert.match(harness.statusNode.textContent, /not ready to install/i);
+  assert.match(harness.statusNode.textContent, /not recognised/i);
 });
 
 function relativeUrl(value) {
@@ -276,7 +284,7 @@ class MemoryCache {
   }
 }
 
-test("v79 replaces the legacy shell and serves the complete installed app offline", async () => {
+test("v80 replaces the legacy shell and serves all course packs, QRs and banks offline", async () => {
   const handlers = new Map();
   const stores = new Map([["evia-shell-v75", new MemoryCache()]]);
   const legacy = stores.get("evia-shell-v75");
@@ -343,7 +351,7 @@ test("v79 replaces the legacy shell and serves the complete installed app offlin
   let installWork;
   handlers.get("install")({ waitUntil(value) { installWork = value; } });
   await installWork;
-  assert.equal(await caches.has("evia-beta-shell-v79"), true);
+  assert.equal(await caches.has("evia-beta-shell-v80"), true);
 
   let activateWork;
   handlers.get("activate")({ waitUntil(value) { activateWork = value; } });
@@ -365,14 +373,22 @@ test("v79 replaces the legacy shell and serves the complete installed app offlin
     },
   });
   const offlineHtml = await (await navigationResponse).text();
-  assert.match(offlineHtml, /evia-app-version" content="79"/);
-  assert.match(offlineHtml, /evia-course-enrolment\.js\?v=79/);
+  assert.match(offlineHtml, /evia-app-version" content="80"/);
+  assert.match(offlineHtml, /evia-course-enrolment\.js\?v=80/);
+  assert.match(offlineHtml, /evia-arp-v80\.js\?v=80/);
 
   for (const resource of [
-    "assets/evia-beta-isolation.js?v=79",
-    "course-delivery/registry-v1.json?v=79",
-    "assets/jsQR-1.4.0.js?v=79",
+    "assets/evia-beta-isolation.js?v=80",
+    "course-delivery/registry-v1.json?v=80",
+    "assets/jsQR-1.4.0.js?v=80",
+    "assets/evia-arp-v80.js?v=80",
     "course-packs/Bricklayer_ST0095_v1.2.nisi",
+    "course-packs/Carpentry_Joinery_ST0264_v1.4.nisi",
+    "course-packs/Trowel_Occupations_6570-05_v1.nisi",
+    "course-delivery/question-banks/ST0264-AJ-v1.json",
+    "course-delivery/question-banks/6570-05-DRAINAGE-v1.json",
+    "course-delivery/qr/ST0264-SITE.png",
+    "course-delivery/qr/6570-05-SPECIALIST.png",
   ]) {
     const request = {
       method: "GET",
@@ -395,4 +411,15 @@ test("v79 replaces the legacy shell and serves the complete installed app offlin
   const qrBody = await (await qrResponsePromise).text();
   assert.doesNotMatch(qrBody, /evia-app-version/);
   assert.ok(qrBody.length > 1000, "the QR PNG should be served instead of the app shell");
+
+  const downloadsRequest = {
+    method: "GET",
+    mode: "navigate",
+    url: "https://example.test/Evia_beta/course-delivery/qr/all-courses.html",
+  };
+  let downloadsResponsePromise;
+  handlers.get("fetch")({ request: downloadsRequest, respondWith(value) { downloadsResponsePromise = value; } });
+  const downloadsBody = await (await downloadsResponsePromise).text();
+  assert.match(downloadsBody, /Evia course QR codes/);
+  assert.doesNotMatch(downloadsBody, /evia-app-version/);
 });

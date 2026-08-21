@@ -1,0 +1,451 @@
+{
+  "eviaQuestionBank": 1,
+  "schemaVersion": 1,
+  "bankVersion": "1.0",
+  "updated": "2026-08-21",
+  "enrolmentId": "ST0095",
+  "courseTitle": "Bricklayer",
+  "qualificationId": "ST0095",
+  "pathwayId": null,
+  "assessmentArea": "ARP",
+  "questionType": "multiple-choice",
+  "questionsPerMock": 10,
+  "sourceNote": "Original Evia practice questions mapped to course criteria. These are not official awarding-body or end-point-assessment questions.",
+  "questions": [
+    {
+      "id": "ST0095-Q001",
+      "type": "multiple-choice",
+      "topic": "Safe systems of work",
+      "mapsTo": [
+        "K3",
+        "S1"
+      ],
+      "prompt": "Before starting unfamiliar bricklaying work, which information should be checked first?",
+      "options": [
+        "Only the delivery ticket",
+        "The risk assessment, method statement and current drawings",
+        "The previous gang's timesheet",
+        "Only the weather forecast"
+      ],
+      "correctIndex": 1,
+      "explanation": "The safe method and current job information must be understood before work begins."
+    },
+    {
+      "id": "ST0095-Q002",
+      "type": "multiple-choice",
+      "topic": "PPE and RPE",
+      "mapsTo": [
+        "K2",
+        "S2"
+      ],
+      "prompt": "A task will create respirable silica dust while cutting masonry. What is the best control approach?",
+      "options": [
+        "Work faster so exposure is shorter",
+        "Use suitable dust suppression or extraction and the specified face-fit-tested RPE",
+        "Wear ordinary glasses only",
+        "Cut indoors so dust cannot spread"
+      ],
+      "correctIndex": 1,
+      "explanation": "Engineering controls should reduce the dust at source, with suitable RPE used as specified."
+    },
+    {
+      "id": "ST0095-Q003",
+      "type": "multiple-choice",
+      "topic": "Power tools",
+      "mapsTo": [
+        "K14",
+        "S1"
+      ],
+      "prompt": "What should happen before changing a disc on a masonry saw?",
+      "options": [
+        "Leave the tool running slowly",
+        "Disconnect or isolate the power and follow the manufacturer's procedure",
+        "Cool the disc with mortar",
+        "Remove the guard for easier access"
+      ],
+      "correctIndex": 1,
+      "explanation": "Isolation prevents accidental start-up while the disc is being changed."
+    },
+    {
+      "id": "ST0095-Q004",
+      "type": "multiple-choice",
+      "topic": "Sustainability",
+      "mapsTo": [
+        "K4",
+        "S3",
+        "B2"
+      ],
+      "prompt": "Which action best protects surface water during bricklaying?",
+      "options": [
+        "Wash wet mortar into a drain",
+        "Contain washout and dispose of it using the site procedure",
+        "Dilute wash water until it looks clear",
+        "Leave washout beside the kerb"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cementitious washout must be contained so it cannot pollute drains or watercourses."
+    },
+    {
+      "id": "ST0095-Q005",
+      "type": "multiple-choice",
+      "topic": "Moisture protection",
+      "mapsTo": [
+        "K6",
+        "K8"
+      ],
+      "prompt": "What is the main purpose of a damp-proof course in masonry?",
+      "options": [
+        "To increase the mortar strength",
+        "To resist moisture passing through the construction",
+        "To make the wall easier to paint",
+        "To replace wall ties"
+      ],
+      "correctIndex": 1,
+      "explanation": "A correctly placed DPC forms a barrier to moisture movement."
+    },
+    {
+      "id": "ST0095-Q006",
+      "type": "multiple-choice",
+      "topic": "Cavity trays",
+      "mapsTo": [
+        "K22",
+        "S11"
+      ],
+      "prompt": "Why are weep vents provided above a cavity tray?",
+      "options": [
+        "To hold insulation in place",
+        "To allow collected moisture to drain to the outside",
+        "To strengthen the lintel",
+        "To ventilate the room"
+      ],
+      "correctIndex": 1,
+      "explanation": "Weeps provide a discharge route for water intercepted by the tray."
+    },
+    {
+      "id": "ST0095-Q007",
+      "type": "multiple-choice",
+      "topic": "Wall ties",
+      "mapsTo": [
+        "K22",
+        "S11"
+      ],
+      "prompt": "How should a cavity wall tie normally be installed?",
+      "options": [
+        "Sloping down toward the inner leaf",
+        "To the specified spacing and orientation, with the drip positioned to prevent water crossing",
+        "Touching the back of the outer leaf only",
+        "Bent around insulation wherever convenient"
+      ],
+      "correctIndex": 1,
+      "explanation": "Tie type, spacing, embedment and orientation must follow the design and manufacturer's requirements."
+    },
+    {
+      "id": "ST0095-Q008",
+      "type": "multiple-choice",
+      "topic": "Brick bonds",
+      "mapsTo": [
+        "K15"
+      ],
+      "prompt": "What is the main reason for maintaining the specified lap in bonded brickwork?",
+      "options": [
+        "To reduce the number of perpends",
+        "To avoid continuous vertical joints and achieve the intended bond",
+        "To make every course a soldier course",
+        "To remove the need for line and level checks"
+      ],
+      "correctIndex": 1,
+      "explanation": "Correct lap prevents stacked perpends and maintains the specified bond."
+    },
+    {
+      "id": "ST0095-Q009",
+      "type": "multiple-choice",
+      "topic": "Setting out",
+      "mapsTo": [
+        "K21",
+        "S10"
+      ],
+      "prompt": "What is a gauge rod used for when setting out masonry?",
+      "options": [
+        "Checking electrical voltage",
+        "Transferring and checking course heights and vertical features",
+        "Measuring mortar strength",
+        "Cleaning the cavity"
+      ],
+      "correctIndex": 1,
+      "explanation": "A gauge rod helps keep course heights and related features consistent."
+    },
+    {
+      "id": "ST0095-Q010",
+      "type": "multiple-choice",
+      "topic": "Accuracy",
+      "mapsTo": [
+        "K21",
+        "S10"
+      ],
+      "prompt": "Which check best confirms that a rectangular opening is square?",
+      "options": [
+        "Measure only its width",
+        "Compare the two diagonal measurements",
+        "Count the bricks in one jamb",
+        "Check only the first course"
+      ],
+      "correctIndex": 1,
+      "explanation": "Equal diagonals are a useful check that a rectangle is square."
+    },
+    {
+      "id": "ST0095-Q011",
+      "type": "multiple-choice",
+      "topic": "Mortar",
+      "mapsTo": [
+        "K20",
+        "S14"
+      ],
+      "prompt": "Where should the required mortar mix and proportions be confirmed?",
+      "options": [
+        "From colour alone",
+        "From the current specification or approved mix information",
+        "From whichever mix was used on the last job",
+        "By adding cement until it feels stiff"
+      ],
+      "correctIndex": 1,
+      "explanation": "The specified mix must be followed rather than guessed from appearance."
+    },
+    {
+      "id": "ST0095-Q012",
+      "type": "multiple-choice",
+      "topic": "Weather protection",
+      "mapsTo": [
+        "K25",
+        "S17"
+      ],
+      "prompt": "Frost is forecast before fresh masonry has cured. What is the correct response?",
+      "options": [
+        "Add unapproved antifreeze",
+        "Follow the cold-weather method and protect or postpone the work as required",
+        "Soak the wall with water",
+        "Remove all joint finishes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fresh masonry must be protected using the approved cold-weather arrangements."
+    },
+    {
+      "id": "ST0095-Q013",
+      "type": "multiple-choice",
+      "topic": "Movement joints",
+      "mapsTo": [
+        "K19"
+      ],
+      "prompt": "Why is a movement joint included in a masonry elevation?",
+      "options": [
+        "To replace a DPC",
+        "To accommodate designed movement and reduce uncontrolled cracking",
+        "To carry wall ties",
+        "To make the wall permanently rigid"
+      ],
+      "correctIndex": 1,
+      "explanation": "Movement joints allow expected expansion, contraction or other movement at designed locations."
+    },
+    {
+      "id": "ST0095-Q014",
+      "type": "multiple-choice",
+      "topic": "Cavity quality",
+      "mapsTo": [
+        "K22",
+        "S11",
+        "B3"
+      ],
+      "prompt": "Why should mortar droppings be kept clear of the cavity?",
+      "options": [
+        "They improve insulation",
+        "They can bridge moisture and obstruct cavity components",
+        "They make ties easier to see",
+        "They increase ventilation"
+      ],
+      "correctIndex": 1,
+      "explanation": "A clean cavity helps prevent moisture bridging and allows components to work as designed."
+    },
+    {
+      "id": "ST0095-Q015",
+      "type": "multiple-choice",
+      "topic": "Feature courses",
+      "mapsTo": [
+        "K23"
+      ],
+      "prompt": "In a soldier course, how are the bricks normally oriented?",
+      "options": [
+        "Laid flat with the long face horizontal",
+        "Set vertically on end with the narrow face showing",
+        "Placed diagonally through the cavity",
+        "Laid as headers in every leaf"
+      ],
+      "correctIndex": 1,
+      "explanation": "A soldier course uses bricks standing vertically, subject to the drawing and specification."
+    },
+    {
+      "id": "ST0095-Q016",
+      "type": "multiple-choice",
+      "topic": "Raking cuts",
+      "mapsTo": [
+        "K30",
+        "S22"
+      ],
+      "prompt": "What gives the most reliable line for a wall with a raking cut?",
+      "options": [
+        "Cut each unit by eye",
+        "Set out the rake from the drawing and use a controlled template or line",
+        "Make the final course level",
+        "Increase every bed joint randomly"
+      ],
+      "correctIndex": 1,
+      "explanation": "Accurate set-out and a consistent guide keep the rake to the required line."
+    },
+    {
+      "id": "ST0095-Q017",
+      "type": "multiple-choice",
+      "topic": "Masonry repair",
+      "mapsTo": [
+        "K24",
+        "S16"
+      ],
+      "prompt": "Before replacing a damaged brick, what should be established?",
+      "options": [
+        "Only the nearest merchant",
+        "The cause, the approved repair method and a compatible replacement",
+        "That the new brick is the brightest colour",
+        "That all surrounding mortar can be removed at once"
+      ],
+      "correctIndex": 1,
+      "explanation": "A repair should address the cause and use a compatible method and material."
+    },
+    {
+      "id": "ST0095-Q018",
+      "type": "multiple-choice",
+      "topic": "Estimating",
+      "mapsTo": [
+        "K12",
+        "S6"
+      ],
+      "prompt": "A drawing quantity is calculated before ordering bricks. What should be added where the project information requires it?",
+      "options": [
+        "An arbitrary amount",
+        "The specified allowance for cuts, damage and waste",
+        "A second full order",
+        "Nothing under any circumstances"
+      ],
+      "correctIndex": 1,
+      "explanation": "A justified waste allowance helps provide enough material without excessive over-ordering."
+    },
+    {
+      "id": "ST0095-Q019",
+      "type": "multiple-choice",
+      "topic": "Drawings",
+      "mapsTo": [
+        "K10",
+        "S5"
+      ],
+      "prompt": "A figured dimension conflicts with a measurement scaled from the drawing. What should you do?",
+      "options": [
+        "Use the scaled measurement",
+        "Stop and seek clarification using the project procedure",
+        "Average the two values",
+        "Change the drawing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Conflicting information must be clarified; drawings should not be altered or guessed."
+    },
+    {
+      "id": "ST0095-Q020",
+      "type": "multiple-choice",
+      "topic": "Joint finishes",
+      "mapsTo": [
+        "K17",
+        "S12"
+      ],
+      "prompt": "When should a mortar joint normally be finished?",
+      "options": [
+        "At a consistent stage when the mortar is firm enough to form the specified profile",
+        "Only after the wall is painted",
+        "While the mortar is running wet",
+        "After the scaffold is removed"
+      ],
+      "correctIndex": 0,
+      "explanation": "Consistent timing helps produce the specified profile without smearing or tearing the mortar."
+    },
+    {
+      "id": "ST0095-Q021",
+      "type": "multiple-choice",
+      "topic": "Communication",
+      "mapsTo": [
+        "K26",
+        "K27",
+        "S18",
+        "B6"
+      ],
+      "prompt": "A delivery will block another trade's access. What is the best action?",
+      "options": [
+        "Say nothing until it arrives",
+        "Coordinate the timing and access with the relevant people",
+        "Move their materials without permission",
+        "Cancel the delivery yourself"
+      ],
+      "correctIndex": 1,
+      "explanation": "Early, clear coordination helps the wider build team work safely and efficiently."
+    },
+    {
+      "id": "ST0095-Q022",
+      "type": "multiple-choice",
+      "topic": "Inclusion",
+      "mapsTo": [
+        "K28",
+        "S19",
+        "B4"
+      ],
+      "prompt": "Which behaviour supports an inclusive site culture?",
+      "options": [
+        "Using unwanted nicknames",
+        "Listening respectfully and challenging inappropriate behaviour through the correct route",
+        "Excluding new starters from briefings",
+        "Sharing personal information as a joke"
+      ],
+      "correctIndex": 1,
+      "explanation": "Respectful communication and appropriate challenge support inclusion and dignity at work."
+    },
+    {
+      "id": "ST0095-Q023",
+      "type": "multiple-choice",
+      "topic": "Wellbeing",
+      "mapsTo": [
+        "K31",
+        "S21",
+        "B1"
+      ],
+      "prompt": "A colleague says they are struggling and it is affecting safe work. What is the best first response?",
+      "options": [
+        "Tell everyone on site",
+        "Listen, encourage appropriate support and follow the site's safety arrangements",
+        "Ignore it because it is private",
+        "Give medical advice"
+      ],
+      "correctIndex": 1,
+      "explanation": "Support should be respectful, confidential where possible and linked to suitable workplace or professional help."
+    },
+    {
+      "id": "ST0095-Q024",
+      "type": "multiple-choice",
+      "topic": "Hand tools",
+      "mapsTo": [
+        "K13",
+        "S9"
+      ],
+      "prompt": "What should be done with a damaged bricklaying hand tool?",
+      "options": [
+        "Keep using it until the shift ends",
+        "Remove it from use and repair or replace it through the correct procedure",
+        "Hide the defect with tape",
+        "Lend it to another operative"
+      ],
+      "correctIndex": 1,
+      "explanation": "Damaged tools should not remain in use because they can cause poor work or injury."
+    }
+  ]
+}

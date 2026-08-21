@@ -16,9 +16,10 @@
       "packageId": "st0095-v1-2",
       "currentPackageVersion": "1.2",
       "packagePath": "../course-packs/Bricklayer_ST0095_v1.2.nisi",
+      "questionBankPath": "question-banks/ST0095-v1.json",
       "content": {
         "course": "available",
-        "multipleChoice": "existing-bank-not-yet-bundled",
+        "multipleChoice": "available-24-question-bank",
         "discussion": "not-yet-created",
         "practical": "not-yet-created"
       },
@@ -36,14 +37,16 @@
       "packageFamilyId": "ST0264",
       "packageId": "st0264-v1-4",
       "currentPackageVersion": "1.4",
-      "packagePath": null,
+      "packagePath": "../course-packs/Carpentry_Joinery_ST0264_v1.4.nisi",
+      "questionBankPath": "question-banks/ST0264-SITE-v1.json",
       "content": {
-        "course": "available-in-current-app-build",
-        "multipleChoice": "existing-bank-not-yet-bundled",
+        "course": "available",
+        "multipleChoice": "available-24-question-bank",
         "discussion": "not-yet-created",
         "practical": "not-yet-created"
       },
-      "publishable": false
+      "releaseChannel": "beta",
+      "publishable": true
     },
     {
       "enrolmentId": "ST0264-AJ",
@@ -56,14 +59,16 @@
       "packageFamilyId": "ST0264",
       "packageId": "st0264-v1-4",
       "currentPackageVersion": "1.4",
-      "packagePath": null,
+      "packagePath": "../course-packs/Carpentry_Joinery_ST0264_v1.4.nisi",
+      "questionBankPath": "question-banks/ST0264-AJ-v1.json",
       "content": {
-        "course": "available-in-current-app-build",
-        "multipleChoice": "existing-bank-not-yet-bundled",
+        "course": "available",
+        "multipleChoice": "available-24-question-bank",
         "discussion": "not-yet-created",
         "practical": "not-yet-created"
       },
-      "publishable": false
+      "releaseChannel": "beta",
+      "publishable": true
     },
     {
       "enrolmentId": "6570-05-THIN",
@@ -76,14 +81,16 @@
       "packageFamilyId": "6570-05",
       "packageId": "6570-05",
       "currentPackageVersion": "1",
-      "packagePath": null,
+      "packagePath": "../course-packs/Trowel_Occupations_6570-05_v1.nisi",
+      "questionBankPath": "question-banks/6570-05-THIN-v1.json",
       "content": {
-        "course": "available-in-current-app-build",
-        "multipleChoice": "not-yet-created",
+        "course": "available",
+        "multipleChoice": "available-24-question-bank",
         "discussion": "not-yet-created",
         "practical": "not-yet-created"
       },
-      "publishable": false
+      "releaseChannel": "beta",
+      "publishable": true
     },
     {
       "enrolmentId": "6570-05-REPAIR",
@@ -96,14 +103,16 @@
       "packageFamilyId": "6570-05",
       "packageId": "6570-05",
       "currentPackageVersion": "1",
-      "packagePath": null,
+      "packagePath": "../course-packs/Trowel_Occupations_6570-05_v1.nisi",
+      "questionBankPath": "question-banks/6570-05-REPAIR-v1.json",
       "content": {
-        "course": "available-in-current-app-build",
-        "multipleChoice": "not-yet-created",
+        "course": "available",
+        "multipleChoice": "available-24-question-bank",
         "discussion": "not-yet-created",
         "practical": "not-yet-created"
       },
-      "publishable": false
+      "releaseChannel": "beta",
+      "publishable": true
     },
     {
       "enrolmentId": "6570-05-SPECIALIST",
@@ -116,14 +125,16 @@
       "packageFamilyId": "6570-05",
       "packageId": "6570-05",
       "currentPackageVersion": "1",
-      "packagePath": null,
+      "packagePath": "../course-packs/Trowel_Occupations_6570-05_v1.nisi",
+      "questionBankPath": "question-banks/6570-05-SPECIALIST-v1.json",
       "content": {
-        "course": "available-in-current-app-build",
-        "multipleChoice": "not-yet-created",
+        "course": "available",
+        "multipleChoice": "available-24-question-bank",
         "discussion": "not-yet-created",
         "practical": "not-yet-created"
       },
-      "publishable": false
+      "releaseChannel": "beta",
+      "publishable": true
     },
     {
       "enrolmentId": "6570-05-DRAINAGE",
@@ -136,14 +147,16 @@
       "packageFamilyId": "6570-05",
       "packageId": "6570-05",
       "currentPackageVersion": "1",
-      "packagePath": null,
+      "packagePath": "../course-packs/Trowel_Occupations_6570-05_v1.nisi",
+      "questionBankPath": "question-banks/6570-05-DRAINAGE-v1.json",
       "content": {
-        "course": "available-in-current-app-build",
-        "multipleChoice": "not-yet-created",
+        "course": "available",
+        "multipleChoice": "available-24-question-bank",
         "discussion": "not-yet-created",
         "practical": "not-yet-created"
       },
-      "publishable": false
+      "releaseChannel": "beta",
+      "publishable": true
     }
   ]
 }

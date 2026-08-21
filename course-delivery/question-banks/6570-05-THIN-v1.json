@@ -1,0 +1,446 @@
+{
+  "eviaQuestionBank": 1,
+  "schemaVersion": 1,
+  "bankVersion": "1.0",
+  "updated": "2026-08-21",
+  "enrolmentId": "6570-05-THIN",
+  "courseTitle": "Thin Joint",
+  "qualificationId": "6570-05",
+  "pathwayId": "thin",
+  "assessmentArea": "ARP",
+  "questionType": "multiple-choice",
+  "questionsPerMock": 10,
+  "sourceNote": "Original Evia practice questions mapped to course criteria. These are not official awarding-body or end-point-assessment questions.",
+  "questions": [
+    {
+      "id": "6570-05-THIN-Q001",
+      "type": "multiple-choice",
+      "topic": "Site safety",
+      "mapsTo": [
+        "102.1.1",
+        "102.1.3"
+      ],
+      "prompt": "What should a worker do with site induction and safety-sign information?",
+      "options": [
+        "Follow it only when supervised",
+        "Understand and follow it throughout the work",
+        "Replace it with personal preference",
+        "Ignore it after the first day"
+      ],
+      "correctIndex": 1,
+      "explanation": "Induction information and safety notices remain part of the site's control arrangements."
+    },
+    {
+      "id": "6570-05-THIN-Q002",
+      "type": "multiple-choice",
+      "topic": "Serious danger",
+      "mapsTo": [
+        "102.2.1",
+        "102.2.2"
+      ],
+      "prompt": "An uncontrolled hazard presents serious and immediate danger. What is the correct action?",
+      "options": [
+        "Continue carefully",
+        "Stop work, move to safety and report it through the site procedure",
+        "Take a photograph and carry on",
+        "Wait until the next break"
+      ],
+      "correctIndex": 1,
+      "explanation": "Work should stop when serious danger is not controlled, and the issue must be reported."
+    },
+    {
+      "id": "6570-05-THIN-Q003",
+      "type": "multiple-choice",
+      "topic": "Manual handling",
+      "mapsTo": [
+        "102.2.5"
+      ],
+      "prompt": "What should be considered before moving a heavy masonry component?",
+      "options": [
+        "Only the shortest route",
+        "Load, individual capability, task, environment and suitable assistance",
+        "Whether it can be thrown",
+        "Only the delivery time"
+      ],
+      "correctIndex": 1,
+      "explanation": "A handling assessment considers the task, load, person and environment, with aids or help used where needed."
+    },
+    {
+      "id": "6570-05-THIN-Q004",
+      "type": "multiple-choice",
+      "topic": "Emergencies",
+      "mapsTo": [
+        "102.1.8",
+        "102.3.8"
+      ],
+      "prompt": "On hearing the evacuation alarm, what should you do?",
+      "options": [
+        "Finish the current course",
+        "Follow the site emergency procedure and go to the designated assembly point",
+        "Collect every personal item",
+        "Use any vehicle to leave"
+      ],
+      "correctIndex": 1,
+      "explanation": "The site emergency plan gives the safe route, assembly point and reporting process."
+    },
+    {
+      "id": "6570-05-THIN-Q005",
+      "type": "multiple-choice",
+      "topic": "Work methods",
+      "mapsTo": [
+        "303.1.1",
+        "303.1.4"
+      ],
+      "prompt": "What should influence the selected method of work?",
+      "options": [
+        "Only speed",
+        "Project information, resources, conditions and the risk assessment",
+        "Only the cheapest tool",
+        "The previous project's method"
+      ],
+      "correctIndex": 1,
+      "explanation": "A suitable method must meet technical requirements while controlling risks and using available resources."
+    },
+    {
+      "id": "6570-05-THIN-Q006",
+      "type": "multiple-choice",
+      "topic": "Clarification",
+      "mapsTo": [
+        "303.2.1",
+        "303.2.2"
+      ],
+      "prompt": "The project information is insufficient to choose a safe method. What should happen?",
+      "options": [
+        "Guess the missing detail",
+        "Obtain the necessary information from an authorised source",
+        "Copy a different drawing",
+        "Start and decide later"
+      ],
+      "correctIndex": 1,
+      "explanation": "Missing information must be obtained before the method is confirmed."
+    },
+    {
+      "id": "6570-05-THIN-Q007",
+      "type": "multiple-choice",
+      "topic": "Planning",
+      "mapsTo": [
+        "300.1.1",
+        "300.1.2"
+      ],
+      "prompt": "What makes a useful personal work sequence?",
+      "options": [
+        "A list based only on preference",
+        "An order based on the work, resources, dependencies and site programme",
+        "Starting every activity at once",
+        "Ignoring other occupations"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sequencing should reflect resources, interfaces and the required programme."
+    },
+    {
+      "id": "6570-05-THIN-Q008",
+      "type": "multiple-choice",
+      "topic": "Programme changes",
+      "mapsTo": [
+        "300.5.1",
+        "300.5.2"
+      ],
+      "prompt": "A delay will affect the agreed programme. What should you do?",
+      "options": [
+        "Hide it until completion",
+        "Identify the effect and inform the relevant person promptly",
+        "Change another trade's programme yourself",
+        "Reduce quality checks"
+      ],
+      "correctIndex": 1,
+      "explanation": "Early reporting allows the programme and interfaces to be managed."
+    },
+    {
+      "id": "6570-05-THIN-Q009",
+      "type": "multiple-choice",
+      "topic": "Low-carbon working",
+      "mapsTo": [
+        "300.4.5",
+        "300.4.6"
+      ],
+      "prompt": "Which choice best supports low-carbon working?",
+      "options": [
+        "Over-ordering every material",
+        "Planning quantities and methods to reduce waste and unnecessary plant use",
+        "Sending reusable materials to mixed waste",
+        "Leaving equipment running"
+      ],
+      "correctIndex": 1,
+      "explanation": "Efficient resources and methods can reduce waste, transport and energy demand."
+    },
+    {
+      "id": "6570-05-THIN-Q010",
+      "type": "multiple-choice",
+      "topic": "Working relationships",
+      "mapsTo": [
+        "502.1.2",
+        "502.1.4"
+      ],
+      "prompt": "Which behaviour supports equality and diversity at work?",
+      "options": [
+        "Withholding information from a new starter",
+        "Communicating respectfully and adapting so relevant people can participate",
+        "Using stereotypes to allocate work",
+        "Ignoring a request for reasonable support"
+      ],
+      "correctIndex": 1,
+      "explanation": "Respectful, inclusive communication helps people contribute safely and effectively."
+    },
+    {
+      "id": "6570-05-THIN-Q011",
+      "type": "multiple-choice",
+      "topic": "Coordination",
+      "mapsTo": [
+        "502.4.1",
+        "502.4.2"
+      ],
+      "prompt": "Your work will affect another occupation's access. What should you do?",
+      "options": [
+        "Block the route without warning",
+        "Clarify and coordinate the activities with the people involved",
+        "Move their work",
+        "Assume they will notice"
+      ],
+      "correctIndex": 1,
+      "explanation": "Interfaces should be agreed so work can proceed safely and efficiently."
+    },
+    {
+      "id": "6570-05-THIN-Q012",
+      "type": "multiple-choice",
+      "topic": "Setting out",
+      "mapsTo": [
+        "701.7.1",
+        "701.7.4"
+      ],
+      "prompt": "Which method can help set out a right angle on site?",
+      "options": [
+        "A 3-4-5 triangle checked to suitable dimensions",
+        "Measuring one side only",
+        "Following the nearest wall without checking",
+        "Changing the datum"
+      ],
+      "correctIndex": 0,
+      "explanation": "A correctly measured 3-4-5 triangle is a practical right-angle check."
+    },
+    {
+      "id": "6570-05-THIN-Q013",
+      "type": "multiple-choice",
+      "topic": "Thin-joint system",
+      "mapsTo": [
+        "238.1.1",
+        "238.7.4"
+      ],
+      "prompt": "What should control the thin-joint masonry system and joint requirements?",
+      "options": [
+        "The operative's preferred mortar",
+        "The current design, system specification and manufacturer's instructions",
+        "A conventional brickwork detail",
+        "The colour of the blocks"
+      ],
+      "correctIndex": 1,
+      "explanation": "Thin-joint work is a proprietary system and must follow its approved design and instructions."
+    },
+    {
+      "id": "6570-05-THIN-Q014",
+      "type": "multiple-choice",
+      "topic": "First course",
+      "mapsTo": [
+        "238.7.1",
+        "238.7.3",
+        "238.7.4"
+      ],
+      "prompt": "Why is the first course especially important in thin-joint masonry?",
+      "options": [
+        "It is hidden later",
+        "Its line, level and accuracy establish the base for subsequent thin beds",
+        "It removes the need for later checks",
+        "It uses no setting out"
+      ],
+      "correctIndex": 1,
+      "explanation": "A precise first course limits accumulated error through the wall."
+    },
+    {
+      "id": "6570-05-THIN-Q015",
+      "type": "multiple-choice",
+      "topic": "Joint control",
+      "mapsTo": [
+        "238.7.1",
+        "238.7.4"
+      ],
+      "prompt": "How should thin-joint bed thickness be controlled?",
+      "options": [
+        "By adding extra adhesive to correct every level error",
+        "By using the specified applicator and system method on accurately prepared units",
+        "By eye with no checks",
+        "By using conventional thick mortar"
+      ],
+      "correctIndex": 1,
+      "explanation": "The proprietary method and applicator help maintain the designed thin, consistent bed."
+    },
+    {
+      "id": "6570-05-THIN-Q016",
+      "type": "multiple-choice",
+      "topic": "Quality checks",
+      "mapsTo": [
+        "238.7.1",
+        "238.7.3"
+      ],
+      "prompt": "Which checks should continue as thin-joint walling rises?",
+      "options": [
+        "Only the final height",
+        "Line, level, plumb, gauge and key opening dimensions",
+        "Only adhesive colour",
+        "No checks after the first course"
+      ],
+      "correctIndex": 1,
+      "explanation": "Regular checks prevent small errors accumulating through thin bed joints."
+    },
+    {
+      "id": "6570-05-THIN-Q017",
+      "type": "multiple-choice",
+      "topic": "Resources",
+      "mapsTo": [
+        "238.4.1",
+        "238.4.4"
+      ],
+      "prompt": "A block or adhesive is not approved for the selected thin-joint system. What should you do?",
+      "options": [
+        "Use it in hidden areas",
+        "Stop and obtain a compatible approved resource",
+        "Mix two products together",
+        "Increase the joint thickness"
+      ],
+      "correctIndex": 1,
+      "explanation": "System components must be compatible and approved for the specified construction."
+    },
+    {
+      "id": "6570-05-THIN-Q018",
+      "type": "multiple-choice",
+      "topic": "Cutting",
+      "mapsTo": [
+        "238.3.2",
+        "238.3.3"
+      ],
+      "prompt": "Cutting thin-joint blocks will create dust. What controls are required?",
+      "options": [
+        "Dry sweep only",
+        "The task-specified dust control, extraction or suppression and suitable RPE",
+        "No controls outdoors",
+        "Remove the tool guard"
+      ],
+      "correctIndex": 1,
+      "explanation": "Block dust must be controlled using the assessed engineering and respiratory controls."
+    },
+    {
+      "id": "6570-05-THIN-Q019",
+      "type": "multiple-choice",
+      "topic": "Bond",
+      "mapsTo": [
+        "238.7.3",
+        "238.7.4"
+      ],
+      "prompt": "Why should contact surfaces be clean before thin-joint adhesive is applied?",
+      "options": [
+        "To make the block lighter",
+        "Dust or debris can reduce consistent contact and bond",
+        "To change the block size",
+        "To avoid setting out"
+      ],
+      "correctIndex": 1,
+      "explanation": "Clean, prepared surfaces support a consistent joint and system bond."
+    },
+    {
+      "id": "6570-05-THIN-Q020",
+      "type": "multiple-choice",
+      "topic": "Openings",
+      "mapsTo": [
+        "238.1.1",
+        "238.7.1"
+      ],
+      "prompt": "How should lintels and opening details be formed in thin-joint masonry?",
+      "options": [
+        "Using any detail from conventional masonry",
+        "To the current drawing and system specification",
+        "Without checking bearing",
+        "After the wall is complete"
+      ],
+      "correctIndex": 1,
+      "explanation": "Openings must use the designed system components, bearings and details."
+    },
+    {
+      "id": "6570-05-THIN-Q021",
+      "type": "multiple-choice",
+      "topic": "Protection",
+      "mapsTo": [
+        "238.5.1",
+        "238.5.4"
+      ],
+      "prompt": "What is the correct response when weather could affect fresh thin-joint work?",
+      "options": [
+        "Ignore the forecast",
+        "Use the specified protection or stop work when conditions are unsuitable",
+        "Add unapproved water",
+        "Cover only the tools"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fresh work and materials must be protected within the system's permitted conditions."
+    },
+    {
+      "id": "6570-05-THIN-Q022",
+      "type": "multiple-choice",
+      "topic": "Coordination",
+      "mapsTo": [
+        "238.7.5"
+      ],
+      "prompt": "A service opening is needed through the thin-joint wall. What should happen?",
+      "options": [
+        "Cut it wherever it is easiest",
+        "Coordinate it with the design and relevant occupations before forming it",
+        "Wait until finishes are complete",
+        "Remove nearby reinforcement without approval"
+      ],
+      "correctIndex": 1,
+      "explanation": "Openings can affect structure and interfaces, so their position and method must be agreed."
+    },
+    {
+      "id": "6570-05-THIN-Q023",
+      "type": "multiple-choice",
+      "topic": "Quantities",
+      "mapsTo": [
+        "238.4.7"
+      ],
+      "prompt": "What should a thin-joint material calculation include?",
+      "options": [
+        "Only wall length",
+        "Wall area or volume, openings, unit coverage and the specified waste allowance",
+        "Only adhesive colour",
+        "A full spare load regardless of need"
+      ],
+      "correctIndex": 1,
+      "explanation": "Dimensions, openings, product coverage and justified waste produce a useful quantity."
+    },
+    {
+      "id": "6570-05-THIN-Q024",
+      "type": "multiple-choice",
+      "topic": "Unsuitable resources",
+      "mapsTo": [
+        "238.1.3",
+        "238.4.3"
+      ],
+      "prompt": "Delivered blocks are damaged beyond the permitted quality. What should you do?",
+      "options": [
+        "Hide them in the wall",
+        "Segregate and report them, then obtain suitable replacements",
+        "Increase the adhesive thickness",
+        "Paint them"
+      ],
+      "correctIndex": 1,
+      "explanation": "Unsuitable resources should not be built in; they must be reported and resolved."
+    }
+  ]
+}

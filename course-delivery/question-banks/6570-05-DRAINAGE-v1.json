@@ -1,0 +1,445 @@
+{
+  "eviaQuestionBank": 1,
+  "schemaVersion": 1,
+  "bankVersion": "1.0",
+  "updated": "2026-08-21",
+  "enrolmentId": "6570-05-DRAINAGE",
+  "courseTitle": "Drainage",
+  "qualificationId": "6570-05",
+  "pathwayId": "drainage",
+  "assessmentArea": "ARP",
+  "questionType": "multiple-choice",
+  "questionsPerMock": 10,
+  "sourceNote": "Original Evia practice questions mapped to course criteria. These are not official awarding-body or end-point-assessment questions.",
+  "questions": [
+    {
+      "id": "6570-05-DRAINAGE-Q001",
+      "type": "multiple-choice",
+      "topic": "Site safety",
+      "mapsTo": [
+        "102.1.1",
+        "102.1.3"
+      ],
+      "prompt": "What should a worker do with site induction and safety-sign information?",
+      "options": [
+        "Follow it only when supervised",
+        "Understand and follow it throughout the work",
+        "Replace it with personal preference",
+        "Ignore it after the first day"
+      ],
+      "correctIndex": 1,
+      "explanation": "Induction information and safety notices remain part of the site's control arrangements."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q002",
+      "type": "multiple-choice",
+      "topic": "Serious danger",
+      "mapsTo": [
+        "102.2.1",
+        "102.2.2"
+      ],
+      "prompt": "An uncontrolled hazard presents serious and immediate danger. What is the correct action?",
+      "options": [
+        "Continue carefully",
+        "Stop work, move to safety and report it through the site procedure",
+        "Take a photograph and carry on",
+        "Wait until the next break"
+      ],
+      "correctIndex": 1,
+      "explanation": "Work should stop when serious danger is not controlled, and the issue must be reported."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q003",
+      "type": "multiple-choice",
+      "topic": "Manual handling",
+      "mapsTo": [
+        "102.2.5"
+      ],
+      "prompt": "What should be considered before moving a heavy masonry component?",
+      "options": [
+        "Only the shortest route",
+        "Load, individual capability, task, environment and suitable assistance",
+        "Whether it can be thrown",
+        "Only the delivery time"
+      ],
+      "correctIndex": 1,
+      "explanation": "A handling assessment considers the task, load, person and environment, with aids or help used where needed."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q004",
+      "type": "multiple-choice",
+      "topic": "Emergencies",
+      "mapsTo": [
+        "102.1.8",
+        "102.3.8"
+      ],
+      "prompt": "On hearing the evacuation alarm, what should you do?",
+      "options": [
+        "Finish the current course",
+        "Follow the site emergency procedure and go to the designated assembly point",
+        "Collect every personal item",
+        "Use any vehicle to leave"
+      ],
+      "correctIndex": 1,
+      "explanation": "The site emergency plan gives the safe route, assembly point and reporting process."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q005",
+      "type": "multiple-choice",
+      "topic": "Work methods",
+      "mapsTo": [
+        "303.1.1",
+        "303.1.4"
+      ],
+      "prompt": "What should influence the selected method of work?",
+      "options": [
+        "Only speed",
+        "Project information, resources, conditions and the risk assessment",
+        "Only the cheapest tool",
+        "The previous project's method"
+      ],
+      "correctIndex": 1,
+      "explanation": "A suitable method must meet technical requirements while controlling risks and using available resources."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q006",
+      "type": "multiple-choice",
+      "topic": "Clarification",
+      "mapsTo": [
+        "303.2.1",
+        "303.2.2"
+      ],
+      "prompt": "The project information is insufficient to choose a safe method. What should happen?",
+      "options": [
+        "Guess the missing detail",
+        "Obtain the necessary information from an authorised source",
+        "Copy a different drawing",
+        "Start and decide later"
+      ],
+      "correctIndex": 1,
+      "explanation": "Missing information must be obtained before the method is confirmed."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q007",
+      "type": "multiple-choice",
+      "topic": "Planning",
+      "mapsTo": [
+        "300.1.1",
+        "300.1.2"
+      ],
+      "prompt": "What makes a useful personal work sequence?",
+      "options": [
+        "A list based only on preference",
+        "An order based on the work, resources, dependencies and site programme",
+        "Starting every activity at once",
+        "Ignoring other occupations"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sequencing should reflect resources, interfaces and the required programme."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q008",
+      "type": "multiple-choice",
+      "topic": "Programme changes",
+      "mapsTo": [
+        "300.5.1",
+        "300.5.2"
+      ],
+      "prompt": "A delay will affect the agreed programme. What should you do?",
+      "options": [
+        "Hide it until completion",
+        "Identify the effect and inform the relevant person promptly",
+        "Change another trade's programme yourself",
+        "Reduce quality checks"
+      ],
+      "correctIndex": 1,
+      "explanation": "Early reporting allows the programme and interfaces to be managed."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q009",
+      "type": "multiple-choice",
+      "topic": "Low-carbon working",
+      "mapsTo": [
+        "300.4.5",
+        "300.4.6"
+      ],
+      "prompt": "Which choice best supports low-carbon working?",
+      "options": [
+        "Over-ordering every material",
+        "Planning quantities and methods to reduce waste and unnecessary plant use",
+        "Sending reusable materials to mixed waste",
+        "Leaving equipment running"
+      ],
+      "correctIndex": 1,
+      "explanation": "Efficient resources and methods can reduce waste, transport and energy demand."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q010",
+      "type": "multiple-choice",
+      "topic": "Working relationships",
+      "mapsTo": [
+        "502.1.2",
+        "502.1.4"
+      ],
+      "prompt": "Which behaviour supports equality and diversity at work?",
+      "options": [
+        "Withholding information from a new starter",
+        "Communicating respectfully and adapting so relevant people can participate",
+        "Using stereotypes to allocate work",
+        "Ignoring a request for reasonable support"
+      ],
+      "correctIndex": 1,
+      "explanation": "Respectful, inclusive communication helps people contribute safely and effectively."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q011",
+      "type": "multiple-choice",
+      "topic": "Coordination",
+      "mapsTo": [
+        "502.4.1",
+        "502.4.2"
+      ],
+      "prompt": "Your work will affect another occupation's access. What should you do?",
+      "options": [
+        "Block the route without warning",
+        "Clarify and coordinate the activities with the people involved",
+        "Move their work",
+        "Assume they will notice"
+      ],
+      "correctIndex": 1,
+      "explanation": "Interfaces should be agreed so work can proceed safely and efficiently."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q012",
+      "type": "multiple-choice",
+      "topic": "Setting out",
+      "mapsTo": [
+        "701.7.1",
+        "701.7.4"
+      ],
+      "prompt": "Which method can help set out a right angle on site?",
+      "options": [
+        "A 3-4-5 triangle checked to suitable dimensions",
+        "Measuring one side only",
+        "Following the nearest wall without checking",
+        "Changing the datum"
+      ],
+      "correctIndex": 0,
+      "explanation": "A correctly measured 3-4-5 triangle is a practical right-angle check."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q013",
+      "type": "multiple-choice",
+      "topic": "Setting out",
+      "mapsTo": [
+        "837.1.1",
+        "837.7.1"
+      ],
+      "prompt": "What should control a drainage run's line, level and fall?",
+      "options": [
+        "The trench shape alone",
+        "The approved drainage design and specified datum",
+        "The nearest fence",
+        "The pipe colour"
+      ],
+      "correctIndex": 1,
+      "explanation": "The design establishes where the system runs and how it drains."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q014",
+      "type": "multiple-choice",
+      "topic": "Excavations",
+      "mapsTo": [
+        "837.2.1",
+        "837.3.2"
+      ],
+      "prompt": "Before entering or working beside a drainage trench, what must be confirmed?",
+      "options": [
+        "Only that the pipe has arrived",
+        "The excavation controls, access and ground conditions are safe",
+        "That the trench is narrow",
+        "That spoil is at the edge"
+      ],
+      "correctIndex": 1,
+      "explanation": "Excavation collapse, access, services and plant movement require effective controls."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q015",
+      "type": "multiple-choice",
+      "topic": "Bedding",
+      "mapsTo": [
+        "837.7.1",
+        "837.7.2"
+      ],
+      "prompt": "Why is correctly prepared bedding important below a drainage pipe?",
+      "options": [
+        "It changes pipe diameter",
+        "It provides continuous support and helps maintain line and fall",
+        "It replaces joints",
+        "It prevents all testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Uniform support reduces point loading and keeps the pipe at its designed alignment."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q016",
+      "type": "multiple-choice",
+      "topic": "Manufacturer instructions",
+      "mapsTo": [
+        "837.4.2",
+        "837.7.5"
+      ],
+      "prompt": "How should pipe sockets, seals and lubricant be assembled?",
+      "options": [
+        "Using any oil available",
+        "To the pipe-system manufacturer's instructions",
+        "With the seal removed",
+        "By hammering the socket"
+      ],
+      "correctIndex": 1,
+      "explanation": "Correct seals, cleanliness, lubricant and insertion method are needed for a sound joint."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q017",
+      "type": "multiple-choice",
+      "topic": "Cleanliness",
+      "mapsTo": [
+        "837.5.2",
+        "837.7.2"
+      ],
+      "prompt": "Why should open drainage pipe ends be capped during installation?",
+      "options": [
+        "To increase the fall",
+        "To prevent debris entering and obstructing or damaging the system",
+        "To replace testing",
+        "To make the pipe heavier"
+      ],
+      "correctIndex": 1,
+      "explanation": "Temporary caps keep soil, mortar and other debris out of the system."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q018",
+      "type": "multiple-choice",
+      "topic": "Flexible joints",
+      "mapsTo": [
+        "837.7.2",
+        "837.7.5"
+      ],
+      "prompt": "Why is an insertion-depth mark useful on a push-fit drainage joint?",
+      "options": [
+        "It marks the pipe colour",
+        "It shows whether the pipe has been inserted to the required position",
+        "It replaces the seal",
+        "It identifies the trench depth"
+      ],
+      "correctIndex": 1,
+      "explanation": "A clear witness mark helps verify correct joint assembly."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q019",
+      "type": "multiple-choice",
+      "topic": "Access",
+      "mapsTo": [
+        "837.1.1",
+        "837.7.1"
+      ],
+      "prompt": "Where should rodding or inspection access be provided?",
+      "options": [
+        "Only where it is hidden",
+        "At the locations required by the design so the system can be inspected and cleared",
+        "At every pipe midpoint",
+        "After backfilling"
+      ],
+      "correctIndex": 1,
+      "explanation": "Designed access points allow maintenance at changes and other required locations."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q020",
+      "type": "multiple-choice",
+      "topic": "Backfilling",
+      "mapsTo": [
+        "837.7.1",
+        "837.7.2"
+      ],
+      "prompt": "What is most important during initial backfill around a pipe?",
+      "options": [
+        "Tip large rubble directly onto it",
+        "Use the specified material and placement method without disturbing line, fall or joints",
+        "Remove side support",
+        "Compact with any plant on the pipe"
+      ],
+      "correctIndex": 1,
+      "explanation": "Correct surround and controlled placement protect the pipe and preserve its alignment."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q021",
+      "type": "multiple-choice",
+      "topic": "Testing",
+      "mapsTo": [
+        "837.7.6"
+      ],
+      "prompt": "When should a new drainage run be tested and checked?",
+      "options": [
+        "Only after it is inaccessible",
+        "At the specified stage before concealment or backfill prevents inspection",
+        "Before joints are made",
+        "Testing is never needed"
+      ],
+      "correctIndex": 1,
+      "explanation": "Testing while the work is accessible allows faults to be located and corrected."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q022",
+      "type": "multiple-choice",
+      "topic": "Test failure",
+      "mapsTo": [
+        "837.1.3",
+        "837.7.6"
+      ],
+      "prompt": "A drainage test fails. What should happen next?",
+      "options": [
+        "Backfill immediately",
+        "Keep the work accessible, identify and rectify the cause, then retest",
+        "Increase the test limit",
+        "Ignore a small loss"
+      ],
+      "correctIndex": 1,
+      "explanation": "A failed system must be investigated, corrected and shown to comply before it is covered."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q023",
+      "type": "multiple-choice",
+      "topic": "Connections",
+      "mapsTo": [
+        "837.1.1",
+        "837.7.5"
+      ],
+      "prompt": "How should foul and surface-water connections be identified?",
+      "options": [
+        "By pipe colour alone",
+        "From the approved drainage information and verified connection points",
+        "By choosing the nearest manhole",
+        "By smell"
+      ],
+      "correctIndex": 1,
+      "explanation": "Misconnections can cause pollution or flooding, so destinations must be confirmed from approved information."
+    },
+    {
+      "id": "6570-05-DRAINAGE-Q024",
+      "type": "multiple-choice",
+      "topic": "Quantities",
+      "mapsTo": [
+        "837.4.6"
+      ],
+      "prompt": "What should a drainage quantity take-off include?",
+      "options": [
+        "Only straight pipe length",
+        "Pipe lengths, fittings, access components, bedding or surround and a justified allowance",
+        "Only the number of trenches",
+        "A fixed percentage unrelated to the design"
+      ],
+      "correctIndex": 1,
+      "explanation": "The take-off must reflect all designed components and an appropriate, justified allowance."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "eviaQrManifest": 1,
+  "updated": "2026-08-21",
+  "labelled": true,
+  "courses": [
+    {
+      "code": "ST0095",
+      "name": "Bricklayer",
+      "payload": "EVIA1:ST0095",
+      "file": "ST0095.png",
+      "width": 1200,
+      "height": 1390,
+      "modules": 25
+    },
+    {
+      "code": "ST0264-SITE",
+      "name": "Site Carpenter",
+      "payload": "EVIA1:ST0264-SITE",
+      "file": "ST0264-SITE.png",
+      "width": 1200,
+      "height": 1390,
+      "modules": 25
+    },
+    {
+      "code": "ST0264-AJ",
+      "name": "Architectural Joiner",
+      "payload": "EVIA1:ST0264-AJ",
+      "file": "ST0264-AJ.png",
+      "width": 1200,
+      "height": 1390,
+      "modules": 25
+    },
+    {
+      "code": "6570-05-THIN",
+      "name": "Thin Joint",
+      "payload": "EVIA1:6570-05-THIN",
+      "file": "6570-05-THIN.png",
+      "width": 1200,
+      "height": 1390,
+      "modules": 25
+    },
+    {
+      "code": "6570-05-REPAIR",
+      "name": "Repair & Maintenance",
+      "payload": "EVIA1:6570-05-REPAIR",
+      "file": "6570-05-REPAIR.png",
+      "width": 1200,
+      "height": 1390,
+      "modules": 25
+    },
+    {
+      "code": "6570-05-SPECIALIST",
+      "name": "Specialist Masonry",
+      "payload": "EVIA1:6570-05-SPECIALIST",
+      "file": "6570-05-SPECIALIST.png",
+      "width": 1200,
+      "height": 1390,
+      "modules": 29
+    },
+    {
+      "code": "6570-05-DRAINAGE",
+      "name": "Drainage",
+      "payload": "EVIA1:6570-05-DRAINAGE",
+      "file": "6570-05-DRAINAGE.png",
+      "width": 1200,
+      "height": 1390,
+      "modules": 29
+    }
+  ]
+}

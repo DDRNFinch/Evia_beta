@@ -1,0 +1,71 @@
+{
+  "eviaQuestionBankIndex": 1,
+  "schemaVersion": 1,
+  "updated": "2026-08-21",
+  "totalQuestions": 168,
+  "banks": [
+    {
+      "enrolmentId": "ST0095",
+      "courseTitle": "Bricklayer",
+      "qualificationId": "ST0095",
+      "pathwayId": null,
+      "path": "ST0095-v1.json",
+      "questionCount": 24,
+      "questionsPerMock": 10
+    },
+    {
+      "enrolmentId": "ST0264-SITE",
+      "courseTitle": "Site Carpenter",
+      "qualificationId": "ST0264",
+      "pathwayId": "site-carpenter",
+      "path": "ST0264-SITE-v1.json",
+      "questionCount": 24,
+      "questionsPerMock": 10
+    },
+    {
+      "enrolmentId": "ST0264-AJ",
+      "courseTitle": "Architectural Joiner",
+      "qualificationId": "ST0264",
+      "pathwayId": "architectural-joiner",
+      "path": "ST0264-AJ-v1.json",
+      "questionCount": 24,
+      "questionsPerMock": 10
+    },
+    {
+      "enrolmentId": "6570-05-THIN",
+      "courseTitle": "Thin Joint",
+      "qualificationId": "6570-05",
+      "pathwayId": "thin",
+      "path": "6570-05-THIN-v1.json",
+      "questionCount": 24,
+      "questionsPerMock": 10
+    },
+    {
+      "enrolmentId": "6570-05-REPAIR",
+      "courseTitle": "Repair & Maintenance",
+      "qualificationId": "6570-05",
+      "pathwayId": "repair",
+      "path": "6570-05-REPAIR-v1.json",
+      "questionCount": 24,
+      "questionsPerMock": 10
+    },
+    {
+      "enrolmentId": "6570-05-SPECIALIST",
+      "courseTitle": "Specialist Masonry",
+      "qualificationId": "6570-05",
+      "pathwayId": "specialist",
+      "path": "6570-05-SPECIALIST-v1.json",
+      "questionCount": 24,
+      "questionsPerMock": 10
+    },
+    {
+      "enrolmentId": "6570-05-DRAINAGE",
+      "courseTitle": "Drainage",
+      "qualificationId": "6570-05",
+      "pathwayId": "drainage",
+      "path": "6570-05-DRAINAGE-v1.json",
+      "questionCount": 24,
+      "questionsPerMock": 10
+    }
+  ]
+}

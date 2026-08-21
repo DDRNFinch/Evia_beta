@@ -1,0 +1,445 @@
+{
+  "eviaQuestionBank": 1,
+  "schemaVersion": 1,
+  "bankVersion": "1.0",
+  "updated": "2026-08-21",
+  "enrolmentId": "6570-05-REPAIR",
+  "courseTitle": "Repair & Maintenance",
+  "qualificationId": "6570-05",
+  "pathwayId": "repair",
+  "assessmentArea": "ARP",
+  "questionType": "multiple-choice",
+  "questionsPerMock": 10,
+  "sourceNote": "Original Evia practice questions mapped to course criteria. These are not official awarding-body or end-point-assessment questions.",
+  "questions": [
+    {
+      "id": "6570-05-REPAIR-Q001",
+      "type": "multiple-choice",
+      "topic": "Site safety",
+      "mapsTo": [
+        "102.1.1",
+        "102.1.3"
+      ],
+      "prompt": "What should a worker do with site induction and safety-sign information?",
+      "options": [
+        "Follow it only when supervised",
+        "Understand and follow it throughout the work",
+        "Replace it with personal preference",
+        "Ignore it after the first day"
+      ],
+      "correctIndex": 1,
+      "explanation": "Induction information and safety notices remain part of the site's control arrangements."
+    },
+    {
+      "id": "6570-05-REPAIR-Q002",
+      "type": "multiple-choice",
+      "topic": "Serious danger",
+      "mapsTo": [
+        "102.2.1",
+        "102.2.2"
+      ],
+      "prompt": "An uncontrolled hazard presents serious and immediate danger. What is the correct action?",
+      "options": [
+        "Continue carefully",
+        "Stop work, move to safety and report it through the site procedure",
+        "Take a photograph and carry on",
+        "Wait until the next break"
+      ],
+      "correctIndex": 1,
+      "explanation": "Work should stop when serious danger is not controlled, and the issue must be reported."
+    },
+    {
+      "id": "6570-05-REPAIR-Q003",
+      "type": "multiple-choice",
+      "topic": "Manual handling",
+      "mapsTo": [
+        "102.2.5"
+      ],
+      "prompt": "What should be considered before moving a heavy masonry component?",
+      "options": [
+        "Only the shortest route",
+        "Load, individual capability, task, environment and suitable assistance",
+        "Whether it can be thrown",
+        "Only the delivery time"
+      ],
+      "correctIndex": 1,
+      "explanation": "A handling assessment considers the task, load, person and environment, with aids or help used where needed."
+    },
+    {
+      "id": "6570-05-REPAIR-Q004",
+      "type": "multiple-choice",
+      "topic": "Emergencies",
+      "mapsTo": [
+        "102.1.8",
+        "102.3.8"
+      ],
+      "prompt": "On hearing the evacuation alarm, what should you do?",
+      "options": [
+        "Finish the current course",
+        "Follow the site emergency procedure and go to the designated assembly point",
+        "Collect every personal item",
+        "Use any vehicle to leave"
+      ],
+      "correctIndex": 1,
+      "explanation": "The site emergency plan gives the safe route, assembly point and reporting process."
+    },
+    {
+      "id": "6570-05-REPAIR-Q005",
+      "type": "multiple-choice",
+      "topic": "Work methods",
+      "mapsTo": [
+        "303.1.1",
+        "303.1.4"
+      ],
+      "prompt": "What should influence the selected method of work?",
+      "options": [
+        "Only speed",
+        "Project information, resources, conditions and the risk assessment",
+        "Only the cheapest tool",
+        "The previous project's method"
+      ],
+      "correctIndex": 1,
+      "explanation": "A suitable method must meet technical requirements while controlling risks and using available resources."
+    },
+    {
+      "id": "6570-05-REPAIR-Q006",
+      "type": "multiple-choice",
+      "topic": "Clarification",
+      "mapsTo": [
+        "303.2.1",
+        "303.2.2"
+      ],
+      "prompt": "The project information is insufficient to choose a safe method. What should happen?",
+      "options": [
+        "Guess the missing detail",
+        "Obtain the necessary information from an authorised source",
+        "Copy a different drawing",
+        "Start and decide later"
+      ],
+      "correctIndex": 1,
+      "explanation": "Missing information must be obtained before the method is confirmed."
+    },
+    {
+      "id": "6570-05-REPAIR-Q007",
+      "type": "multiple-choice",
+      "topic": "Planning",
+      "mapsTo": [
+        "300.1.1",
+        "300.1.2"
+      ],
+      "prompt": "What makes a useful personal work sequence?",
+      "options": [
+        "A list based only on preference",
+        "An order based on the work, resources, dependencies and site programme",
+        "Starting every activity at once",
+        "Ignoring other occupations"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sequencing should reflect resources, interfaces and the required programme."
+    },
+    {
+      "id": "6570-05-REPAIR-Q008",
+      "type": "multiple-choice",
+      "topic": "Programme changes",
+      "mapsTo": [
+        "300.5.1",
+        "300.5.2"
+      ],
+      "prompt": "A delay will affect the agreed programme. What should you do?",
+      "options": [
+        "Hide it until completion",
+        "Identify the effect and inform the relevant person promptly",
+        "Change another trade's programme yourself",
+        "Reduce quality checks"
+      ],
+      "correctIndex": 1,
+      "explanation": "Early reporting allows the programme and interfaces to be managed."
+    },
+    {
+      "id": "6570-05-REPAIR-Q009",
+      "type": "multiple-choice",
+      "topic": "Low-carbon working",
+      "mapsTo": [
+        "300.4.5",
+        "300.4.6"
+      ],
+      "prompt": "Which choice best supports low-carbon working?",
+      "options": [
+        "Over-ordering every material",
+        "Planning quantities and methods to reduce waste and unnecessary plant use",
+        "Sending reusable materials to mixed waste",
+        "Leaving equipment running"
+      ],
+      "correctIndex": 1,
+      "explanation": "Efficient resources and methods can reduce waste, transport and energy demand."
+    },
+    {
+      "id": "6570-05-REPAIR-Q010",
+      "type": "multiple-choice",
+      "topic": "Working relationships",
+      "mapsTo": [
+        "502.1.2",
+        "502.1.4"
+      ],
+      "prompt": "Which behaviour supports equality and diversity at work?",
+      "options": [
+        "Withholding information from a new starter",
+        "Communicating respectfully and adapting so relevant people can participate",
+        "Using stereotypes to allocate work",
+        "Ignoring a request for reasonable support"
+      ],
+      "correctIndex": 1,
+      "explanation": "Respectful, inclusive communication helps people contribute safely and effectively."
+    },
+    {
+      "id": "6570-05-REPAIR-Q011",
+      "type": "multiple-choice",
+      "topic": "Coordination",
+      "mapsTo": [
+        "502.4.1",
+        "502.4.2"
+      ],
+      "prompt": "Your work will affect another occupation's access. What should you do?",
+      "options": [
+        "Block the route without warning",
+        "Clarify and coordinate the activities with the people involved",
+        "Move their work",
+        "Assume they will notice"
+      ],
+      "correctIndex": 1,
+      "explanation": "Interfaces should be agreed so work can proceed safely and efficiently."
+    },
+    {
+      "id": "6570-05-REPAIR-Q012",
+      "type": "multiple-choice",
+      "topic": "Setting out",
+      "mapsTo": [
+        "701.7.1",
+        "701.7.4"
+      ],
+      "prompt": "Which method can help set out a right angle on site?",
+      "options": [
+        "A 3-4-5 triangle checked to suitable dimensions",
+        "Measuring one side only",
+        "Following the nearest wall without checking",
+        "Changing the datum"
+      ],
+      "correctIndex": 0,
+      "explanation": "A correctly measured 3-4-5 triangle is a practical right-angle check."
+    },
+    {
+      "id": "6570-05-REPAIR-Q013",
+      "type": "multiple-choice",
+      "topic": "Diagnosis",
+      "mapsTo": [
+        "690.1.1",
+        "690.7.4"
+      ],
+      "prompt": "What should be established before a masonry repair method is selected?",
+      "options": [
+        "Only the visible colour",
+        "The defect, likely cause, extent and specified repair outcome",
+        "The fastest demolition method",
+        "Only the age of the building"
+      ],
+      "correctIndex": 1,
+      "explanation": "Treating the cause and extent is essential to a durable, appropriate repair."
+    },
+    {
+      "id": "6570-05-REPAIR-Q014",
+      "type": "multiple-choice",
+      "topic": "Compatibility",
+      "mapsTo": [
+        "690.4.1",
+        "690.4.2"
+      ],
+      "prompt": "Why should replacement masonry and mortar be compatible with the existing work?",
+      "options": [
+        "Only to reduce price",
+        "Incompatible strength, movement or moisture behaviour can cause further damage",
+        "To make every repair invisible",
+        "To avoid curing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Repair materials should work physically and visually with the retained construction."
+    },
+    {
+      "id": "6570-05-REPAIR-Q015",
+      "type": "multiple-choice",
+      "topic": "Protection",
+      "mapsTo": [
+        "690.5.1",
+        "690.5.2"
+      ],
+      "prompt": "Before removing a damaged unit, what should be protected?",
+      "options": [
+        "Only the new unit",
+        "Retained masonry, adjacent finishes, people and the surrounding area",
+        "Nothing if the unit is small",
+        "Only the tools"
+      ],
+      "correctIndex": 1,
+      "explanation": "Controlled protection prevents the repair operation causing additional damage or risk."
+    },
+    {
+      "id": "6570-05-REPAIR-Q016",
+      "type": "multiple-choice",
+      "topic": "Stability",
+      "mapsTo": [
+        "690.2.1",
+        "690.7.4"
+      ],
+      "prompt": "A proposed repair may affect structural stability. What should happen?",
+      "options": [
+        "Remove more masonry for access",
+        "Stop and obtain the specified temporary support or authorised advice",
+        "Work faster",
+        "Rely on the mortar above"
+      ],
+      "correctIndex": 1,
+      "explanation": "Stability must be maintained through an approved sequence and support arrangement."
+    },
+    {
+      "id": "6570-05-REPAIR-Q017",
+      "type": "multiple-choice",
+      "topic": "Controlled removal",
+      "mapsTo": [
+        "690.7.2",
+        "690.7.3"
+      ],
+      "prompt": "What is the aim when cutting out defective masonry?",
+      "options": [
+        "To enlarge the opening as much as possible",
+        "To remove the specified material while minimising damage to sound work",
+        "To break every adjoining joint",
+        "To reuse damaged units automatically"
+      ],
+      "correctIndex": 1,
+      "explanation": "Careful cutting preserves retained material and the intended repair dimensions."
+    },
+    {
+      "id": "6570-05-REPAIR-Q018",
+      "type": "multiple-choice",
+      "topic": "Repointing",
+      "mapsTo": [
+        "690.7.4"
+      ],
+      "prompt": "How should a joint be prepared for repointing?",
+      "options": [
+        "Smear new mortar over the surface",
+        "Remove defective material to the specified sound depth and clean the joint",
+        "Fill it with dry dust",
+        "Seal it before raking out"
+      ],
+      "correctIndex": 1,
+      "explanation": "A clean, adequately prepared joint provides space and a sound background for new mortar."
+    },
+    {
+      "id": "6570-05-REPAIR-Q019",
+      "type": "multiple-choice",
+      "topic": "Background preparation",
+      "mapsTo": [
+        "690.4.3",
+        "690.7.4"
+      ],
+      "prompt": "What should control whether a repair background is dampened before mortar is placed?",
+      "options": [
+        "Personal habit",
+        "The repair specification, material condition and environmental conditions",
+        "The wall colour",
+        "The number of operatives"
+      ],
+      "correctIndex": 1,
+      "explanation": "Preparation must suit the selected repair materials and site conditions."
+    },
+    {
+      "id": "6570-05-REPAIR-Q020",
+      "type": "multiple-choice",
+      "topic": "Mortar selection",
+      "mapsTo": [
+        "690.4.1",
+        "690.4.4"
+      ],
+      "prompt": "Which mortar should be used for a masonry repair?",
+      "options": [
+        "The strongest available",
+        "The compatible mix stated in the repair specification",
+        "Any leftover mix",
+        "Pure cement in every case"
+      ],
+      "correctIndex": 1,
+      "explanation": "An overly strong or incompatible mortar can damage retained masonry."
+    },
+    {
+      "id": "6570-05-REPAIR-Q021",
+      "type": "multiple-choice",
+      "topic": "Curing",
+      "mapsTo": [
+        "690.5.1",
+        "690.5.4"
+      ],
+      "prompt": "Why must a completed repair be protected during curing?",
+      "options": [
+        "To make it dry instantly",
+        "To control damaging moisture loss, rain, frost or impact as specified",
+        "To avoid all inspections",
+        "To increase joint thickness"
+      ],
+      "correctIndex": 1,
+      "explanation": "Correct protection allows the repair material to develop as intended."
+    },
+    {
+      "id": "6570-05-REPAIR-Q022",
+      "type": "multiple-choice",
+      "topic": "Escalation",
+      "mapsTo": [
+        "690.1.3",
+        "690.7.4"
+      ],
+      "prompt": "Cracking continues beyond the area shown for repair. What should you do?",
+      "options": [
+        "Fill only the visible end",
+        "Stop and report the changed condition for reassessment",
+        "Cover it with paint",
+        "Remove the entire wall"
+      ],
+      "correctIndex": 1,
+      "explanation": "A changed defect pattern may indicate a different cause or scope and needs authorised review."
+    },
+    {
+      "id": "6570-05-REPAIR-Q023",
+      "type": "multiple-choice",
+      "topic": "Records",
+      "mapsTo": [
+        "690.1.3",
+        "690.7.5"
+      ],
+      "prompt": "Why should unexpected concealed defects be recorded and reported?",
+      "options": [
+        "To delay the job",
+        "They may change the repair method, resources, safety or programme",
+        "Only to increase material use",
+        "They never affect the work"
+      ],
+      "correctIndex": 1,
+      "explanation": "Clear records support an informed decision and coordination with relevant people."
+    },
+    {
+      "id": "6570-05-REPAIR-Q024",
+      "type": "multiple-choice",
+      "topic": "Tools",
+      "mapsTo": [
+        "690.7.6"
+      ],
+      "prompt": "What should happen to repair tools after use?",
+      "options": [
+        "Leave mortar to harden on them",
+        "Clean, inspect, maintain and store them using the correct procedure",
+        "Store them wet",
+        "Discard every tool"
+      ],
+      "correctIndex": 1,
+      "explanation": "Maintenance keeps tools safe, serviceable and capable of accurate work."
+    }
+  ]
+}

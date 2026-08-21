@@ -1,11 +1,11 @@
 {
-  "version": "79",
-  "title": "Bricklayer enrolment repaired for mobile",
+  "version": "80",
+  "title": "Seven course QR codes and ARP practice",
   "details": [
-    "QR images now scan inside Evia on Android and iPhone even when the browser has no built-in QR reader",
-    "The permanent Bricklayer code remains ST0095 and the QR remains EVIA1:ST0095",
-    "Manual ST0095 entry has a bundled fallback if the online registry cannot be reached",
-    "The public ST0095 PNG address now stays an image instead of reopening the app",
-    "The Bricklayer course pack and complete Beta shell remain available offline"
+    "All seven course codes now install the correct Bricklayer, carpentry or Trowel Occupations route",
+    "Seven uploadable QR PNGs now show the course name and manual code below the QR",
+    "Each course has a mapped bank of 24 original multiple-choice practice questions",
+    "ARP now runs random ten-question mocks with feedback, scoring and a saved best result",
+    "Course packs, QR images and all 168 practice questions remain available offline"
   ]
 }

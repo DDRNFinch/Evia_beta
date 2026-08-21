@@ -1,0 +1,449 @@
+{
+  "eviaQuestionBank": 1,
+  "schemaVersion": 1,
+  "bankVersion": "1.0",
+  "updated": "2026-08-21",
+  "enrolmentId": "ST0264-AJ",
+  "courseTitle": "Architectural Joiner",
+  "qualificationId": "ST0264",
+  "pathwayId": "architectural-joiner",
+  "assessmentArea": "ARP",
+  "questionType": "multiple-choice",
+  "questionsPerMock": 10,
+  "sourceNote": "Original Evia practice questions mapped to course criteria. These are not official awarding-body or end-point-assessment questions.",
+  "questions": [
+    {
+      "id": "ST0264-AJ-Q001",
+      "type": "multiple-choice",
+      "topic": "Safe systems of work",
+      "mapsTo": [
+        "K3",
+        "S1"
+      ],
+      "prompt": "Before starting a new carpentry task, what should be confirmed?",
+      "options": [
+        "Only the finish time",
+        "The current risk assessment, method and work information",
+        "The previous task's cutting list",
+        "Only who supplied the timber"
+      ],
+      "correctIndex": 1,
+      "explanation": "The task method, hazards and current design information must be understood first."
+    },
+    {
+      "id": "ST0264-AJ-Q002",
+      "type": "multiple-choice",
+      "topic": "PPE and RPE",
+      "mapsTo": [
+        "K2",
+        "S2"
+      ],
+      "prompt": "Machining timber will create dust. Which approach gives the best control?",
+      "options": [
+        "Blow dust away with compressed air",
+        "Use effective extraction and the specified face-fit-tested RPE",
+        "Open a door only",
+        "Remove the guard to improve airflow"
+      ],
+      "correctIndex": 1,
+      "explanation": "Dust should be controlled at source, with suitable RPE used where the assessment requires it."
+    },
+    {
+      "id": "ST0264-AJ-Q003",
+      "type": "multiple-choice",
+      "topic": "Drawings",
+      "mapsTo": [
+        "K8",
+        "S6"
+      ],
+      "prompt": "A drawing dimension conflicts with the specification. What should you do?",
+      "options": [
+        "Choose the larger value",
+        "Stop and obtain clarification through the project procedure",
+        "Split the difference",
+        "Alter the specification"
+      ],
+      "correctIndex": 1,
+      "explanation": "Conflicting design information must be clarified before material is cut or fitted."
+    },
+    {
+      "id": "ST0264-AJ-Q004",
+      "type": "multiple-choice",
+      "topic": "Timber",
+      "mapsTo": [
+        "K9",
+        "K10"
+      ],
+      "prompt": "Why should timber condition and moisture be considered before use?",
+      "options": [
+        "Only to change its colour",
+        "Movement or decay can affect dimensions, joints and service performance",
+        "It eliminates the need for fixings",
+        "It makes every species interchangeable"
+      ],
+      "correctIndex": 1,
+      "explanation": "Moisture movement and defects can change fit, strength, stability and durability."
+    },
+    {
+      "id": "ST0264-AJ-Q005",
+      "type": "multiple-choice",
+      "topic": "Estimating",
+      "mapsTo": [
+        "K12",
+        "S7"
+      ],
+      "prompt": "What should a cutting list include?",
+      "options": [
+        "Only finished widths",
+        "Component quantities, sizes and suitable machining or cutting allowances",
+        "The operatives' names",
+        "Only the delivery date"
+      ],
+      "correctIndex": 1,
+      "explanation": "A useful cutting list identifies every component and the material allowance needed to produce it."
+    },
+    {
+      "id": "ST0264-AJ-Q006",
+      "type": "multiple-choice",
+      "topic": "Hand tools",
+      "mapsTo": [
+        "K15",
+        "S11"
+      ],
+      "prompt": "A chisel edge is damaged. What is the correct response?",
+      "options": [
+        "Use more force",
+        "Maintain it using the correct sharpening method and inspect it before reuse",
+        "Round over the cutting edge",
+        "Cool it in adhesive"
+      ],
+      "correctIndex": 1,
+      "explanation": "A correctly maintained edge is safer and produces more accurate work."
+    },
+    {
+      "id": "ST0264-AJ-Q007",
+      "type": "multiple-choice",
+      "topic": "Power tools",
+      "mapsTo": [
+        "K17",
+        "S10"
+      ],
+      "prompt": "What should happen before adjusting or changing a blade or cutter?",
+      "options": [
+        "Hold the trigger partly on",
+        "Isolate the tool and follow the manufacturer's procedure",
+        "Remove all guards",
+        "Ask someone else to hold the blade"
+      ],
+      "correctIndex": 1,
+      "explanation": "Isolation prevents unintentional start-up during adjustment."
+    },
+    {
+      "id": "ST0264-AJ-Q008",
+      "type": "multiple-choice",
+      "topic": "Jigs",
+      "mapsTo": [
+        "K16",
+        "S12"
+      ],
+      "prompt": "What is the main benefit of a well-made jig?",
+      "options": [
+        "It replaces all quality checks",
+        "It helps repeat an operation accurately and consistently",
+        "It makes blunt cutters safe",
+        "It changes timber species"
+      ],
+      "correctIndex": 1,
+      "explanation": "A jig locates or guides work so repeat components can be made consistently."
+    },
+    {
+      "id": "ST0264-AJ-Q009",
+      "type": "multiple-choice",
+      "topic": "Communication",
+      "mapsTo": [
+        "K13",
+        "S8",
+        "B5"
+      ],
+      "prompt": "Another trade needs access through your work area. What should you do?",
+      "options": [
+        "Ignore them",
+        "Agree a safe sequence and communicate any restrictions",
+        "Leave tools across the route",
+        "Move their equipment without asking"
+      ],
+      "correctIndex": 1,
+      "explanation": "Clear coordination supports safe and efficient team working."
+    },
+    {
+      "id": "ST0264-AJ-Q010",
+      "type": "multiple-choice",
+      "topic": "Inclusion",
+      "mapsTo": [
+        "K19",
+        "B3"
+      ],
+      "prompt": "Which action supports an inclusive workplace?",
+      "options": [
+        "Excluding a learner from technical discussions",
+        "Using respectful language and giving people a fair chance to contribute",
+        "Sharing jokes after someone asks you to stop",
+        "Making assumptions about ability"
+      ],
+      "correctIndex": 1,
+      "explanation": "Respect and fair participation help create an inclusive culture."
+    },
+    {
+      "id": "ST0264-AJ-Q011",
+      "type": "multiple-choice",
+      "topic": "Wellbeing",
+      "mapsTo": [
+        "K20",
+        "S13",
+        "B1"
+      ],
+      "prompt": "Where should a worker look for wellbeing support?",
+      "options": [
+        "Only social media",
+        "The employer or site support route and appropriate professional services",
+        "An unqualified rumour",
+        "Nowhere until the job ends"
+      ],
+      "correctIndex": 1,
+      "explanation": "Workers should know and use appropriate internal and professional sources of support."
+    },
+    {
+      "id": "ST0264-AJ-Q012",
+      "type": "multiple-choice",
+      "topic": "Sustainability",
+      "mapsTo": [
+        "K4",
+        "S3",
+        "B2"
+      ],
+      "prompt": "Which material practice best supports sustainability?",
+      "options": [
+        "Mix all waste together",
+        "Plan cuts, protect reusable material and segregate waste correctly",
+        "Order without checking quantities",
+        "Burn treated timber"
+      ],
+      "correctIndex": 1,
+      "explanation": "Efficient cutting, protection, reuse and correct segregation reduce waste and environmental harm."
+    },
+    {
+      "id": "ST0264-AJ-Q013",
+      "type": "multiple-choice",
+      "topic": "Fire doors",
+      "mapsTo": [
+        "K30"
+      ],
+      "prompt": "Why must components in a fire-door assembly match the approved specification?",
+      "options": [
+        "Only for appearance",
+        "Substitution can compromise the tested fire and smoke performance",
+        "To make the door heavier",
+        "To avoid fitting hinges"
+      ],
+      "correctIndex": 1,
+      "explanation": "Door leaf, frame, seals, glazing and ironmongery form a specified performance assembly."
+    },
+    {
+      "id": "ST0264-AJ-Q014",
+      "type": "multiple-choice",
+      "topic": "Fixed machinery",
+      "mapsTo": [
+        "K31",
+        "S30"
+      ],
+      "prompt": "When may a guard on fixed workshop machinery be adjusted?",
+      "options": [
+        "While the cutter is moving",
+        "After isolation, using the correct setting procedure",
+        "Only when another person holds it",
+        "Whenever it blocks the view"
+      ],
+      "correctIndex": 1,
+      "explanation": "Isolation and the manufacturer's setting method are required before guard adjustment."
+    },
+    {
+      "id": "ST0264-AJ-Q015",
+      "type": "multiple-choice",
+      "topic": "Fixed machinery",
+      "mapsTo": [
+        "K31",
+        "S30"
+      ],
+      "prompt": "What should be done if a machine's extraction is not working effectively?",
+      "options": [
+        "Continue until the end of the batch",
+        "Stop and report the fault using the workshop procedure",
+        "Remove the guard",
+        "Sweep dust into the machine"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ineffective extraction can create serious dust hazards and requires corrective action."
+    },
+    {
+      "id": "ST0264-AJ-Q016",
+      "type": "multiple-choice",
+      "topic": "Setting out",
+      "mapsTo": [
+        "K32",
+        "S23"
+      ],
+      "prompt": "What is a setting rod used for in architectural joinery?",
+      "options": [
+        "Recording staff attendance",
+        "Setting out full-size component, joint and feature positions",
+        "Testing timber moisture electrically",
+        "Sharpening cutters"
+      ],
+      "correctIndex": 1,
+      "explanation": "A setting rod transfers the required sizes and positions consistently to the work."
+    },
+    {
+      "id": "ST0264-AJ-Q017",
+      "type": "multiple-choice",
+      "topic": "Marking out",
+      "mapsTo": [
+        "K32",
+        "S23"
+      ],
+      "prompt": "Why are face-side and face-edge marks used?",
+      "options": [
+        "To decorate the component",
+        "To provide consistent reference surfaces for setting out and machining",
+        "To show waste only",
+        "To identify treated timber"
+      ],
+      "correctIndex": 1,
+      "explanation": "Common reference faces reduce accumulated marking and machining errors."
+    },
+    {
+      "id": "ST0264-AJ-Q018",
+      "type": "multiple-choice",
+      "topic": "Timber joints",
+      "mapsTo": [
+        "K33",
+        "S24"
+      ],
+      "prompt": "What helps matching mortise-and-tenon components assemble accurately?",
+      "options": [
+        "Marking each part from unrelated faces",
+        "Using consistent datums and checking shoulders and fit before assembly",
+        "Making the tenon wider than the mortise",
+        "Rounding every shoulder"
+      ],
+      "correctIndex": 1,
+      "explanation": "Consistent reference faces and trial fitting help the joint close squarely and accurately."
+    },
+    {
+      "id": "ST0264-AJ-Q019",
+      "type": "multiple-choice",
+      "topic": "Joinery connections",
+      "mapsTo": [
+        "K35",
+        "S25"
+      ],
+      "prompt": "Why is a dry assembly useful before adhesive is applied?",
+      "options": [
+        "It cures the timber",
+        "It checks joint fit, dimensions and squareness while adjustment is still possible",
+        "It replaces clamps",
+        "It removes the need for drawings"
+      ],
+      "correctIndex": 1,
+      "explanation": "A dry fit exposes errors before the assembly becomes difficult to correct."
+    },
+    {
+      "id": "ST0264-AJ-Q020",
+      "type": "multiple-choice",
+      "topic": "Timber windows",
+      "mapsTo": [
+        "K34",
+        "S26"
+      ],
+      "prompt": "Before gluing a window frame, which check is most useful?",
+      "options": [
+        "Only the longest member",
+        "Joint fit, rebates, overall size and equal diagonals",
+        "Only the preservative colour",
+        "That every component is identical"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fit, profile, size and squareness should be verified before final assembly."
+    },
+    {
+      "id": "ST0264-AJ-Q021",
+      "type": "multiple-choice",
+      "topic": "First-fix manufacture",
+      "mapsTo": [
+        "K36",
+        "S27"
+      ],
+      "prompt": "A door lining head and jambs are being prepared. What should control their sizes?",
+      "options": [
+        "The nearest stock length",
+        "The drawing or setting rod, joint detail and required finished opening",
+        "The workshop bench width",
+        "The last lining made"
+      ],
+      "correctIndex": 1,
+      "explanation": "The product must be set out from its current design and finished-opening requirements."
+    },
+    {
+      "id": "ST0264-AJ-Q022",
+      "type": "multiple-choice",
+      "topic": "Second-fix manufacture",
+      "mapsTo": [
+        "K37",
+        "S28"
+      ],
+      "prompt": "What should be checked when a timber door is clamped after assembly?",
+      "options": [
+        "Only adhesive colour",
+        "Overall dimensions, diagonals, joint closure and flatness",
+        "Only one stile length",
+        "That the clamps are all different"
+      ],
+      "correctIndex": 1,
+      "explanation": "Dimensional and joint checks confirm the assembly is square, closed and true."
+    },
+    {
+      "id": "ST0264-AJ-Q023",
+      "type": "multiple-choice",
+      "topic": "Ironmongery",
+      "mapsTo": [
+        "K39",
+        "S29"
+      ],
+      "prompt": "How should a lock or hinge recess be set out?",
+      "options": [
+        "From the fitting, drawing and consistent product datums",
+        "By guessing the centre",
+        "After finishing the product",
+        "Using only the screw length"
+      ],
+      "correctIndex": 0,
+      "explanation": "Accurate datums and the actual fitting requirements control position and depth."
+    },
+    {
+      "id": "ST0264-AJ-Q024",
+      "type": "multiple-choice",
+      "topic": "Finishing",
+      "mapsTo": [
+        "K38"
+      ],
+      "prompt": "What is the safest response to a finishing product not listed in the specification?",
+      "options": [
+        "Use it on the whole product",
+        "Check compatibility and obtain approval before use",
+        "Mix it with adhesive",
+        "Apply extra coats to compensate"
+      ],
+      "correctIndex": 1,
+      "explanation": "An unapproved finish may react with timber, adhesive, seals or later coatings."
+    }
+  ]
+}

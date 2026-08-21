@@ -1,0 +1,445 @@
+{
+  "eviaQuestionBank": 1,
+  "schemaVersion": 1,
+  "bankVersion": "1.0",
+  "updated": "2026-08-21",
+  "enrolmentId": "6570-05-SPECIALIST",
+  "courseTitle": "Specialist Masonry",
+  "qualificationId": "6570-05",
+  "pathwayId": "specialist",
+  "assessmentArea": "ARP",
+  "questionType": "multiple-choice",
+  "questionsPerMock": 10,
+  "sourceNote": "Original Evia practice questions mapped to course criteria. These are not official awarding-body or end-point-assessment questions.",
+  "questions": [
+    {
+      "id": "6570-05-SPECIALIST-Q001",
+      "type": "multiple-choice",
+      "topic": "Site safety",
+      "mapsTo": [
+        "102.1.1",
+        "102.1.3"
+      ],
+      "prompt": "What should a worker do with site induction and safety-sign information?",
+      "options": [
+        "Follow it only when supervised",
+        "Understand and follow it throughout the work",
+        "Replace it with personal preference",
+        "Ignore it after the first day"
+      ],
+      "correctIndex": 1,
+      "explanation": "Induction information and safety notices remain part of the site's control arrangements."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q002",
+      "type": "multiple-choice",
+      "topic": "Serious danger",
+      "mapsTo": [
+        "102.2.1",
+        "102.2.2"
+      ],
+      "prompt": "An uncontrolled hazard presents serious and immediate danger. What is the correct action?",
+      "options": [
+        "Continue carefully",
+        "Stop work, move to safety and report it through the site procedure",
+        "Take a photograph and carry on",
+        "Wait until the next break"
+      ],
+      "correctIndex": 1,
+      "explanation": "Work should stop when serious danger is not controlled, and the issue must be reported."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q003",
+      "type": "multiple-choice",
+      "topic": "Manual handling",
+      "mapsTo": [
+        "102.2.5"
+      ],
+      "prompt": "What should be considered before moving a heavy masonry component?",
+      "options": [
+        "Only the shortest route",
+        "Load, individual capability, task, environment and suitable assistance",
+        "Whether it can be thrown",
+        "Only the delivery time"
+      ],
+      "correctIndex": 1,
+      "explanation": "A handling assessment considers the task, load, person and environment, with aids or help used where needed."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q004",
+      "type": "multiple-choice",
+      "topic": "Emergencies",
+      "mapsTo": [
+        "102.1.8",
+        "102.3.8"
+      ],
+      "prompt": "On hearing the evacuation alarm, what should you do?",
+      "options": [
+        "Finish the current course",
+        "Follow the site emergency procedure and go to the designated assembly point",
+        "Collect every personal item",
+        "Use any vehicle to leave"
+      ],
+      "correctIndex": 1,
+      "explanation": "The site emergency plan gives the safe route, assembly point and reporting process."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q005",
+      "type": "multiple-choice",
+      "topic": "Work methods",
+      "mapsTo": [
+        "303.1.1",
+        "303.1.4"
+      ],
+      "prompt": "What should influence the selected method of work?",
+      "options": [
+        "Only speed",
+        "Project information, resources, conditions and the risk assessment",
+        "Only the cheapest tool",
+        "The previous project's method"
+      ],
+      "correctIndex": 1,
+      "explanation": "A suitable method must meet technical requirements while controlling risks and using available resources."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q006",
+      "type": "multiple-choice",
+      "topic": "Clarification",
+      "mapsTo": [
+        "303.2.1",
+        "303.2.2"
+      ],
+      "prompt": "The project information is insufficient to choose a safe method. What should happen?",
+      "options": [
+        "Guess the missing detail",
+        "Obtain the necessary information from an authorised source",
+        "Copy a different drawing",
+        "Start and decide later"
+      ],
+      "correctIndex": 1,
+      "explanation": "Missing information must be obtained before the method is confirmed."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q007",
+      "type": "multiple-choice",
+      "topic": "Planning",
+      "mapsTo": [
+        "300.1.1",
+        "300.1.2"
+      ],
+      "prompt": "What makes a useful personal work sequence?",
+      "options": [
+        "A list based only on preference",
+        "An order based on the work, resources, dependencies and site programme",
+        "Starting every activity at once",
+        "Ignoring other occupations"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sequencing should reflect resources, interfaces and the required programme."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q008",
+      "type": "multiple-choice",
+      "topic": "Programme changes",
+      "mapsTo": [
+        "300.5.1",
+        "300.5.2"
+      ],
+      "prompt": "A delay will affect the agreed programme. What should you do?",
+      "options": [
+        "Hide it until completion",
+        "Identify the effect and inform the relevant person promptly",
+        "Change another trade's programme yourself",
+        "Reduce quality checks"
+      ],
+      "correctIndex": 1,
+      "explanation": "Early reporting allows the programme and interfaces to be managed."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q009",
+      "type": "multiple-choice",
+      "topic": "Low-carbon working",
+      "mapsTo": [
+        "300.4.5",
+        "300.4.6"
+      ],
+      "prompt": "Which choice best supports low-carbon working?",
+      "options": [
+        "Over-ordering every material",
+        "Planning quantities and methods to reduce waste and unnecessary plant use",
+        "Sending reusable materials to mixed waste",
+        "Leaving equipment running"
+      ],
+      "correctIndex": 1,
+      "explanation": "Efficient resources and methods can reduce waste, transport and energy demand."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q010",
+      "type": "multiple-choice",
+      "topic": "Working relationships",
+      "mapsTo": [
+        "502.1.2",
+        "502.1.4"
+      ],
+      "prompt": "Which behaviour supports equality and diversity at work?",
+      "options": [
+        "Withholding information from a new starter",
+        "Communicating respectfully and adapting so relevant people can participate",
+        "Using stereotypes to allocate work",
+        "Ignoring a request for reasonable support"
+      ],
+      "correctIndex": 1,
+      "explanation": "Respectful, inclusive communication helps people contribute safely and effectively."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q011",
+      "type": "multiple-choice",
+      "topic": "Coordination",
+      "mapsTo": [
+        "502.4.1",
+        "502.4.2"
+      ],
+      "prompt": "Your work will affect another occupation's access. What should you do?",
+      "options": [
+        "Block the route without warning",
+        "Clarify and coordinate the activities with the people involved",
+        "Move their work",
+        "Assume they will notice"
+      ],
+      "correctIndex": 1,
+      "explanation": "Interfaces should be agreed so work can proceed safely and efficiently."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q012",
+      "type": "multiple-choice",
+      "topic": "Setting out",
+      "mapsTo": [
+        "701.7.1",
+        "701.7.4"
+      ],
+      "prompt": "Which method can help set out a right angle on site?",
+      "options": [
+        "A 3-4-5 triangle checked to suitable dimensions",
+        "Measuring one side only",
+        "Following the nearest wall without checking",
+        "Changing the datum"
+      ],
+      "correctIndex": 0,
+      "explanation": "A correctly measured 3-4-5 triangle is a practical right-angle check."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q013",
+      "type": "multiple-choice",
+      "topic": "Design information",
+      "mapsTo": [
+        "828.1.1",
+        "828.7.4"
+      ],
+      "prompt": "What should control the installation of a proprietary masonry support angle?",
+      "options": [
+        "A detail from any project",
+        "The approved design and manufacturer's system instructions",
+        "The easiest anchor spacing",
+        "The brick colour"
+      ],
+      "correctIndex": 1,
+      "explanation": "Support systems must match their engineered design, approved fixings and installation tolerances."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q014",
+      "type": "multiple-choice",
+      "topic": "Substrate",
+      "mapsTo": [
+        "828.1.3",
+        "828.4.3"
+      ],
+      "prompt": "The substrate differs from the support-system design. What should you do?",
+      "options": [
+        "Use longer fixings without approval",
+        "Stop and obtain authorised clarification",
+        "Drill extra holes at random",
+        "Reduce the number of anchors"
+      ],
+      "correctIndex": 1,
+      "explanation": "A changed substrate can alter fixing capacity and requires design review."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q015",
+      "type": "multiple-choice",
+      "topic": "Setting out",
+      "mapsTo": [
+        "828.7.1",
+        "828.7.3"
+      ],
+      "prompt": "What should be established before fixing a specialist masonry element?",
+      "options": [
+        "Only its delivery weight",
+        "The correct datum, line, level, position and interfaces",
+        "The nearest mortar joint",
+        "The scaffold colour"
+      ],
+      "correctIndex": 1,
+      "explanation": "Accurate setting out is essential for structural and envelope interfaces."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q016",
+      "type": "multiple-choice",
+      "topic": "Fire barriers",
+      "mapsTo": [
+        "828.7.4"
+      ],
+      "prompt": "Why must cavity fire barriers remain continuous at joints and interfaces?",
+      "options": [
+        "To support wet mortar",
+        "Gaps can compromise the intended fire and smoke performance",
+        "To replace wall ties",
+        "To improve paint adhesion"
+      ],
+      "correctIndex": 1,
+      "explanation": "The installed barrier must preserve the specified continuity of fire performance."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q017",
+      "type": "multiple-choice",
+      "topic": "Wind posts",
+      "mapsTo": [
+        "828.7.1",
+        "828.7.4"
+      ],
+      "prompt": "How should a wind post be positioned?",
+      "options": [
+        "Where it is least visible",
+        "To the approved line, level, fixing and connection details",
+        "Touching every service",
+        "Without checking the base connection"
+      ],
+      "correctIndex": 1,
+      "explanation": "Wind posts are structural elements and must match the engineered location and connections."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q018",
+      "type": "multiple-choice",
+      "topic": "Starter systems",
+      "mapsTo": [
+        "828.4.1",
+        "828.7.4"
+      ],
+      "prompt": "Which components should be used in a proprietary masonry starter system?",
+      "options": [
+        "Any similar-looking strip and ties",
+        "The specified compatible system components and fixings",
+        "Second-hand fixings of unknown grade",
+        "Only mortar"
+      ],
+      "correctIndex": 1,
+      "explanation": "System performance depends on compatible, approved components installed as designed."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q019",
+      "type": "multiple-choice",
+      "topic": "Coordination",
+      "mapsTo": [
+        "828.7.5"
+      ],
+      "prompt": "A support angle clashes with another trade's service. What should happen?",
+      "options": [
+        "Cut the angle",
+        "Stop and coordinate an authorised resolution with the relevant people",
+        "Move the service yourself",
+        "Omit the nearest fixing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Structural or fire-performance components must not be altered without approval."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q020",
+      "type": "multiple-choice",
+      "topic": "Substitution",
+      "mapsTo": [
+        "828.4.1",
+        "828.4.4"
+      ],
+      "prompt": "A specified specialist fixing is unavailable. What is the correct response?",
+      "options": [
+        "Use a smaller fixing",
+        "Seek an approved equivalent through the project procedure",
+        "Reduce the spacing",
+        "Leave the connection loose"
+      ],
+      "correctIndex": 1,
+      "explanation": "Substitution requires confirmation that performance, substrate and exposure requirements are met."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q021",
+      "type": "multiple-choice",
+      "topic": "Handling",
+      "mapsTo": [
+        "828.2.1",
+        "828.4.5"
+      ],
+      "prompt": "A specialist masonry element is heavy and awkward. What should be planned?",
+      "options": [
+        "A single-person lift",
+        "A suitable lifting method, access and control of the load",
+        "Throwing it onto the scaffold",
+        "Removing lifting points"
+      ],
+      "correctIndex": 1,
+      "explanation": "Handling should be assessed and suitable mechanical or team assistance used."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q022",
+      "type": "multiple-choice",
+      "topic": "Protection",
+      "mapsTo": [
+        "828.5.1",
+        "828.5.4"
+      ],
+      "prompt": "How should exposed finished specialist masonry be protected?",
+      "options": [
+        "With any material that traps staining moisture",
+        "Using the specified non-damaging protection while allowing required curing and drainage",
+        "By covering fixings before inspection",
+        "By washing it with acid"
+      ],
+      "correctIndex": 1,
+      "explanation": "Protection must prevent damage without creating staining, trapped moisture or hidden defects."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q023",
+      "type": "multiple-choice",
+      "topic": "Fixing verification",
+      "mapsTo": [
+        "828.7.1",
+        "828.7.3"
+      ],
+      "prompt": "A fixing requires a stated installation torque. What should be used?",
+      "options": [
+        "An uncalibrated guess",
+        "The specified verified method and suitable calibrated equipment where required",
+        "The longest lever available",
+        "A hammer only"
+      ],
+      "correctIndex": 1,
+      "explanation": "Specified fixing installation values must be achieved and verified using suitable equipment."
+    },
+    {
+      "id": "6570-05-SPECIALIST-Q024",
+      "type": "multiple-choice",
+      "topic": "Inspection",
+      "mapsTo": [
+        "828.7.1",
+        "828.7.5"
+      ],
+      "prompt": "Why should specialist elements be checked before they are concealed?",
+      "options": [
+        "Only for photographs",
+        "Fixings, continuity and interfaces may no longer be accessible later",
+        "To avoid recording the work",
+        "Because finishes correct all defects"
+      ],
+      "correctIndex": 1,
+      "explanation": "Inspection before concealment allows critical components and interfaces to be verified."
+    }
+  ]
+}

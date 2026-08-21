@@ -1,0 +1,450 @@
+{
+  "eviaQuestionBank": 1,
+  "schemaVersion": 1,
+  "bankVersion": "1.0",
+  "updated": "2026-08-21",
+  "enrolmentId": "ST0264-SITE",
+  "courseTitle": "Site Carpenter",
+  "qualificationId": "ST0264",
+  "pathwayId": "site-carpenter",
+  "assessmentArea": "ARP",
+  "questionType": "multiple-choice",
+  "questionsPerMock": 10,
+  "sourceNote": "Original Evia practice questions mapped to course criteria. These are not official awarding-body or end-point-assessment questions.",
+  "questions": [
+    {
+      "id": "ST0264-SITE-Q001",
+      "type": "multiple-choice",
+      "topic": "Safe systems of work",
+      "mapsTo": [
+        "K3",
+        "S1"
+      ],
+      "prompt": "Before starting a new carpentry task, what should be confirmed?",
+      "options": [
+        "Only the finish time",
+        "The current risk assessment, method and work information",
+        "The previous task's cutting list",
+        "Only who supplied the timber"
+      ],
+      "correctIndex": 1,
+      "explanation": "The task method, hazards and current design information must be understood first."
+    },
+    {
+      "id": "ST0264-SITE-Q002",
+      "type": "multiple-choice",
+      "topic": "PPE and RPE",
+      "mapsTo": [
+        "K2",
+        "S2"
+      ],
+      "prompt": "Machining timber will create dust. Which approach gives the best control?",
+      "options": [
+        "Blow dust away with compressed air",
+        "Use effective extraction and the specified face-fit-tested RPE",
+        "Open a door only",
+        "Remove the guard to improve airflow"
+      ],
+      "correctIndex": 1,
+      "explanation": "Dust should be controlled at source, with suitable RPE used where the assessment requires it."
+    },
+    {
+      "id": "ST0264-SITE-Q003",
+      "type": "multiple-choice",
+      "topic": "Drawings",
+      "mapsTo": [
+        "K8",
+        "S6"
+      ],
+      "prompt": "A drawing dimension conflicts with the specification. What should you do?",
+      "options": [
+        "Choose the larger value",
+        "Stop and obtain clarification through the project procedure",
+        "Split the difference",
+        "Alter the specification"
+      ],
+      "correctIndex": 1,
+      "explanation": "Conflicting design information must be clarified before material is cut or fitted."
+    },
+    {
+      "id": "ST0264-SITE-Q004",
+      "type": "multiple-choice",
+      "topic": "Timber",
+      "mapsTo": [
+        "K9",
+        "K10"
+      ],
+      "prompt": "Why should timber condition and moisture be considered before use?",
+      "options": [
+        "Only to change its colour",
+        "Movement or decay can affect dimensions, joints and service performance",
+        "It eliminates the need for fixings",
+        "It makes every species interchangeable"
+      ],
+      "correctIndex": 1,
+      "explanation": "Moisture movement and defects can change fit, strength, stability and durability."
+    },
+    {
+      "id": "ST0264-SITE-Q005",
+      "type": "multiple-choice",
+      "topic": "Estimating",
+      "mapsTo": [
+        "K12",
+        "S7"
+      ],
+      "prompt": "What should a cutting list include?",
+      "options": [
+        "Only finished widths",
+        "Component quantities, sizes and suitable machining or cutting allowances",
+        "The operatives' names",
+        "Only the delivery date"
+      ],
+      "correctIndex": 1,
+      "explanation": "A useful cutting list identifies every component and the material allowance needed to produce it."
+    },
+    {
+      "id": "ST0264-SITE-Q006",
+      "type": "multiple-choice",
+      "topic": "Hand tools",
+      "mapsTo": [
+        "K15",
+        "S11"
+      ],
+      "prompt": "A chisel edge is damaged. What is the correct response?",
+      "options": [
+        "Use more force",
+        "Maintain it using the correct sharpening method and inspect it before reuse",
+        "Round over the cutting edge",
+        "Cool it in adhesive"
+      ],
+      "correctIndex": 1,
+      "explanation": "A correctly maintained edge is safer and produces more accurate work."
+    },
+    {
+      "id": "ST0264-SITE-Q007",
+      "type": "multiple-choice",
+      "topic": "Power tools",
+      "mapsTo": [
+        "K17",
+        "S10"
+      ],
+      "prompt": "What should happen before adjusting or changing a blade or cutter?",
+      "options": [
+        "Hold the trigger partly on",
+        "Isolate the tool and follow the manufacturer's procedure",
+        "Remove all guards",
+        "Ask someone else to hold the blade"
+      ],
+      "correctIndex": 1,
+      "explanation": "Isolation prevents unintentional start-up during adjustment."
+    },
+    {
+      "id": "ST0264-SITE-Q008",
+      "type": "multiple-choice",
+      "topic": "Jigs",
+      "mapsTo": [
+        "K16",
+        "S12"
+      ],
+      "prompt": "What is the main benefit of a well-made jig?",
+      "options": [
+        "It replaces all quality checks",
+        "It helps repeat an operation accurately and consistently",
+        "It makes blunt cutters safe",
+        "It changes timber species"
+      ],
+      "correctIndex": 1,
+      "explanation": "A jig locates or guides work so repeat components can be made consistently."
+    },
+    {
+      "id": "ST0264-SITE-Q009",
+      "type": "multiple-choice",
+      "topic": "Communication",
+      "mapsTo": [
+        "K13",
+        "S8",
+        "B5"
+      ],
+      "prompt": "Another trade needs access through your work area. What should you do?",
+      "options": [
+        "Ignore them",
+        "Agree a safe sequence and communicate any restrictions",
+        "Leave tools across the route",
+        "Move their equipment without asking"
+      ],
+      "correctIndex": 1,
+      "explanation": "Clear coordination supports safe and efficient team working."
+    },
+    {
+      "id": "ST0264-SITE-Q010",
+      "type": "multiple-choice",
+      "topic": "Inclusion",
+      "mapsTo": [
+        "K19",
+        "B3"
+      ],
+      "prompt": "Which action supports an inclusive workplace?",
+      "options": [
+        "Excluding a learner from technical discussions",
+        "Using respectful language and giving people a fair chance to contribute",
+        "Sharing jokes after someone asks you to stop",
+        "Making assumptions about ability"
+      ],
+      "correctIndex": 1,
+      "explanation": "Respect and fair participation help create an inclusive culture."
+    },
+    {
+      "id": "ST0264-SITE-Q011",
+      "type": "multiple-choice",
+      "topic": "Wellbeing",
+      "mapsTo": [
+        "K20",
+        "S13",
+        "B1"
+      ],
+      "prompt": "Where should a worker look for wellbeing support?",
+      "options": [
+        "Only social media",
+        "The employer or site support route and appropriate professional services",
+        "An unqualified rumour",
+        "Nowhere until the job ends"
+      ],
+      "correctIndex": 1,
+      "explanation": "Workers should know and use appropriate internal and professional sources of support."
+    },
+    {
+      "id": "ST0264-SITE-Q012",
+      "type": "multiple-choice",
+      "topic": "Sustainability",
+      "mapsTo": [
+        "K4",
+        "S3",
+        "B2"
+      ],
+      "prompt": "Which material practice best supports sustainability?",
+      "options": [
+        "Mix all waste together",
+        "Plan cuts, protect reusable material and segregate waste correctly",
+        "Order without checking quantities",
+        "Burn treated timber"
+      ],
+      "correctIndex": 1,
+      "explanation": "Efficient cutting, protection, reuse and correct segregation reduce waste and environmental harm."
+    },
+    {
+      "id": "ST0264-SITE-Q013",
+      "type": "multiple-choice",
+      "topic": "First fix",
+      "mapsTo": [
+        "K27",
+        "S14"
+      ],
+      "prompt": "Which item is normally associated with first-fix site carpentry?",
+      "options": [
+        "Door handles after decoration",
+        "Floor joists or structural timber before finishes",
+        "Final paint coating",
+        "Carpet grippers after handover"
+      ],
+      "correctIndex": 1,
+      "explanation": "First fix includes structural and concealed carpentry installed before later finishes."
+    },
+    {
+      "id": "ST0264-SITE-Q014",
+      "type": "multiple-choice",
+      "topic": "Structural fixings",
+      "mapsTo": [
+        "K22",
+        "S15"
+      ],
+      "prompt": "How should a structural timber fixing be selected?",
+      "options": [
+        "By colour",
+        "To the drawing or specification for the load, substrate and environment",
+        "Using the shortest fixing available",
+        "By reusing any removed fixing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Structural fixings must suit the designed load, materials, exposure and installation requirements."
+    },
+    {
+      "id": "ST0264-SITE-Q015",
+      "type": "multiple-choice",
+      "topic": "Timber sizing",
+      "mapsTo": [
+        "K23",
+        "S16"
+      ],
+      "prompt": "What should be checked before using a timber sizing table?",
+      "options": [
+        "Only the timber price",
+        "That the table applies to the member, span, loading, spacing and timber grade",
+        "That every value is rounded down",
+        "That the timber is painted"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sizing information is valid only when its stated design conditions match the work."
+    },
+    {
+      "id": "ST0264-SITE-Q016",
+      "type": "multiple-choice",
+      "topic": "Pitched roofs",
+      "mapsTo": [
+        "K25",
+        "S18"
+      ],
+      "prompt": "What controls the length and angles of a common rafter?",
+      "options": [
+        "The roof span, rise or pitch and the specified overhang/details",
+        "Only the tile colour",
+        "The scaffold width",
+        "The number of operatives"
+      ],
+      "correctIndex": 0,
+      "explanation": "Rafter geometry comes from the roof dimensions and specified details."
+    },
+    {
+      "id": "ST0264-SITE-Q017",
+      "type": "multiple-choice",
+      "topic": "Pitched roofs",
+      "mapsTo": [
+        "K25",
+        "S18"
+      ],
+      "prompt": "Why must a birdsmouth not be over-cut?",
+      "options": [
+        "It makes painting slower",
+        "It can reduce the effective rafter section and bearing performance",
+        "It increases the roof pitch",
+        "It changes the timber species"
+      ],
+      "correctIndex": 1,
+      "explanation": "Excessive notching can weaken the rafter and reduce effective bearing."
+    },
+    {
+      "id": "ST0264-SITE-Q018",
+      "type": "multiple-choice",
+      "topic": "Flat roofs",
+      "mapsTo": [
+        "K26"
+      ],
+      "prompt": "Why is the designed fall important on a flat roof?",
+      "options": [
+        "To make joists longer",
+        "To direct water toward the intended outlet and limit ponding",
+        "To replace the weatherproof covering",
+        "To remove the need for ventilation"
+      ],
+      "correctIndex": 1,
+      "explanation": "The specified fall helps water drain to the designed outlet."
+    },
+    {
+      "id": "ST0264-SITE-Q019",
+      "type": "multiple-choice",
+      "topic": "Laser levels",
+      "mapsTo": [
+        "K29",
+        "S19"
+      ],
+      "prompt": "Before transferring a datum with a laser level, what should be checked?",
+      "options": [
+        "Only the battery colour",
+        "The instrument is suitable, stable and checked for accuracy",
+        "The receiver is hidden",
+        "The datum is estimated"
+      ],
+      "correctIndex": 1,
+      "explanation": "A stable, verified instrument is needed before relying on transferred levels."
+    },
+    {
+      "id": "ST0264-SITE-Q020",
+      "type": "multiple-choice",
+      "topic": "Second fix",
+      "mapsTo": [
+        "K28",
+        "S17"
+      ],
+      "prompt": "Which task is typically second-fix carpentry?",
+      "options": [
+        "Installing roof trusses",
+        "Fitting skirting, architrave or internal doors",
+        "Excavating foundations",
+        "Casting a concrete slab"
+      ],
+      "correctIndex": 1,
+      "explanation": "Second fix generally includes visible finishing carpentry after the main structure and finishes are ready."
+    },
+    {
+      "id": "ST0264-SITE-Q021",
+      "type": "multiple-choice",
+      "topic": "Door linings",
+      "mapsTo": [
+        "K21",
+        "S21"
+      ],
+      "prompt": "What should be checked before permanently fixing a door lining?",
+      "options": [
+        "Only the head length",
+        "Plumb, level, square, opening size and allowance for finishes",
+        "Only the hinge colour",
+        "That the jambs are bowed"
+      ],
+      "correctIndex": 1,
+      "explanation": "The lining must be correctly positioned and sized so the door and finishes can fit and operate."
+    },
+    {
+      "id": "ST0264-SITE-Q022",
+      "type": "multiple-choice",
+      "topic": "Hinges",
+      "mapsTo": [
+        "K21",
+        "S21"
+      ],
+      "prompt": "How should a hinge recess be prepared?",
+      "options": [
+        "Deeper than the leaf",
+        "To the marked position and depth so the leaf sits correctly",
+        "Without checking the hinge size",
+        "With a rounded base regardless of the fitting"
+      ],
+      "correctIndex": 1,
+      "explanation": "Accurate position and depth allow the hinge to sit flush and the door to operate correctly."
+    },
+    {
+      "id": "ST0264-SITE-Q023",
+      "type": "multiple-choice",
+      "topic": "Scribing",
+      "mapsTo": [
+        "K24",
+        "S22"
+      ],
+      "prompt": "What is the purpose of scribing a timber component?",
+      "options": [
+        "To copy an irregular profile or junction for a close fit",
+        "To increase its moisture content",
+        "To replace every fixing",
+        "To make it deliberately oversize"
+      ],
+      "correctIndex": 0,
+      "explanation": "Scribing transfers the shape of an adjoining surface or detail to the component."
+    },
+    {
+      "id": "ST0264-SITE-Q024",
+      "type": "multiple-choice",
+      "topic": "Connections",
+      "mapsTo": [
+        "K22",
+        "S20"
+      ],
+      "prompt": "A joist hanger is being installed. Which information takes priority?",
+      "options": [
+        "A photograph from another site",
+        "The design and manufacturer's fixing schedule",
+        "The fewest nails possible",
+        "The operative's preferred pattern"
+      ],
+      "correctIndex": 1,
+      "explanation": "Proprietary connectors depend on the specified type, position and full fixing schedule."
+    }
+  ]
+}
