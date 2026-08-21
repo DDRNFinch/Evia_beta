@@ -284,7 +284,7 @@ class MemoryCache {
   }
 }
 
-test("v81 replaces the legacy shell and serves the in-app QR gallery offline", async () => {
+test("v82 replaces the legacy shell and serves Discussion Coach offline", async () => {
   const handlers = new Map();
   const stores = new Map([["evia-shell-v75", new MemoryCache()]]);
   const legacy = stores.get("evia-shell-v75");
@@ -351,7 +351,7 @@ test("v81 replaces the legacy shell and serves the in-app QR gallery offline", a
   let installWork;
   handlers.get("install")({ waitUntil(value) { installWork = value; } });
   await installWork;
-  assert.equal(await caches.has("evia-beta-shell-v81"), true);
+  assert.equal(await caches.has("evia-beta-shell-v82"), true);
 
   let activateWork;
   handlers.get("activate")({ waitUntil(value) { activateWork = value; } });
@@ -373,16 +373,21 @@ test("v81 replaces the legacy shell and serves the in-app QR gallery offline", a
     },
   });
   const offlineHtml = await (await navigationResponse).text();
-  assert.match(offlineHtml, /evia-app-version" content="81"/);
+  assert.match(offlineHtml, /evia-app-version" content="82"/);
+  assert.match(offlineHtml, /course-registry\.js\?v=82/);
   assert.match(offlineHtml, /evia-course-enrolment\.js\?v=80/);
   assert.match(offlineHtml, /evia-arp-v80\.js\?v=80/);
+  assert.match(offlineHtml, /evia-arp-discussion-v82\.js\?v=82/);
+  assert.match(offlineHtml, /evia-arp-v82\.css\?v=82/);
   assert.match(offlineHtml, /evia-toc\.js\?v=81/);
 
   for (const resource of [
     "assets/evia-beta-isolation.js?v=80",
-    "course-delivery/registry-v1.json?v=80",
+    "course-delivery/registry-v1.json?v=82",
     "assets/jsQR-1.4.0.js?v=80",
     "assets/evia-arp-v80.js?v=80",
+    "assets/evia-arp-discussion-v82.js?v=82",
+    "assets/evia-arp-v82.css?v=82",
     "assets/evia-toc.js?v=81",
     "assets/evia-toc.css?v=81",
     "course-packs/Bricklayer_ST0095_v1.2.nisi",

@@ -56,12 +56,14 @@ test("all seven registry entries point to verified install packs and mapped 24-q
   assert.equal(registry.courses.length, 7);
   assert.equal(index.banks.length, 7);
   assert.equal(index.totalQuestions, 168);
+  assert.equal(index.totalDiscussionScenarios, 168);
 
   const packCache = new Map();
   const questionIds = new Set();
   for (const entry of registry.courses) {
     assert.equal(entry.publishable, true);
     assert.equal(entry.qrPayload, `EVIA1:${entry.enrolmentId}`);
+    assert.equal(entry.content.discussion, "available-24-scenario-coach");
     const packRelative = path.posix.normalize(path.posix.join("course-delivery", entry.packagePath));
     const bankRelative = path.posix.join("course-delivery", entry.questionBankPath);
     await access(absolute(packRelative));
@@ -85,11 +87,15 @@ test("all seven registry entries point to verified install packs and mapped 24-q
 
     const bank = await json(bankRelative);
     assert.equal(bank.eviaQuestionBank, 1);
+    assert.equal(bank.bankVersion, "1.1");
     assert.equal(bank.enrolmentId, entry.enrolmentId);
     assert.equal(bank.qualificationId, entry.qualificationId);
     assert.equal(bank.pathwayId, entry.pathwayId);
     assert.equal(bank.questions.length, 24);
     assert.equal(bank.questionsPerMock, 10);
+    assert.equal(bank.discussionScenarioVersion, 1);
+    assert.equal(bank.discussionScenariosPerPractice, 5);
+    assert.equal(bank.discussionStrengthLevels, 4);
     assert.match(bank.sourceNote, /not official/i);
     for (const question of bank.questions) {
       assert.equal(question.options.length, 4);
@@ -104,6 +110,8 @@ test("all seven registry entries point to verified install packs and mapped 24-q
     const indexed = index.banks.find((item) => item.enrolmentId === entry.enrolmentId);
     assert.equal(indexed?.path, path.posix.basename(entry.questionBankPath));
     assert.equal(indexed?.questionCount, 24);
+    assert.equal(indexed?.discussionScenarioCount, 24);
+    assert.equal(indexed?.discussionScenariosPerPractice, 5);
   }
   assert.equal(questionIds.size, 168);
 });
@@ -129,7 +137,7 @@ test("TOC exposes all seven labelled QR downloads and keeps pack management avai
   }
 });
 
-test("ARP selects the matching question bank for every installed course pathway", async () => {
+test("ARP selects all seven banks and builds 24 graded discussion scenarios for each pathway", async () => {
   const registry = await json("course-delivery/registry-v1.json");
   let current = null;
   const requested = [];
@@ -171,6 +179,7 @@ test("ARP selects the matching question bank for every installed course pathway"
     Promise,
     RegExp,
     Response,
+    Set,
     String,
     URL,
     document,
@@ -180,6 +189,7 @@ test("ARP selects the matching question bank for every installed course pathway"
     window,
   });
   vm.runInContext(await read("assets/evia-arp-v80.js"), context, { filename: "assets/evia-arp-v80.js" });
+  vm.runInContext(await read("assets/evia-arp-discussion-v82.js"), context, { filename: "assets/evia-arp-discussion-v82.js" });
 
   const profiles = [
     ["ST0095", { courseId: "st0095-v1-2", packFamilyId: "ST0095", pathway: "" }],
@@ -195,6 +205,39 @@ test("ARP selects the matching question bank for every installed course pathway"
     const bank = await window.EviaArp.currentBank(true);
     assert.equal(bank.enrolmentId, enrolmentId);
     assert.equal(bank.questions.length, 24);
+    const scenarios = window.EviaArpDiscussion.discussionItems(bank);
+    assert.equal(scenarios.length, 24);
+    assert.equal(new Set(Array.from(scenarios, (scenario) => scenario.id)).size, 24);
+    for (const [index, scenario] of scenarios.entries()) {
+      const source = bank.questions[index];
+      const correct = source.options[source.correctIndex];
+      assert.equal(scenario.sourceQuestionId, source.id);
+      assert.deepEqual([...scenario.mapsTo], [...source.mapsTo]);
+      assert.equal(scenario.responses.length, 4);
+      assert.deepEqual(Array.from(scenario.responses, (response) => response.strength), [1, 2, 3, 4]);
+      assert.ok(Array.from(scenario.responses).every((response) => response.text.includes(correct)));
+      assert.ok(Array.from(scenario.responses).every((response) => response.feedback.length > 40));
+      assert.ok(scenario.followUp.endsWith("?"));
+    }
   }
   assert.equal(requested.length, 7);
+});
+
+test("Discussion Coach includes graded choice, voice, transcript and mock flows", async () => {
+  const script = await read("assets/evia-arp-discussion-v82.js");
+  const css = await read("assets/evia-arp-v82.css");
+  const html = await read("index.html");
+
+  assert.match(script, /data-discussion-mode="learn"/);
+  assert.match(script, /data-discussion-mode="practice"/);
+  assert.match(script, /data-discussion-mode="mock"/);
+  assert.match(script, /Speak for about 60–90 seconds/);
+  assert.match(script, /window\.MediaRecorder/);
+  assert.match(script, /window\.SpeechRecognition\|\|window\.webkitSpeechRecognition/);
+  assert.match(script, /Evia follow-up/);
+  assert.match(script, /Every response is factually correct/);
+  assert.match(css, /\.evia-arp-voice-card/);
+  assert.match(css, /\.evia-arp-strength-key/);
+  assert.match(html, /assets\/evia-arp-v82\.css\?v=82/);
+  assert.match(html, /assets\/evia-arp-discussion-v82\.js\?v=82/);
 });

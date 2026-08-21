@@ -1,7 +1,7 @@
 {
   "eviaQuestionBank": 1,
   "schemaVersion": 1,
-  "bankVersion": "1.0",
+  "bankVersion": "1.1",
   "updated": "2026-08-21",
   "enrolmentId": "ST0264-AJ",
   "courseTitle": "Architectural Joiner",
@@ -10,6 +10,9 @@
   "assessmentArea": "ARP",
   "questionType": "multiple-choice",
   "questionsPerMock": 10,
+  "discussionScenarioVersion": 1,
+  "discussionScenariosPerPractice": 5,
+  "discussionStrengthLevels": 4,
   "sourceNote": "Original Evia practice questions mapped to course criteria. These are not official awarding-body or end-point-assessment questions.",
   "questions": [
     {

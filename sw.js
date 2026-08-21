@@ -1,4 +1,4 @@
-const CACHE_NAME = "evia-beta-shell-v81";
+const CACHE_NAME = "evia-beta-shell-v82";
 const CACHE_PREFIXES = ["evia-beta-shell-", "evia-shell-"];
 const APP_SHELL = [
   "./",
@@ -13,6 +13,7 @@ const APP_SHELL = [
   "./assets/evia-selfobs-fixes.css",
   "./assets/evia-updater.css",
   "./assets/evia-tools.css",
+  "./assets/evia-arp-v82.css",
   "./assets/evia-rpl-evidence.css",
   "./assets/evia-rpl-course.css",
   "./assets/evia-targets.css",
@@ -70,6 +71,7 @@ const APP_SHELL = [
   "./assets/evia-avatar-life.js",
   "./assets/evia-count-display.js",
   "./assets/evia-arp-v80.js",
+  "./assets/evia-arp-discussion-v82.js",
   "./assets/evia-assistant-network.js",
   "./assets/evia-v69-interaction-fixes.js",
   "./assets/evia-v73-page-handoff.js",

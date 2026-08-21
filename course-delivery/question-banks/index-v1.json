@@ -3,6 +3,7 @@
   "schemaVersion": 1,
   "updated": "2026-08-21",
   "totalQuestions": 168,
+  "totalDiscussionScenarios": 168,
   "banks": [
     {
       "enrolmentId": "ST0095",
@@ -11,7 +12,9 @@
       "pathwayId": null,
       "path": "ST0095-v1.json",
       "questionCount": 24,
-      "questionsPerMock": 10
+      "questionsPerMock": 10,
+      "discussionScenarioCount": 24,
+      "discussionScenariosPerPractice": 5
     },
     {
       "enrolmentId": "ST0264-SITE",
@@ -20,7 +23,9 @@
       "pathwayId": "site-carpenter",
       "path": "ST0264-SITE-v1.json",
       "questionCount": 24,
-      "questionsPerMock": 10
+      "questionsPerMock": 10,
+      "discussionScenarioCount": 24,
+      "discussionScenariosPerPractice": 5
     },
     {
       "enrolmentId": "ST0264-AJ",
@@ -29,7 +34,9 @@
       "pathwayId": "architectural-joiner",
       "path": "ST0264-AJ-v1.json",
       "questionCount": 24,
-      "questionsPerMock": 10
+      "questionsPerMock": 10,
+      "discussionScenarioCount": 24,
+      "discussionScenariosPerPractice": 5
     },
     {
       "enrolmentId": "6570-05-THIN",
@@ -38,7 +45,9 @@
       "pathwayId": "thin",
       "path": "6570-05-THIN-v1.json",
       "questionCount": 24,
-      "questionsPerMock": 10
+      "questionsPerMock": 10,
+      "discussionScenarioCount": 24,
+      "discussionScenariosPerPractice": 5
     },
     {
       "enrolmentId": "6570-05-REPAIR",
@@ -47,7 +56,9 @@
       "pathwayId": "repair",
       "path": "6570-05-REPAIR-v1.json",
       "questionCount": 24,
-      "questionsPerMock": 10
+      "questionsPerMock": 10,
+      "discussionScenarioCount": 24,
+      "discussionScenariosPerPractice": 5
     },
     {
       "enrolmentId": "6570-05-SPECIALIST",
@@ -56,7 +67,9 @@
       "pathwayId": "specialist",
       "path": "6570-05-SPECIALIST-v1.json",
       "questionCount": 24,
-      "questionsPerMock": 10
+      "questionsPerMock": 10,
+      "discussionScenarioCount": 24,
+      "discussionScenariosPerPractice": 5
     },
     {
       "enrolmentId": "6570-05-DRAINAGE",
@@ -65,7 +78,9 @@
       "pathwayId": "drainage",
       "path": "6570-05-DRAINAGE-v1.json",
       "questionCount": 24,
-      "questionsPerMock": 10
+      "questionsPerMock": 10,
+      "discussionScenarioCount": 24,
+      "discussionScenariosPerPractice": 5
     }
   ]
 }
