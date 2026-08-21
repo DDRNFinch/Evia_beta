@@ -1,4 +1,4 @@
-const CACHE_NAME = "evia-beta-shell-v84";
+const CACHE_NAME = "evia-beta-shell-v85";
 const CACHE_PREFIXES = ["evia-beta-shell-", "evia-shell-"];
 const APP_SHELL = [
   "./",
@@ -82,6 +82,7 @@ const APP_SHELL = [
   "./assets/evia-arp-v80.js",
   "./assets/evia-arp-discussion-v82.js",
   "./assets/evia-arp-practical-v83.js",
+  "./assets/evia-mini-milos-v85.js",
   "./assets/evia-assistant-network.js",
   "./assets/evia-v69-interaction-fixes.js",
   "./assets/evia-v73-page-handoff.js",
