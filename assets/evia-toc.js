@@ -16,6 +16,15 @@ const BUILTIN_COURSES=[
     {id:"drainage",title:"837 · Drainage"}
   ],builtIn:true}
 ];
+const COURSE_QR_CODES=[
+  {name:"Bricklayer",code:"ST0095",file:"ST0095.png"},
+  {name:"Site Carpenter",code:"ST0264-SITE",file:"ST0264-SITE.png"},
+  {name:"Architectural Joiner",code:"ST0264-AJ",file:"ST0264-AJ.png"},
+  {name:"Thin Joint",code:"6570-05-THIN",file:"6570-05-THIN.png"},
+  {name:"Repair & Maintenance",code:"6570-05-REPAIR",file:"6570-05-REPAIR.png"},
+  {name:"Specialist Masonry",code:"6570-05-SPECIALIST",file:"6570-05-SPECIALIST.png"},
+  {name:"Drainage",code:"6570-05-DRAINAGE",file:"6570-05-DRAINAGE.png"}
+];
 
 function readJSON(key,fallback){try{const raw=localStorage.getItem(key);return raw?JSON.parse(raw):fallback}catch{return fallback}}
 function writeJSON(key,value){try{localStorage.setItem(key,JSON.stringify(value))}catch{}}
@@ -101,10 +110,45 @@ function layer(body,title="My course",back=null){
   document.body.appendChild(el);el.querySelector("[data-toc-back]").onclick=back||closeLayer;return el
 }
 function openPackManager(back=null){if(window.EviaCoursePacks?.manager)window.EviaCoursePacks.manager(back)}
+async function copyCourseCode(code,status){
+  try{
+    if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(code);
+    else{
+      const input=document.createElement("textarea");input.value=code;input.setAttribute("readonly","");input.style.position="fixed";input.style.opacity="0";
+      document.body.appendChild(input);input.select();document.execCommand("copy");input.remove()
+    }
+    if(status)status.textContent=`${code} copied.`
+  }catch{if(status)status.textContent=`Course code: ${code}`}
+}
+function openQrCodes(back=summary){
+  const cards=COURSE_QR_CODES.map(item=>{
+    const href=`./course-delivery/qr/${encodeURIComponent(item.file)}`;
+    return `<article class="evia-course-qr-card">
+      <a class="evia-course-qr-image" href="${href}" download="${esc(item.file)}" aria-label="Download ${esc(item.name)} QR code">
+        <img src="${href}" alt="${esc(item.name)} course QR code" loading="lazy" decoding="async" draggable="false">
+      </a>
+      <div class="evia-course-qr-copy"><b>${esc(item.name)}</b><code>${esc(item.code)}</code></div>
+      <div class="evia-course-qr-actions">
+        <a href="${href}" download="${esc(item.file)}">Download</a>
+        <button type="button" data-copy-course-code="${esc(item.code)}">Copy code</button>
+      </div>
+    </article>`
+  }).join("");
+  const el=layer(`
+    <p class="evia-tools-kicker">Course enrolment</p>
+    <h2>Course QR Codes</h2>
+    <p class="evia-tools-copy">Download a labelled QR for a learner, or copy the manual course code underneath it.</p>
+    <div class="evia-course-qr-status" data-course-qr-status aria-live="polite"></div>
+    <div class="evia-course-qr-grid">${cards}</div>
+    ${window.EviaCoursePacks?'<button type="button" class="evia-tools-secondary" data-qr-manage-packs>Manage installed packs</button>':""}
+  `,"Course QR Codes",back);
+  const status=el.querySelector("[data-course-qr-status]");
+  el.querySelectorAll("[data-copy-course-code]").forEach(button=>button.addEventListener("click",()=>copyCourseCode(button.dataset.copyCourseCode,status)));
+  el.querySelector("[data-qr-manage-packs]")?.addEventListener("click",()=>openPackManager(()=>{document.querySelector(".nisi-pack-layer")?.remove();openQrCodes(back)}))
+}
 function summary(){
   if(!hasSelectedCourse())return edit(true);
   const t=currentTimeline(),pos=coursePosition(t),name=currentName()||"Name not set";if(!pos.valid)return edit(false);
-  const course=selectedCourse(t),packButton=course?.installedPack?`<button class="evia-tools-secondary" data-manage-packs>Manage course packs</button>`:"";
   const el=layer(`
     <p class="evia-tools-kicker">Time on course</p>
     <div class="evia-toc-hero"><strong>${pos.pct}%</strong><span>through planned course time</span></div>
@@ -115,10 +159,11 @@ function summary(){
       <div class="wide"><span>Time on course</span><b>${esc(formatSpan(pos.on))}</b></div>
       <div class="wide"><span>Time remaining</span><b>${esc(formatSpan(pos.remaining))}</b></div>
     </div>
-    <button class="evia-tools-primary" data-edit-course>Edit course details</button>${packButton}
+    <button class="evia-tools-primary" data-edit-course>Edit course details</button>
+    <button class="evia-tools-secondary" data-course-qr-codes>Course QR Codes</button>
   `,"My course",closeLayer);
   el.querySelector("[data-edit-course]").onclick=()=>edit(false);
-  el.querySelector("[data-manage-packs]")?.addEventListener("click",()=>openPackManager(summary))
+  el.querySelector("[data-course-qr-codes]")?.addEventListener("click",()=>openQrCodes(summary))
 }
 function courseSelectorMarkup(t){
   const courses=allCourses();
@@ -152,7 +197,7 @@ function edit(initialSetup=false){
   const t=currentTimeline(),name=currentName(),selector=courseSelectorMarkup(t);
   const courseFields=initialSetup?selector.fields:`<label>Course<input type="text" value="${esc(fullCourseLine(t))}" readonly tabindex="-1" aria-readonly="true"></label>`;
   const copy=initialSetup?"Choose an installed course or add a Nisi course pack from your induction email. Evia keeps each course and its learner data separate.":"Update your learner details or planned course dates. Your enrolled course stays the same.";
-  const packInstall=initialSetup&&window.EviaCoursePacks?`<div class="nisi-pack-inline"><button type="button" class="evia-tools-secondary" data-toc-packs>Add / manage course packs</button></div>`:"";
+  const packInstall=initialSetup&&window.EviaCoursePacks?`<div class="nisi-pack-inline"><button type="button" class="evia-tools-secondary" data-toc-packs>Install a course pack</button></div>`:"";
   const el=layer(`
     <h2>${initialSetup?"Set up your course":"Course details"}</h2>
     <p class="evia-tools-copy">${esc(copy)}</p>
@@ -202,7 +247,7 @@ function patchAdmin(){
       row.insertAdjacentElement("afterend",packs)
     }
     const count=window.EviaCoursePacks.list().length;
-    packs.innerHTML=`<span><b>Course packs</b><small>${count} imported on this device · add, replace or remove</small></span><i>›</i>`;
+    packs.innerHTML=`<span><b>Installed course packs</b><small>${count} imported on this device · add, replace or remove</small></span><i>›</i>`;
     packs.onclick=()=>{admin.style.display="none";openPackManager(()=>{document.querySelector(".nisi-pack-layer")?.remove();admin.style.display="";patchAdmin()})}
   }
 }
@@ -219,7 +264,7 @@ function openAdminCourse(admin){
       <p class="evia-tools-copy">Change which installed course Evia loads on this device for setup or app testing. Existing learner data for each course is kept separately.</p>
       <div class="evia-toc-form">${selector.fields}</div>
       <button class="evia-tools-primary" data-admin-course-save>Save course</button>
-      ${window.EviaCoursePacks?'<button class="evia-tools-secondary" data-admin-course-packs>Manage course packs</button>':""}
+      ${window.EviaCoursePacks?'<button class="evia-tools-secondary" data-admin-course-packs>Manage installed packs</button>':""}
     </div>
   </section>`;
   document.body.appendChild(layer);

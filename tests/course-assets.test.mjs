@@ -108,6 +108,27 @@ test("all seven registry entries point to verified install packs and mapped 24-q
   assert.equal(questionIds.size, 168);
 });
 
+test("TOC exposes all seven labelled QR downloads and keeps pack management available", async () => {
+  const toc = await read("assets/evia-toc.js");
+  const css = await read("assets/evia-toc.css");
+  const html = await read("index.html");
+  const manifest = await json("course-delivery/qr/manifest-v1.json");
+
+  assert.match(toc, /data-course-qr-codes>Course QR Codes</);
+  assert.match(toc, /<h2>Course QR Codes<\/h2>/);
+  assert.match(toc, /data-qr-manage-packs>Manage installed packs</);
+  assert.doesNotMatch(toc, />Manage course packs</);
+  assert.match(toc, /data-copy-course-code/);
+  assert.match(css, /\.evia-course-qr-grid/);
+  assert.match(css, /grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/);
+  assert.match(html, /assets\/evia-toc\.js\?v=81/);
+  assert.match(html, /assets\/evia-toc\.css\?v=81/);
+  for (const course of manifest.courses) {
+    assert.ok(toc.includes(`code:"${course.code}"`));
+    assert.ok(toc.includes(`file:"${course.file}"`));
+  }
+});
+
 test("ARP selects the matching question bank for every installed course pathway", async () => {
   const registry = await json("course-delivery/registry-v1.json");
   let current = null;

@@ -1,11 +1,11 @@
 {
-  "version": "80",
-  "title": "Seven course QR codes and ARP practice",
+  "version": "81",
+  "title": "Course QR Codes added to TOC",
   "details": [
-    "All seven course codes now install the correct Bricklayer, carpentry or Trowel Occupations route",
-    "Seven uploadable QR PNGs now show the course name and manual code below the QR",
-    "Each course has a mapped bank of 24 original multiple-choice practice questions",
-    "ARP now runs random ten-question mocks with feedback, scoring and a saved best result",
-    "Course packs, QR images and all 168 practice questions remain available offline"
+    "The TOC section now includes a Course QR Codes button",
+    "All seven labelled course QRs can be viewed and downloaded without leaving Evia",
+    "Every QR card includes a one-tap Copy code option for manual enrolment",
+    "Installed course-pack controls remain available from the QR screen",
+    "The complete QR gallery continues to work offline"
   ]
 }
