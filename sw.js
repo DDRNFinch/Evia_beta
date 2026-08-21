@@ -1,4 +1,4 @@
-const CACHE_NAME = "evia-beta-shell-v78";
+const CACHE_NAME = "evia-beta-shell-v79";
 const CACHE_PREFIXES = ["evia-beta-shell-", "evia-shell-"];
 const APP_SHELL = [
   "./",
@@ -37,6 +37,7 @@ const APP_SHELL = [
   "./course-delivery/course-registry.js",
   "./course-delivery/registry-v1.json",
   "./course-packs/Bricklayer_ST0095_v1.2.nisi",
+  "./course-delivery/qr/ST0095.png",
   "./assets/jsQR-1.4.0.js",
   "./assets/evia-course-enrolment.js",
   "./assets/evia-st0264-epa-enable.js",
@@ -133,7 +134,9 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  if (request.mode === "navigate" || url.pathname.endsWith("/index.html")) {
+  const lastSegment = url.pathname.split("/").pop() || "";
+  const isFileNavigation = request.mode === "navigate" && /\.[a-z0-9]{1,10}$/i.test(lastSegment) && !url.pathname.endsWith("/index.html");
+  if ((request.mode === "navigate" && !isFileNavigation) || url.pathname.endsWith("/index.html")) {
     event.respondWith((async () => {
       const cache = await caches.open(CACHE_NAME);
       const cached = (await cache.match("./index.html")) || (await cache.match("./"));

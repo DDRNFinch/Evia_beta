@@ -1,10 +1,11 @@
 {
-  "version": "78",
+  "version": "79",
   "title": "Bricklayer enrolment repaired for mobile",
   "details": [
     "QR images now scan inside Evia on Android and iPhone even when the browser has no built-in QR reader",
     "The permanent Bricklayer code remains ST0095 and the QR remains EVIA1:ST0095",
     "Manual ST0095 entry has a bundled fallback if the online registry cannot be reached",
+    "The public ST0095 PNG address now stays an image instead of reopening the app",
     "The Bricklayer course pack and complete Beta shell remain available offline"
   ]
 }

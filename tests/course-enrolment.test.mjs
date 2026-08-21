@@ -227,8 +227,8 @@ test("manual ST0095 enrolment still installs when the remote registry is unavail
 
 test("the cross-browser QR decoder loads before the enrolment controller", async () => {
   const html = await read("index.html");
-  const decoder = html.indexOf("assets/jsQR-1.4.0.js?v=78");
-  const enrolment = html.indexOf("assets/evia-course-enrolment.js?v=78");
+  const decoder = html.indexOf("assets/jsQR-1.4.0.js?v=79");
+  const enrolment = html.indexOf("assets/evia-course-enrolment.js?v=79");
 
   assert.ok(decoder > 0, "the QR decoder should be included");
   assert.ok(enrolment > decoder, "the QR decoder should load first");
@@ -276,7 +276,7 @@ class MemoryCache {
   }
 }
 
-test("v78 replaces the legacy shell and serves the complete installed app offline", async () => {
+test("v79 replaces the legacy shell and serves the complete installed app offline", async () => {
   const handlers = new Map();
   const stores = new Map([["evia-shell-v75", new MemoryCache()]]);
   const legacy = stores.get("evia-shell-v75");
@@ -343,7 +343,7 @@ test("v78 replaces the legacy shell and serves the complete installed app offlin
   let installWork;
   handlers.get("install")({ waitUntil(value) { installWork = value; } });
   await installWork;
-  assert.equal(await caches.has("evia-beta-shell-v78"), true);
+  assert.equal(await caches.has("evia-beta-shell-v79"), true);
 
   let activateWork;
   handlers.get("activate")({ waitUntil(value) { activateWork = value; } });
@@ -365,13 +365,13 @@ test("v78 replaces the legacy shell and serves the complete installed app offlin
     },
   });
   const offlineHtml = await (await navigationResponse).text();
-  assert.match(offlineHtml, /evia-app-version" content="78"/);
-  assert.match(offlineHtml, /evia-course-enrolment\.js\?v=78/);
+  assert.match(offlineHtml, /evia-app-version" content="79"/);
+  assert.match(offlineHtml, /evia-course-enrolment\.js\?v=79/);
 
   for (const resource of [
-    "assets/evia-beta-isolation.js?v=78",
-    "course-delivery/registry-v1.json?v=78",
-    "assets/jsQR-1.4.0.js?v=78",
+    "assets/evia-beta-isolation.js?v=79",
+    "course-delivery/registry-v1.json?v=79",
+    "assets/jsQR-1.4.0.js?v=79",
     "course-packs/Bricklayer_ST0095_v1.2.nisi",
   ]) {
     const request = {
@@ -384,4 +384,15 @@ test("v78 replaces the legacy shell and serves the complete installed app offlin
     const response = await responsePromise;
     assert.equal(response.ok, true, `${resource} should be available offline`);
   }
+
+  const qrRequest = {
+    method: "GET",
+    mode: "navigate",
+    url: "https://example.test/Evia_beta/course-delivery/qr/ST0095.png",
+  };
+  let qrResponsePromise;
+  handlers.get("fetch")({ request: qrRequest, respondWith(value) { qrResponsePromise = value; } });
+  const qrBody = await (await qrResponsePromise).text();
+  assert.doesNotMatch(qrBody, /evia-app-version/);
+  assert.ok(qrBody.length > 1000, "the QR PNG should be served instead of the app shell");
 });

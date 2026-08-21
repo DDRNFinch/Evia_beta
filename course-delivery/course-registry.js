@@ -2,7 +2,7 @@
 "use strict";
 const REGISTRY_URL="./course-delivery/registry-v1.json";
 const QR_PREFIX="EVIA1:";
-const REGISTRY_VERSION="78";
+const REGISTRY_VERSION="79";
 const BUNDLED_ST0095={
   enrolmentId:"ST0095",
   qrPayload:"EVIA1:ST0095",
