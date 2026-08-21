@@ -1,4 +1,4 @@
-const CACHE_NAME = "evia-beta-shell-v75";
+const CACHE_NAME = "evia-beta-shell-v76";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -32,6 +32,9 @@ const APP_SHELL = [
   "./assets/evia-course-pack-export.js",
   "./assets/evia-6570-pack-migration.js",
   "./assets/evia-course-context.js",
+  "./course-delivery/course-registry.js",
+  "./course-delivery/registry-v1.json",
+  "./assets/evia-course-enrolment.js",
   "./assets/evia-st0264-epa-enable.js",
   "./assets/evia-6570-pack-cutover.js",
   "./assets/evia-trowel-fetch.js",
@@ -66,16 +69,9 @@ const APP_SHELL = [
   "./assets/evia-targets.js",
   "./assets/evia-6570-smoke.js",
   "./assets/evia-updater.js",
-  "./course-packs/Bricklayer_ST0095_v1.2.nisi",
-  "./app/evia-site-data-1.ts",
-  "./app/evia-site-data-2.ts",
-  "./app/evia-site-data-3.ts",
-  "./app/evia-carpentry-site-data-1.ts",
-  "./app/evia-carpentry-site-data-2.ts",
-  "./app/evia-carpentry-site-data-3.ts",
-  "./app/evia-carpentry-joiner-data-1.ts",
-  "./app/evia-carpentry-joiner-data-2.ts",
-  "./app/evia-carpentry-joiner-data-3.ts",
+  "./app/evia-no-course-data-1.ts",
+  "./app/evia-no-course-data-2.ts",
+  "./app/evia-no-course-data-3.ts",
 ];
 
 self.addEventListener("install", (event) => {
