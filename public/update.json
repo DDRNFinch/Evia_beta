@@ -1,9 +1,10 @@
 {
-  "version": "48",
-  "title": "A new Evia update is ready",
+  "version": "85",
+  "title": "Mini Milos assessor exchange is live",
   "details": [
-    "Made the smaller top Evia use the same proportional line weight as large Evia",
-    "Removed the stroke compensation that made the small avatar look thicker",
-    "Matched the destination stroke exactly to the naturally scaled travelling avatar"
+    "Visit Feedback now stores assessor reviews and observations newest first",
+    "Share with Assessor now creates real QR codes and accepts rear-camera or saved-image scans",
+    "Learner reference and course must match exactly, with blue o markers for assessor-observed criteria",
+    "Names, contacts, locations, media and signatures are excluded from QR transfers"
   ]
 }
