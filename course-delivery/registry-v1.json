@@ -22,7 +22,8 @@
         "discussion": "not-yet-created",
         "practical": "not-yet-created"
       },
-      "publishable": false
+      "releaseChannel": "beta",
+      "publishable": true
     },
     {
       "enrolmentId": "ST0264-SITE",
