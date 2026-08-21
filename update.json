@@ -1,9 +1,10 @@
 {
-  "version": "84",
-  "title": "Mini Milos prepared for assessor sharing",
+  "version": "85",
+  "title": "Mini Milos assessor exchange is live",
   "details": [
-    "Mock Assessment has been removed from Mini Milos",
-    "Mini Milos now focuses on assessment feedback and secure assessor sharing",
-    "Course, Discussion Coach and Practical Coach features remain unchanged and available offline"
+    "Visit Feedback now stores assessor reviews and observations newest first",
+    "Share with Assessor now creates real QR codes and accepts rear-camera or saved-image scans",
+    "Learner reference and course must match exactly, with blue o markers for assessor-observed criteria",
+    "Names, contacts, locations, media and signatures are excluded from QR transfers"
   ]
 }
