@@ -1,11 +1,9 @@
 {
-  "version": "83",
-  "title": "Practical Coach added to ARP",
+  "version": "84",
+  "title": "Mini Milos prepared for assessor sharing",
   "details": [
-    "Practical now includes Learn the Task, Guided Rehearsal and Mock Practical modes",
-    "Every course has 12 mapped trade tasks, giving 84 practical tasks across all seven routes",
-    "Guided Rehearsal includes safety gates, work stages, camera or gallery checkpoints and recorded quality checks",
-    "Mock Practical includes short and full timers, practical questioning, readiness scoring and optional tutor verification",
-    "Saved practical progress, results and evidence remain private on the learner's device and work offline"
+    "Mock Assessment has been removed from Mini Milos",
+    "Mini Milos now focuses on assessment feedback and secure assessor sharing",
+    "Course, Discussion Coach and Practical Coach features remain unchanged and available offline"
   ]
 }
