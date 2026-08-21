@@ -8,7 +8,7 @@ let pageOpen=false;
 let patchQueued=false;
 let lookTimers=[];
 const assistants={
-  milos:{name:"Milos",role:"Assessment assistant",shortRole:"Assessor",color:"#4f7fc4",items:[["Mock assessment","EPA or Q&A practice for your course"],["Assessment feedback","Review feedback shared by your assessor"],["Share with assessor","Exchange assessment information securely"]]},
+  milos:{name:"Milos",role:"Assessment assistant",shortRole:"Assessor",color:"#4f7fc4",items:[["Assessment feedback","Review feedback shared by your assessor"],["Share with assessor","Exchange assessment information securely"]]},
   symi:{name:"Symi",role:"Tutor assistant",shortRole:"Tutor",color:"#59a875",items:[["Register sign-in","Scan or enter your tutor register code"],["Learning support","Revision and help with course knowledge"],["Tutor resources","Open learning shared by your tutor"]]},
   tinos:{name:"Tinos",role:"Employer assistant",shortRole:"Employer",color:"#d88b45",items:[["Witness testimony","Request or receive workplace testimony"],["Employer feedback","Review feedback from your employer"],["Workplace updates","Share progress and workplace information"]]}
 };
